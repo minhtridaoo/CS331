@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-15",
+  "scope": "5 dev images / 15 queries, count metrics only, supplied GT pending independent review",
+  "stats": {
+    "B0": {
+      "MAE": 19.4,
+      "RMSE": 24.315975544210986,
+      "exact_count": 1
+    },
+    "B2": {
+      "MAE": 22.0,
+      "RMSE": 30.090973175799196,
+      "exact_count": 1
+    }
+  },
+  "error_change": {
+    "improved": 6,
+    "unchanged": 5,
+    "worsened": 4
+  },
+  "queries": [
+    {
+      "run": "b2_two_images_20261015",
+      "query_id": "q01_1",
+      "image_id": "mcac_100",
+      "prompt": "guitars",
+      "gt": 25,
+      "B0": 25,
+      "B2": 25,
+      "pseudo_count": 3,
+      "B0_error": 0,
+      "B2_error": 0
+    },
+    {
+      "run": "b2_two_images_20261015",
+      "query_id": "q01_2",
+      "image_id": "mcac_100",
+      "prompt": "amplifiers",
+      "gt": 11,
+      "B0": 44,
+      "B2": 38,
+      "pseudo_count": 3,
+      "B0_error": 33,
+      "B2_error": 27
+    },
+    {
+      "run": "b2_two_images_20261015",
+      "query_id": "q01_3",
+      "image_id": "mcac_100",
+      "prompt": "chairs",
+      "gt": 1,
+      "B0": 0,
+      "B2": 0,
+      "pseudo_count": 0,
+      "B0_error": 1,
+      "B2_error": 1
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q02_1",
+      "image_id": "mcac_11",
+      "prompt": "plates",
+      "gt": 15,
+      "B0": 28,
+      "B2": 31,
+      "pseudo_count": 3,
+      "B0_error": 13,
+      "B2_error": 16
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q02_2",
+      "image_id": "mcac_11",
+      "prompt": "bowls",
+      "gt": 3,
+      "B0": 31,
+      "B2": 31,
+      "pseudo_count": 3,
+      "B0_error": 28,
+      "B2_error": 28
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q02_3",
+      "image_id": "mcac_11",
+      "prompt": "cups",
+      "gt": 2,
+      "B0": 23,
+      "B2": 26,
+      "pseudo_count": 3,
+      "B0_error": 21,
+      "B2_error": 24
+    },
+    {
+      "run": "b2_two_images_20261015",
+      "query_id": "q03_1",
+      "image_id": "mcac_200",
+      "prompt": "pens",
+      "gt": 6,
+      "B0": 17,
+      "B2": 13,
+      "pseudo_count": 3,
+      "B0_error": 11,
+      "B2_error": 7
+    },
+    {
+      "run": "b2_two_images_20261015",
+      "query_id": "q03_2",
+      "image_id": "mcac_200",
+      "prompt": "rulers",
+      "gt": 6,
+      "B0": 18,
+      "B2": 18,
+      "pseudo_count": 3,
+      "B0_error": 12,
+      "B2_error": 12
+    },
+    {
+      "run": "b2_two_images_20261015",
+      "query_id": "q03_3",
+      "image_id": "mcac_200",
+      "prompt": "pencils",
+      "gt": 6,
+      "B0": 17,
+      "B2": 16,
+      "pseudo_count": 3,
+      "B0_error": 11,
+      "B2_error": 10
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q04_1",
+      "image_id": "mcac_20",
+      "prompt": "strawberries",
+      "gt": 6,
+      "B0": 60,
+      "B2": 59,
+      "pseudo_count": 3,
+      "B0_error": 54,
+      "B2_error": 53
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q04_2",
+      "image_id": "mcac_20",
+      "prompt": "blueberries",
+      "gt": 24,
+      "B0": 43,
+      "B2": 32,
+      "pseudo_count": 3,
+      "B0_error": 19,
+      "B2_error": 8
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q04_3",
+      "image_id": "mcac_20",
+      "prompt": "red currants",
+      "gt": 39,
+      "B0": 84,
+      "B2": 84,
+      "pseudo_count": 3,
+      "B0_error": 45,
+      "B2_error": 45
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q05_1",
+      "image_id": "mcac_27",
+      "prompt": "cherries",
+      "gt": 2,
+      "B0": 20,
+      "B2": 15,
+      "pseudo_count": 3,
+      "B0_error": 18,
+      "B2_error": 13
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q05_2",
+      "image_id": "mcac_27",
+      "prompt": "raspberries",
+      "gt": 4,
+      "B0": 11,
+      "B2": 14,
+      "pseudo_count": 3,
+      "B0_error": 7,
+      "B2_error": 10
+    },
+    {
+      "run": "b2_remaining3_20261015",
+      "query_id": "q05_3",
+      "image_id": "mcac_27",
+      "prompt": "blackberries",
+      "gt": 3,
+      "B0": 21,
+      "B2": 79,
+      "pseudo_count": 3,
+      "B0_error": 18,
+      "B2_error": 76
+    }
+  ],
+  "source_sha256": {
+    "experiments\\countgdpp\\m4_inputs\\manifest.csv": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+    "experiments\\countgdpp\\m4_inputs\\first5_inputs.jsonl": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+    "results\\countgdpp\\m4_first5_b0\\predictions.jsonl": "ffe47cbef8037087fe6a61a4c2079805ac7dbad44b219a5ce3511e54a83341ac",
+    "results\\countgdpp\\b2_two_images_20261015\\run_config.json": "efdafc5675db0db57bc6e18f16bd9ab7ffa8ac3aee497ea7fd7224d3152207bb",
+    "results\\countgdpp\\b2_two_images_20261015\\predictions.jsonl": "14a460534782aa0322ce46ffa45fa73e3c3eb4e5dd865f3b1bba96892ca61775",
+    "results\\countgdpp\\b2_remaining3_20261015\\run_config.json": "8b62b6fd5203b391bd3a93af2ca7ae6fc25e123f6cbf8ecd0aa4ce95f438e0b9",
+    "results\\countgdpp\\b2_remaining3_20261015\\predictions.jsonl": "90ffc069cd3e3b2e5e9f7af7b1690bfdc85fb9030c9df4f816943f357e20cbe4"
+  },
+  "adapter_hash_note": "Old and new adapter hashes differ after CLI tau_sample was added; effective selection/final configs match at .23, first-pass boxes/scores match saved B0. Not a claim of byte-identical scripts."
+}

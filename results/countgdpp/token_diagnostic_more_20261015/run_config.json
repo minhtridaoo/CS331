@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "scope": "Instrumented original B0; target-token alternative is offline diagnostic only",
+  "query_ids": [
+    "q03_1",
+    "q03_3",
+    "q01_1",
+    "q01_2"
+  ],
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "pens"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "pencils"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "guitars"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "amplifiers"
+    }
+  ],
+  "source_script_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "diagnostic_script_sha256": "1eabffb11408df3dfc14243d6dba3b5c166ba864a7f557931de9814df0f8bc9b",
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "input_sha256": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+  "reference_predictions_sha256": "ffe47cbef8037087fe6a61a4c2079805ac7dbad44b219a5ce3511e54a83341ac",
+  "threshold": 0.23,
+  "seed": 42,
+  "date": "2026-10-15",
+  "measurements": "Predict call including preprocessing, transfers and tensor capture; excludes model load/overlay/write, no warm-up. Peak allocated memory includes resident model; not total device VRAM."
+}

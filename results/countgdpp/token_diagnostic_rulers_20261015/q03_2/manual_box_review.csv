@@ -1,0 +1,19 @@
+proposal_id,visual_class,is_requested_class,target_word_score,reviewer,source
+0,ruler,True,0.48711708188056946,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+1,ruler,True,0.484231173992157,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+2,ruler,True,0.4905904531478882,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+3,ruler,True,0.4819958806037903,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+4,ruler,True,0.4738333821296692,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+5,pen,False,0.4232025742530823,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+6,pen,False,0.43837612867355347,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+7,pen,False,0.4406938850879669,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+8,pen,False,0.4269399344921112,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+9,pencil,False,0.3776252865791321,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+10,pencil,False,0.36592385172843933,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+11,pen,False,0.43639540672302246,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+12,pencil,False,0.35400593280792236,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+13,ruler,True,0.42515960335731506,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+14,pencil,False,0.367891401052475,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+15,pencil,False,0.3586806058883667,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+16,pencil,False,0.35860201716423035,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only
+44,pen,False,0.44446101784706116,assistant visual inspection; second reviewer pending,proposal_ids.jpg; post-inference diagnostic only

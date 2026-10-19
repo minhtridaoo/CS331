@@ -1,0 +1,7 @@
+image_id,query_id,prompt,gt_count,B0,B2,B0_absolute_error,B2_absolute_error,pseudo_count,stage2_executed,visual_note
+mcac_100,q01_1,guitars,25,25,25,0,0,3,True,Three guitar samples; final count stays 25; location accuracy not formally scored
+mcac_100,q01_2,amplifiers,11,44,38,33,27,3,True,"All three selected samples visually are guitars, not amplifiers; final still selects guitars"
+mcac_100,q01_3,chairs,1,0,0,1,1,0,False,No samples; returns B0 without second forward; present chair missed
+mcac_200,q03_1,pens,6,17,13,11,7,3,True,Selected samples mix pen and pencils; final retains pens/pencils and a ruler
+mcac_200,q03_2,rulers,6,18,18,12,12,3,True,"All three selected samples visually are rulers, but final still selects all 18 objects"
+mcac_200,q03_3,pencils,6,17,16,11,10,3,True,"All three selected samples visually are pens, not pencils; final selects multiple classes"

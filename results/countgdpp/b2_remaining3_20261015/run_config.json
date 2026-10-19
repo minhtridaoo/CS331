@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "variant": "B2",
+  "scope": "App-based two-pass component comparison; not full paper",
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "plates"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "bowls"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "cups"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "strawberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "blueberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "red currants"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "cherries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "raspberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "blackberries"
+    }
+  ],
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "source_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "adapter_sha256": "058d60a8f86da39b16fe575328e9ac8a2e4f217ca48709ad6d4d174256a75a38",
+  "input_sha256": "ee4abb3b86b6626834b4983ac29839f781d3406d7b1c27a6a51bfd1796d6db09",
+  "model_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "selection_reference": "test_shanghai_tech.py:get_pseudo_exemplars",
+  "selection_reference_sha256": "8ad806d1557bccb210b1015aa833a78c5c9df94d81b329f39e9fb0ecf8460b18",
+  "tau_sample": 0.23,
+  "tau_final": 0.23,
+  "max_pseudo": 3,
+  "selection": "Max target-word token score on all first-pass proposals, strict > threshold, descending torch.sort CPU, top 3, clamp xyxy",
+  "nms": false,
+  "no_pseudo_policy": "return B0 without second forward (adapter convention, unlike upstream unconditional second pass)",
+  "final_filter": "Unchanged app positive-vs-remaining filter, includes inserted exemplar tokens before period in stage 2",
+  "negative_prompts": false,
+  "synthetic": false,
+  "crop": false,
+  "seed": 42,
+  "resize": {
+    "short_side": 800,
+    "max_size": 1333
+  },
+  "timing": "elapsed_ms = both predict calls including preprocess/capture and selection; excludes model load, replay check, disk/overlay; no warmup",
+  "memory": "peak_vram_mib = peak torch CUDA allocated including resident model, not total device memory",
+  "raw_arrays": "All 900 proposals: normalized cxcywh, sigmoid token scores and input_ids for each executed pass",
+  "device": "NVIDIA RTX A2000 Laptop GPU",
+  "torch_version": "2.5.1+cu121",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "completed_queries": 9
+}

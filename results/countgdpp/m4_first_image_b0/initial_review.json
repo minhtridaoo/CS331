@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-14",
+  "scope": "One-image preliminary review, not full evaluator or benchmark",
+  "manifest_sha256": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+  "predictions_sha256": "73c0c082bcda21401e58bfe6ba6f164945aae912242fcef80422ce9ba78c1c81",
+  "queries": [
+    {
+      "query_id": "q01_1",
+      "prompt": "guitars",
+      "gt_count": 25,
+      "predicted_count": 25,
+      "absolute_error": 0
+    },
+    {
+      "query_id": "q01_2",
+      "prompt": "amplifiers",
+      "gt_count": 11,
+      "predicted_count": 44,
+      "absolute_error": 33
+    },
+    {
+      "query_id": "q01_3",
+      "prompt": "chairs",
+      "gt_count": 1,
+      "predicted_count": 0,
+      "absolute_error": 1
+    }
+  ],
+  "observations": {
+    "guitars": "Count matches supplied GT; boxes visually mostly on guitars. Exact localization correctness not formally scored.",
+    "amplifiers": "Overlay includes many guitars in addition to lower amplifier regions; 44 is not 44 correct amplifier detections.",
+    "chairs": "No boxes; supplied GT has one chair/stool, visible at lower left."
+  },
+  "not_concluded": [
+    "Cause of cross-class errors",
+    "General model accuracy",
+    "Complete visual GT audit"
+  ],
+  "next": "Continue first five dev images at unchanged threshold 0.23; evaluator implementation by Trieu remains unconfirmed"
+}

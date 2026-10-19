@@ -1,0 +1,38 @@
+{
+  "tokens": [
+    "[CLS]",
+    "pens",
+    ".",
+    "[SEP]"
+  ],
+  "token_ids": [
+    101,
+    25636,
+    1012,
+    102
+  ],
+  "target_token_indices": [
+    1
+  ],
+  "excluded_positive_indices": [
+    0,
+    2
+  ],
+  "first_period_index": 2,
+  "proposals": 900,
+  "stock_count": 17,
+  "target_tokens_only_counterfactual_count": 17,
+  "stock_kept_but_target_only_rejects": 0,
+  "kept_top_positive_tokens": {
+    "[CLS]": 0,
+    "pens": 17,
+    ".": 0
+  },
+  "query_id": "q03_1",
+  "prompt": "pens",
+  "image_id": "mcac_200",
+  "prior_count": 17,
+  "matches_prior_count_boxes_scores": true,
+  "predict_capture_ms": 1402.81,
+  "peak_allocated_mib": 1461.12
+}

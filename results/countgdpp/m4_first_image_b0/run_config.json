@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "run_id": "m4_first_image_b0",
+  "variant": "B0",
+  "status": "complete",
+  "model_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "adapter_sha256": "98d44dead10cfcede4f9e2d4ea9f7f1a0c84bc9934784d143f3e4593cb67d127",
+  "process_folder_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "input_sha256": "be896c482276046866e4c7ff4a7ee9dae3a046b060190c9803d9d618c0941c47",
+  "manifest_sha256": null,
+  "manifest_note": "GT manifest is evaluator-only; identify its version when joining predictions",
+  "checkpoint_source": "https://github.com/niki-amini-naieni/CountGDPlusPlus",
+  "conf_thresh": 0.23,
+  "seed": 42,
+  "resize": {
+    "short_side": 800,
+    "max_size": 1333
+  },
+  "precision": "stock default; no AMP flag",
+  "pseudo_exemplars": false,
+  "negative_prompts": false,
+  "crop": false,
+  "synthetic_exemplars": false,
+  "elapsed_ms_definition": "Per-query stock subprocess wall time, includes model load/preprocess/inference/overlay/write; not pure inference latency",
+  "peak_vram_mib_note": "Not measured, null; resource profiling remains pending",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "executable": "/root/.venvs/countgdpp/bin/python",
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "guitars"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "amplifiers"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "chairs"
+    }
+  ],
+  "completed_queries": 3,
+  "failed_queries": 0
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-15",
+  "queries": [
+    {
+      "query_id": "q03_2",
+      "prompt": "rulers",
+      "image_id": "mcac_200",
+      "stock_count": 18,
+      "content_only_count": 18,
+      "kept_proposal_ids_identical": true,
+      "replay_matches": true,
+      "summary_sha256": "cd780efcc10e2f54ab587c4ed3559657ceea1dae21369c5449936ea7737384d2"
+    },
+    {
+      "query_id": "q03_1",
+      "prompt": "pens",
+      "image_id": "mcac_200",
+      "stock_count": 17,
+      "content_only_count": 17,
+      "kept_proposal_ids_identical": true,
+      "replay_matches": true,
+      "summary_sha256": "431bff0adfde0be022ded445fb454017c7791b31d8965b23775761de2b6513fa"
+    },
+    {
+      "query_id": "q03_3",
+      "prompt": "pencils",
+      "image_id": "mcac_200",
+      "stock_count": 17,
+      "content_only_count": 17,
+      "kept_proposal_ids_identical": true,
+      "replay_matches": true,
+      "summary_sha256": "64c8840a727dbe3affd4b35a1eebde772d5dbadbc92c4d5dffec5ddefe7cf35d"
+    },
+    {
+      "query_id": "q01_1",
+      "prompt": "guitars",
+      "image_id": "mcac_100",
+      "stock_count": 25,
+      "content_only_count": 25,
+      "kept_proposal_ids_identical": true,
+      "replay_matches": true,
+      "summary_sha256": "1326a5aaecb5a27507795a0d16a5fea06511544847744a772e8aed817be11218"
+    },
+    {
+      "query_id": "q01_2",
+      "prompt": "amplifiers",
+      "image_id": "mcac_100",
+      "stock_count": 44,
+      "content_only_count": 44,
+      "kept_proposal_ids_identical": true,
+      "replay_matches": true,
+      "summary_sha256": "4eeea4c3d32c99c320e6fb3baed96d144535e1d1374988deba180c2259f32741"
+    }
+  ],
+  "images": 2,
+  "queries_checked": 5,
+  "kept_proposals_checked": 121,
+  "finding": "No proposal changes when removing special/punctuation tokens from positive max, on these 5 queries. Original filtering still uses the original caption and negative-side max.",
+  "limitations": [
+    "Does not prove punctuation never matters on other inputs",
+    "No causal explanation of learned cross-class scores",
+    "B0 app is not full paper evaluation configuration",
+    "Offline removal from score aggregation is not rerunning a punctuation-free caption"
+  ],
+  "next": "Prepare a controlled B0 vs B2 comparison on the same two dev images; verify pseudo-exemplar selection code and record automatic exemplars before execution"
+}

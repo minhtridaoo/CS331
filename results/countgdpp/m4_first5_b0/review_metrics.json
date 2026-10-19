@@ -1,0 +1,19 @@
+{
+  "images": 5,
+  "queries": 15,
+  "valid_queries": 15,
+  "coverage": 1.0,
+  "exact_count_queries": 1,
+  "overcount_queries": 13,
+  "undercount_queries": 1,
+  "MAE_present": 19.4,
+  "RMSE_present": 24.315975544210986,
+  "presence_recall": 0.9333333333333333,
+  "FPR_absent": null,
+  "MeanAbsentCount": null,
+  "absent_queries": 0,
+  "first_image_repeat_counts_equal": true,
+  "scope": "Preliminary review of first 5 internal dev images; not full benchmark or Trieu evaluator validation. Presence recall is not class-selection accuracy.",
+  "manifest_sha256": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+  "predictions_sha256": "ffe47cbef8037087fe6a61a4c2079805ac7dbad44b219a5ce3511e54a83341ac"
+}

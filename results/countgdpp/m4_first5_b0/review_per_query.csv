@@ -1,0 +1,16 @@
+image_id,query_id,prompt,gt_count,predicted_count,signed_error,absolute_error,overlay_path
+mcac_100,q01_1,guitars,25,25,0,0,results/countgdpp/m4_first5_b0/jobs/001_q01_1/raw/mcac_100.jpg
+mcac_100,q01_2,amplifiers,11,44,33,33,results/countgdpp/m4_first5_b0/jobs/002_q01_2/raw/mcac_100.jpg
+mcac_100,q01_3,chairs,1,0,-1,1,results/countgdpp/m4_first5_b0/jobs/003_q01_3/raw/mcac_100.jpg
+mcac_11,q02_1,plates,15,28,13,13,results/countgdpp/m4_first5_b0/jobs/004_q02_1/raw/mcac_11.jpg
+mcac_11,q02_2,bowls,3,31,28,28,results/countgdpp/m4_first5_b0/jobs/005_q02_2/raw/mcac_11.jpg
+mcac_11,q02_3,cups,2,23,21,21,results/countgdpp/m4_first5_b0/jobs/006_q02_3/raw/mcac_11.jpg
+mcac_200,q03_1,pens,6,17,11,11,results/countgdpp/m4_first5_b0/jobs/007_q03_1/raw/mcac_200.jpg
+mcac_200,q03_2,rulers,6,18,12,12,results/countgdpp/m4_first5_b0/jobs/008_q03_2/raw/mcac_200.jpg
+mcac_200,q03_3,pencils,6,17,11,11,results/countgdpp/m4_first5_b0/jobs/009_q03_3/raw/mcac_200.jpg
+mcac_20,q04_1,strawberries,6,60,54,54,results/countgdpp/m4_first5_b0/jobs/010_q04_1/raw/mcac_20.jpg
+mcac_20,q04_2,blueberries,24,43,19,19,results/countgdpp/m4_first5_b0/jobs/011_q04_2/raw/mcac_20.jpg
+mcac_20,q04_3,red currants,39,84,45,45,results/countgdpp/m4_first5_b0/jobs/012_q04_3/raw/mcac_20.jpg
+mcac_27,q05_1,cherries,2,20,18,18,results/countgdpp/m4_first5_b0/jobs/013_q05_1/raw/mcac_27.jpg
+mcac_27,q05_2,raspberries,4,11,7,7,results/countgdpp/m4_first5_b0/jobs/014_q05_2/raw/mcac_27.jpg
+mcac_27,q05_3,blackberries,3,21,18,18,results/countgdpp/m4_first5_b0/jobs/015_q05_3/raw/mcac_27.jpg

@@ -1,0 +1,4 @@
+# ninja log v7
+17	10702	1791906946476856600	/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/ops/build/temp.linux-x86_64-3.10/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/ops/src/cpu/ms_deform_attn_cpu.o	1a0d52ad99e2d641
+26	26088	1791906946486804900	/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/ops/build/temp.linux-x86_64-3.10/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/ops/src/cuda/ms_deform_attn_cuda.o	cebf7406bdcb8711
+11118	36822	1791906958156735100	/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/ops/build/temp.linux-x86_64-3.10/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/ops/src/vision.o	f2aa1e1cd5e87af6

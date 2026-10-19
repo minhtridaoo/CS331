@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "experiment": "M6 E1 fixed-pseudo final threshold sweep",
+  "grid": [
+    0.1,
+    0.23,
+    0.35,
+    0.5
+  ],
+  "tau_sample_fixed": 0.23,
+  "max_pseudo": 3,
+  "source_run": "b2_two_images_20261015",
+  "source_config_sha256": "efdafc5675db0db57bc6e18f16bd9ab7ffa8ac3aee497ea7fd7224d3152207bb",
+  "source_predictions_sha256": "14a460534782aa0322ce46ffa45fa73e3c3eb4e5dd865f3b1bba96892ca61775",
+  "manifest_sha256": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+  "adapter_sha256": "65416e2dada22b6e56674057809382940129635b59e9171a538124b9b68e45d5",
+  "raw_sha256": {
+    "results\\countgdpp\\b2_two_images_20261015\\q01_1\\stage1_raw.npz": "31a3fc9b577cf42e4ce3cfcc881c6019cdcd71b9b56003ec619544b4e0c4793d",
+    "results\\countgdpp\\b2_two_images_20261015\\q01_1\\stage2_raw.npz": "4bf2cea3cab0bcb18b98cce6ef264089a9f365efeea37848503a1eb1af0f290b",
+    "results\\countgdpp\\b2_two_images_20261015\\q01_2\\stage1_raw.npz": "a51494a117b8266f01922732e447a67400f677d44c81db399b241c97632dd8fa",
+    "results\\countgdpp\\b2_two_images_20261015\\q01_2\\stage2_raw.npz": "fec7d506a3fe163bb15a3860dc1386e9fdce9c6221b24f4a1f46019c1592f491",
+    "results\\countgdpp\\b2_two_images_20261015\\q01_3\\stage1_raw.npz": "f73ded16cbdcf2161ce94f8be1faf8e574c1b944028b07add61fe4a2531afca8",
+    "results\\countgdpp\\b2_two_images_20261015\\q03_1\\stage1_raw.npz": "9f730b661521e0de01a345d42ad4b8ebbab9e9b8563844d229fbd360b07d0759",
+    "results\\countgdpp\\b2_two_images_20261015\\q03_1\\stage2_raw.npz": "73f1861fc8de56eede9d6943e30728d042c7de8581f7b56182eb138f43b668bf",
+    "results\\countgdpp\\b2_two_images_20261015\\q03_2\\stage1_raw.npz": "8e513906cccc91feea7fcb7a2482d6c335046b086ac64afaa2b72139376a0b12",
+    "results\\countgdpp\\b2_two_images_20261015\\q03_2\\stage2_raw.npz": "b70464f10b713f0bda4d1290f5a88ec3f38d2b4a260502e62a1cfa9bb693208e",
+    "results\\countgdpp\\b2_two_images_20261015\\q03_3\\stage1_raw.npz": "1138a3ea4c113c6194a404dc1d4845143446bc0d8729995d748a1d6cfb7f1326",
+    "results\\countgdpp\\b2_two_images_20261015\\q03_3\\stage2_raw.npz": "2badc23e88d5e5785da09c267e2c38d49e8c56e4cf6fab332f6157e8d74c82e0"
+  },
+  "no_pseudo": "No second pass. Refilter stage1 at each tau_final; pseudo selection remains fixed at tau_sample 0.23.",
+  "filter": "Original app strict positive max > tau_final and positive max > remaining max; inserted exemplar tokens retained",
+  "scope": "Same 2-image/6-query exploratory dev subset; no per-query tuned thresholds, no holdout selection, no inference timing",
+  "replay_023_verified": true,
+  "query_configurations": 48
+}

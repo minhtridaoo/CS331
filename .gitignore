@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+.ipynb_checkpoints/
+.vscode/
+*.log
+# Model weights
+*.pth
+*.pt
+*.safetensors
+*.ckpt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Temporary files
+.ipynb_checkpoints/
+.vscode/
+*.log
+
+# Secrets
+.env
+.env.*

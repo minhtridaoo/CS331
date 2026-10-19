@@ -1,0 +1,51 @@
+{
+  "verified_date": "2026-10-13",
+  "scope": "Technical smoke test on one upstream demo image; not pilot or benchmark",
+  "results": [
+    {
+      "query": "spoon",
+      "manual_gt": 7,
+      "predicted_count": 19,
+      "box_count": 19,
+      "score_count": 19,
+      "raw_path": "results/countgdpp/smoke_spoon/results.json",
+      "raw_sha256": "8a2b949275fa0dc65761ad2727644183bd9339f42ed20c49f6a32c89418613ef",
+      "prompt_sha256": "d41498910e08a9c7cd5edb4786e8c6d21cbda7c91b927b51337c40f9cae9c0e0"
+    },
+    {
+      "query": "fork",
+      "manual_gt": 7,
+      "predicted_count": 14,
+      "box_count": 14,
+      "score_count": 14,
+      "raw_path": "results/countgdpp/smoke_fork/results.json",
+      "raw_sha256": "8e9a6a0cbb6f982085fa16005dd5c50c949fa3afe96f04473cb13b2398c5f54c",
+      "prompt_sha256": "b2ef331ef7d1d030da8143ff09444db8a18ecbb5baf7af7e3670da700cfb8217"
+    },
+    {
+      "query": "cat",
+      "manual_gt": 0,
+      "predicted_count": 0,
+      "box_count": 0,
+      "score_count": 0,
+      "raw_path": "results/countgdpp/smoke_cat/results.json",
+      "raw_sha256": "a768a3f9aab36294a7ca96f2de63337a6564b8d3616f1892b70bed72b9b2ccb1",
+      "prompt_sha256": "cb52ef045647edb3e2a11faa83feca6ca2160515da516400d38fcff97d4d902d"
+    }
+  ],
+  "checks": "JSON shape, count-box-score consistency, finite values, ordered coordinates, prompt text, empty exemplars/negatives, overlay existence; fork and cat overlays visually inspected",
+  "manual_gt_status": "Manual visual count, not double-annotated manifest",
+  "observations": {
+    "fork": "14 boxes cover 7 forks and 7 spoons",
+    "cat": "0 boxes, correct absence for this image",
+    "spoon": "19 boxes; earlier visual review observed cross-class boxes and duplicates"
+  },
+  "pending": [
+    "checkpoint missing/unexpected key audit",
+    "standardized schema v1 handoff",
+    "runtime and peak VRAM measurements",
+    "independent multi-image pilot"
+  ],
+  "elapsed_ms": null,
+  "peak_vram_mib": null
+}

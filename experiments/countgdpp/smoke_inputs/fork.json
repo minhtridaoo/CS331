@@ -1,0 +1,10 @@
+{
+  "positive": {
+    "text": "fork",
+    "exemplars": {
+      "image": "/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/experiments/countgdpp/smoke_inputs/images/utensils.jpg",
+      "boxes": []
+    }
+  },
+  "negative": []
+}

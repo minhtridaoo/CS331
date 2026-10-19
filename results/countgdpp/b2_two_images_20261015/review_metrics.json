@@ -1,0 +1,19 @@
+{
+  "scope": "Paired preliminary review, same 2 internal-dev images / 6 queries; not full benchmark or 5-image score",
+  "queries": 6,
+  "images": 2,
+  "coverage_B0": 1.0,
+  "coverage_B2": 1.0,
+  "B0_MAE_present": 11.333333333333334,
+  "B2_MAE_present": 9.5,
+  "B0_exact_count": 1,
+  "B2_exact_count": 1,
+  "lower_absolute_error_queries": 3,
+  "unchanged_absolute_error_queries": 3,
+  "stage2_executed_queries": 5,
+  "absent_queries": 0,
+  "FPR_absent": null,
+  "pseudo_visual_review": "Assistant inspection only; teammate confirmation pending",
+  "manifest_sha256": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+  "predictions_sha256": "14a460534782aa0322ce46ffa45fa73e3c3eb4e5dd865f3b1bba96892ca61775"
+}

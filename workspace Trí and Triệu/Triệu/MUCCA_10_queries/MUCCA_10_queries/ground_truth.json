@@ -1,0 +1,242 @@
+[
+  {
+    "query_id": "q01_1",
+    "image": "images/mcac_100.jpg",
+    "class_id": 27,
+    "dataset_label": "guitars",
+    "expected_count": 25,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q01_2",
+    "image": "images/mcac_100.jpg",
+    "class_id": 26,
+    "dataset_label": "amplifiers",
+    "expected_count": 11,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q01_3",
+    "image": "images/mcac_100.jpg",
+    "class_id": 6,
+    "dataset_label": "chairs",
+    "expected_count": 1,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q02_1",
+    "image": "images/mcac_11.jpg",
+    "class_id": 0,
+    "dataset_label": "plates",
+    "expected_count": 15,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q02_2",
+    "image": "images/mcac_11.jpg",
+    "class_id": 1,
+    "dataset_label": "bowls",
+    "expected_count": 3,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q02_3",
+    "image": "images/mcac_11.jpg",
+    "class_id": 2,
+    "dataset_label": "cups",
+    "expected_count": 2,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q03_1",
+    "image": "images/mcac_200.jpg",
+    "class_id": 42,
+    "dataset_label": "pens",
+    "expected_count": 6,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q03_2",
+    "image": "images/mcac_200.jpg",
+    "class_id": 43,
+    "dataset_label": "rulers",
+    "expected_count": 6,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q03_3",
+    "image": "images/mcac_200.jpg",
+    "class_id": 44,
+    "dataset_label": "pencils",
+    "expected_count": 6,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q04_1",
+    "image": "images/mcac_20.jpg",
+    "class_id": 10,
+    "dataset_label": "strawberries",
+    "expected_count": 6,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q04_2",
+    "image": "images/mcac_20.jpg",
+    "class_id": 11,
+    "dataset_label": "blueberries",
+    "expected_count": 24,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q04_3",
+    "image": "images/mcac_20.jpg",
+    "class_id": 13,
+    "dataset_label": "red currants",
+    "expected_count": 39,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q05_1",
+    "image": "images/mcac_27.jpg",
+    "class_id": 8,
+    "dataset_label": "cherries",
+    "expected_count": 2,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q05_2",
+    "image": "images/mcac_27.jpg",
+    "class_id": 9,
+    "dataset_label": "raspberries",
+    "expected_count": 4,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q05_3",
+    "image": "images/mcac_27.jpg",
+    "class_id": 12,
+    "dataset_label": "blackberries",
+    "expected_count": 3,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q06_1",
+    "image": "images/mcac_44.jpg",
+    "class_id": 16,
+    "dataset_label": "apples",
+    "expected_count": 6,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q06_2",
+    "image": "images/mcac_44.jpg",
+    "class_id": 17,
+    "dataset_label": "pears",
+    "expected_count": 2,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q06_3",
+    "image": "images/mcac_44.jpg",
+    "class_id": 19,
+    "dataset_label": "oranges",
+    "expected_count": 5,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q07_1",
+    "image": "images/mcac_58.jpg",
+    "class_id": 20,
+    "dataset_label": "people",
+    "expected_count": 125,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q07_2",
+    "image": "images/mcac_58.jpg",
+    "class_id": 21,
+    "dataset_label": "beach umbrellas",
+    "expected_count": 53,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q07_3",
+    "image": "images/mcac_58.jpg",
+    "class_id": 6,
+    "dataset_label": "chairs",
+    "expected_count": 7,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q08_1",
+    "image": "images/mcac_81.jpg",
+    "class_id": 22,
+    "dataset_label": "cars",
+    "expected_count": 14,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q08_2",
+    "image": "images/mcac_81.jpg",
+    "class_id": 23,
+    "dataset_label": "motorbikes",
+    "expected_count": 56,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q08_3",
+    "image": "images/mcac_81.jpg",
+    "class_id": 20,
+    "dataset_label": "people",
+    "expected_count": 70,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q09_1",
+    "image": "images/mcac_171.jpg",
+    "class_id": 39,
+    "dataset_label": "sheeps",
+    "expected_count": 80,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q09_2",
+    "image": "images/mcac_171.jpg",
+    "class_id": 40,
+    "dataset_label": "goats",
+    "expected_count": 7,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q09_3",
+    "image": "images/mcac_171.jpg",
+    "class_id": 29,
+    "dataset_label": "dogs",
+    "expected_count": 4,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q10_1",
+    "image": "images/mcac_176.jpg",
+    "class_id": 41,
+    "dataset_label": "boats",
+    "expected_count": 12,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q10_2",
+    "image": "images/mcac_176.jpg",
+    "class_id": 22,
+    "dataset_label": "cars",
+    "expected_count": 7,
+    "source": "MUCCA annotations: number of point labels for this class"
+  },
+  {
+    "query_id": "q10_3",
+    "image": "images/mcac_176.jpg",
+    "class_id": 20,
+    "dataset_label": "people",
+    "expected_count": 83,
+    "source": "MUCCA annotations: number of point labels for this class"
+  }
+]

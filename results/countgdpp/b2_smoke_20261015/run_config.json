@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "variant": "B2",
+  "scope": "App-based two-pass component comparison; not full paper",
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "utensils",
+      "query_id": "smoke_spoon",
+      "image_path": "experiments/countgdpp/smoke_inputs/images/utensils.jpg",
+      "prompt": "spoon"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "utensils",
+      "query_id": "smoke_fork",
+      "image_path": "experiments/countgdpp/smoke_inputs/images/utensils.jpg",
+      "prompt": "fork"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "utensils",
+      "query_id": "smoke_cat",
+      "image_path": "experiments/countgdpp/smoke_inputs/images/utensils.jpg",
+      "prompt": "cat"
+    }
+  ],
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "source_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "adapter_sha256": "be92a4765915b00d97c203cf4d623eb528687ff7329d6a89175c476a81c8cee3",
+  "input_sha256": "3aff4317343e156881acce1cb827cb56bdcfafc5463a54cabd237d842b669d1a",
+  "model_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "selection_reference": "test_shanghai_tech.py:get_pseudo_exemplars",
+  "selection_reference_sha256": "8ad806d1557bccb210b1015aa833a78c5c9df94d81b329f39e9fb0ecf8460b18",
+  "tau_sample": 0.23,
+  "tau_final": 0.23,
+  "max_pseudo": 3,
+  "selection": "Max target-word token score on all first-pass proposals, strict > threshold, descending torch.sort CPU, top 3, clamp xyxy",
+  "nms": false,
+  "no_pseudo_policy": "return B0 without second forward (adapter convention, unlike upstream unconditional second pass)",
+  "final_filter": "Unchanged app positive-vs-remaining filter, includes inserted exemplar tokens before period in stage 2",
+  "negative_prompts": false,
+  "synthetic": false,
+  "crop": false,
+  "seed": 42,
+  "resize": {
+    "short_side": 800,
+    "max_size": 1333
+  },
+  "timing": "elapsed_ms = both predict calls including preprocess/capture and selection; excludes model load, replay check, disk/overlay; no warmup",
+  "memory": "peak_vram_mib = peak torch CUDA allocated including resident model, not total device memory",
+  "raw_arrays": "All 900 proposals: normalized cxcywh, sigmoid token scores and input_ids for each executed pass",
+  "device": "NVIDIA RTX A2000 Laptop GPU",
+  "torch_version": "2.5.1+cu121",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "completed_queries": 3
+}

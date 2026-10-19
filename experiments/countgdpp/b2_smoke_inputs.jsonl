@@ -1,0 +1,3 @@
+{"schema_version": 1, "image_id": "utensils", "query_id": "smoke_spoon", "image_path": "experiments/countgdpp/smoke_inputs/images/utensils.jpg", "prompt": "spoon"}
+{"schema_version": 1, "image_id": "utensils", "query_id": "smoke_fork", "image_path": "experiments/countgdpp/smoke_inputs/images/utensils.jpg", "prompt": "fork"}
+{"schema_version": 1, "image_id": "utensils", "query_id": "smoke_cat", "image_path": "experiments/countgdpp/smoke_inputs/images/utensils.jpg", "prompt": "cat"}

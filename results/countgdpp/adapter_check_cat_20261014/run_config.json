@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "run_id": "adapter_check_cat_20261014",
+  "variant": "B0",
+  "status": "complete",
+  "model_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "adapter_sha256": "16898435a9f904d284a73074b3324b9790ff3c4ed18b8d252b47c46a65b72a59",
+  "process_folder_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "input_sha256": "274d385b86b6f1936e2616efe125e2353f7560eb4b23acb21115e3b36e9820c0",
+  "manifest_sha256": null,
+  "manifest_note": "GT manifest is evaluator-only; identify its version when joining predictions",
+  "checkpoint_source": "https://github.com/niki-amini-naieni/CountGDPlusPlus",
+  "conf_thresh": 0.23,
+  "seed": 42,
+  "resize": {
+    "short_side": 800,
+    "max_size": 1333
+  },
+  "precision": "stock default; no AMP flag",
+  "pseudo_exemplars": false,
+  "negative_prompts": false,
+  "crop": false,
+  "synthetic_exemplars": false,
+  "elapsed_ms_definition": "Per-query stock subprocess wall time, includes model load/preprocess/inference/overlay/write; not pure inference latency",
+  "peak_vram_mib_note": "Not measured, null; resource profiling remains pending",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "executable": "/root/.venvs/countgdpp/bin/python",
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "utensils",
+      "query_id": "smoke_cat",
+      "image_path": "experiments/countgdpp/smoke_inputs/images/utensils.jpg",
+      "prompt": "cat"
+    }
+  ],
+  "completed_queries": 1,
+  "failed_queries": 0
+}

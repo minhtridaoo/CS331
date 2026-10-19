@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "run_id": "m4_first5_b0",
+  "variant": "B0",
+  "status": "complete",
+  "model_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "adapter_sha256": "98d44dead10cfcede4f9e2d4ea9f7f1a0c84bc9934784d143f3e4593cb67d127",
+  "process_folder_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "input_sha256": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+  "manifest_sha256": null,
+  "manifest_note": "GT manifest is evaluator-only; identify its version when joining predictions",
+  "checkpoint_source": "https://github.com/niki-amini-naieni/CountGDPlusPlus",
+  "conf_thresh": 0.23,
+  "seed": 42,
+  "resize": {
+    "short_side": 800,
+    "max_size": 1333
+  },
+  "precision": "stock default; no AMP flag",
+  "pseudo_exemplars": false,
+  "negative_prompts": false,
+  "crop": false,
+  "synthetic_exemplars": false,
+  "elapsed_ms_definition": "Per-query stock subprocess wall time, includes model load/preprocess/inference/overlay/write; not pure inference latency",
+  "peak_vram_mib_note": "Not measured, null; resource profiling remains pending",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "executable": "/root/.venvs/countgdpp/bin/python",
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "guitars"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "amplifiers"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "chairs"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "plates"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "bowls"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "cups"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "pens"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "rulers"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "pencils"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "strawberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "blueberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "red currants"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "cherries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "raspberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "blackberries"
+    }
+  ],
+  "completed_queries": 15,
+  "failed_queries": 0
+}

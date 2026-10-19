@@ -1,0 +1,242 @@
+[
+  {
+    "query_id": "q01_1",
+    "image": "images/mcac_100.jpg",
+    "text_prompt": "guitars",
+    "question_en": "How many guitars are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu đàn guitar?",
+    "class_id": 27
+  },
+  {
+    "query_id": "q01_2",
+    "image": "images/mcac_100.jpg",
+    "text_prompt": "amplifiers",
+    "question_en": "How many amplifiers are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu ampli?",
+    "class_id": 26
+  },
+  {
+    "query_id": "q01_3",
+    "image": "images/mcac_100.jpg",
+    "text_prompt": "chairs",
+    "question_en": "How many chairs are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu ghế?",
+    "class_id": 6
+  },
+  {
+    "query_id": "q02_1",
+    "image": "images/mcac_11.jpg",
+    "text_prompt": "plates",
+    "question_en": "How many plates are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu đĩa?",
+    "class_id": 0
+  },
+  {
+    "query_id": "q02_2",
+    "image": "images/mcac_11.jpg",
+    "text_prompt": "bowls",
+    "question_en": "How many bowls are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu bát?",
+    "class_id": 1
+  },
+  {
+    "query_id": "q02_3",
+    "image": "images/mcac_11.jpg",
+    "text_prompt": "cups",
+    "question_en": "How many cups are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu cốc có quai?",
+    "class_id": 2
+  },
+  {
+    "query_id": "q03_1",
+    "image": "images/mcac_200.jpg",
+    "text_prompt": "pens",
+    "question_en": "How many pens are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu bút mực?",
+    "class_id": 42
+  },
+  {
+    "query_id": "q03_2",
+    "image": "images/mcac_200.jpg",
+    "text_prompt": "rulers",
+    "question_en": "How many rulers are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu thước kẻ?",
+    "class_id": 43
+  },
+  {
+    "query_id": "q03_3",
+    "image": "images/mcac_200.jpg",
+    "text_prompt": "pencils",
+    "question_en": "How many pencils are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu bút chì?",
+    "class_id": 44
+  },
+  {
+    "query_id": "q04_1",
+    "image": "images/mcac_20.jpg",
+    "text_prompt": "strawberries",
+    "question_en": "How many strawberries are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu dâu tây?",
+    "class_id": 10
+  },
+  {
+    "query_id": "q04_2",
+    "image": "images/mcac_20.jpg",
+    "text_prompt": "blueberries",
+    "question_en": "How many blueberries are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu việt quất?",
+    "class_id": 11
+  },
+  {
+    "query_id": "q04_3",
+    "image": "images/mcac_20.jpg",
+    "text_prompt": "red currants",
+    "question_en": "How many red currants are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu quả lý chua đỏ?",
+    "class_id": 13
+  },
+  {
+    "query_id": "q05_1",
+    "image": "images/mcac_27.jpg",
+    "text_prompt": "cherries",
+    "question_en": "How many cherries are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu quả anh đào?",
+    "class_id": 8
+  },
+  {
+    "query_id": "q05_2",
+    "image": "images/mcac_27.jpg",
+    "text_prompt": "raspberries",
+    "question_en": "How many raspberries are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu mâm xôi đỏ?",
+    "class_id": 9
+  },
+  {
+    "query_id": "q05_3",
+    "image": "images/mcac_27.jpg",
+    "text_prompt": "blackberries",
+    "question_en": "How many blackberries are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu mâm xôi đen?",
+    "class_id": 12
+  },
+  {
+    "query_id": "q06_1",
+    "image": "images/mcac_44.jpg",
+    "text_prompt": "apples",
+    "question_en": "How many apples are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu táo?",
+    "class_id": 16
+  },
+  {
+    "query_id": "q06_2",
+    "image": "images/mcac_44.jpg",
+    "text_prompt": "pears",
+    "question_en": "How many pears are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu lê?",
+    "class_id": 17
+  },
+  {
+    "query_id": "q06_3",
+    "image": "images/mcac_44.jpg",
+    "text_prompt": "oranges",
+    "question_en": "How many oranges are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu cam?",
+    "class_id": 19
+  },
+  {
+    "query_id": "q07_1",
+    "image": "images/mcac_58.jpg",
+    "text_prompt": "people",
+    "question_en": "How many people are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu người?",
+    "class_id": 20
+  },
+  {
+    "query_id": "q07_2",
+    "image": "images/mcac_58.jpg",
+    "text_prompt": "beach umbrellas",
+    "question_en": "How many beach umbrellas are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu ô che nắng trên bãi biển?",
+    "class_id": 21
+  },
+  {
+    "query_id": "q07_3",
+    "image": "images/mcac_58.jpg",
+    "text_prompt": "chairs",
+    "question_en": "How many chairs are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu ghế?",
+    "class_id": 6
+  },
+  {
+    "query_id": "q08_1",
+    "image": "images/mcac_81.jpg",
+    "text_prompt": "cars",
+    "question_en": "How many cars are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu ô tô?",
+    "class_id": 22
+  },
+  {
+    "query_id": "q08_2",
+    "image": "images/mcac_81.jpg",
+    "text_prompt": "motorbikes",
+    "question_en": "How many motorbikes are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu xe máy?",
+    "class_id": 23
+  },
+  {
+    "query_id": "q08_3",
+    "image": "images/mcac_81.jpg",
+    "text_prompt": "people",
+    "question_en": "How many people are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu người?",
+    "class_id": 20
+  },
+  {
+    "query_id": "q09_1",
+    "image": "images/mcac_171.jpg",
+    "text_prompt": "sheep",
+    "question_en": "How many sheep are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu cừu?",
+    "class_id": 39
+  },
+  {
+    "query_id": "q09_2",
+    "image": "images/mcac_171.jpg",
+    "text_prompt": "goats",
+    "question_en": "How many goats are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu dê?",
+    "class_id": 40
+  },
+  {
+    "query_id": "q09_3",
+    "image": "images/mcac_171.jpg",
+    "text_prompt": "dogs",
+    "question_en": "How many dogs are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu chó?",
+    "class_id": 29
+  },
+  {
+    "query_id": "q10_1",
+    "image": "images/mcac_176.jpg",
+    "text_prompt": "boats",
+    "question_en": "How many boats are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu thuyền?",
+    "class_id": 41
+  },
+  {
+    "query_id": "q10_2",
+    "image": "images/mcac_176.jpg",
+    "text_prompt": "cars",
+    "question_en": "How many cars are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu ô tô?",
+    "class_id": 22
+  },
+  {
+    "query_id": "q10_3",
+    "image": "images/mcac_176.jpg",
+    "text_prompt": "people",
+    "question_en": "How many people are in the image?",
+    "question_vi": "Trong ảnh có bao nhiêu người?",
+    "class_id": 20
+  }
+]

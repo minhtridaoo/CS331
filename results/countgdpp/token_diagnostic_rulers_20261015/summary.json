@@ -1,0 +1,40 @@
+[
+  {
+    "tokens": [
+      "[CLS]",
+      "rulers",
+      ".",
+      "[SEP]"
+    ],
+    "token_ids": [
+      101,
+      11117,
+      1012,
+      102
+    ],
+    "target_token_indices": [
+      1
+    ],
+    "excluded_positive_indices": [
+      0,
+      2
+    ],
+    "first_period_index": 2,
+    "proposals": 900,
+    "stock_count": 18,
+    "target_tokens_only_counterfactual_count": 18,
+    "stock_kept_but_target_only_rejects": 0,
+    "kept_top_positive_tokens": {
+      "[CLS]": 0,
+      "rulers": 18,
+      ".": 0
+    },
+    "query_id": "q03_2",
+    "prompt": "rulers",
+    "image_id": "mcac_200",
+    "prior_count": 18,
+    "matches_prior_count_boxes_scores": true,
+    "predict_capture_ms": 1736.6,
+    "peak_allocated_mib": 1461.12
+  }
+]

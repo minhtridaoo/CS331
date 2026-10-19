@@ -1,0 +1,38 @@
+{
+  "tokens": [
+    "[CLS]",
+    "guitars",
+    ".",
+    "[SEP]"
+  ],
+  "token_ids": [
+    101,
+    7334,
+    1012,
+    102
+  ],
+  "target_token_indices": [
+    1
+  ],
+  "excluded_positive_indices": [
+    0,
+    2
+  ],
+  "first_period_index": 2,
+  "proposals": 900,
+  "stock_count": 25,
+  "target_tokens_only_counterfactual_count": 25,
+  "stock_kept_but_target_only_rejects": 0,
+  "kept_top_positive_tokens": {
+    "[CLS]": 0,
+    "guitars": 25,
+    ".": 0
+  },
+  "query_id": "q01_1",
+  "prompt": "guitars",
+  "image_id": "mcac_100",
+  "prior_count": 25,
+  "matches_prior_count_boxes_scores": true,
+  "predict_capture_ms": 778.63,
+  "peak_allocated_mib": 1356.84
+}

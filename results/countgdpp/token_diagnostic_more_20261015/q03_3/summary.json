@@ -1,0 +1,42 @@
+{
+  "tokens": [
+    "[CLS]",
+    "pencil",
+    "##s",
+    ".",
+    "[SEP]"
+  ],
+  "token_ids": [
+    101,
+    14745,
+    2015,
+    1012,
+    102
+  ],
+  "target_token_indices": [
+    1,
+    2
+  ],
+  "excluded_positive_indices": [
+    0,
+    3
+  ],
+  "first_period_index": 3,
+  "proposals": 900,
+  "stock_count": 17,
+  "target_tokens_only_counterfactual_count": 17,
+  "stock_kept_but_target_only_rejects": 0,
+  "kept_top_positive_tokens": {
+    "[CLS]": 0,
+    "pencil": 17,
+    "##s": 0,
+    ".": 0
+  },
+  "query_id": "q03_3",
+  "prompt": "pencils",
+  "image_id": "mcac_200",
+  "prior_count": 17,
+  "matches_prior_count_boxes_scores": true,
+  "predict_capture_ms": 920.47,
+  "peak_allocated_mib": 1462.41
+}

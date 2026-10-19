@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-14",
+  "source": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries",
+  "images": 10,
+  "queries": 30,
+  "present_queries": 30,
+  "absent_queries": 0,
+  "counts_match_supplied_point_annotations": true,
+  "out_of_bounds_points": [],
+  "source_hashes": {
+    "queries.json": "22ccada75292d4cb0182c024d59987b77f17b98b574bc14054f8ed3275b9a6e0",
+    "ground_truth.json": "6bcdf9219ae6da719668e8a9f7d0c4e6ab41672bd6ffc67a1d8dae47fbbece73",
+    "annotations.json": "cd6b1c1439a3ad69fd1ee4b65798ea6defb17311287c367520b723ce95fd1aab",
+    "class_mapping.json": "4a9daeaef21b27e13db42c986a397fb97035f886d0094ea55bc409be1a9b355d"
+  },
+  "first5_selection": "First five images in original queries.json order, before seeing predictions",
+  "first5": [
+    "mcac_100",
+    "mcac_11",
+    "mcac_200",
+    "mcac_20",
+    "mcac_27"
+  ],
+  "limitations": [
+    "No absent queries; cannot compute FPR_absent",
+    "Source URL/license and annotation provenance not independently verified",
+    "Annotation consistency is not visual label correctness",
+    "All images designated internal dev; no independent holdout"
+  ]
+}
