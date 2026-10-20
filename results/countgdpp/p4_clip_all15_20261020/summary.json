@@ -1,0 +1,77 @@
+[
+  {
+    "query_id": "q01_1",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "q01_2",
+    "n_boxes": 38,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "q01_3",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "q02_1",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "q02_2",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "q02_3",
+    "n_boxes": 26,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "q03_1",
+    "n_boxes": 13,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "q03_2",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "q03_3",
+    "n_boxes": 16,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "q04_1",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "q04_2",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "q04_3",
+    "n_boxes": 84,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "q05_1",
+    "n_boxes": 15,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "q05_2",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "q05_3",
+    "n_boxes": 79,
+    "output_file": "results/countgdpp/p4_clip_all15_20261020/q05_3_clip_scores.json"
+  }
+]

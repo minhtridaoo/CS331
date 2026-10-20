@@ -1,0 +1,9 @@
+{
+  "query_id": "q05_2",
+  "final_boxes": 14,
+  "target_boxes": 5,
+  "distinct_target_objects": 4,
+  "extra_target_boxes": 1,
+  "wrong_class_boxes": 9,
+  "note": "Recounts supplied manual labels; not model-derived labels or formal IoU precision/recall."
+}

@@ -1,18 +1,12 @@
-# Pipeline thực nghiệm CS331 — CountGD++
+# Pipeline kỹ thuật CS331 — CountGD++
 
-**Ưu tiên bổ sung 15/10 — chuẩn bị đánh giá theo paper trên Kaggle:** người dùng yêu cầu chạy FSCD-147 test; đã tạo [notebook và hướng dẫn](../roadmap/KAGGLE_PAPER_EVAL.md), chưa chạy Kaggle/chưa có metric mới. Tiếp theo import notebook, bật GPU/Internet và kiểm cell 1–2. Kết quả nhóm khác không phải kết quả của Triệu. Giữ kết quả pilot bên dưới; không so trực tiếp MAE khác tập dữ liệu.
+**Cập nhật 20/10/2026, theo ROADMAP V4.6.** Đây là protocol kỹ thuật để tra cấu hình; bắt đầu công việc mỗi buổi ở [README](../README.md), xem trạng thái ở [ROADMAP](ROADMAP.md) và [HANDOFF hiện hành](../HANDOFF/HANDOFF.md).
 
-**Mốc mới nhất 16/10 — đã nhận kiểm chéo của Triệu cho 14/15 query:** số đếm/GT khớp file kết quả; còn q01_1 guitars chưa có review trực tiếp. Plates hiệu chỉnh từ 0/3 theo Trí thành 3/3 đúng loại theo Triệu và ảnh đã kiểm; bản gốc giữ nguyên. Raspberries final đã giải thích đủ 14 = 4 quả mục tiêu + 1 khung trùng + 9 khung sai loại. Stage1 có 2 strawberry ở số 6/7, giải thích đủ 11 khung. **Tiếp theo:** bổ sung guitar và đối sánh q04_2 blueberries; dùng nhãn q05_2 để kiểm evaluator, không làm lại từ đầu. Giữ kế hoạch benchmark Kaggle hiện có; chưa có metric Kaggle mới. [Đối chiếu chi tiết](../results/countgdpp/b2_remaining3_20261015/TRIEU_CROSSCHECK_2026-10-16.md).
+**Đã có:** smoke 3/3; B0/B2 pilot 5 ảnh/15 query; E1/E2 trên 2 ảnh/6 query; review định tính Trí/Triệu đều 15/15; bản Triệu chốt v1 đã làm rõ guitar/q04_2. **Còn chốt:** [phần 2 evaluator](PHAN_2_DANH_GIA.md) và [phần 3 tổng kết pilot](PHAN_3_TONG_KET.md). Evaluator đã chạy ngày 20/10, output/hash/15 dòng đã audit; còn Triệu kiểm chéo và nhóm duyệt báo cáo. Mục 6 báo cáo có đề xuất CLIP sau B2; chưa có phương pháp cải tiến được kiểm chứng.
 
-**Cập nhật: 15/10/2026 (Asia/Bangkok).**
-**Trạng thái: đã chạy B0 smoke đủ spoon/fork/cat; pipeline chuẩn hóa và pilot chưa hoàn thành.**
-[Lịch sử và lệnh tiếp theo](../HANDOFF/WORKLOG_CS331.md): M3 inference đủ 3/3 query: spoon=19/GT7, fork=14/GT7, cat=0/GT0 ở ngưỡng 0.23 theo lệnh đã hướng dẫn. JSON/prompt và overlay đã kiểm; fork khoanh cả muỗng, cat không có khung. Ngày 14/10 đã audit tải trọng số/lọc, có runner xuất schema; còn ghép evaluator và đo tài nguyên; chưa kết luận nguyên nhân hay hiệu quả nghiên cứu.
+**Nhánh benchmark đã hoàn thành lượt chạy:** FSCD-147 1.190 ảnh, MAE=8.336975, RMSE=24.637626; count metrics đã đối chiếu ngày 20/10. [Báo cáo](../reports/BENCHMARK_FSCD147.md). Cấu hình có text + synthetic + pseudo + adaptive crop. Các B0/B2 bên dưới chỉ là cấu hình thành phần của pilot, không phải toàn bộ nhánh đó.
 
-Sau mỗi mốc có bằng chứng, cập nhật work log, handoff và trạng thái pipeline. Ảnh demo kỹ thuật không thay thế pilot/holdout.
-[Roadmap V4.3](CS331_ZSC_V4_Final.md) · [Handoff mới nhất](../HANDOFF/HANDOFF_CS331_2026-10-15.md)
-
-**Phân công và schema bàn giao v1:** [PIPELINE_PHAN_CONG.md](PIPELINE_PHAN_CONG.md).
-Bạn thực hiện inference; Triệu viết evaluator. Tên trường chính xác, trạng thái lỗi và quy ước tọa độ lấy theo schema chung để hai nhánh ghép được.
+**Phân công/schema đang dùng:** [PIPELINE_PHAN_CONG.md](PIPELINE_PHAN_CONG.md). Trí chạy model; Triệu phụ trách dữ liệu và kiểm evaluator, cùng Trí chốt số liệu. Các kế hoạch mở rộng dưới đây không tự trở thành việc đã hoàn thành.
 
 ## 1. Đầu vào và đầu ra
 
@@ -25,7 +19,7 @@ Bạn thực hiện inference; Triệu viết evaluator. Tên trường chính x
 
 ## 2. Dữ liệu và chia tập
 
-**Pilot:** 20–30 ảnh dev để khám phá lỗi, chưa phải benchmark kết luận. Bắt đầu 5 ảnh dễ kiểm tra; ưu tiên ảnh thật nhiều loại vật, mật độ vừa để kiểm nhãn/vị trí. Ghi rõ thiên lệch chọn ảnh dễ; sau đó mở rộng điều kiện khó có kiểm soát.
+**Pilot đã chạy:** 5 ảnh/15 query để khám phá lỗi. **Kế hoạch mở rộng dev:** 20–30 ảnh, chưa hoàn thành và chưa phải benchmark kết luận. Bộ đầu tiên chọn ảnh dễ kiểm tra; ưu tiên ảnh thật nhiều loại vật, mật độ vừa để kiểm nhãn/vị trí. Ghi rõ thiên lệch chọn ảnh dễ; sau đó mở rộng điều kiện khó có kiểm soát.
 
 Mỗi ảnh ưu tiên có qX và qY thuộc hai loại khác hẳn nhau cùng hiện diện, kèm số lượng thật; thêm qAbsent đã xác nhận không có trong ảnh. Có cả cặp X/Y khác số lượng và bằng số lượng. Lớp vắng mặt dễ nhầm có thể thêm sau, phân tầng riêng. Ảnh mơ hồ/che khuất cần quy tắc đếm hoặc loại khỏi chỉ số đòi hỏi nhãn chắc chắn, báo số loại.
 
@@ -57,13 +51,15 @@ Mỗi ảnh ưu tiên có qX và qY thuộc hai loại khác hẳn nhau cùng hi
 
 **Trước khi chạy hàng loạt:** thử một ảnh với X/Y/vắng mặt; count khớp số khung; overlay đúng tọa độ; prompt thật sự đổi; exemplar không lấy từ nhãn; nhánh không mẫu chạy được; lỗi được ghi riêng. Đối chiếu B0 với suy luận gốc cùng thiết lập, B2 với logic hai lượt đã đọc.
 
-## 4. Ma trận theo thứ tự ưu tiên
+## 4. Ma trận cấu hình cho pilot và bước cải tiến
+
+Bảng này áp dụng nhánh dev chẩn đoán. “Hoãn B3” nghĩa là chưa tích hợp B3 vào runner pilot; nhánh benchmark riêng đã chạy synthetic/pseudo/crop.
 
 | Mã | Cấu hình | Trạng thái |
 |---|---|---|
-| B0 | Text một lượt | Bắt buộc đầu tiên |
-| B2 | Text → pseudo từ ảnh → lượt hai | Sau B0 |
-| B4(B2) | B2, khảo sát riêng hai ngưỡng | Sau khi B2 hoạt động |
+| B0 | Text một lượt | Đã chạy 15 query |
+| B2 | Text → pseudo từ ảnh → lượt hai | Đã chạy 15 query |
+| B4(B2) | B2, khảo sát riêng hai ngưỡng | E1/E2 đã làm trên 6 query; E3 chưa mở |
 | B1 | Text + synthetic, một lượt | Hoãn; cần nguồn exemplar rõ |
 | B3 | Text + synthetic + pseudo | Hoãn; không bắt buộc cho pilot |
 | B4(B3) | B3, khảo sát riêng hai ngưỡng | Chỉ nếu đã triển khai B3 |
@@ -128,7 +124,7 @@ Không trộn định nghĩa PrACo/PrACo++ hoặc split khác nhau. Muốn tái 
 
 ## 7. File đầu ra cần triển khai
 
-Các tên dưới đây là đặc tả, chưa tồn tại ở lần cập nhật này.
+B0/B2 đã có manifest, inputs, predictions.jsonl và run_config. Evaluator đã chạy với 5 output/run; số liệu và hash nguồn đã đối chiếu. Báo cáo đã điền kết quả và kế hoạch, chờ kiểm chéo/duyệt. Mô tả dưới đây là đặc tả chung, tên trường thực tế theo schema v1 trong [phân công](PIPELINE_PHAN_CONG.md).
 
 **manifest.csv:** image_id, source_group_id, image_path, source_url, license_note, split; query_id, target_class, prompt, presence_status, gt_count, pair_id; annotation_source, verified_by, uncertainty_note. GT vị trí lưu riêng nếu có; không truyền GT vào model.
 
@@ -138,9 +134,9 @@ Các tên dưới đây là đặc tả, chưa tồn tại ở lần cập nhậ
 
 **error_review.csv:** run_id, image_id, query_id, pred_box_id, reviewed_class, error_type, reviewer, note. Phân biệt nhầm lớp, nền, trùng khung, thiếu đối tượng và nhãn chưa rõ.
 
-**pilot_summary.md:** B0/B2, E1/E2 nếu có; số ảnh/query, lỗi thực thi, bảng chỉ số, ca đúng/sai, giới hạn và quyết định tiếp theo.
+**reports/PILOT_SUMMARY.md:** B0/B2, E1/E2 nếu có; số ảnh/query, lỗi thực thi, bảng chỉ số, ca đúng/sai, giới hạn và quyết định tiếp theo.
 
-Thư mục dự kiến: data/pilot/, configs/countgdpp/, experiments/countgdpp/, results/countgdpp/<run_id>/. Không ghi đè cấu hình khác. Chỉ resume/cache khi metadata khớp checkpoint, dữ liệu, prompt, mẫu và ngưỡng.
+Đường dẫn hiện hành: input ở experiments/countgdpp/m4_inputs/; runner ở experiments/countgdpp/; evaluator ở evaluation/; kết quả ở results/countgdpp/<run_id>/; báo cáo ở reports/. Chưa cần tạo thêm data/pilot/ hoặc configs/countgdpp/ chỉ để khớp tên kế hoạch cũ. Không ghi đè cấu hình khác. Chỉ resume/cache khi metadata khớp checkpoint, dữ liệu, prompt, mẫu và ngưỡng.
 
 ## 8. Phần hoãn lại
 

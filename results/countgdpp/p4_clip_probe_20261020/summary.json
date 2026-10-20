@@ -1,0 +1,12 @@
+[
+  {
+    "query_id": "q03_2",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p4_clip_probe_20261020/q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "q05_2",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p4_clip_probe_20261020/q05_2_clip_scores.json"
+  }
+]

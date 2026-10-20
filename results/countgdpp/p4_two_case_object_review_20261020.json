@@ -1,0 +1,111 @@
+{
+  "type": "exploratory_object_level_review",
+  "queries": [
+    "q03_2",
+    "q05_2"
+  ],
+  "gt_objects": 10,
+  "cases": {
+    "q03_2": {
+      "gt_count": 6,
+      "annotation_source": "results/countgdpp/p4_review_q03_2_20261020/q03_2_annotation_review_assistant_20261020.csv",
+      "label_status": "assistant_preliminary",
+      "results": {
+        "B2": {
+          "threshold": 0.897137314081192,
+          "kept_boxes": 4,
+          "distinct_targets": 4,
+          "wrong_class_boxes": 0,
+          "duplicate_target_boxes": 0,
+          "missed_targets": 2,
+          "kept_ranks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "CLIP": {
+          "threshold": 0.24671510607004166,
+          "kept_boxes": 5,
+          "distinct_targets": 5,
+          "wrong_class_boxes": 0,
+          "duplicate_target_boxes": 0,
+          "missed_targets": 1,
+          "kept_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    "q05_2": {
+      "gt_count": 4,
+      "annotation_source": "results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json",
+      "label_status": "manual_review_existing",
+      "results": {
+        "B2": {
+          "threshold": 0.9080622494220734,
+          "kept_boxes": 2,
+          "distinct_targets": 2,
+          "wrong_class_boxes": 0,
+          "duplicate_target_boxes": 0,
+          "missed_targets": 2,
+          "kept_ranks": [
+            3,
+            7
+          ]
+        },
+        "CLIP": {
+          "threshold": 0.24420910328626633,
+          "kept_boxes": 13,
+          "distinct_targets": 4,
+          "wrong_class_boxes": 8,
+          "duplicate_target_boxes": 1,
+          "missed_targets": 0,
+          "kept_ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            14
+          ]
+        }
+      }
+    }
+  },
+  "totals": {
+    "B2": {
+      "kept_boxes": 6,
+      "distinct_targets": 6,
+      "wrong_class_boxes": 0,
+      "duplicate_target_boxes": 0,
+      "missed_targets": 4
+    },
+    "CLIP": {
+      "kept_boxes": 18,
+      "distinct_targets": 9,
+      "wrong_class_boxes": 8,
+      "duplicate_target_boxes": 1,
+      "missed_targets": 1
+    }
+  },
+  "limitations": [
+    "Two selected development queries only.",
+    "q03_2 labels are assistant preliminary visual labels.",
+    "q05_2 uses existing manual visual annotations.",
+    "Thresholds were learned from other development images.",
+    "Not independent holdout or formal localization evaluation."
+  ]
+}

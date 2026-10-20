@@ -1,0 +1,17 @@
+{
+  "model_id": "openai/clip-vit-base-patch32",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "device": "cuda",
+  "batch_size": 2,
+  "processor_use_fast": false,
+  "text_template": "a photo of {prompt}",
+  "torch_version": "2.9.1+cu128",
+  "transformers_version": "4.57.1",
+  "inputs_sha256": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+  "prediction_sha256": {
+    "results/countgdpp/b2_two_images_20261015/predictions.jsonl": "14a460534782aa0322ce46ffa45fa73e3c3eb4e5dd865f3b1bba96892ca61775",
+    "results/countgdpp/b2_remaining3_20261015/predictions.jsonl": "90ffc069cd3e3b2e5e9f7af7b1690bfdc85fb9030c9df4f816943f357e20cbe4"
+  },
+  "uses_ground_truth_for_scoring": false,
+  "status": "scores_only_no_filtering"
+}

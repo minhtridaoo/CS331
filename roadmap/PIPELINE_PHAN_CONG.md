@@ -1,9 +1,11 @@
 # Pipeline phân công — Bạn và Triệu
 
-**Mốc mới nhất 16/10 — đã nhận kiểm chéo của Triệu cho 14/15 query:** số đếm/GT khớp file kết quả; còn q01_1 guitars chưa có review trực tiếp. Plates hiệu chỉnh từ 0/3 theo Trí thành 3/3 đúng loại theo Triệu và ảnh đã kiểm; bản gốc giữ nguyên. Raspberries final đã giải thích đủ 14 = 4 quả mục tiêu + 1 khung trùng + 9 khung sai loại. Stage1 có 2 strawberry ở số 6/7, giải thích đủ 11 khung. **Tiếp theo:** bổ sung guitar và đối sánh q04_2 blueberries; dùng nhãn q05_2 để kiểm evaluator, không làm lại từ đầu. Giữ kế hoạch benchmark Kaggle hiện có; chưa có metric Kaggle mới. [Đối chiếu chi tiết](../results/countgdpp/b2_remaining3_20261015/TRIEU_CROSSCHECK_2026-10-16.md).
+**Điểm tiếp tục 20/10:** phần 2–3 pilot đã có hướng dẫn riêng; evaluator đã chạy/audit output; tổng kết đã điền kết quả và đề xuất P4, chờ Triệu kiểm chéo và nhóm duyệt. [Phần 2](PHAN_2_DANH_GIA.md) · [Phần 3](PHAN_3_TONG_KET.md) · [Roadmap hiện hành](ROADMAP.md) · [Work log chính](../WORKLOG.md).
 
-**Cập nhật 16/10/2026. Áp dụng cho CountGD++, roadmap V4.3.**
+**Cập nhật 20/10/2026. Áp dụng cho CountGD++, roadmap V4.6.**
 [Handoff chung](../HANDOFF/HANDOFF.md) · [Handoff của bạn](../HANDOFF/HANDOFF_MODEL.md) · [Handoff Triệu](../HANDOFF/HANDOFF_TRIEU.md) · [Protocol nghiên cứu](PIPELINE_COUNTGDPP.md)
+
+Benchmark của Trí đã chạy đủ FSCD-147 1.190 ảnh; count metrics được kiểm ngày 20/10, MAE=8.336975, RMSE=24.637626. [Báo cáo](../reports/BENCHMARK_FSCD147.md). Nhánh này không thay phần 2–3 của pilot.
 
 ## 1. Mục tiêu chung và phần chịu trách nhiệm
 
@@ -43,7 +45,7 @@ flowchart LR
 | M5 | B2, ghi mẫu và cả hai lượt | Dự đoán và pseudo-exemplar; chính sách không có mẫu |
 | M6 | E1/E2 tách ngưỡng, E3 nếu cần | Các run riêng, cấu hình cố định; chưa chọn bằng holdout |
 
-**Bước hiện tại: B0/B2 và review của Trí đã đủ 5 ảnh/15 query.** Chẩn đoán token 5 query; M6/E1/E2 trên 2 ảnh/6 query. q05_2 final đã có nhãn 14 bbox; Trí dùng kiểm evaluator, Triệu bổ sung guitar/q04_2 và hoàn thiện evaluator. Tài nguyên, evaluator/G1 chính thức và query absent còn chờ; chưa kết luận hiệu quả cải tiến.
+**Bước hiện tại: B0/B2 và review của Trí đã đủ 5 ảnh/15 query.** Chẩn đoán token 5 query; M6/E1/E2 trên 2 ảnh/6 query. q05_2 final đã có nhãn 14 bbox; Trí đã chạy phần 2, assistant đã audit; còn kiểm chéo nhóm và chốt phần 3; Triệu đã chốt review định tính 15/15 (guitar/q04_2 đã làm rõ), chuyển sang kiểm evaluator. Tài nguyên, evaluator/G1 chính thức và query absent còn chờ; chưa kết luận hiệu quả cải tiến.
 
 Bạn chịu trách nhiệm chuyển đầu ra gốc của repo sang định dạng chung. Không yêu cầu Triệu đọc riêng từng định dạng nội bộ của B0/B2.
 
@@ -62,7 +64,7 @@ Triệu không cần chờ GPU hoặc cài CountGD++ để làm T1–T4. Có th�
 
 ## 5. Định dạng bàn giao v1 — hai bên phải dùng chung
 
-Đây là schema cần triển khai. Đã có results.json gốc của spoon/fork/cat; chưa có file chuẩn hóa và ghép evaluator để đóng G1.
+Đây là schema đã dùng cho B0/B2 pilot. Đã có predictions.jsonl chuẩn hóa 15 query; evaluator chuẩn bị 19/10 đã được Trí chạy ngày 20/10, đủ 5 output/run và đã audit; còn Triệu xác nhận kiểm chéo để đóng phần 2.
 
 ### 5.1. Triệu → bạn
 
@@ -113,7 +115,7 @@ B2 thêm stage1_boxes/stage1_scores/stage1_count, pseudo_boxes/pseudo_scores, no
 - error_review.csv: phân loại đúng lớp / nhầm lớp / nền / trùng / thiếu / chưa rõ, người kiểm tra và ghi chú.
 - pilot_summary.md: bảng kết quả, ca đúng/sai, giới hạn, câu hỏi cần nhóm quyết định.
 
-Vị trí dự kiến: dữ liệu trong data/pilot/; code của bạn trong experiments/countgdpp/; code Triệu trong evaluation/; kết quả từng run trong results/countgdpp/<run_id>/. Đã có experiments/countgdpp/smoke_inputs/ và results/countgdpp/smoke_spoon/, smoke_fork/, smoke_cat/; đã có adapter và bộ input/manifest dev trong experiments/countgdpp/m4_inputs/; chưa có xác nhận evaluator đã triển khai.
+Vị trí hiện hành: dữ liệu/input chuẩn hóa trong experiments/countgdpp/m4_inputs/; code inference trong experiments/countgdpp/; evaluator trong evaluation/; kết quả từng run trong results/countgdpp/<run_id>/. Gói dữ liệu/review gốc của Triệu và artifact Kaggle của Trí giữ trong workspace Trí and Triệu/. Đã có experiments/countgdpp/smoke_inputs/ và results/countgdpp/smoke_spoon/, smoke_fork/, smoke_cat/; đã có adapter và bộ input/manifest dev trong experiments/countgdpp/m4_inputs/; evaluation/evaluate_pilot.py đã chạy ngày 20/10 bằng python3: Minhtri báo self-test PASS, output thật đủ và đã đối chiếu. Không yêu cầu venv model cho evaluator CPU.
 
 ## 6. Quy tắc evaluator
 
@@ -150,4 +152,11 @@ Thêm ca kiểm tra có ý nghĩa: thiếu một ID; ID trùng; error/null; coun
 4. **G3 — có đối chứng:** cùng ảnh/query B0/B2 và E1/E2; đọc cả lỗi vắng mặt và chất lượng có mặt.
 5. **G4 — quyết định nghiên cứu:** chọn một lỗi có bằng chứng và một can thiệp; thống nhất trước khi mở holdout.
 
-Sau mỗi mốc có bằng chứng, nối thêm [work log](../HANDOFF/WORKLOG_CS331.md), đồng bộ handoff và pipeline theo yêu cầu người dùng. Cuối mỗi buổi, cập nhật handoff cá nhân: việc xong, đường dẫn/lệnh tái chạy, kết quả kiểm tra, lỗi còn lại, bước kế tiếp. Chỉ ghi “xong” khi có sản phẩm kiểm được. Không cần đợi người kia hoàn thành toàn nhánh mới ghép G1.
+Sau mỗi mốc có bằng chứng, nối thêm [work log](../WORKLOG.md), đồng bộ handoff và pipeline theo yêu cầu người dùng. Cuối mỗi buổi, cập nhật handoff cá nhân: việc xong, đường dẫn/lệnh tái chạy, kết quả kiểm tra, lỗi còn lại, bước kế tiếp. Chỉ ghi “xong” khi có sản phẩm kiểm được. Không cần đợi người kia hoàn thành toàn nhánh mới ghép G1.
+
+
+## 9. Phần 2–3 hiện hành, cập nhật 20/10
+
+[Phần 2](PHAN_2_DANH_GIA.md) chỉ rõ code, input, lệnh self-test/đánh giá và đáp án mong đợi. [Phần 3](PHAN_3_TONG_KET.md) chỉ rõ bản báo cáo phải sửa. Trong bản evaluator ban đầu, bảng từng query xuất per_query.json thay vì CSV; cùng nội dung/khóa schema. Nếu cần CSV để báo cáo thì xuất thêm có kiểm tra, không là điều kiện bắt buộc để chốt pilot.
+
+M0–M6, T1–T6 và G0–G4 phía trên là khung đầy đủ; hoàn thành pilot nhỏ không đồng nghĩa mọi gate dev/absent/holdout đã đạt. Người dùng tự chạy; assistant muốn chạy đánh giá thay phải hỏi trước.

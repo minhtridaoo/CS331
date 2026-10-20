@@ -19,16 +19,16 @@ Các mốc dưới đây được tổng hợp từ cuộc trò chuyện và ki�
 | M2 — trọng số | BERT local có config/tokenizer/model.safetensors; CountGD++ checkpoint 1,250,122,586 byte; script nạp và chạy ra output | Chưa ghi SHA256 vào metadata; chưa kiểm missing/unexpected keys của strict=False |
 | M3 — một ảnh | Đã chuẩn bị utensils.jpg và ba prompt spoon/fork/cat; đã có một kết quả thật spoon | Còn fork/cat, chuẩn hóa schema v1 và metadata trước bàn giao |
 
-Snapshot môi trường: [environment_countgdpp.txt](../environment_countgdpp.txt).
+Snapshot môi trường: [environment_countgdpp.txt](../../../environment_countgdpp.txt).
 
 ## Run đầu tiên — spoon, 13/10/2026
 
 - Người dùng thực thi process_folder.py và gửi log hoàn tất; đã kiểm tra file đầu ra trực tiếp.
-- Ảnh: [utensils.jpg](../experiments/countgdpp/smoke_inputs/images/utensils.jpg), lấy từ ảnh demo trong checkout upstream. Đây là smoke test kỹ thuật, không phải pilot/holdout độc lập.
-- Prompt: [spoon.json](../experiments/countgdpp/smoke_inputs/spoon.json); positive text spoon, exemplar boxes rỗng, negative rỗng; ảnh exemplar trỏ chính ảnh đầu vào.
+- Ảnh: [utensils.jpg](../../../experiments/countgdpp/smoke_inputs/images/utensils.jpg), lấy từ ảnh demo trong checkout upstream. Đây là smoke test kỹ thuật, không phải pilot/holdout độc lập.
+- Prompt: [spoon.json](../../../experiments/countgdpp/smoke_inputs/spoon.json); positive text spoon, exemplar boxes rỗng, negative rỗng; ảnh exemplar trỏ chính ảnh đầu vào.
 - Cấu hình: B0 một lượt qua script gốc; conf_thresh=0.23; có lưu overlay. Chưa chạy B2.
-- [Kết quả gốc](../results/countgdpp/smoke_spoon/results.json): count=19, 19 boxes, 19 scores.
-- [Overlay](../results/countgdpp/smoke_spoon/utensils.jpg): quan sát thấy lấy cả nĩa và khung trùng trên một muỗng.
+- [Kết quả gốc](../../../results/countgdpp/smoke_spoon/results.json): count=19, 19 boxes, 19 scores.
+- [Overlay](../../../results/countgdpp/smoke_spoon/utensils.jpg): quan sát thấy lấy cả nĩa và khung trùng trên một muỗng.
 - Đếm thủ công ảnh: 7 muỗng, 7 nĩa, 0 mèo. Đây là nhãn kiểm bằng mắt, chưa phải manifest đã được hai người kiểm chéo.
 - Log TRAIN/FutureWarning không làm dừng run và không tự chứng minh cần fine-tune.
 - RTX A2000 Laptop 4 GB chạy được cấu hình smoke này. Chưa đo peak VRAM/thời gian; không suy rộng sang toàn bộ B2/benchmark.
@@ -62,7 +62,7 @@ Người dùng báo chạy xong; đã đọc trực tiếp ba results.json và x
 | fork | 7 | 14 | Overlay khoanh cả 7 nĩa và 7 muỗng |
 | cat | 0 | 0 | Không có khung, đúng trên ảnh này |
 
-Đã kiểm: mỗi JSON đúng một ảnh, count bằng số boxes/scores; giá trị hữu hạn, tọa độ có thứ tự, score trong [0,1]; prompt đúng spoon/fork/cat, exemplar boxes và negative rỗng; có đủ overlay. [Báo cáo kiểm chứng và hash output/prompt](../results/countgdpp/smoke_verification_2026-10-13.json).
+Đã kiểm: mỗi JSON đúng một ảnh, count bằng số boxes/scores; giá trị hữu hạn, tọa độ có thứ tự, score trong [0,1]; prompt đúng spoon/fork/cat, exemplar boxes và negative rỗng; có đủ overlay. [Báo cáo kiểm chứng và hash output/prompt](../../../results/countgdpp/smoke_verification_2026-10-13.json).
 
 Kết luận đúng mức: hoàn thành inference smoke 3/3 query. Mô hình không trả cùng kết quả cho mọi query; truy vấn cat đúng nhưng fork vẫn lấy nhầm muỗng. Một ảnh chưa đủ kết luận đã giải quyết lớp vắng mặt hoặc xác định nguyên nhân lỗi X/Y; muỗng/nĩa cũng là hai loại đồ dùng có hình dạng tương tự nên cần pilot có hai loại khác hẳn nhau theo yêu cầu thầy.
 

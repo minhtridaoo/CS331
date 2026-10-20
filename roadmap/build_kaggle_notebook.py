@@ -15,7 +15,7 @@ Nguồn: https://arxiv.org/html/2512.23351v2#S6.T1 và https://github.com/niki-a
 
 Bật **GPU** và **Internet** trong Kaggle. Chạy từng cell theo thứ tự; gặp lỗi thì dừng và gửi log.
 Notebook dùng môi trường Python riêng, không cần thay kernel. Chỉ dùng 1 GPU.
-Chưa được thực thi trên Kaggle; đã kiểm cấu trúc và cú pháp ở máy local.
+Run của Trí đã chạy đủ 1.190 ảnh; count metrics được kiểm ngày 20/10/2026. Xem KAGGLE_PAPER_EVAL.md và reports/BENCHMARK_FSCD147.md. File notebook này vẫn là mẫu hướng dẫn, không nhúng output của run.
 Không thay ngưỡng theo test. Không so trực tiếp MAE này với 5 ảnh/15 query dev khác dữ liệu.
 ''')
 md('## 1. Kiểm GPU và tạo thư mục')

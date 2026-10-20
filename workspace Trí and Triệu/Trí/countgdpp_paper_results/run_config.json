@@ -1,0 +1,19 @@
+{
+  "status": "prepared_not_run",
+  "repo_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "dataset": "FSCD-147",
+  "split": "test",
+  "expected_images": 1190,
+  "paper": "https://arxiv.org/html/2512.23351v2#S6.T1",
+  "variant": "text+synthetic+pseudo+adaptive_crop",
+  "paper_mae": 8.39,
+  "paper_rmse": 27.03,
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "annotation_sha256": "e301c6933396b98040ff9b7d86e18d66c14cc8c2118ce0e4cae24f4f5807c35c",
+  "gt_sha256": "f17e99d481c3a1f1dfa9e42d7d1dc0a96bb76498eda9d5440efb033d7763f5d2",
+  "synthetic_annotation_sha256": "36f2142946464917f95b4503a7baa76a5d58a3a501a9db28554d9a64f0ec7fc2",
+  "input_images": "/kaggle/working/countgdpp_paper/assets/images/FSC147_384_V2/images_384_VarV2",
+  "synthetic": "/kaggle/working/countgdpp_paper/assets/synthetic/synthetic_exemplars",
+  "crops": "/kaggle/working/countgdpp_paper/assets/crops/super-crops",
+  "note": "Môi trường Kaggle; không tuyên bố tái tạo môi trường tác giả từng phiên bản."
+}

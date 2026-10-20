@@ -1,0 +1,482 @@
+{
+  "query_id": "q03_2",
+  "image_id": "mcac_200",
+  "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+  "prompt": "rulers",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "text_prompt": "a photo of rulers",
+  "n_boxes": 18,
+  "rows_original_order": [
+    {
+      "rank": 1,
+      "box_xyxy": [
+        48,
+        374,
+        423,
+        414
+      ],
+      "b2_score": 0.9250419735908508,
+      "clip_cosine_target": 0.258838027715683,
+      "crop_width": 375,
+      "crop_height": 40
+    },
+    {
+      "rank": 2,
+      "box_xyxy": [
+        48,
+        227,
+        328,
+        266
+      ],
+      "b2_score": 0.9200892448425293,
+      "clip_cosine_target": 0.27297836542129517,
+      "crop_width": 280,
+      "crop_height": 39
+    },
+    {
+      "rank": 3,
+      "box_xyxy": [
+        49,
+        300,
+        441,
+        340
+      ],
+      "b2_score": 0.9194850921630859,
+      "clip_cosine_target": 0.2481456995010376,
+      "crop_width": 392,
+      "crop_height": 40
+    },
+    {
+      "rank": 4,
+      "box_xyxy": [
+        47,
+        155,
+        307,
+        194
+      ],
+      "b2_score": 0.9152811765670776,
+      "clip_cosine_target": 0.2902737259864807,
+      "crop_width": 260,
+      "crop_height": 39
+    },
+    {
+      "rank": 5,
+      "box_xyxy": [
+        48,
+        87,
+        258,
+        121
+      ],
+      "b2_score": 0.8794039487838745,
+      "clip_cosine_target": 0.2669975161552429,
+      "crop_width": 210,
+      "crop_height": 34
+    },
+    {
+      "rank": 6,
+      "box_xyxy": [
+        44,
+        445,
+        562,
+        477
+      ],
+      "b2_score": 0.8052651286125183,
+      "clip_cosine_target": 0.2380850613117218,
+      "crop_width": 518,
+      "crop_height": 32
+    },
+    {
+      "rank": 7,
+      "box_xyxy": [
+        490,
+        41,
+        519,
+        238
+      ],
+      "b2_score": 0.6676167249679565,
+      "clip_cosine_target": 0.17887291312217712,
+      "crop_width": 29,
+      "crop_height": 197
+    },
+    {
+      "rank": 8,
+      "box_xyxy": [
+        376,
+        41,
+        406,
+        238
+      ],
+      "b2_score": 0.6562758684158325,
+      "clip_cosine_target": 0.19737213850021362,
+      "crop_width": 30,
+      "crop_height": 197
+    },
+    {
+      "rank": 9,
+      "box_xyxy": [
+        414,
+        43,
+        444,
+        237
+      ],
+      "b2_score": 0.6751176714897156,
+      "clip_cosine_target": 0.19571137428283691,
+      "crop_width": 30,
+      "crop_height": 194
+    },
+    {
+      "rank": 10,
+      "box_xyxy": [
+        453,
+        51,
+        479,
+        233
+      ],
+      "b2_score": 0.6406154632568359,
+      "clip_cosine_target": 0.20357166230678558,
+      "crop_width": 26,
+      "crop_height": 182
+    },
+    {
+      "rank": 11,
+      "box_xyxy": [
+        527,
+        50,
+        557,
+        236
+      ],
+      "b2_score": 0.6328688263893127,
+      "clip_cosine_target": 0.18825221061706543,
+      "crop_width": 30,
+      "crop_height": 186
+    },
+    {
+      "rank": 12,
+      "box_xyxy": [
+        334,
+        42,
+        367,
+        236
+      ],
+      "b2_score": 0.6036665439605713,
+      "clip_cosine_target": 0.2039145827293396,
+      "crop_width": 33,
+      "crop_height": 194
+    },
+    {
+      "rank": 13,
+      "box_xyxy": [
+        501,
+        251,
+        517,
+        430
+      ],
+      "b2_score": 0.4827325642108917,
+      "clip_cosine_target": 0.22530367970466614,
+      "crop_width": 16,
+      "crop_height": 179
+    },
+    {
+      "rank": 14,
+      "box_xyxy": [
+        478,
+        249,
+        495,
+        433
+      ],
+      "b2_score": 0.45910897850990295,
+      "clip_cosine_target": 0.22722259163856506,
+      "crop_width": 17,
+      "crop_height": 184
+    },
+    {
+      "rank": 15,
+      "box_xyxy": [
+        522,
+        257,
+        538,
+        429
+      ],
+      "b2_score": 0.45708420872688293,
+      "clip_cosine_target": 0.20807155966758728,
+      "crop_width": 16,
+      "crop_height": 172
+    },
+    {
+      "rank": 16,
+      "box_xyxy": [
+        543,
+        250,
+        561,
+        436
+      ],
+      "b2_score": 0.48749005794525146,
+      "clip_cosine_target": 0.2157135307788849,
+      "crop_width": 18,
+      "crop_height": 186
+    },
+    {
+      "rank": 17,
+      "box_xyxy": [
+        566,
+        251,
+        583,
+        433
+      ],
+      "b2_score": 0.462410032749176,
+      "clip_cosine_target": 0.23003631830215454,
+      "crop_width": 17,
+      "crop_height": 182
+    },
+    {
+      "rank": 18,
+      "box_xyxy": [
+        455,
+        250,
+        472,
+        432
+      ],
+      "b2_score": 0.42545992136001587,
+      "clip_cosine_target": 0.2354629635810852,
+      "crop_width": 17,
+      "crop_height": 182
+    }
+  ],
+  "rows_sorted_by_clip": [
+    {
+      "rank": 4,
+      "box_xyxy": [
+        47,
+        155,
+        307,
+        194
+      ],
+      "b2_score": 0.9152811765670776,
+      "clip_cosine_target": 0.2902737259864807,
+      "crop_width": 260,
+      "crop_height": 39
+    },
+    {
+      "rank": 2,
+      "box_xyxy": [
+        48,
+        227,
+        328,
+        266
+      ],
+      "b2_score": 0.9200892448425293,
+      "clip_cosine_target": 0.27297836542129517,
+      "crop_width": 280,
+      "crop_height": 39
+    },
+    {
+      "rank": 5,
+      "box_xyxy": [
+        48,
+        87,
+        258,
+        121
+      ],
+      "b2_score": 0.8794039487838745,
+      "clip_cosine_target": 0.2669975161552429,
+      "crop_width": 210,
+      "crop_height": 34
+    },
+    {
+      "rank": 1,
+      "box_xyxy": [
+        48,
+        374,
+        423,
+        414
+      ],
+      "b2_score": 0.9250419735908508,
+      "clip_cosine_target": 0.258838027715683,
+      "crop_width": 375,
+      "crop_height": 40
+    },
+    {
+      "rank": 3,
+      "box_xyxy": [
+        49,
+        300,
+        441,
+        340
+      ],
+      "b2_score": 0.9194850921630859,
+      "clip_cosine_target": 0.2481456995010376,
+      "crop_width": 392,
+      "crop_height": 40
+    },
+    {
+      "rank": 6,
+      "box_xyxy": [
+        44,
+        445,
+        562,
+        477
+      ],
+      "b2_score": 0.8052651286125183,
+      "clip_cosine_target": 0.2380850613117218,
+      "crop_width": 518,
+      "crop_height": 32
+    },
+    {
+      "rank": 18,
+      "box_xyxy": [
+        455,
+        250,
+        472,
+        432
+      ],
+      "b2_score": 0.42545992136001587,
+      "clip_cosine_target": 0.2354629635810852,
+      "crop_width": 17,
+      "crop_height": 182
+    },
+    {
+      "rank": 17,
+      "box_xyxy": [
+        566,
+        251,
+        583,
+        433
+      ],
+      "b2_score": 0.462410032749176,
+      "clip_cosine_target": 0.23003631830215454,
+      "crop_width": 17,
+      "crop_height": 182
+    },
+    {
+      "rank": 14,
+      "box_xyxy": [
+        478,
+        249,
+        495,
+        433
+      ],
+      "b2_score": 0.45910897850990295,
+      "clip_cosine_target": 0.22722259163856506,
+      "crop_width": 17,
+      "crop_height": 184
+    },
+    {
+      "rank": 13,
+      "box_xyxy": [
+        501,
+        251,
+        517,
+        430
+      ],
+      "b2_score": 0.4827325642108917,
+      "clip_cosine_target": 0.22530367970466614,
+      "crop_width": 16,
+      "crop_height": 179
+    },
+    {
+      "rank": 16,
+      "box_xyxy": [
+        543,
+        250,
+        561,
+        436
+      ],
+      "b2_score": 0.48749005794525146,
+      "clip_cosine_target": 0.2157135307788849,
+      "crop_width": 18,
+      "crop_height": 186
+    },
+    {
+      "rank": 15,
+      "box_xyxy": [
+        522,
+        257,
+        538,
+        429
+      ],
+      "b2_score": 0.45708420872688293,
+      "clip_cosine_target": 0.20807155966758728,
+      "crop_width": 16,
+      "crop_height": 172
+    },
+    {
+      "rank": 12,
+      "box_xyxy": [
+        334,
+        42,
+        367,
+        236
+      ],
+      "b2_score": 0.6036665439605713,
+      "clip_cosine_target": 0.2039145827293396,
+      "crop_width": 33,
+      "crop_height": 194
+    },
+    {
+      "rank": 10,
+      "box_xyxy": [
+        453,
+        51,
+        479,
+        233
+      ],
+      "b2_score": 0.6406154632568359,
+      "clip_cosine_target": 0.20357166230678558,
+      "crop_width": 26,
+      "crop_height": 182
+    },
+    {
+      "rank": 8,
+      "box_xyxy": [
+        376,
+        41,
+        406,
+        238
+      ],
+      "b2_score": 0.6562758684158325,
+      "clip_cosine_target": 0.19737213850021362,
+      "crop_width": 30,
+      "crop_height": 197
+    },
+    {
+      "rank": 9,
+      "box_xyxy": [
+        414,
+        43,
+        444,
+        237
+      ],
+      "b2_score": 0.6751176714897156,
+      "clip_cosine_target": 0.19571137428283691,
+      "crop_width": 30,
+      "crop_height": 194
+    },
+    {
+      "rank": 11,
+      "box_xyxy": [
+        527,
+        50,
+        557,
+        236
+      ],
+      "b2_score": 0.6328688263893127,
+      "clip_cosine_target": 0.18825221061706543,
+      "crop_width": 30,
+      "crop_height": 186
+    },
+    {
+      "rank": 7,
+      "box_xyxy": [
+        490,
+        41,
+        519,
+        238
+      ],
+      "b2_score": 0.6676167249679565,
+      "clip_cosine_target": 0.17887291312217712,
+      "crop_width": 29,
+      "crop_height": 197
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # CS331 — Roadmap Zero-Shot Object Counting với CountGD++
 
-**Mốc mới nhất 16/10 — đã nhận kiểm chéo của Triệu cho 14/15 query:** số đếm/GT khớp file kết quả; còn q01_1 guitars chưa có review trực tiếp. Plates hiệu chỉnh từ 0/3 theo Trí thành 3/3 đúng loại theo Triệu và ảnh đã kiểm; bản gốc giữ nguyên. Raspberries final đã giải thích đủ 14 = 4 quả mục tiêu + 1 khung trùng + 9 khung sai loại. Stage1 có 2 strawberry ở số 6/7, giải thích đủ 11 khung. **Tiếp theo:** bổ sung guitar và đối sánh q04_2 blueberries; dùng nhãn q05_2 để kiểm evaluator, không làm lại từ đầu. Giữ kế hoạch benchmark Kaggle hiện có; chưa có metric Kaggle mới. [Đối chiếu chi tiết](../results/countgdpp/b2_remaining3_20261015/TRIEU_CROSSCHECK_2026-10-16.md).
+**Mốc mới nhất 16/10 — đã nhận kiểm chéo của Triệu cho 14/15 query:** số đếm/GT khớp file kết quả; còn q01_1 guitars chưa có review trực tiếp. Plates hiệu chỉnh từ 0/3 theo Trí thành 3/3 đúng loại theo Triệu và ảnh đã kiểm; bản gốc giữ nguyên. Raspberries final đã giải thích đủ 14 = 4 quả mục tiêu + 1 khung trùng + 9 khung sai loại. Stage1 có 2 strawberry ở số 6/7, giải thích đủ 11 khung. **Tiếp theo:** bổ sung guitar và đối sánh q04_2 blueberries; dùng nhãn q05_2 để kiểm evaluator, không làm lại từ đầu. Giữ kế hoạch benchmark Kaggle hiện có; chưa có metric Kaggle mới. [Đối chiếu chi tiết](../../../results/countgdpp/b2_remaining3_20261015/TRIEU_CROSSCHECK_2026-10-16.md).
 
 **Phiên bản V4.3 — cập nhật 16/10/2026 (Asia/Bangkok).**
 **Trạng thái: M4 đã chạy/review 5 ảnh MUCCA nội bộ, 15 query; đã chẩn đoán 5 query/2 ảnh; B2 đã chạy đủ 5 ảnh/15 query và Trí đã review bằng mắt đủ 15 query. M6/E1/E2 pilot chỉ trên 2 ảnh. Triệu đã kiểm chéo 14/15 query, q05_2 đã có phân loại final; chưa train, còn tài nguyên, guitar/q04_2 và evaluator.**
@@ -124,7 +124,7 @@ Kiểm tra trực tiếp ngày 13/10/2026:
 
 Python mặc định của Windows là 3.14, khác môi trường đồ án. Lỗi pip “No matching distribution” trước đó được xử lý bằng chọn rõ Python WSL 3.10. Từ đây chạy cài đặt/build trong đúng môi trường, không quay lại pip Windows.
 
-**Việc tiếp theo:** E1/E2 pilot đã xong; [review 15 query và phân loại lỗi từng bbox](../results/countgdpp/b2_remaining3_20261015/USER_VISUAL_REVIEW.md). Nối evaluator song song. Không cần cài lại các phần đã đạt. GPU cloud vẫn là phương án nếu OOM; chưa xác nhận quota.
+**Việc tiếp theo:** E1/E2 pilot đã xong; [review 15 query và phân loại lỗi từng bbox](../../../results/countgdpp/b2_remaining3_20261015/USER_VISUAL_REVIEW.md). Nối evaluator song song. Không cần cài lại các phần đã đạt. GPU cloud vẫn là phương án nếu OOM; chưa xác nhận quota.
 
 P0–P3 chưa cần synthetic exemplar, dịch vụ tạo ảnh hoặc super-crop. B0/B2 là đối chứng thành phần, không đại diện toàn bộ cấu hình đạt điểm paper.
 

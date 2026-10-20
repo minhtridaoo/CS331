@@ -1,0 +1,12 @@
+{
+  "query_id": "q01_3",
+  "image_id": "mcac_100",
+  "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+  "prompt": "chairs",
+  "text_prompt": "a photo of chairs",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "n_boxes": 0,
+  "rows_original_order": [],
+  "rows_sorted_by_clip": []
+}

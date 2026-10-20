@@ -1,0 +1,17 @@
+{
+  "scope": "dev pilot; CPU evaluation of saved predictions; no model inference",
+  "command": [
+    "evaluation/evaluate_pilot.py",
+    "--out",
+    "results/countgdpp/pilot_eval_20261020"
+  ],
+  "sources_sha256": {
+    "experiments/countgdpp/m4_inputs/manifest.csv": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+    "experiments/countgdpp/m4_inputs/first5_inputs.jsonl": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+    "results/countgdpp/m4_first5_b0/predictions.jsonl": "ffe47cbef8037087fe6a61a4c2079805ac7dbad44b219a5ce3511e54a83341ac",
+    "results/countgdpp/b2_two_images_20261015/predictions.jsonl": "14a460534782aa0322ce46ffa45fa73e3c3eb4e5dd865f3b1bba96892ca61775",
+    "results/countgdpp/b2_remaining3_20261015/predictions.jsonl": "90ffc069cd3e3b2e5e9f7af7b1690bfdc85fb9030c9df4f816943f357e20cbe4",
+    "results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json": "f403a61aa471a4e9bfd3ef55b8f35ca540eec977d9788730cbe9d5c69b0eb087",
+    "evaluation/evaluate_pilot.py": "b87250cb3e903824492f49c88fc5f3ff61b58cfb6cb43d9ab8fdc36bfe6ccb80"
+  }
+}

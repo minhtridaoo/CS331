@@ -1,0 +1,378 @@
+{
+  "query_id": "q05_2",
+  "image_id": "mcac_27",
+  "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+  "prompt": "raspberries",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "text_prompt": "a photo of raspberries",
+  "n_boxes": 14,
+  "rows_original_order": [
+    {
+      "rank": 1,
+      "box_xyxy": [
+        409,
+        458,
+        660,
+        658
+      ],
+      "b2_score": 0.9014928936958313,
+      "clip_cosine_target": 0.27889108657836914,
+      "crop_width": 251,
+      "crop_height": 200
+    },
+    {
+      "rank": 2,
+      "box_xyxy": [
+        589,
+        708,
+        918,
+        1030
+      ],
+      "b2_score": 0.8578158020973206,
+      "clip_cosine_target": 0.3020198941230774,
+      "crop_width": 329,
+      "crop_height": 322
+    },
+    {
+      "rank": 3,
+      "box_xyxy": [
+        110,
+        518,
+        453,
+        754
+      ],
+      "b2_score": 0.9105385541915894,
+      "clip_cosine_target": 0.2791300415992737,
+      "crop_width": 343,
+      "crop_height": 236
+    },
+    {
+      "rank": 4,
+      "box_xyxy": [
+        945,
+        618,
+        1365,
+        929
+      ],
+      "b2_score": 0.7259870171546936,
+      "clip_cosine_target": 0.2521578371524811,
+      "crop_width": 420,
+      "crop_height": 311
+    },
+    {
+      "rank": 5,
+      "box_xyxy": [
+        829,
+        469,
+        1218,
+        779
+      ],
+      "b2_score": 0.5522557497024536,
+      "clip_cosine_target": 0.27066487073898315,
+      "crop_width": 389,
+      "crop_height": 310
+    },
+    {
+      "rank": 6,
+      "box_xyxy": [
+        1407,
+        561,
+        1966,
+        980
+      ],
+      "b2_score": 0.6596593260765076,
+      "clip_cosine_target": 0.2614480257034302,
+      "crop_width": 559,
+      "crop_height": 419
+    },
+    {
+      "rank": 7,
+      "box_xyxy": [
+        60,
+        429,
+        381,
+        650
+      ],
+      "b2_score": 0.9150726199150085,
+      "clip_cosine_target": 0.31469595432281494,
+      "crop_width": 321,
+      "crop_height": 221
+    },
+    {
+      "rank": 8,
+      "box_xyxy": [
+        885,
+        347,
+        1231,
+        524
+      ],
+      "b2_score": 0.47023823857307434,
+      "clip_cosine_target": 0.25186771154403687,
+      "crop_width": 346,
+      "crop_height": 177
+    },
+    {
+      "rank": 9,
+      "box_xyxy": [
+        673,
+        576,
+        845,
+        718
+      ],
+      "b2_score": 0.40798619389533997,
+      "clip_cosine_target": 0.2443644106388092,
+      "crop_width": 172,
+      "crop_height": 142
+    },
+    {
+      "rank": 10,
+      "box_xyxy": [
+        605,
+        264,
+        926,
+        586
+      ],
+      "b2_score": 0.3630131483078003,
+      "clip_cosine_target": 0.28424885869026184,
+      "crop_width": 321,
+      "crop_height": 322
+    },
+    {
+      "rank": 11,
+      "box_xyxy": [
+        60,
+        452,
+        223,
+        665
+      ],
+      "b2_score": 0.2331569343805313,
+      "clip_cosine_target": 0.3039281964302063,
+      "crop_width": 163,
+      "crop_height": 213
+    },
+    {
+      "rank": 12,
+      "box_xyxy": [
+        1524,
+        880,
+        1737,
+        1079
+      ],
+      "b2_score": 0.2326723337173462,
+      "clip_cosine_target": 0.23503047227859497,
+      "crop_width": 213,
+      "crop_height": 199
+    },
+    {
+      "rank": 13,
+      "box_xyxy": [
+        594,
+        679,
+        744,
+        793
+      ],
+      "b2_score": 0.24644768238067627,
+      "clip_cosine_target": 0.27398163080215454,
+      "crop_width": 150,
+      "crop_height": 114
+    },
+    {
+      "rank": 14,
+      "box_xyxy": [
+        1232,
+        470,
+        1538,
+        737
+      ],
+      "b2_score": 0.242670938372612,
+      "clip_cosine_target": 0.26775479316711426,
+      "crop_width": 306,
+      "crop_height": 267
+    }
+  ],
+  "rows_sorted_by_clip": [
+    {
+      "rank": 7,
+      "box_xyxy": [
+        60,
+        429,
+        381,
+        650
+      ],
+      "b2_score": 0.9150726199150085,
+      "clip_cosine_target": 0.31469595432281494,
+      "crop_width": 321,
+      "crop_height": 221
+    },
+    {
+      "rank": 11,
+      "box_xyxy": [
+        60,
+        452,
+        223,
+        665
+      ],
+      "b2_score": 0.2331569343805313,
+      "clip_cosine_target": 0.3039281964302063,
+      "crop_width": 163,
+      "crop_height": 213
+    },
+    {
+      "rank": 2,
+      "box_xyxy": [
+        589,
+        708,
+        918,
+        1030
+      ],
+      "b2_score": 0.8578158020973206,
+      "clip_cosine_target": 0.3020198941230774,
+      "crop_width": 329,
+      "crop_height": 322
+    },
+    {
+      "rank": 10,
+      "box_xyxy": [
+        605,
+        264,
+        926,
+        586
+      ],
+      "b2_score": 0.3630131483078003,
+      "clip_cosine_target": 0.28424885869026184,
+      "crop_width": 321,
+      "crop_height": 322
+    },
+    {
+      "rank": 3,
+      "box_xyxy": [
+        110,
+        518,
+        453,
+        754
+      ],
+      "b2_score": 0.9105385541915894,
+      "clip_cosine_target": 0.2791300415992737,
+      "crop_width": 343,
+      "crop_height": 236
+    },
+    {
+      "rank": 1,
+      "box_xyxy": [
+        409,
+        458,
+        660,
+        658
+      ],
+      "b2_score": 0.9014928936958313,
+      "clip_cosine_target": 0.27889108657836914,
+      "crop_width": 251,
+      "crop_height": 200
+    },
+    {
+      "rank": 13,
+      "box_xyxy": [
+        594,
+        679,
+        744,
+        793
+      ],
+      "b2_score": 0.24644768238067627,
+      "clip_cosine_target": 0.27398163080215454,
+      "crop_width": 150,
+      "crop_height": 114
+    },
+    {
+      "rank": 5,
+      "box_xyxy": [
+        829,
+        469,
+        1218,
+        779
+      ],
+      "b2_score": 0.5522557497024536,
+      "clip_cosine_target": 0.27066487073898315,
+      "crop_width": 389,
+      "crop_height": 310
+    },
+    {
+      "rank": 14,
+      "box_xyxy": [
+        1232,
+        470,
+        1538,
+        737
+      ],
+      "b2_score": 0.242670938372612,
+      "clip_cosine_target": 0.26775479316711426,
+      "crop_width": 306,
+      "crop_height": 267
+    },
+    {
+      "rank": 6,
+      "box_xyxy": [
+        1407,
+        561,
+        1966,
+        980
+      ],
+      "b2_score": 0.6596593260765076,
+      "clip_cosine_target": 0.2614480257034302,
+      "crop_width": 559,
+      "crop_height": 419
+    },
+    {
+      "rank": 4,
+      "box_xyxy": [
+        945,
+        618,
+        1365,
+        929
+      ],
+      "b2_score": 0.7259870171546936,
+      "clip_cosine_target": 0.2521578371524811,
+      "crop_width": 420,
+      "crop_height": 311
+    },
+    {
+      "rank": 8,
+      "box_xyxy": [
+        885,
+        347,
+        1231,
+        524
+      ],
+      "b2_score": 0.47023823857307434,
+      "clip_cosine_target": 0.25186771154403687,
+      "crop_width": 346,
+      "crop_height": 177
+    },
+    {
+      "rank": 9,
+      "box_xyxy": [
+        673,
+        576,
+        845,
+        718
+      ],
+      "b2_score": 0.40798619389533997,
+      "clip_cosine_target": 0.2443644106388092,
+      "crop_width": 172,
+      "crop_height": 142
+    },
+    {
+      "rank": 12,
+      "box_xyxy": [
+        1524,
+        880,
+        1737,
+        1079
+      ],
+      "b2_score": 0.2326723337173462,
+      "clip_cosine_target": 0.23503047227859497,
+      "crop_width": 213,
+      "crop_height": 199
+    }
+  ]
+}

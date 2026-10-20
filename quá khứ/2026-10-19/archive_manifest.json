@@ -1,0 +1,282 @@
+[
+  {
+    "mode": "copy",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF.md",
+    "sha256_before": "b3ad2faa5076f42b1f79c3d7e02adb76a37571f46c29194de7c0885efbc030d1",
+    "sha256_after_link_rebase": "e08ad8806071e5bd6d6225480f216bbcf19fe0adba6caa3c44235fe33d968b21"
+  },
+  {
+    "mode": "copy",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_MODEL.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_MODEL.md",
+    "sha256_before": "882981d19bd49871bac7bbd22b0d4c44c0cca28f9405c7e2bd36dbde2ad5d343",
+    "sha256_after_link_rebase": "112e36aff34fe2122583552ff9d57fca1d270ce799395699861588bd3914caa2"
+  },
+  {
+    "mode": "copy",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_TRIEU.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_TRIEU.md",
+    "sha256_before": "4be97d9dd2a954d280b5a63e11958133e885fde629bf37c130ed0d2c76d4014c",
+    "sha256_after_link_rebase": "80c1174d1817fd83de4eb0e492bc4526cc97c03d0b1630c7b5b599d02de5e5cc"
+  },
+  {
+    "mode": "copy",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\PIPELINE_COUNTGDPP.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\PIPELINE_COUNTGDPP.md",
+    "sha256_before": "ad76b602d04f094cb22401e7cc9a188a21335bb21da6f9e70573ed5abd1ae8b1",
+    "sha256_after_link_rebase": "7f2bf0bd4ec495e6939cf432e107148f8b9c8a6b7a3e8bf605b2b21041f58a29"
+  },
+  {
+    "mode": "copy",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\PIPELINE_PHAN_CONG.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\PIPELINE_PHAN_CONG.md",
+    "sha256_before": "c860ed70fa4af0dc28192a121e966565c14e155ec6fc2c01bca0a55089768d5c",
+    "sha256_after_link_rebase": "55e22656e4a44dcd9f8fc23289fad75323808e297be26337fa839d8a6fe74f50"
+  },
+  {
+    "mode": "copy",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\experiments\\countgdpp\\README_B2.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\experiments\\countgdpp\\README_B2.md",
+    "sha256_before": "23d216c82c2a0d81f03377c33010ec2d7728d0bb1f167a1b74d4cc07f4fdb539",
+    "sha256_after_link_rebase": "da7d5d446ac9c771e8ae56cd97b5add8eef4fd0298860a6eb6b2a1566d227bf7"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\WORKLOG_CS331.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\WORKLOG_CS331.md",
+    "sha256_before": "e3082940ffa0a6daa001f4eeea9f5a834f66a0b75f440ec6e53e3139734930af",
+    "sha256_after_link_rebase": "c8a206466ee3446bdb3010d28747919311c0917e5d53f6c86bb1542b017b5def"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\CS331_ZSC_V4_Final.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\CS331_ZSC_V4_Final.md",
+    "sha256_before": "a1212a4315920a6addd33267c4967e645f3da408cdf86bd359c8c12b5b63a6ba",
+    "sha256_after_link_rebase": "33c7b8157ed0a886e08b2d10c4ee901cf5e917db2e2bf338de0945bf16b94460"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\CS331_ZSC_V3_4_Final.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\CS331_ZSC_V3_4_Final.md",
+    "sha256_before": "8a7f202b876b6a932bc712632e6c1ee90df37948c5bc7db9fc43d1ee80cbf361",
+    "sha256_after_link_rebase": "8a7f202b876b6a932bc712632e6c1ee90df37948c5bc7db9fc43d1ee80cbf361"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\SETUP_COUNTGDPP_SAU_CUDA.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\SETUP_COUNTGDPP_SAU_CUDA.md",
+    "sha256_before": "5d1ec988dbfa73e0fabe1e7fff5cbfb3dd0255b470b8b147b87393ee81432e33",
+    "sha256_after_link_rebase": "5d1ec988dbfa73e0fabe1e7fff5cbfb3dd0255b470b8b147b87393ee81432e33"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_CS331_2026-09-25.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_CS331_2026-09-25.md",
+    "sha256_before": "86876e67904b367ecd7485436b8afe0e2135fff569d0ca12eedb5153a632594b",
+    "sha256_after_link_rebase": "86876e67904b367ecd7485436b8afe0e2135fff569d0ca12eedb5153a632594b"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_CS331_2026-10-07.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_CS331_2026-10-07.md",
+    "sha256_before": "850f26af0468a18ee8bd755f1ec437d822f3108d0710402212e3ea19aa7be022",
+    "sha256_after_link_rebase": "850f26af0468a18ee8bd755f1ec437d822f3108d0710402212e3ea19aa7be022"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_CS331_2026-10-13.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_CS331_2026-10-13.md",
+    "sha256_before": "f8d29bfd19b016f53a032548ed0e69d3e29c063b7478d86df55c95f0cca7c7c5",
+    "sha256_after_link_rebase": "f8d29bfd19b016f53a032548ed0e69d3e29c063b7478d86df55c95f0cca7c7c5"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_CS331_2026-10-14.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_CS331_2026-10-14.md",
+    "sha256_before": "21dd667ab7546e794dc633cf23c2b75d912c94f6ae92c5a424c79438e7de3ef7",
+    "sha256_after_link_rebase": "b9cfb285391f0105ea05063fc390374ecd4358c3daf226bf9e0bb732c98c9d78"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_CS331_2026-10-15.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_CS331_2026-10-15.md",
+    "sha256_before": "3dd95acba11a1b4f8a8ec2debaa75c5d23d4270161f438d1ed1c36cc6fcf0986",
+    "sha256_after_link_rebase": "d59443859d874cff287b79551e8cc364dd098cdb27b7cc979fa0d3b6d11b53a3"
+  },
+  {
+    "mode": "move",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\HANDOFF\\HANDOFF_CS331_2026-10-16.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\HANDOFF\\HANDOFF_CS331_2026-10-16.md",
+    "sha256_before": "7cb4bd466df58f2cf4323248f2438ac902f3188dc015730603f7329c7d5f3c33",
+    "sha256_after_link_rebase": "0b49466f19e06a137d8d21926c31e3b0fbe1f224b5c32d062b994b2207264972"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_BaoCao_DanhGia_VanDe.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_BaoCao_DanhGia_VanDe.md",
+    "sha256_before": "dcad0ea2a86b5b1e5468e061d39e1ae3679fa05222e10eb0f5dfd4c46436a926",
+    "sha256_after_link_rebase": "95491085828747b603d0d71ba2a5e99167c02637e32441a778f0aa8e0dcdfed4"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_BaoCao_Review_V3_2.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_BaoCao_Review_V3_2.md",
+    "sha256_before": "1b941c4cc187e5a7dc1405bb076e2fcb908d6cc7ab7559ee7b802fd9b871b51c",
+    "sha256_after_link_rebase": "3e8ba19023be1fb47a8d5455c65a2b10dcf4662b328cd0616fd912998d0ecfd1"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_BaoCao_Review_V3_3.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_BaoCao_Review_V3_3.md",
+    "sha256_before": "3e98d437298d8c44db086e29e8da8054437c8084e426234b01acdae311d18061",
+    "sha256_after_link_rebase": "a8b63d6a133835dc5793f2f98ed9c096bec4af3466d9a49c93cbd8c120471648"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_DeXuat_ChotDeTai_6Tuan_2026-10-07.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_DeXuat_ChotDeTai_6Tuan_2026-10-07.md",
+    "sha256_before": "7a64b8edfd85b98c4decb0404c307166a8c3ee3928e734b4f49481859aec15a9",
+    "sha256_after_link_rebase": "d10da7593b4845bb27b2c255d2ef05105176c86008a09f7f65e6ba6be69a46f3"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_Roadmap_DanhGiaLai_2026-10-07.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_Roadmap_DanhGiaLai_2026-10-07.md",
+    "sha256_before": "dac33bd88ded09496c2e7a33ee30a215c759439200fd8136c98da5659eeeac9a",
+    "sha256_after_link_rebase": "692287d6cc7ae657bc284cf948d71a6635e4f377cca9f36eb249449d774b49e5"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V2_Friend_Review.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V2_Friend_Review.md",
+    "sha256_before": "36e6ecad9472c59373681169319c9549cdafc4cf3a3fef76bbe23499f2e430f8",
+    "sha256_after_link_rebase": "77c8cabca90a6496287c3e597b15efceccd8e72e877d983db40c3c50d29d0a0c"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V3_1_Final_Review.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V3_1_Final_Review.md",
+    "sha256_before": "082e0929ea254dcfe35094caba1a41effff3fc1b1eb07eaf6ddd465b3b7d8f48",
+    "sha256_after_link_rebase": "7448540e51833f5a58fe4188a95c6e0be6d5414cfe24f8f40e3b43b4d8123329"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V3_2_Final.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V3_2_Final.md",
+    "sha256_before": "a6c998b4dd273504c5c2eaf47e984e8495d42dfa7335de441de4f482e7889e1a",
+    "sha256_after_link_rebase": "b25daf4c292255b33ddcb3fb416c38a94dac81f5e861ff8197d448d11a65d171"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V3_3_Final.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V3_3_Final.md",
+    "sha256_before": "d340ede62a2b9eaa088f3a63dc95e5907f68b9fcff165e287381d03a9a4398e8",
+    "sha256_after_link_rebase": "6bd666c3abe2a038711eda523da610db0709aed6b2bc4379eb1866b20d0fd3ed"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V3_4_Final.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V3_4_Final.md",
+    "sha256_before": "4be2b7cab00980e6c3520707b3c0f8b648fde6e771571047d850d4c7fa4fc7fe",
+    "sha256_after_link_rebase": "c6b5cb028469518bfc34002363f873f0fee037acaa7953744e54501e574a4c98"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V3_4_Review_2026-10-07.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V3_4_Review_2026-10-07.md",
+    "sha256_before": "9c94d2b3fcb8de55faea7f9bf6f98a7008cac46559f7a18397402b8cb340c9f8",
+    "sha256_after_link_rebase": "b807afc2ceb23aa8e821ef948c4c933abdcbf112a3f96b83fe0ac94a24da794d"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V3_Final_Review.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V3_Final_Review.md",
+    "sha256_before": "5a072476fe1d60f71a22cb82ca4a3ec277b349956e89df942b7031dfe53de48f",
+    "sha256_after_link_rebase": "916356635f4ed82a1151666e75bd0f9ae5f4a17e1294a7b17f2d41be68162cf8"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_V4_1_2026-10-07.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_V4_1_2026-10-07.md",
+    "sha256_before": "1013f2c961dc531b8abf4afbe5c6a7223548eedf05a92f641f3f8d78f3459f98",
+    "sha256_after_link_rebase": "1013f2c961dc531b8abf4afbe5c6a7223548eedf05a92f641f3f8d78f3459f98"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\CS331_ZSC_Zero_to_Hero_FULL_Roadmap.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\CS331_ZSC_Zero_to_Hero_FULL_Roadmap.md",
+    "sha256_before": "79cac60b6ba19f9444dfcb8a28b7ab801fd5661c69ed5cbe3a40ac615df28c0a",
+    "sha256_after_link_rebase": "98044128f125737796456cba686a34d3bc963237315b043d17f09fe0ebeaeed3"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\HANDOFF_CS331_2026-09-23.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\HANDOFF_CS331_2026-09-23.md",
+    "sha256_before": "dbe72a952c2eef794f5c59ded994cdcb77104c28107423cc1479e7ec946ad867",
+    "sha256_after_link_rebase": "fedcabbb7ae06389add5e6c5da3c13f2cae681e9f8035b1177b94fa82fa15d07"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\HANDOFF_CS331_2026-09-25.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\HANDOFF_CS331_2026-09-25.md",
+    "sha256_before": "a0e8d52e50bab077021496d1305bb49c5795b76fe8066ffd3e99ac6928190c54",
+    "sha256_after_link_rebase": "d35cbdbfb94509c8b08c73523baa647197581cbba2860047e666d6e341d2e123"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\HANDOFF_CS331_2026-10-07.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\HANDOFF_CS331_2026-10-07.md",
+    "sha256_before": "478f727df3193a859ccc35db4ca5396f6f13bd3712213a256a46a4b93e01451c",
+    "sha256_after_link_rebase": "fb27dbde62e365d1b1a2623234b433aa51fdd125ee2e3ae6ed9c9ae33dd407ea"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF_CS331_2026-09-25.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF_CS331_2026-09-25.md",
+    "sha256_before": "d5bb2b2505a5803fc837986854807d35a0f47a1df4b111943b106282d6f7e7e2",
+    "sha256_after_link_rebase": "ef1512325cccbac30975c3ddf96dccf1b4bad9c6eab7a3bfc490f1b1fec66404"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF_CS331_2026-10-07.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF_CS331_2026-10-07.md",
+    "sha256_before": "d7653cce9dacd8e4cde7b2c14d355418bacc6c21bfd72087ae0df670e6cff1f2",
+    "sha256_after_link_rebase": "024daf88ac7705468b715b35731e0a69b26d7c4fa37340393652dfb91574ba34"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF_CS331_2026-10-13.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF_CS331_2026-10-13.md",
+    "sha256_before": "b28503e306b2d17a34d171bad40e986f6f0875d0e79d10a7cd2ef150a6b56b97",
+    "sha256_after_link_rebase": "29e093b85983c7cdcda57876c04e57cf913db540f5fdcf1afcac3ddc6b327d09"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\HANDOFF\\HANDOFF.md",
+    "sha256_before": "a63c71c7f12eee20bfb723f062ecf0c63660f59416a2a285a38aab0facfb1ab6",
+    "sha256_after_link_rebase": "19c25e2d53c1938d34a1b9c961d1b7eb4e8b3a3eb9a042f9ad73723093dc0610"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\roadmap\\CS331_ZSC_V3_4_Final.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\roadmap\\CS331_ZSC_V3_4_Final.md",
+    "sha256_before": "eb739135894318cb7bcafba82edfc7fdfdbb5e0fbf3480daea1d20eb0f894733",
+    "sha256_after_link_rebase": "96825d0f5f65f5c5d1b14efb2a6d8d80a3b52847746a7b7b09c2bb5a9273cd32"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\roadmap\\CS331_ZSC_V4_Final.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\roadmap\\CS331_ZSC_V4_Final.md",
+    "sha256_before": "5a1cd059edaba47208e5a5cedb0209adb7d4da5c3b75829c8e52fdfe88f85060",
+    "sha256_after_link_rebase": "8e62cac1a91f50e3162dcb2956acebd991d7e143614f78f8ba672d83b720189c"
+  },
+  {
+    "mode": "move_directory_member",
+    "source": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\roadmap\\PIPELINE_COUNTGDPP.md",
+    "destination": "D:\\MINHTRIHOCCODE\\HOCKI5\\CS331\\quá khứ\\2026-10-19\\roadmap\\ban_cu\\2026-10-13_truoc_phan_cong\\roadmap\\PIPELINE_COUNTGDPP.md",
+    "sha256_before": "a3078b00155b0a826e8b447a1f1b8c66d3862113be410c01cfd018ceeb058d93",
+    "sha256_after_link_rebase": "706013085000db8bc84558831d6cbdefa370765e6f399817e9248e5bf3aa8c60"
+  }
+]

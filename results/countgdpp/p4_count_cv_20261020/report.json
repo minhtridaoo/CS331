@@ -1,0 +1,177 @@
+{
+  "study": "P4 count-only exploratory image-group cross-validation",
+  "split": "5-fold leave-one-original-image-out",
+  "threshold_selection": "MAE then RMSE on other four dev images",
+  "n_images": 5,
+  "n_queries": 15,
+  "n_scored_boxes": 481,
+  "results": {
+    "B2_original": {
+      "n_queries": 15,
+      "MAE": 22.0,
+      "RMSE": 30.090973175799196,
+      "exact_count": 1
+    },
+    "B2_threshold": {
+      "n_queries": 15,
+      "MAE": 4.6,
+      "RMSE": 6.618156843109719,
+      "exact_count": 1
+    },
+    "CLIP_threshold": {
+      "n_queries": 15,
+      "MAE": 6.8,
+      "RMSE": 8.846845012017937,
+      "exact_count": 0
+    }
+  },
+  "folds": [
+    {
+      "held_out_image": "mcac_100",
+      "training_queries": [
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q04_1",
+        "q04_2",
+        "q04_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_queries": [
+        "q01_1",
+        "q01_2",
+        "q01_3"
+      ],
+      "B2_threshold": 0.9067394733428955,
+      "CLIP_threshold": 0.24671510607004166
+    },
+    {
+      "held_out_image": "mcac_11",
+      "training_queries": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q04_1",
+        "q04_2",
+        "q04_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_queries": [
+        "q02_1",
+        "q02_2",
+        "q02_3"
+      ],
+      "B2_threshold": 0.9064508676528931,
+      "CLIP_threshold": 0.24706215411424637
+    },
+    {
+      "held_out_image": "mcac_20",
+      "training_queries": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_queries": [
+        "q04_1",
+        "q04_2",
+        "q04_3"
+      ],
+      "B2_threshold": 0.9067394733428955,
+      "CLIP_threshold": 0.24496211111545563
+    },
+    {
+      "held_out_image": "mcac_200",
+      "training_queries": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q04_1",
+        "q04_2",
+        "q04_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_queries": [
+        "q03_1",
+        "q03_2",
+        "q03_3"
+      ],
+      "B2_threshold": 0.897137314081192,
+      "CLIP_threshold": 0.24671510607004166
+    },
+    {
+      "held_out_image": "mcac_27",
+      "training_queries": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q04_1",
+        "q04_2",
+        "q04_3"
+      ],
+      "test_queries": [
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "B2_threshold": 0.9080622494220734,
+      "CLIP_threshold": 0.24420910328626633
+    }
+  ],
+  "limitations": [
+    "All five images belong to development data.",
+    "This is not independent holdout evaluation.",
+    "Count metrics cannot establish correct object class.",
+    "Count metrics cannot establish localization quality.",
+    "Zero-box predictions cannot be recovered by filtering.",
+    "Thresholds are reselected on training images for each fold."
+  ],
+  "source_sha256": {
+    "experiments/countgdpp/m4_inputs/first5_inputs.jsonl": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+    "experiments/countgdpp/m4_inputs/manifest.csv": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+    "results/countgdpp/p4_clip_all15_20261020/q01_1_clip_scores.json": "7af409aaa4a8afc908d0798c179ca93744ecfe2b124a3f2df9c784978fecb451",
+    "results/countgdpp/p4_clip_all15_20261020/q01_2_clip_scores.json": "504754e8aa7f4531d3995cfcee0d5eb34c5bd2e9a5f7c7fb6593e61b0d735184",
+    "results/countgdpp/p4_clip_all15_20261020/q01_3_clip_scores.json": "2815964d9154dc65ea8425b79822a6e0eb2312e699cd3115cf2580991df429b0",
+    "results/countgdpp/p4_clip_all15_20261020/q02_1_clip_scores.json": "49ba651dbb044cece70a9138706a41644b858b3b54c0a2b82cbf5cd7887f859a",
+    "results/countgdpp/p4_clip_all15_20261020/q02_2_clip_scores.json": "b9d798abb1381c9fadabbb059e35616fad6581aa82734a9ba290c8357cad69b2",
+    "results/countgdpp/p4_clip_all15_20261020/q02_3_clip_scores.json": "b4a4aba1163a1ff64a6f999f8413283b3b1851a428d143b43cdde1450dc29a2f",
+    "results/countgdpp/p4_clip_all15_20261020/q03_1_clip_scores.json": "e2026489c974850d0d0a3e53969dc3d2f1af46f1e07c4a24187099ef53c4635f",
+    "results/countgdpp/p4_clip_all15_20261020/q03_2_clip_scores.json": "e8b20ee03e7be31966e7f4bd80fd138194c43e8455a4bae93afc1a3b86f64a47",
+    "results/countgdpp/p4_clip_all15_20261020/q03_3_clip_scores.json": "4594a7764d3ce4ec45f37c5fa5ff1718d275c9cc3b3f4042e971bf29a8ae5278",
+    "results/countgdpp/p4_clip_all15_20261020/q04_1_clip_scores.json": "2cab02aa52de2c35309ce565ff5379d6ebd7cab0f6cf7b961e6b987a40bcbc80",
+    "results/countgdpp/p4_clip_all15_20261020/q04_2_clip_scores.json": "0606db1b5fe84cff0801c38dd99ab010616270bc7439793f2744f0025cc4b653",
+    "results/countgdpp/p4_clip_all15_20261020/q04_3_clip_scores.json": "a8bfdc1ab1f8a0e6588656a998cf1508531d44a836bf7e604a97f8f47f762ceb",
+    "results/countgdpp/p4_clip_all15_20261020/q05_1_clip_scores.json": "2d71378ad32e118c3f9f0060a29b49e058be4d6e05c1d96de7638986543840b0",
+    "results/countgdpp/p4_clip_all15_20261020/q05_2_clip_scores.json": "1b5e962990146326352ef2ca11fc1735c9fa01669ab55bacb9daad49a8cfeb13",
+    "results/countgdpp/p4_clip_all15_20261020/q05_3_clip_scores.json": "743d1dbb5b64bc284fb96ce1f53b14b98f4a254993b332791c01536094970c3f"
+  }
+}

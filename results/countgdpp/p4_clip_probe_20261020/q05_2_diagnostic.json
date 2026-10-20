@@ -1,0 +1,127 @@
+{
+  "query_id": "q05_2",
+  "analysis_type": "exploratory_posthoc",
+  "gt_count": 4,
+  "source": {
+    "clip_scores": "results/countgdpp/p4_clip_probe_20261020/q05_2_clip_scores.json",
+    "manual_labels": "results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json",
+    "manifest": "experiments/countgdpp/m4_inputs/manifest.csv"
+  },
+  "results": [
+    {
+      "method": "B2 original",
+      "threshold": null,
+      "kept": 14,
+      "distinct_targets": 4,
+      "wrong_class_boxes": 9,
+      "duplicate_target_boxes": 1,
+      "missed_targets": 0,
+      "absolute_count_error": 10,
+      "kept_ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "method": "B2",
+      "threshold": 0.5,
+      "kept": 7,
+      "distinct_targets": 4,
+      "wrong_class_boxes": 3,
+      "duplicate_target_boxes": 0,
+      "missed_targets": 0,
+      "absolute_count_error": 3,
+      "kept_ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "method": "B2",
+      "threshold": 0.8,
+      "kept": 4,
+      "distinct_targets": 4,
+      "wrong_class_boxes": 0,
+      "duplicate_target_boxes": 0,
+      "missed_targets": 0,
+      "absolute_count_error": 0,
+      "kept_ranks": [
+        1,
+        2,
+        3,
+        7
+      ]
+    },
+    {
+      "method": "CLIP",
+      "threshold": 0.275,
+      "kept": 6,
+      "distinct_targets": 4,
+      "wrong_class_boxes": 1,
+      "duplicate_target_boxes": 1,
+      "missed_targets": 0,
+      "absolute_count_error": 2,
+      "kept_ranks": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "method": "CLIP",
+      "threshold": 0.28,
+      "kept": 4,
+      "distinct_targets": 2,
+      "wrong_class_boxes": 1,
+      "duplicate_target_boxes": 1,
+      "missed_targets": 2,
+      "absolute_count_error": 0,
+      "kept_ranks": [
+        2,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "method": "CLIP",
+      "threshold": 0.3,
+      "kept": 3,
+      "distinct_targets": 2,
+      "wrong_class_boxes": 0,
+      "duplicate_target_boxes": 1,
+      "missed_targets": 2,
+      "absolute_count_error": 1,
+      "kept_ranks": [
+        2,
+        7,
+        11
+      ]
+    }
+  ],
+  "limitations": [
+    "Thresholds inspected after seeing dev labels.",
+    "Manual visual labels are not formal benchmark matching.",
+    "Results are not holdout performance."
+  ]
+}

@@ -1,0 +1,67 @@
+# Tổng kết pilot CS331 — CountGD++ và lỗi chọn đối tượng
+
+**BẢN NHÁP cập nhật 20/10/2026.** Số liệu pilot giữ từ run 15/10; review Triệu chốt v1 ngày 19/10 đã đọc lại ngày 20/10. Evaluator đã chạy và được đối chiếu ngày 20/10/2026; chưa coi báo cáo được nhóm duyệt.
+
+**Pilot là bộ thử nhỏ 5 ảnh/15 câu hỏi để tìm lỗi.** Đây là file hoàn thiện ở phần 3, sau khi chạy evaluator ở phần 2. Nhánh benchmark 1.190 ảnh đã có [báo cáo riêng](BENCHMARK_FSCD147.md), không thay thế việc xác nhận các ô dưới đây.
+
+## 1. Thông tin bạn tự điền
+
+- Người chạy evaluator: **Minhtri**
+- Ngày chạy: **20/10/2026**
+- Self-test: **PASS — python3 evaluation/evaluate_pilot.py --self-test**
+- Thư mục evaluator thực tế: **results/countgdpp/pilot_eval_20261020/**
+- Coverage/IDs đã kiểm: **15/15 B0 và B2; 0 error, 0 uncertain; paired=15**
+- Người kiểm chéo/ngày: **Chưa xác nhận kiểm chéo evaluator mới; review định tính của Triệu chốt ngày 19/10/2026**
+- Trạng thái báo cáo: **CHỜ KIỂM CHÉO VÀ DUYỆT**
+
+## 2. Câu hỏi và thiết lập
+
+Cùng ảnh, đổi tên loại X/Y có làm mô hình đếm riêng đúng loại được hỏi không? Dùng checkpoint CountGD++, chưa fine-tune. B0 là text một lượt; B2 là lượt đầu → top tối đa 3 mẫu tự chọn → lượt hai. Tau_sample=tau_final=.23; không mẫu thì trả B0 theo quy ước adapter. Đây không phải tái hiện toàn pipeline paper.
+
+Tập 5 ảnh/15 query dev từ gói dữ liệu Triệu; mọi query trong tập này có đối tượng. GT chỉ đưa vào evaluator. Không có holdout độc lập hoặc absent query trong 15 dòng. Mẫu và khung được review bằng mắt để chẩn đoán, không dùng nhãn hậu kiểm làm input model.
+
+## 3. Kết quả đã có trước evaluator mới
+
+Nguồn: [combined_first5_metrics.json](../results/countgdpp/b2_remaining3_20261015/combined_first5_metrics.json). **Đã đối chiếu với output evaluator ngày 20/10/2026.**
+
+| Cấu hình | Số query | MAE | RMSE | Đúng count |
+|---|---:|---:|---:|---:|
+| B0 | 15 | 19.4 | 24.315976 | 1/15 |
+| B2 | 15 | 22.0 | 30.090973 | 1/15 |
+
+B2 giảm sai số 6 query, tăng 4, giữ nguyên 5. Đếm giảm chưa chứng minh đúng loại; B2 không cải thiện MAE trung bình trên pilot này. Không loại ca blackberries để làm kết quả đẹp hơn.
+
+**Xác nhận sau phần 2:** Run `results/countgdpp/pilot_eval_20261020/`; B0 và B2 đều có 15/15 query hợp lệ, 0 error, 0 uncertain. Hai bên ghép chung 15 query. MAE/RMSE và exact_count khớp bảng tham chiếu. Hậu kiểm q05_2 cũng khớp. Chưa có xác nhận kiểm chéo evaluator mới của Triệu.
+
+## 4. Bằng chứng định tính và kiểm chéo
+
+**Trí và Triệu đều đã review định tính 15/15 query.** Nguồn hiện hành: [TRIEU_VISUAL_REVIEW.md — chốt v1 ngày 19/10](<../workspace Trí and Triệu/Triệu/TRIEU_VISUAL_REVIEW.md>), đọc lại tại workspace ngày 20/10. Bản [đối chiếu ngày 16/10](../results/countgdpp/b2_remaining3_20261015/TRIEU_CROSSCHECK_2026-10-16.md) là lịch sử; các ghi chú còn thiếu guitar/q04_2 trong bản đó đã được cập nhật bởi review mới.
+
+- Guitar: theo quy ước Triệu xác nhận, ca không nêu lỗi là đã xem và thấy đúng; stage 1, pseudo và final được chốt đúng định tính. Không coi đây là chấm IoU chính thức.
+- Plates: pseudo được Triệu xác nhận 3/3 đúng loại, bao trọn đĩa. Review gốc Trí ghi 0/3 được giữ nguyên như lịch sử. Plates/rulers/raspberries có mẫu đúng 3/3 nhưng final vẫn sai/thừa.
+- Tổng số pseudo đúng loại theo bảng review chốt: 23/42 (14 query có 3 mẫu, chairs không có mẫu). Đây là phân loại định tính của review, không phải precision/recall định vị hoặc 42 mẫu đều được hai người phân xử độc lập.
+- q04_2 blueberries: final 32 = 24 blueberry + 7 blackberry + 1 red currant theo bản chốt; chênh lệch 35/32 đã được giải quyết. 10 điểm blackberry trong nguồn khác với 7 quả nhìn thấy theo review; giữ dữ liệu nguồn, không đổi GT mục tiêu blueberries=24.
+- q05_2 raspberries: final 14 = 4 quả mục tiêu + 1 khung trùng + 9 khung sai loại. Triệu chốt lỗi trùng/sai loại; các nhận xét cũ của assistant về “bao một phần” không tự trở thành nhãn đã được Triệu xác nhận.
+- q02_1 plates: bản chốt ghi phần đối sánh bổ sung của assistant, stage 1 = 15 nhóm đĩa + 10 khung dư do trùng + 3 sai loại; final = 15 nhóm đĩa + 13 dư trùng + 3 sai loại. Một số nhóm chắc chắn vừa. File `Q02_1_DETAILED_REVIEW.md` được liên kết trong review chưa có ở workspace hiện tại; chưa coi bảng ghép chi tiết là artifact đã kiểm tại lượt này. Bổ sung nếu dùng bảng đó làm bằng chứng chi tiết.
+- Blackberries 21→79: có sai loại và đếm phần quả; chưa phân loại đủ 79 khung để lượng hóa mọi cơ chế.
+- Chairs GT=1 nhưng trả 0; bowls có bỏ sót một bát theo review. Đây là ca lớp có mặt, không phải truy vấn absent.
+
+[Nhãn hậu kiểm q05_2 ngày 16/10](../results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json) vẫn dùng cho phép kiểm số khung/lớp/vật trong evaluator. Phép kiểm không chấm hoặc xác nhận các cờ phần vật; ghi nguồn/giới hạn theo review mới ở trên.
+
+## 5. Đối chứng ngưỡng và giới hạn
+
+E1 thay ngưỡng cuối với mẫu cố định; E2 thay ngưỡng mẫu giữ cuối=.23, chỉ trên 2 ảnh/6 query. E2 chạy .10/.23/.50; .35 bỏ qua có lý do từ điểm top-3, không báo là đã chạy. Chưa E3, train hoặc cải tiến mới. [E1](../results/countgdpp/m6_e1_final_20261015/REVIEW.md) · [E2](../results/countgdpp/m6_e2_sample050_20261015/REVIEW.md).
+
+5 ảnh chưa đại diện toàn benchmark. Nhãn đếm có từ gói nguồn nhưng xuất xứ/giấy phép và toàn bộ định vị chưa được xác minh đầy đủ. Chưa có absent/holdout trong pilot; benchmark tài nguyên chuẩn còn chờ. Nhánh FSCD-147 Kaggle đã xác nhận count metrics ngày 20/10 trong báo cáo riêng; không suy rộng kết quả đó sang phép thử X/Y của pilot. Chưa tìm ra nguyên nhân nội tại kiến trúc từ các quan sát này.
+
+## 6. Quyết định sang P4 — bạn và Triệu điền
+
+- Lỗi ưu tiên: **đếm nhầm loại khi đổi query X/Y**, kể cả khi mẫu tự chọn đúng loại.
+- Giả thuyết cụ thể sẽ thử: **[CHƯA CHỐT]**.
+- Một phương pháp ứng viên và tài liệu nguồn: **[CHƯA CHỐT]**.
+- Baseline/đối chứng giữ nguyên: **[điền cấu hình B0/B2 nào, cùng dữ liệu]**.
+- Cách đo giữ vật đúng và loại vật sai: **[định nghĩa/matching trước khi chạy; không chỉ MAE]**.
+- Dev dùng chọn cấu hình và holdout riêng: **[CHƯA CHỐT]**.
+- Quyết định: **[đóng vòng pilot / còn mục ...]**; người duyệt/ngày: **[...]**.
+
+Không cần tuyên bố có phương pháp mới để đóng báo cáo pilot. Khi đã điền, cập nhật [WORKLOG](../WORKLOG.md), [ROADMAP](../roadmap/ROADMAP.md), [HANDOFF](../HANDOFF/HANDOFF.md).
