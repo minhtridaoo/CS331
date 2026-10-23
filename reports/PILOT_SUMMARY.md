@@ -1,6 +1,8 @@
 # Tổng kết pilot CS331 — CountGD++ và lỗi chọn đối tượng
 
-**BẢN NHÁP cập nhật 20/10/2026.** Số liệu pilot giữ từ run 15/10; review Triệu chốt v1 ngày 19/10 đã đọc lại ngày 20/10. Evaluator đã chạy và được đối chiếu ngày 20/10/2026; chưa coi báo cáo được nhóm duyệt.
+**BẢN NHÁP cập nhật xác nhận 24/10/2026.** Số liệu pilot giữ từ run 15/10; review Triệu chốt v1 ngày 19/10 đã đọc lại ngày 20/10. Evaluator đã chạy và được đối chiếu ngày 20/10/2026; chưa coi báo cáo được nhóm duyệt.
+
+**Bổ sung 21/10:** đã có [bản hỗ trợ kiểm chéo evaluator cho Triệu](TRIEU_EVALUATOR_CROSSCHECK_20261021.md) và artifact chi tiết q02_1. Các ô xác nhận của Triệu/nhóm vẫn giữ nguyên. Repo cũng có artifact P4/CLIP mới hơn trạng thái tài liệu bên dưới; cần đồng bộ log và kiểm riêng trước khi chốt P4.
 
 **Pilot là bộ thử nhỏ 5 ảnh/15 câu hỏi để tìm lỗi.** Đây là file hoàn thiện ở phần 3, sau khi chạy evaluator ở phần 2. Nhánh benchmark 1.190 ảnh đã có [báo cáo riêng](BENCHMARK_FSCD147.md), không thay thế việc xác nhận các ô dưới đây.
 
@@ -12,8 +14,8 @@
 - Thư mục evaluator thực tế: **results/countgdpp/pilot_eval_20261020/**
 - Coverage/IDs đã kiểm: **15/15 B0 và B2; 0 error, 0 uncertain; paired=15**
 - Audit artifact/code: **assistant ngày 20/10 đã đối chiếu trực tiếp đủ 15 dòng, metrics, manual_check và hash nguồn**; không thực thi evaluator/model.
-- Người kiểm chéo của nhóm/ngày: **Triệu chưa xác nhận kiểm evaluator mới**; review định tính đã chốt ngày 19/10 là công việc khác.
-- Trạng thái báo cáo: **CHỜ KIỂM CHÉO VÀ DUYỆT**
+- Người thực hiện kiểm kỹ thuật: **assistant**. Người đọc, hiểu và chấp nhận kết quả kiểm được ủy quyền: **Triệu — 24/10/2026**, xác nhận trực tiếp trong chat; không ghi Triệu đã tự audit code. Review định tính đã chốt ngày 19/10 là công việc khác.
+- Trạng thái báo cáo: **TRIỆU ĐÃ CHẤP NHẬN KẾT QUẢ KIỂM ĐƯỢC ỦY QUYỀN — CHỜ NHÓM DUYỆT**
 
 ## 2. Câu hỏi và thiết lập
 
@@ -32,7 +34,7 @@ Nguồn hiện tại: [metrics.json](../results/countgdpp/pilot_eval_20261020/me
 
 B2 giảm sai số 6 query, tăng 4, giữ nguyên 5. Đếm giảm chưa chứng minh đúng loại; B2 không cải thiện MAE trung bình trên pilot này. Không loại ca blackberries để làm kết quả đẹp hơn.
 
-**Xác nhận sau phần 2:** Run `results/countgdpp/pilot_eval_20261020/`; B0 và B2 đều có 15/15 query hợp lệ, 0 error, 0 uncertain. Hai bên ghép chung 15 query. MAE/RMSE và exact_count khớp bảng tham chiếu. Hậu kiểm q05_2 cũng khớp. Có đủ 5 file output. Cả 7 hash nguồn trong run_config khớp file hiện tại. Run `_r2` có cùng 4 file kết quả và cùng hash nguồn; chỉ khác tên output trong command, không coi là mẫu thí nghiệm độc lập. Chưa có xác nhận kiểm chéo evaluator mới của Triệu.
+**Xác nhận sau phần 2:** Run `results/countgdpp/pilot_eval_20261020/`; B0 và B2 đều có 15/15 query hợp lệ, 0 error, 0 uncertain. Hai bên ghép chung 15 query. MAE/RMSE và exact_count khớp bảng tham chiếu. Hậu kiểm q05_2 cũng khớp. Có đủ 5 file output. Cả 7 nguồn khớp nội dung đã lưu; trong checkout Windows ngày 24/10 có 3 hash byte thô khớp, 4 hash chỉ khớp sau chuẩn hóa CRLF→LF (xem audit). Run `_r2` có cùng 4 file kết quả và cùng hash nguồn; chỉ khác tên output trong command, không coi là mẫu thí nghiệm độc lập. Ngày 24/10, Triệu đã đọc, hiểu và đồng ý dùng kết quả kiểm kỹ thuật do assistant thực hiện; không coi đây là Triệu tự audit code.
 
 ## 4. Bằng chứng định tính và kiểm chéo
 
@@ -43,7 +45,7 @@ B2 giảm sai số 6 query, tăng 4, giữ nguyên 5. Đếm giảm chưa chứn
 - Tổng số pseudo đúng loại theo bảng review chốt: 23/42 (14 query có 3 mẫu, chairs không có mẫu). Đây là phân loại định tính của review, không phải precision/recall định vị hoặc 42 mẫu đều được hai người phân xử độc lập.
 - q04_2 blueberries: final 32 = 24 blueberry + 7 blackberry + 1 red currant theo bản chốt; chênh lệch 35/32 đã được giải quyết. 10 điểm blackberry trong nguồn khác với 7 quả nhìn thấy theo review; giữ dữ liệu nguồn, không đổi GT mục tiêu blueberries=24.
 - q05_2 raspberries: final 14 = 4 quả mục tiêu + 1 khung trùng + 9 khung sai loại. Triệu chốt lỗi trùng/sai loại; các nhận xét cũ của assistant về “bao một phần” không tự trở thành nhãn đã được Triệu xác nhận.
-- q02_1 plates: bản chốt ghi phần đối sánh bổ sung của assistant, stage 1 = 15 nhóm đĩa + 10 khung dư do trùng + 3 sai loại; final = 15 nhóm đĩa + 13 dư trùng + 3 sai loại. Một số nhóm chắc chắn vừa. File `Q02_1_DETAILED_REVIEW.md` được liên kết trong review chưa có ở workspace hiện tại; chưa coi bảng ghép chi tiết là artifact đã kiểm tại lượt này. Bổ sung nếu dùng bảng đó làm bằng chứng chi tiết.
+- q02_1 plates: bản chốt ghi phần đối sánh bổ sung của assistant, stage 1 = 15 nhóm đĩa + 10 khung dư do trùng + 3 sai loại; final = 15 nhóm đĩa + 13 dư trùng + 3 sai loại. Một số nhóm chắc chắn vừa. Ngày 21/10 đã bổ sung [bản chi tiết](<../workspace Trí and Triệu/Triệu/Q02_1_DETAILED_REVIEW.md>), ba JSON và ảnh bằng chứng từ cuộc trò chuyện Triệu ngày 19/10; bản sao khớp hash nguồn, không xem mọi nhóm đã được Triệu phân xử.
 - Blackberries 21→79: có sai loại và đếm phần quả; chưa phân loại đủ 79 khung để lượng hóa mọi cơ chế.
 - Chairs GT=1 nhưng trả 0; bowls có bỏ sót một bát theo review. Đây là ca lớp có mặt, không phải truy vấn absent.
 
@@ -89,13 +91,17 @@ E1 thay ngưỡng cuối với mẫu cố định; E2 thay ngưỡng mẫu giữ
 
 ## 7. Phiếu xác nhận của nhóm — chỉ điền sau khi thực sự kiểm
 
+**Kiểm được ủy quyền ngày 24/10:** assistant đã làm hộ phần kỹ thuật theo yêu cầu Triệu đang ưu tiên deadline paper; [báo cáo và bằng chứng](TRIEU_KET_QUA_KIEM_CHEO_20261024.md). 15 dòng, bốn ca minh họa, metric, q05_2 và logic null đã đối chiếu; không chạy evaluator/model. Ghi nhận đúng người kiểm kỹ thuật là assistant; xác nhận đọc/chấp nhận của Triệu đã có bên dưới, duyệt nhóm vẫn chờ.
+
 Audit artifact/code của assistant: **20/10/2026, đạt trong phạm vi file pilot đã lưu**. Các ô dưới đây dành cho nhóm; không dùng xác nhận assistant để tự ghi Triệu đã kiểm hoặc nhóm đã đồng ý dùng CLIP.
 
-- Triệu đã kiểm ghép ID/công thức/một vài dòng nguồn/q05_2: **[CHƯA XÁC NHẬN]**.
-- Người kiểm, ngày và kết luận hoặc điểm phải sửa: **[Triệu điền]**.
+Hỗ trợ đọc/kiểm chéo ngày 21/10: xem [bốn điểm code, bốn dòng nguồn và q05_2](TRIEU_EVALUATOR_CROSSCHECK_20261021.md). Đối chiếu đủ 15 dòng khớp; hash checkout Windows được giải thích theo byte/EOL. Bản hỗ trợ này chưa thay việc Triệu tự đọc và xác nhận các ô dưới đây.
+
+- [x] Triệu đã đọc, hiểu và đồng ý dùng bản kiểm kỹ thuật ngày 24/10 do assistant thực hiện. Phạm vi là chấp nhận kết quả kiểm được ủy quyền; không ghi Triệu đã tự kiểm code/nguồn.
+- Người xác nhận: **Triệu — 24/10/2026**. Xác nhận trực tiếp: “Tôi đã đọc và hiểu bản kiểm ngày 24/10, đồng ý dùng kết quả kiểm kỹ thuật do assistant thực hiện.” [Bản ghi xác nhận](audits/TRIEU_ACCEPTANCE_20261024.json).
 - Nhóm duyệt nội dung pilot: **[CHƯA DUYỆT — tên/ngày]**.
 - Quyết định pilot: **[đóng vòng pilot để chuẩn bị P4 / còn sửa mục ...]**.
 - Quyết định ứng viên P4: **[thử CLIP theo phạm vi mục 6 / cần chỉnh giả thuyết]**.
 - Đã chốt bốn mục 6C trước thực thi: **[CHƯA]**.
 
-Hiện chưa có kết quả CLIP, E3, cải tiến hoặc holdout mới. Sau khi có xác nhận, cập nhật [WORKLOG](../WORKLOG.md), [ROADMAP](../roadmap/ROADMAP.md) và [HANDOFF](../HANDOFF/HANDOFF.md).
+Tại lượt cập nhật 21/10 đã thấy score CLIP và báo cáo khảo sát P4 trong repo; chưa audit toàn bộ hoặc xác nhận hiệu quả/duyệt P4 tại lượt này. Không tiếp tục coi “chưa có artifact CLIP” là trạng thái hiện tại. Sau khi có xác nhận nhóm, cập nhật [WORKLOG](../WORKLOG.md), [ROADMAP](../roadmap/ROADMAP.md) và [HANDOFF](../HANDOFF/HANDOFF.md).

@@ -1,0 +1,235 @@
+[
+  {
+    "id": "L01",
+    "point": [
+      128,
+      140
+    ],
+    "stage1": [
+      8,
+      17,
+      28
+    ],
+    "final": [
+      6,
+      30
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L02",
+    "point": [
+      130,
+      146
+    ],
+    "stage1": [
+      5
+    ],
+    "final": [
+      4,
+      9
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L03",
+    "point": [
+      129,
+      153
+    ],
+    "stage1": [
+      2,
+      3
+    ],
+    "final": [
+      5
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L04",
+    "point": [
+      129,
+      161
+    ],
+    "stage1": [
+      13
+    ],
+    "final": [
+      3,
+      31
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L05",
+    "point": [
+      130,
+      166
+    ],
+    "stage1": [
+      11
+    ],
+    "final": [
+      2
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L06",
+    "point": [
+      131,
+      170
+    ],
+    "stage1": [
+      1
+    ],
+    "final": [
+      1
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L07",
+    "point": [
+      105,
+      183
+    ],
+    "stage1": [
+      9,
+      15,
+      21
+    ],
+    "final": [
+      10,
+      15,
+      21,
+      24,
+      27
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L08",
+    "point": [
+      105,
+      189
+    ],
+    "stage1": [
+      6
+    ],
+    "final": [
+      23
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L09",
+    "point": [
+      104,
+      196
+    ],
+    "stage1": [
+      4
+    ],
+    "final": [
+      8
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "L10",
+    "point": [
+      105,
+      204
+    ],
+    "stage1": [
+      14,
+      18
+    ],
+    "final": [
+      11
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "L11",
+    "point": [
+      105,
+      211
+    ],
+    "stage1": [
+      20
+    ],
+    "final": [
+      13,
+      17,
+      18
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "L12",
+    "point": [
+      131,
+      218
+    ],
+    "stage1": [
+      16,
+      23
+    ],
+    "final": [
+      20
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "R01",
+    "point": [
+      273,
+      218
+    ],
+    "stage1": [
+      7,
+      27
+    ],
+    "final": [
+      12,
+      19,
+      28
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "R02",
+    "point": [
+      273,
+      226
+    ],
+    "stage1": [
+      12,
+      22
+    ],
+    "final": [
+      22,
+      26
+    ],
+    "confidence": "moderate"
+  },
+  {
+    "id": "R03",
+    "point": [
+      274,
+      236
+    ],
+    "stage1": [
+      24,
+      26
+    ],
+    "final": [
+      14,
+      29
+    ],
+    "confidence": "high"
+  }
+]

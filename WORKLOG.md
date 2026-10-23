@@ -1,8 +1,8 @@
 # WORKLOG CS331 — nhật ký chung
 
-**Cập nhật 20/10/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+**Cập nhật 24/10/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
-**Điểm tiếp tục:** Phần 2 đã chạy và output đã audit; Phần 3 đã điền run/kết quả/đề xuất P4. Còn Triệu kiểm chéo evaluator và nhóm duyệt báo cáo. Trí chuẩn bị bốn mục §6C cho P4 song song; chưa chạy CLIP. [Việc cụ thể](roadmap/PHAN_3_TONG_KET.md).
+**Điểm tiếp tục:** phần kiểm chéo kỹ thuật đã được assistant làm hộ ngày 24/10 theo yêu cầu Triệu; [kết quả đọc nhanh](reports/TRIEU_KET_QUA_KIEM_CHEO_20261024.md). Triệu đã xác nhận đọc/hiểu và đồng ý dùng kết quả kiểm được ủy quyền; nhóm chưa duyệt báo cáo. Phần 2 đã chạy; đã có [bản hỗ trợ Triệu kiểm chéo ngày 21/10](reports/TRIEU_EVALUATOR_CROSSCHECK_20261021.md), chưa ghi xác nhận thay Triệu. Nhóm vẫn cần duyệt báo cáo. Repo đã có artifact score/khảo sát P4, khác trạng thái “chưa chạy” trong tài liệu ngày 20/10; cần Trí đồng bộ log và kiểm riêng P4. [Việc cụ thể](roadmap/PHAN_3_TONG_KET.md).
 
 ## Cách dùng nhật ký
 
@@ -19,6 +19,52 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 24/10/2026 — Triệu xác nhận đã đọc và chấp nhận bản kiểm được ủy quyền
+
+**Người xác nhận:** Triệu, trực tiếp trong cuộc trò chuyện ngày 24/10/2026.
+
+> Tôi đã đọc và hiểu bản kiểm ngày 24/10, đồng ý dùng kết quả kiểm kỹ thuật do assistant thực hiện.
+
+**Phạm vi được xác nhận:** đọc/hiểu và đồng ý dùng [bản kiểm kỹ thuật ngày 24/10](reports/TRIEU_KET_QUA_KIEM_CHEO_20261024.md). Người thực hiện đối chiếu kỹ thuật vẫn là assistant; không nâng thành Triệu đã tự audit code hoặc dữ liệu nguồn. [Bản ghi xác nhận](reports/audits/TRIEU_ACCEPTANCE_20261024.json).
+
+**Đã cập nhật:** PILOT_SUMMARY mục 1/3/7, ROADMAP, HANDOFF chung/cá nhân và phần tiếp tục của bản kiểm. Giữ nguyên bản audit kỹ thuật trước xác nhận và nhật ký cũ như lịch sử.
+
+**Trạng thái:** Triệu đã chấp nhận kết quả kiểm được ủy quyền. Nhóm chưa duyệt toàn báo cáo, chưa quyết định đóng pilot hoặc chọn phương pháp P4.
+
+**Bước tiếp theo:** Triệu cùng Trí duyệt PILOT_SUMMARY; Trí đồng bộ log/cấu hình với artifact P4 đã có. Lượt này chỉ cập nhật tài liệu, không chạy evaluator/model, không gửi tin nhắn, commit hoặc push GitHub.
+
+## 24/10/2026 — làm hộ phần kiểm chéo kỹ thuật khi Triệu ưu tiên deadline paper
+
+**Người thực hiện:** assistant theo yêu cầu trực tiếp của Triệu. Không ghi Triệu đã tự đọc/xác nhận hoặc nhóm đã duyệt.
+
+**Việc thực sự chạy:** PowerShell đối chiếu các file pilot đã lưu, tính độc lập sai số 15 query, so kết quả evaluator và nhãn q05_2; đọc logic xử lý error/null/uncertain/absent. Không import/chạy evaluator/self-test/model/CLIP/train, không tạo run inference hoặc metric nghiên cứu mới.
+
+**Nguồn:** checkout commit `31278dd`; 7 hash checkout nguồn không đổi so với 21/10. Hash đối chiếu run: 3 byte thô khớp, 4 khác CRLF/LF nhưng nội dung khớp.
+
+**Kết quả:** 15/15 ID và per_query khớp, paired=15, error=uncertain=absent=0. MAE B0=291/15=19.4, B2=330/15=22; RMSE=sqrt(8869/15) và sqrt(13582/15), exact=1 mỗi nhánh; tốt/kém/giữ=6/4/5. q05_2 khớp 14 box/5 target box/4 vật/1 dư/9 sai loại. Bốn ca minh họa và nhánh null đã kiểm; không gọi đọc code nhánh giả định là test động.
+
+**Bằng chứng:** [báo cáo đọc nhanh](reports/TRIEU_KET_QUA_KIEM_CHEO_20261024.md), [audit JSON](reports/audits/TRIEU_EVALUATOR_20261024.json), [trace đủ 15 dòng](reports/audits/PER_QUERY_TRACE_20261024.csv).
+
+**Trạng thái:** phần kỹ thuật được ủy quyền đã hoàn thành bởi assistant; xác nhận cá nhân Triệu/duyệt nhóm vẫn chưa có. Triệu có thể ưu tiên deadline paper, khi quay lại đọc bản kết quả thay vì tự tạo lại toàn bộ audit. Trí có thể chuẩn bị/đồng bộ log P4 song song; chưa xác nhận P4 hiệu quả. Chưa commit/push hoặc gửi tin nhắn cho Trí.
+
+## 21/10/2026 — hỗ trợ Triệu kiểm chéo evaluator theo worklog
+
+**Người thực hiện phần đối chiếu:** assistant theo yêu cầu Triệu đọc repo và làm theo worklog. Nguồn repo tại commit `31278dd`; đây không phải chữ ký xác nhận người kiểm của Triệu hoặc duyệt của nhóm.
+
+**Đã kiểm:** đọc `indexed` → `validate_prediction` → `evaluate` → `manual_check`; đối chiếu 15 cặp image_id/query_id giữa input, manifest, B0/B2, per_query và metric đã lưu. Manifest có 30 dòng, input chọn 15, B2 ghép 6+9. Kết quả khớp: B0 MAE 19.4/RMSE 24.315975544210986; B2 22.0/30.090973175799196; exact 1 mỗi bên; thay đổi 6 tốt hơn/4 kém hơn/5 giữ nguyên; absent 0 và metric absent null. q05_2 đủ 14 index/tọa độ, gồm 5 box mục tiêu trên 4 vật + 9 sai loại, 1 box dư do trùng. Bốn file kết quả `_r2` giống run chính.
+
+**Hash trên checkout Windows:** 3/7 nguồn khớp byte thô, 4/7 khớp sau đối chiếu CRLF→LF, không còn khác biệt nội dung chưa giải thích. Không ghi là 7/7 khớp byte thô của checkout này; giữ hash cả hai dạng trong [audit JSON](reports/audits/TRIEU_EVALUATOR_20261021.json). Không sửa nguồn để ép hash.
+
+**Artifact bổ sung:** đã đưa bản chi tiết q02_1, ba JSON và chín ảnh bằng chứng từ kết quả ngày 19/10 của cuộc trò chuyện Triệu vào `workspace Trí and Triệu/Triệu/`. Hash bản sao khớp nguồn. Giữ mức chắc chắn vừa cho các nhóm mép đĩa sát nhau; không nâng thành nhãn bbox được Triệu xác nhận toàn bộ. Không thay review gốc hoặc raw prediction.
+
+**Điểm tài liệu mới:** repo có `p4_clip_all15_20261020/run_config.json` và score, `p4_count_cv_20261020/report.json`, cùng review hai case P4. Vì vậy các câu “chưa chạy/chưa có CLIP” ở mục ngày 20/10 là trạng thái tài liệu lúc đó, không đại diện đầy đủ artifact đang có. Lượt này chỉ đọc metadata, chưa audit kết quả P4, không tự xác nhận nhóm đã duyệt.
+
+**Phạm vi thực thi:** chỉ đọc/đối chiếu số học các file đã lưu và chuẩn bị tài liệu. Không import/chạy evaluator, không chạy self-test/inference/CLIP/train; PASS self-test vẫn theo Minhtri báo trước đó. Không tạo run metric nghiên cứu mới.
+
+**Trạng thái:** phần hỗ trợ kiểm chéo đã có [hướng dẫn và bằng chứng](reports/TRIEU_EVALUATOR_CROSSCHECK_20261021.md); Triệu cần tự đọc và ghi kết luận ở PILOT_SUMMARY §7. Nhóm duyệt/đóng pilot/P4 còn để riêng. Chưa commit/push các thay đổi của lượt này.
+
+**Bước tiếp theo:** Triệu đọc bốn điểm code và bốn ca minh họa trong bản hỗ trợ, xác nhận hiểu error/null/uncertain/absent và q05_2; sau đó điền tên/ngày/kết luận. Trí đồng bộ log P4 với artifact đã có; cả nhóm duyệt báo cáo. Không yêu cầu review lại 15 ảnh hoặc chạy model để làm bước này.
 
 ## 20/10/2026 — xác nhận Phần 2 đã chạy, Phần 3 chờ duyệt, chuẩn bị P4
 

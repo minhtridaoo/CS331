@@ -1,0 +1,676 @@
+{
+  "query_id": "q02_1",
+  "stage": "stage1",
+  "prompt": "plates",
+  "review_date": "2026-10-19",
+  "reviewer": "assistant",
+  "basis": "Manual object matching from original 390x280 image, separately displayed SVG box panels, raw coordinates and original point annotations. Geometry used as supporting evidence, never as automatic NMS/deduplication.",
+  "all_boxes_assigned": true,
+  "review_complete": true,
+  "human_adjudication_complete": false,
+  "review_limit": "Several adjacent plate rims are low-resolution/occluded; moderate-confidence object assignments are provisional visual review, not ground-truth box labels or a standard localization benchmark.",
+  "raw_count": 28,
+  "source_gt_count": 15,
+  "unique_plate_groups": 15,
+  "wrong_class_overlay_ids": [
+    10,
+    19,
+    25
+  ],
+  "duplicate_extra_boxes": 10,
+  "duplicate_groups": [
+    {
+      "plate_id": "L01",
+      "overlay_ids": [
+        8,
+        17,
+        28
+      ],
+      "gt_point": [
+        128,
+        140
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "plate_id": "L03",
+      "overlay_ids": [
+        2,
+        3
+      ],
+      "gt_point": [
+        129,
+        153
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "plate_id": "L07",
+      "overlay_ids": [
+        9,
+        15,
+        21
+      ],
+      "gt_point": [
+        105,
+        183
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "plate_id": "L10",
+      "overlay_ids": [
+        14,
+        18
+      ],
+      "gt_point": [
+        105,
+        204
+      ],
+      "confidence": "high"
+    },
+    {
+      "plate_id": "L12",
+      "overlay_ids": [
+        16,
+        23
+      ],
+      "gt_point": [
+        131,
+        218
+      ],
+      "confidence": "high"
+    },
+    {
+      "plate_id": "R01",
+      "overlay_ids": [
+        7,
+        27
+      ],
+      "gt_point": [
+        273,
+        218
+      ],
+      "confidence": "high"
+    },
+    {
+      "plate_id": "R02",
+      "overlay_ids": [
+        12,
+        22
+      ],
+      "gt_point": [
+        273,
+        226
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "plate_id": "R03",
+      "overlay_ids": [
+        24,
+        26
+      ],
+      "gt_point": [
+        274,
+        236
+      ],
+      "confidence": "high"
+    }
+  ],
+  "source_predictions_modified": false,
+  "source_annotations_modified": false,
+  "boxes": [
+    {
+      "overlay_id": 1,
+      "prediction_index": 0,
+      "xyxy_pixels": [
+        44.02167510986328,
+        166.79339599609375,
+        175.50360107421875,
+        176.51963806152344
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L06",
+      "gt_point": [
+        131,
+        170
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 2,
+      "prediction_index": 1,
+      "xyxy_pixels": [
+        54.834228515625,
+        149.0697479248047,
+        174.94174194335938,
+        157.7405242919922
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L03",
+      "gt_point": [
+        129,
+        153
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 3,
+      "prediction_index": 2,
+      "xyxy_pixels": [
+        54.306846618652344,
+        146.85775756835938,
+        176.25421142578125,
+        154.97952270507812
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L03",
+      "gt_point": [
+        129,
+        153
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 4,
+      "prediction_index": 3,
+      "xyxy_pixels": [
+        35.873573303222656,
+        190.02447509765625,
+        124.0448989868164,
+        199.07852172851562
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L09",
+      "gt_point": [
+        104,
+        196
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 5,
+      "prediction_index": 4,
+      "xyxy_pixels": [
+        55.04364013671875,
+        141.11981201171875,
+        173.97140502929688,
+        148.76675415039062
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L02",
+      "gt_point": [
+        130,
+        146
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 6,
+      "prediction_index": 5,
+      "xyxy_pixels": [
+        38.366310119628906,
+        184.86312866210938,
+        121.3127212524414,
+        192.7039794921875
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L08",
+      "gt_point": [
+        105,
+        189
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 7,
+      "prediction_index": 6,
+      "xyxy_pixels": [
+        175.96063232421875,
+        200.5562286376953,
+        370.189208984375,
+        222.91201782226562
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "R01",
+      "gt_point": [
+        273,
+        218
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 8,
+      "prediction_index": 7,
+      "xyxy_pixels": [
+        56.620849609375,
+        135.42811584472656,
+        168.50682067871094,
+        143.3294677734375
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L01",
+      "gt_point": [
+        128,
+        140
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 9,
+      "prediction_index": 8,
+      "xyxy_pixels": [
+        40.49022674560547,
+        173.8301239013672,
+        176.52651977539062,
+        186.30174255371094
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L07",
+      "gt_point": [
+        105,
+        183
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 10,
+      "prediction_index": 9,
+      "xyxy_pixels": [
+        196.33966064453125,
+        173.91940307617188,
+        336.65557861328125,
+        204.41546630859375
+      ],
+      "observed_class": "bowl",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": true,
+      "plate_id": null,
+      "gt_point": null,
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 11,
+      "prediction_index": 10,
+      "xyxy_pixels": [
+        52.81856918334961,
+        161.6731719970703,
+        174.71847534179688,
+        169.18203735351562
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L05",
+      "gt_point": [
+        130,
+        166
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 12,
+      "prediction_index": 11,
+      "xyxy_pixels": [
+        179.61062622070312,
+        223.8665313720703,
+        366.5491638183594,
+        239.34844970703125
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "R02",
+      "gt_point": [
+        273,
+        226
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 13,
+      "prediction_index": 12,
+      "xyxy_pixels": [
+        52.10447692871094,
+        156.42941284179688,
+        175.85012817382812,
+        164.1901397705078
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L04",
+      "gt_point": [
+        129,
+        161
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 14,
+      "prediction_index": 13,
+      "xyxy_pixels": [
+        36.257808685302734,
+        197.5223846435547,
+        133.53909301757812,
+        206.7584991455078
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L10",
+      "gt_point": [
+        105,
+        204
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 15,
+      "prediction_index": 14,
+      "xyxy_pixels": [
+        112.7308349609375,
+        171.9987030029297,
+        180.20358276367188,
+        181.7280731201172
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L07",
+      "gt_point": [
+        105,
+        183
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 16,
+      "prediction_index": 15,
+      "xyxy_pixels": [
+        43.61786651611328,
+        213.94017028808594,
+        154.96664428710938,
+        229.45680236816406
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L12",
+      "gt_point": [
+        131,
+        218
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 17,
+      "prediction_index": 16,
+      "xyxy_pixels": [
+        57.485694885253906,
+        131.36505126953125,
+        170.71923828125,
+        140.47262573242188
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": true,
+      "plate_id": "L01",
+      "gt_point": [
+        128,
+        140
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 18,
+      "prediction_index": 17,
+      "xyxy_pixels": [
+        34.82729721069336,
+        197.10430908203125,
+        144.6376953125,
+        206.9007110595703
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L10",
+      "gt_point": [
+        105,
+        204
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 19,
+      "prediction_index": 18,
+      "xyxy_pixels": [
+        241.77720642089844,
+        133.71778869628906,
+        353.53131103515625,
+        175.1873321533203
+      ],
+      "observed_class": "bowl",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": true,
+      "plate_id": null,
+      "gt_point": null,
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 20,
+      "prediction_index": 19,
+      "xyxy_pixels": [
+        35.37263488769531,
+        205.14959716796875,
+        157.4344482421875,
+        215.0664520263672
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L11",
+      "gt_point": [
+        105,
+        211
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 21,
+      "prediction_index": 20,
+      "xyxy_pixels": [
+        39.59004592895508,
+        175.70904541015625,
+        119.9429931640625,
+        186.62310791015625
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L07",
+      "gt_point": [
+        105,
+        183
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 22,
+      "prediction_index": 21,
+      "xyxy_pixels": [
+        176.7210693359375,
+        219.76358032226562,
+        369.384033203125,
+        233.100341796875
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "R02",
+      "gt_point": [
+        273,
+        226
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 23,
+      "prediction_index": 22,
+      "xyxy_pixels": [
+        42.55696487426758,
+        213.32301330566406,
+        166.13809204101562,
+        228.8876953125
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "L12",
+      "gt_point": [
+        131,
+        218
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 24,
+      "prediction_index": 23,
+      "xyxy_pixels": [
+        183.08270263671875,
+        228.87054443359375,
+        364.3033447265625,
+        249.8707275390625
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": true,
+      "plate_id": "R03",
+      "gt_point": [
+        274,
+        236
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 25,
+      "prediction_index": 24,
+      "xyxy_pixels": [
+        131.6820526123047,
+        126.29656982421875,
+        177.9232177734375,
+        133.597900390625
+      ],
+      "observed_class": "glass rim",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": true,
+      "plate_id": null,
+      "gt_point": null,
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 26,
+      "prediction_index": 25,
+      "xyxy_pixels": [
+        204.4290313720703,
+        236.6233673095703,
+        346.45263671875,
+        250.91477966308594
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": true,
+      "plate_id": "R03",
+      "gt_point": [
+        274,
+        236
+      ],
+      "confidence": "high",
+      "extent_note": "User confirms smaller region of same plate as box 24"
+    },
+    {
+      "overlay_id": 27,
+      "prediction_index": 26,
+      "xyxy_pixels": [
+        178.6291961669922,
+        212.24058532714844,
+        367.4229736328125,
+        222.68588256835938
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": false,
+      "plate_id": "R01",
+      "gt_point": [
+        273,
+        218
+      ],
+      "confidence": "high",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    },
+    {
+      "overlay_id": 28,
+      "prediction_index": 27,
+      "xyxy_pixels": [
+        58.350379943847656,
+        127.08378601074219,
+        174.43521118164062,
+        140.15464782714844
+      ],
+      "observed_class": "plate",
+      "review_status": "assistant_visual_reviewed",
+      "user_confirmed_annotation": true,
+      "plate_id": "L01",
+      "gt_point": [
+        128,
+        140
+      ],
+      "confidence": "moderate",
+      "extent_note": "Object identity reviewed; tightness/IoU not formally scored"
+    }
+  ]
+}

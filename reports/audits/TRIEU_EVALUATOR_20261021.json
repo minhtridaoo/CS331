@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-21",
+  "type": "assistant_read_only_crosscheck_of_saved_outputs",
+  "repo_commit": "31278dd70377578accda4d126a95b14d33bcdef0",
+  "executed_evaluator": false,
+  "executed_self_test": false,
+  "executed_model": false,
+  "human_confirmation": "not supplied",
+  "manifest_rows": 30,
+  "selected_inputs": 15,
+  "B0_rows": 15,
+  "B2_rows": 15,
+  "paired": 15,
+  "source_hash_checks": [
+    {
+      "path": "experiments/countgdpp/m4_inputs/manifest.csv",
+      "expected_sha256": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+      "checkout_sha256": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+      "lf_sha256": "1ed40bd838104cac5fb63df0aa4550c3a2b34c234ac65834cece22910369a7ad",
+      "match_kind": "exact_bytes"
+    },
+    {
+      "path": "experiments/countgdpp/m4_inputs/first5_inputs.jsonl",
+      "expected_sha256": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+      "checkout_sha256": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+      "lf_sha256": "db53b66978d25d549ae4c442ec431c2ec4296658842fe9152aa444fd89184102",
+      "match_kind": "exact_bytes"
+    },
+    {
+      "path": "results/countgdpp/m4_first5_b0/predictions.jsonl",
+      "expected_sha256": "ffe47cbef8037087fe6a61a4c2079805ac7dbad44b219a5ce3511e54a83341ac",
+      "checkout_sha256": "65d2fdc260237a0c44c7642ee02a78c9b9edab2a42cdef46292861a787f6e21b",
+      "lf_sha256": "ffe47cbef8037087fe6a61a4c2079805ac7dbad44b219a5ce3511e54a83341ac",
+      "match_kind": "matches_after_CRLF_to_LF"
+    },
+    {
+      "path": "results/countgdpp/b2_two_images_20261015/predictions.jsonl",
+      "expected_sha256": "14a460534782aa0322ce46ffa45fa73e3c3eb4e5dd865f3b1bba96892ca61775",
+      "checkout_sha256": "d3f8730cbac9c99bee2e4e26714515b7f64f82bf0605c8ca59ed97f52ad82e5b",
+      "lf_sha256": "14a460534782aa0322ce46ffa45fa73e3c3eb4e5dd865f3b1bba96892ca61775",
+      "match_kind": "matches_after_CRLF_to_LF"
+    },
+    {
+      "path": "results/countgdpp/b2_remaining3_20261015/predictions.jsonl",
+      "expected_sha256": "90ffc069cd3e3b2e5e9f7af7b1690bfdc85fb9030c9df4f816943f357e20cbe4",
+      "checkout_sha256": "7f9655f9d60073bf2e81d149c2f0ffcf777194569366a70144fb906f60d7a7d0",
+      "lf_sha256": "90ffc069cd3e3b2e5e9f7af7b1690bfdc85fb9030c9df4f816943f357e20cbe4",
+      "match_kind": "matches_after_CRLF_to_LF"
+    },
+    {
+      "path": "results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json",
+      "expected_sha256": "f403a61aa471a4e9bfd3ef55b8f35ca540eec977d9788730cbe9d5c69b0eb087",
+      "checkout_sha256": "f403a61aa471a4e9bfd3ef55b8f35ca540eec977d9788730cbe9d5c69b0eb087",
+      "lf_sha256": "3625e3432c93ed218e94cb51c90e7e0bba9126ca82a7bd940e9e18c41148b4b4",
+      "match_kind": "exact_bytes"
+    },
+    {
+      "path": "evaluation/evaluate_pilot.py",
+      "expected_sha256": "b87250cb3e903824492f49c88fc5f3ff61b58cfb6cb43d9ab8fdc36bfe6ccb80",
+      "checkout_sha256": "05985e468e4b9141a9788ad6f39ca009be878511001b1930cb58ad3b474bd659",
+      "lf_sha256": "b87250cb3e903824492f49c88fc5f3ff61b58cfb6cb43d9ab8fdc36bfe6ccb80",
+      "match_kind": "matches_after_CRLF_to_LF"
+    }
+  ],
+  "stats": [
+    {
+      "variant": "B0",
+      "n": 15,
+      "MAE": 19.4,
+      "RMSE": 24.315975544210986,
+      "exact": 1,
+      "presence_recall": 0.9333333333333333
+    },
+    {
+      "variant": "B2",
+      "n": 15,
+      "MAE": 22.0,
+      "RMSE": 30.090973175799196,
+      "exact": 1,
+      "presence_recall": 0.9333333333333333
+    }
+  ],
+  "error_change": {
+    "improved": 6,
+    "worsened": 4,
+    "unchanged": 5
+  },
+  "manual_q05_2": {
+    "final_boxes": 14,
+    "target_boxes": 5,
+    "distinct_target_objects": 4,
+    "extra_target_boxes": 1,
+    "wrong_class_boxes": 9
+  },
+  "repeated_outputs": [
+    {
+      "file": "metrics.json",
+      "identical": true
+    },
+    {
+      "file": "per_query.json",
+      "identical": true
+    },
+    {
+      "file": "manual_check.json",
+      "identical": true
+    },
+    {
+      "file": "SUMMARY.md",
+      "identical": true
+    }
+  ],
+  "per_query_trace": [
+    {
+      "image_id": "mcac_100",
+      "query_id": "q01_1",
+      "prompt": "guitars",
+      "gt_count": 25,
+      "B0": 25,
+      "B2": 25,
+      "B0_error": 0,
+      "B2_error": 0,
+      "error_change": "unchanged"
+    },
+    {
+      "image_id": "mcac_100",
+      "query_id": "q01_2",
+      "prompt": "amplifiers",
+      "gt_count": 11,
+      "B0": 44,
+      "B2": 38,
+      "B0_error": 33,
+      "B2_error": 27,
+      "error_change": "improved"
+    },
+    {
+      "image_id": "mcac_100",
+      "query_id": "q01_3",
+      "prompt": "chairs",
+      "gt_count": 1,
+      "B0": 0,
+      "B2": 0,
+      "B0_error": 1,
+      "B2_error": 1,
+      "error_change": "unchanged"
+    },
+    {
+      "image_id": "mcac_11",
+      "query_id": "q02_1",
+      "prompt": "plates",
+      "gt_count": 15,
+      "B0": 28,
+      "B2": 31,
+      "B0_error": 13,
+      "B2_error": 16,
+      "error_change": "worsened"
+    },
+    {
+      "image_id": "mcac_11",
+      "query_id": "q02_2",
+      "prompt": "bowls",
+      "gt_count": 3,
+      "B0": 31,
+      "B2": 31,
+      "B0_error": 28,
+      "B2_error": 28,
+      "error_change": "unchanged"
+    },
+    {
+      "image_id": "mcac_11",
+      "query_id": "q02_3",
+      "prompt": "cups",
+      "gt_count": 2,
+      "B0": 23,
+      "B2": 26,
+      "B0_error": 21,
+      "B2_error": 24,
+      "error_change": "worsened"
+    },
+    {
+      "image_id": "mcac_20",
+      "query_id": "q04_1",
+      "prompt": "strawberries",
+      "gt_count": 6,
+      "B0": 60,
+      "B2": 59,
+      "B0_error": 54,
+      "B2_error": 53,
+      "error_change": "improved"
+    },
+    {
+      "image_id": "mcac_20",
+      "query_id": "q04_2",
+      "prompt": "blueberries",
+      "gt_count": 24,
+      "B0": 43,
+      "B2": 32,
+      "B0_error": 19,
+      "B2_error": 8,
+      "error_change": "improved"
+    },
+    {
+      "image_id": "mcac_20",
+      "query_id": "q04_3",
+      "prompt": "red currants",
+      "gt_count": 39,
+      "B0": 84,
+      "B2": 84,
+      "B0_error": 45,
+      "B2_error": 45,
+      "error_change": "unchanged"
+    },
+    {
+      "image_id": "mcac_200",
+      "query_id": "q03_1",
+      "prompt": "pens",
+      "gt_count": 6,
+      "B0": 17,
+      "B2": 13,
+      "B0_error": 11,
+      "B2_error": 7,
+      "error_change": "improved"
+    },
+    {
+      "image_id": "mcac_200",
+      "query_id": "q03_2",
+      "prompt": "rulers",
+      "gt_count": 6,
+      "B0": 18,
+      "B2": 18,
+      "B0_error": 12,
+      "B2_error": 12,
+      "error_change": "unchanged"
+    },
+    {
+      "image_id": "mcac_200",
+      "query_id": "q03_3",
+      "prompt": "pencils",
+      "gt_count": 6,
+      "B0": 17,
+      "B2": 16,
+      "B0_error": 11,
+      "B2_error": 10,
+      "error_change": "improved"
+    },
+    {
+      "image_id": "mcac_27",
+      "query_id": "q05_1",
+      "prompt": "cherries",
+      "gt_count": 2,
+      "B0": 20,
+      "B2": 15,
+      "B0_error": 18,
+      "B2_error": 13,
+      "error_change": "improved"
+    },
+    {
+      "image_id": "mcac_27",
+      "query_id": "q05_2",
+      "prompt": "raspberries",
+      "gt_count": 4,
+      "B0": 11,
+      "B2": 14,
+      "B0_error": 7,
+      "B2_error": 10,
+      "error_change": "worsened"
+    },
+    {
+      "image_id": "mcac_27",
+      "query_id": "q05_3",
+      "prompt": "blackberries",
+      "gt_count": 3,
+      "B0": 21,
+      "B2": 79,
+      "B0_error": 18,
+      "B2_error": 76,
+      "error_change": "worsened"
+    }
+  ],
+  "nonblocking_limits": [
+    "No absent queries: absent metrics remain null.",
+    "Code validation checks finite positive-area boxes but does not require boxes within image bounds.",
+    "Self-test PASS is inherited from Minhtri report; not freshly executed.",
+    "Manual check recounts supplied labels; does not rate extent/IoU."
+  ],
+  "box_boundary_observations": {
+    "B0": 22,
+    "B2": 16
+  }
+}
