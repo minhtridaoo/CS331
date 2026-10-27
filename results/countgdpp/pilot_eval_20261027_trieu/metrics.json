@@ -1,0 +1,89 @@
+{
+  "expected_queries": 15,
+  "expected_images": 5,
+  "uncertain_excluded": [],
+  "eligible_queries": 15,
+  "coverage": {
+    "B0": {
+      "valid": 15,
+      "errors": 0,
+      "eligible": 15
+    },
+    "B2": {
+      "valid": 15,
+      "errors": 0,
+      "eligible": 15
+    }
+  },
+  "individual": {
+    "B0": {
+      "n_queries": 15,
+      "n_images": 5,
+      "MAE": 19.4,
+      "RMSE": 24.315975544210986,
+      "exact_count": 1,
+      "n_present": 15,
+      "n_absent": 0,
+      "MAE_present": 19.4,
+      "RMSE_present": 24.315975544210986,
+      "presence_recall": 0.9333333333333333,
+      "FPR_absent": null,
+      "MeanAbsentCount": null
+    },
+    "B2": {
+      "n_queries": 15,
+      "n_images": 5,
+      "MAE": 22.0,
+      "RMSE": 30.090973175799196,
+      "exact_count": 1,
+      "n_present": 15,
+      "n_absent": 0,
+      "MAE_present": 22.0,
+      "RMSE_present": 30.090973175799196,
+      "presence_recall": 0.9333333333333333,
+      "FPR_absent": null,
+      "MeanAbsentCount": null
+    }
+  },
+  "paired": {
+    "n_queries": 15,
+    "B0": {
+      "n_queries": 15,
+      "n_images": 5,
+      "MAE": 19.4,
+      "RMSE": 24.315975544210986,
+      "exact_count": 1,
+      "n_present": 15,
+      "n_absent": 0,
+      "MAE_present": 19.4,
+      "RMSE_present": 24.315975544210986,
+      "presence_recall": 0.9333333333333333,
+      "FPR_absent": null,
+      "MeanAbsentCount": null
+    },
+    "B2": {
+      "n_queries": 15,
+      "n_images": 5,
+      "MAE": 22.0,
+      "RMSE": 30.090973175799196,
+      "exact_count": 1,
+      "n_present": 15,
+      "n_absent": 0,
+      "MAE_present": 22.0,
+      "RMSE_present": 30.090973175799196,
+      "presence_recall": 0.9333333333333333,
+      "FPR_absent": null,
+      "MeanAbsentCount": null
+    },
+    "error_change": {
+      "improved": 6,
+      "worsened": 4,
+      "unchanged": 5
+    }
+  },
+  "limits": [
+    "Count metrics do not establish correct class or localization.",
+    "Absent metrics are null when no absent queries exist; never interpret null as zero error.",
+    "Errors and uncertain annotations are reported, not converted to zero counts."
+  ]
+}

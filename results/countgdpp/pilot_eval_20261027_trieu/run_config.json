@@ -1,0 +1,17 @@
+{
+  "scope": "dev pilot; CPU evaluation of saved predictions; no model inference",
+  "command": [
+    "evaluation\\evaluate_pilot.py",
+    "--out",
+    "results\\countgdpp\\pilot_eval_20261027_trieu"
+  ],
+  "sources_sha256": {
+    "experiments\\countgdpp\\m4_inputs\\manifest.csv": "8c20558aac772dcb71d4b17b59febe51123f6b1a63deb8fc2cb3cbcebfaa2a7e",
+    "experiments\\countgdpp\\m4_inputs\\first5_inputs.jsonl": "664cbc1f4777254cc6d38985f8d1003dbebf174f8413c1f9f602bbf1d509f724",
+    "results\\countgdpp\\m4_first5_b0\\predictions.jsonl": "65d2fdc260237a0c44c7642ee02a78c9b9edab2a42cdef46292861a787f6e21b",
+    "results\\countgdpp\\b2_two_images_20261015\\predictions.jsonl": "d3f8730cbac9c99bee2e4e26714515b7f64f82bf0605c8ca59ed97f52ad82e5b",
+    "results\\countgdpp\\b2_remaining3_20261015\\predictions.jsonl": "7f9655f9d60073bf2e81d149c2f0ffcf777194569366a70144fb906f60d7a7d0",
+    "results\\countgdpp\\b2_remaining3_20261015\\q05_2\\manual_crosscheck_20261016.json": "f403a61aa471a4e9bfd3ef55b8f35ca540eec977d9788730cbe9d5c69b0eb087",
+    "evaluation\\evaluate_pilot.py": "05985e468e4b9141a9788ad6f39ca009be878511001b1930cb58ad3b474bd659"
+  }
+}

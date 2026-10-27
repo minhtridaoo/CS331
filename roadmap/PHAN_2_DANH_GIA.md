@@ -43,10 +43,10 @@ Kiểm vài ca dễ nhìn trong per_query và nguồn predictions; đây là cá
 
 Các nguồn predictions được liệt kê và hash trong run_config. Với q05_2, đối chiếu [nhãn đã lưu](../results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json), chỉ số khung và object_id với manual_check. Script chỉ đếm lại nhãn người gán; không tự nhận diện lớp hoặc chấm IoU/AP.
 
-- [ ] Triệu đã đọc phần ghép ID, công thức MAE/RMSE và cách xử lý error/null/uncertain.
-- [ ] Triệu đối chiếu các ca trong bảng với nguồn, kiểm manual q05_2.
-- [ ] Triệu hiểu `n_absent=0` → metric absent=null, không phải sai số bằng 0; presence_recall chỉ là trả count dương.
-- [ ] Ghi tên, ngày và kết luận trong phiếu xác nhận ở cuối [PILOT_SUMMARY](../reports/PILOT_SUMMARY.md).
+- [x] Triệu đã đọc phần ghép ID, công thức MAE/RMSE và cách xử lý error/null/uncertain (27/10; thử thêm 5 ca dữ liệu hỏng).
+- [x] Triệu đối chiếu các ca trong bảng với nguồn, kiểm manual q05_2 (27/10; truy ngược q05_3, tự gán nhãn 14 box q05_2 trước khi mở nhãn cũ).
+- [x] Triệu hiểu `n_absent=0` → metric absent=null, không phải sai số bằng 0; presence_recall chỉ là trả count dương (27/10).
+- [x] Ghi tên, ngày và kết luận trong phiếu xác nhận ở cuối [PILOT_SUMMARY](../reports/PILOT_SUMMARY.md) (27/10). [Báo cáo tự kiểm](../reports/TRIEU_TU_KIEM_PHAN2_20261027.md).
 
 Không cần gán nhãn lại 15 query hoặc viết một evaluator thứ hai để hoàn thành phần này. Review định tính Triệu đã chốt 15/15 trước đó; nhiệm vụ hiện tại là kiểm phép chấm và dữ liệu ghép.
 
@@ -70,6 +70,6 @@ Mọi lỗi phải được ghi riêng, không chuyển thành count 0. Không s
 - [x] Người chạy báo self-test PASS, nguồn được ghi rõ.
 - [x] Output đủ 5 file; số liệu/IDs/hash đã đối chiếu trên file thật.
 - [x] ROADMAP/HANDOFF/WORKLOG đã đồng bộ sau lượt kiểm ngày 20/10.
-- [ ] Triệu xác nhận kiểm chéo evaluator mới.
+- [x] Triệu tự kiểm chéo evaluator ngày 27/10: self-test PASS, tính lại metric khớp, run `pilot_eval_20261027_trieu` giống hệt run 20/10.
 
 Phần chạy và audit output đã xong; chỉ còn xác nhận nhóm để đóng Phần 2. Tiếp tục [Phần 3](PHAN_3_TONG_KET.md), không chạy lại inference. Assistant chạy self-test/evaluator/thực nghiệm thay vẫn phải hỏi trước theo yêu cầu của bạn ngày 19/10.

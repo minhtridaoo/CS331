@@ -20,6 +20,17 @@ Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
 
+## 27/10/2026 — Triệu tự kiểm chéo Phần 2, xong 8/8
+
+Người thực hiện: Triệu (tự chạy lệnh, tự tính, tự xem ảnh, tự gán nhãn); assistant hướng dẫn và chấm câu trả lời, không làm hộ.
+Việc/lệnh đã thực sự chạy: `evaluate_pilot.py --self-test` trên Windows (conda ai_new); tính lại MAE/RMSE bằng Excel; đọc predictions q05_3 bằng PowerShell và xem pseudo/final; tự gán nhãn 14 box q05_2 trước khi mở nhãn cũ; 5 ca dữ liệu hỏng trên bản sao ngoài repo; chạy evaluator thật ra `pilot_eval_20261027_trieu`.
+Input/cấu hình hoặc run ID: commit d6db189; m4_first5_b0, b2_two_images_20261015, b2_remaining3_20261015; manifest/first5_inputs mặc định của evaluator.
+Output/bằng chứng: [tiến độ chi tiết](reports/TRIEU_TU_KIEM_PHAN2_20261027.md), [stdout self-test](reports/audits/TRIEU_SELFTEST_stdout.txt), [bảng tính + nhãn q05_2](reports/audits/TRIEU_TINH_TAY.xlsx), [run evaluator của Triệu](results/countgdpp/pilot_eval_20261027_trieu).
+Kiểm tra và kết quả: self-test PASS; MAE 19.4/22, RMSE 24.316/30.091, 6/4/5 khớp; q05_3 B0=21, B2 lượt 1=21, cuối=79, tăng ở lượt 2; q05_2 loại quả khớp 14/14, 5/4/1/9 khớp manual_check; 5/5 ca hỏng được xử lý đúng (4 dừng, 1 lỗi hợp lệ được loại và báo coverage); metrics/per_query/manual_check của run mới giống hệt run 20/10.
+Lỗi/điểm chưa rõ: bỏ riêng q05_3 thì MAE đảo chiều (B0 19.5, B2 18.14), kết luận B0/B2 trên 15 câu rất mong manh. Box 12/13 q05_2: nhãn cũ partial, Triệu tron (khác định nghĩa, không đổi số đếm). Vai trò box mẫu raspberry trong lỗi q05_3 mới là giả thuyết.
+Trạng thái: Đã xác nhận. Kết luận nguyên văn của Triệu ghi ở PILOT_SUMMARY mục 7: đồng ý dùng số liệu Phần 2, nhưng không ghi B2 kém hơn B0 như kết luận tổng quát; đã thêm lưu ý độ nhạy q05_3 vào mục 3. Bản 24/10 giữ làm lịch sử.
+Bước tiếp theo + người làm: Trí và Triệu cùng duyệt toàn bộ PILOT_SUMMARY, ghi quyết định đóng pilot và bốn mục 6C trước P4.
+
 ## 24/10/2026 — Triệu xác nhận đã đọc và chấp nhận bản kiểm được ủy quyền
 
 **Người xác nhận:** Triệu, trực tiếp trong cuộc trò chuyện ngày 24/10/2026.

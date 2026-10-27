@@ -34,6 +34,8 @@ Nguồn hiện tại: [metrics.json](../results/countgdpp/pilot_eval_20261020/me
 
 B2 giảm sai số 6 query, tăng 4, giữ nguyên 5. Đếm giảm chưa chứng minh đúng loại; B2 không cải thiện MAE trung bình trên pilot này. Không loại ca blackberries để làm kết quả đẹp hơn.
 
+**Lưu ý độ nhạy (Triệu tự kiểm 27/10):** kết luận B0/B2 phụ thuộc mạnh vào q05_3 blackberries (sai số B2 = 76). Bỏ riêng câu này thì MAE B0 = 273/14 = 19.5, B2 = 254/14 ≈ 18.14, tức chiều so sánh đảo ngược. Vì vậy chỉ ghi "trên pilot 15 câu, MAE B2 cao hơn B0, chủ yếu do q05_3", không ghi B2 kém hơn B0 như kết luận tổng quát. Vẫn giữ q05_3 trong metric vì đây là lỗi thật của model. [Chi tiết](TRIEU_TU_KIEM_PHAN2_20261027.md).
+
 **Xác nhận sau phần 2:** Run `results/countgdpp/pilot_eval_20261020/`; B0 và B2 đều có 15/15 query hợp lệ, 0 error, 0 uncertain. Hai bên ghép chung 15 query. MAE/RMSE và exact_count khớp bảng tham chiếu. Hậu kiểm q05_2 cũng khớp. Có đủ 5 file output. Cả 7 nguồn khớp nội dung đã lưu; trong checkout Windows ngày 24/10 có 3 hash byte thô khớp, 4 hash chỉ khớp sau chuẩn hóa CRLF→LF (xem audit). Run `_r2` có cùng 4 file kết quả và cùng hash nguồn; chỉ khác tên output trong command, không coi là mẫu thí nghiệm độc lập. Ngày 24/10, Triệu đã đọc, hiểu và đồng ý dùng kết quả kiểm kỹ thuật do assistant thực hiện; không coi đây là Triệu tự audit code.
 
 ## 4. Bằng chứng định tính và kiểm chéo
@@ -99,6 +101,7 @@ Hỗ trợ đọc/kiểm chéo ngày 21/10: xem [bốn điểm code, bốn dòng
 
 - [x] Triệu đã đọc, hiểu và đồng ý dùng bản kiểm kỹ thuật ngày 24/10 do assistant thực hiện. Phạm vi là chấp nhận kết quả kiểm được ủy quyền; không ghi Triệu đã tự kiểm code/nguồn.
 - Người xác nhận: **Triệu — 24/10/2026**. Xác nhận trực tiếp: “Tôi đã đọc và hiểu bản kiểm ngày 24/10, đồng ý dùng kết quả kiểm kỹ thuật do assistant thực hiện.” [Bản ghi xác nhận](audits/TRIEU_ACCEPTANCE_20261024.json).
+- [x] **Triệu tự kiểm chéo Phần 2 — 27/10/2026.** Lần này Triệu tự chạy self-test và evaluator, tự tính lại MAE/RMSE, truy ngược q05_3 về predictions, tự gán nhãn 14 box q05_2 trước khi mở nhãn cũ, và thử 5 ca dữ liệu hỏng; assistant chỉ hướng dẫn. Kết quả khớp run 20/10. [Báo cáo tự kiểm và bằng chứng](TRIEU_TU_KIEM_PHAN2_20261027.md). Kết luận của Triệu, nguyên văn: “Đã check lại metric, q05_3 và tự gán nhãn lại q05_2, check thử đưa dữ liệu hỏng vào thì xảy ra chuyện gì đối với evaluator. Ở q05_2 thì box 12 với [13] chấm khác với nhãn cũ, cũng tùy vào người chấm cũng như máy chấm thì khác nữa, quan điểm mỗi người thôi, theo tôi thì 2 box đó đã làm tốt việc của mình. Nên ghi rõ ở q05_3, thực chất B2 kém hơn B0 thì cũng tùy trường hợp nữa chứ không thể ghi tổng quát như vậy được, các số liệu đó ghi vào báo cáo được đó.” Phạm vi đồng ý: dùng số liệu Phần 2 (MAE/RMSE, 6/4/5, coverage, q05_2) kèm lưu ý độ nhạy ở mục 3. Bản 24/10 phía trên giữ làm lịch sử.
 - Nhóm duyệt nội dung pilot: **[CHƯA DUYỆT — tên/ngày]**.
 - Quyết định pilot: **[đóng vòng pilot để chuẩn bị P4 / còn sửa mục ...]**.
 - Quyết định ứng viên P4: **[thử CLIP theo phạm vi mục 6 / cần chỉnh giả thuyết]**.

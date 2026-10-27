@@ -32,7 +32,7 @@ Bạn gần xong vòng kiểm baseline/pilot đầu tiên, chưa gần xong toà
 | M4–M5: B0/B2 pilot | Đã chạy đủ 5 ảnh / 15 query | [Review và bảng kết quả](../results/countgdpp/b2_remaining3_20261015/REVIEW.md) |
 | M6: E1/E2 kiểm ngưỡng | Đã đóng phạm vi 2 ảnh / 6 query | E2 .35 không chạy; E3 chưa cần mở chỉ để đủ lưới |
 | Review Trí / Triệu | **15/15 mỗi người về định tính** | [Review Triệu chốt v1 ngày 19/10](<../workspace Trí and Triệu/Triệu/TRIEU_VISUAL_REVIEW.md>), đọc lại 20/10; guitar/q04_2 đã làm rõ |
-| **Phần 2: chấm lại pilot** | **Đã chạy; assistant audit; Triệu đã đọc/hiểu và chấp nhận kết quả** | Self-test PASS theo Minhtri; 5 file/run, 15 dòng khớp; 7 nguồn khớp nội dung (Windows: 3 byte thô, 4 chuẩn hóa EOL); [run chính](../results/countgdpp/pilot_eval_20261020/SUMMARY.md) |
+| **Phần 2: chấm lại pilot** | **Đã chạy; assistant audit; Triệu tự kiểm chéo 27/10, khớp** | Self-test PASS theo Minhtri; 5 file/run, 15 dòng khớp; 7 nguồn khớp nội dung (Windows: 3 byte thô, 4 chuẩn hóa EOL); [run chính](../results/countgdpp/pilot_eval_20261020/SUMMARY.md) |
 | **Phần 3: tổng kết pilot** | **Đã điền; Triệu chấp nhận kết quả kiểm; chờ nhóm duyệt báo cáo** | [PILOT_SUMMARY](../reports/PILOT_SUMMARY.md) mục 6 kế hoạch, mục 7 xác nhận nhóm |
 | Benchmark FSCD-147 theo cấu hình paper | **Đã chạy đủ; count metrics đã kiểm** | Run `full_20261015T080230Z`, audit 20/10; MAE=8.336975, RMSE=24.637626; chưa xác nhận AP/AP50 |
 | P4: chọn một can thiệp | **Có đề xuất và artifact thử, chờ đồng bộ/audit/duyệt** | `p4_clip_all15_20261020`, `p4_count_cv_20261020/report.json`; lượt 21/10 chỉ đọc metadata, chưa xác nhận toàn bộ kết quả hoặc hiệu quả |
@@ -50,6 +50,7 @@ Trạng thái “chưa có bằng chứng” được xác định từ file đa
 
 - [x] Phần chạy Phần 2: Minhtri báo self-test PASS; đã kiểm output cho 15 query/5 ảnh, metric/coverage hợp lệ và q05_2. Chưa có stdout self-test riêng; không yêu cầu chạy lại chỉ để lấy log.
 - [x] Triệu đọc/hiểu và đồng ý dùng kết quả kiểm kỹ thuật do assistant thực hiện; ghi nhận trực tiếp ngày 24/10 tại mục 7 PILOT_SUMMARY. Không ghi Triệu đã tự audit code.
+- [x] Triệu tự kiểm chéo Phần 2 ngày 27/10: self-test, tính lại metric, truy ngược q05_3, tự gán nhãn q05_2, thử dữ liệu hỏng, chạy lại evaluator; tất cả khớp. Đồng ý dùng số liệu kèm lưu ý kết luận B0/B2 phụ thuộc q05_3. [Báo cáo](../reports/TRIEU_TU_KIEM_PHAN2_20261027.md).
 - [x] Review định tính đã đủ: bản Triệu chốt 15/15, guitar được xác nhận đúng theo quy ước review, q04_2 final giải thích đủ 32 khung. Không đồng nhất review này với annotation định vị chính thức hoặc xác minh độc lập mọi GT.
 - [x] Phần 3 đã có run, dữ liệu đối chiếu và mục 6 đề xuất; phân biệt số liệu/quan sát/giả thuyết.
 - [ ] Nhóm duyệt báo cáo, ghi người/ngày và quyết định đóng pilot để chuẩn bị P4. Bốn mục 6C phải được thống nhất trước lần chạy P4.
