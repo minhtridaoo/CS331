@@ -1,0 +1,4 @@
+query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
+u07_2,cars,pseudo,P1,198.9,544.0,470.7,722.6,,,,,,
+u07_2,cars,pseudo,P2,699.5,479.9,944.7,648.7,,,,,,
+u07_2,cars,pseudo,P3,349.6,703.2,645.9,867.7,,,,,,

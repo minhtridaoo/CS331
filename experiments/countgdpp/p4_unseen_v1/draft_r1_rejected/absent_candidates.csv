@@ -1,0 +1,11 @@
+image_id,proposed_absent,next_candidates,annotated_classes,human_check,checked_by,date,note
+mcac_222,blueberries,sheeps; bowls; windows; apples; balconies,people=31; motorbikes=28,PENDING,,,
+mcac_123,lemons,oranges; chairs; padlocks; red currants; keys,people=10; dogs=27,PENDING,,,
+mcac_87,spoons,plates; desks; knives; keys; cherries,people=4; cars=2; motorbikes=9; bicycles=1,PENDING,,,
+mcac_76,spoons,chairs; pears; cigaretts; apples; amplifiers,people=30; cars=18,PENDING,,,
+mcac_83,oranges,amplifiers; bananas; cherries; cups; spoons,people=6; cars=24; motorbikes=6,PENDING,,,
+mcac_120,spoons,cups; cigaretts; lemons; bicycles; cherries,people=4; dogs=7,PENDING,,,
+mcac_72,guitars,blackberries; apples; lemons; blueberries; dogs,people=7; cars=14; motorbikes=1,PENDING,,,
+mcac_224,plates,padlocks; pens; goats; keys; pencils,people=31; boats=8,PENDING,,,
+mcac_96,amplifiers,rulers; pears; glasses; spoons; sheeps,people=10; motorbikes=9,PENDING,,,
+mcac_95,raspberries,knives; pencils; key holders; blackberries; keys,people=27; motorbikes=20,PENDING,,,

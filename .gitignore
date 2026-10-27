@@ -28,3 +28,9 @@ venv/
 # Secrets
 .env
 .env.*
+
+# External datasets (download again from source; see experiments/countgdpp/p4_unseen_v1/README.md)
+data_external/
+
+# Local recovery snapshots; shared handoff ZIPs remain versioned.
+/quá khứ/*.zip

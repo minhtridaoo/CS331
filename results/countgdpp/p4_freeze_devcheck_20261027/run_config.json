@@ -1,0 +1,49 @@
+{
+  "runner": "p4_apply_freeze.py (P4.6b)",
+  "adapter_sha256": "cf2784bb188527f4b8a06889167a2cc862be942fb26300c7b2293bf4033e8ef8",
+  "freeze": "results/countgdpp/p4_candidate_freeze_20261021.json",
+  "freeze_sha256": "3c4634e79d21d0c58bd7c0e3db0972c3a3eeff6d25996c716b4def1267def4da",
+  "frozen_values": {
+    "b2_threshold": 0.9067394733428955,
+    "fusion_threshold": 0.6551826746408328,
+    "bounds": {
+      "B2": [
+        0.2326723337173462,
+        0.9772246479988098
+      ],
+      "CLIP": [
+        0.1666240692138672,
+        0.3146958649158478
+      ]
+    }
+  },
+  "comparison": ">= threshold; minmax clamp [0,1]; weights 0.5/0.5; no refit, no GT, no top-K",
+  "scores": "results/countgdpp/p4_clip_all15_20261020",
+  "score_file_sha256": {
+    "q01_1_clip_scores.json": "7af409aaa4a8afc908d0798c179ca93744ecfe2b124a3f2df9c784978fecb451",
+    "q01_2_clip_scores.json": "504754e8aa7f4531d3995cfcee0d5eb34c5bd2e9a5f7c7fb6593e61b0d735184",
+    "q01_3_clip_scores.json": "2815964d9154dc65ea8425b79822a6e0eb2312e699cd3115cf2580991df429b0",
+    "q02_1_clip_scores.json": "49ba651dbb044cece70a9138706a41644b858b3b54c0a2b82cbf5cd7887f859a",
+    "q02_2_clip_scores.json": "b9d798abb1381c9fadabbb059e35616fad6581aa82734a9ba290c8357cad69b2",
+    "q02_3_clip_scores.json": "b4a4aba1163a1ff64a6f999f8413283b3b1851a428d143b43cdde1450dc29a2f",
+    "q03_1_clip_scores.json": "e2026489c974850d0d0a3e53969dc3d2f1af46f1e07c4a24187099ef53c4635f",
+    "q03_2_clip_scores.json": "e8b20ee03e7be31966e7f4bd80fd138194c43e8455a4bae93afc1a3b86f64a47",
+    "q03_3_clip_scores.json": "4594a7764d3ce4ec45f37c5fa5ff1718d275c9cc3b3f4042e971bf29a8ae5278",
+    "q04_1_clip_scores.json": "2cab02aa52de2c35309ce565ff5379d6ebd7cab0f6cf7b961e6b987a40bcbc80",
+    "q04_2_clip_scores.json": "0606db1b5fe84cff0801c38dd99ab010616270bc7439793f2744f0025cc4b653",
+    "q04_3_clip_scores.json": "a8bfdc1ab1f8a0e6588656a998cf1508531d44a836bf7e604a97f8f47f762ceb",
+    "q05_1_clip_scores.json": "2d71378ad32e118c3f9f0060a29b49e058be4d6e05c1d96de7638986543840b0",
+    "q05_2_clip_scores.json": "1b5e962990146326352ef2ca11fc1735c9fa01669ab55bacb9daad49a8cfeb13",
+    "q05_3_clip_scores.json": "743d1dbb5b64bc284fb96ce1f53b14b98f4a254993b332791c01536094970c3f"
+  },
+  "uses_ground_truth": false,
+  "checks": {
+    "audit": {
+      "path": "results/countgdpp/p4_freeze_audit_20261021.json",
+      "sha256": "41c4a7a51ec58b688584e0aa47afe5f0c875d0a495565cc45e7d5ba29d6f590b",
+      "mismatches": [],
+      "audit_queries_missing_here": [],
+      "passed": true
+    }
+  }
+}

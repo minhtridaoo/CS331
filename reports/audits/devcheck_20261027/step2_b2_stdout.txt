@@ -1,0 +1,32 @@
+Validated 15 queries / 5 images; b0_reference=results/countgdpp/m4_first5_b0/predictions.jsonl
+/root/.venvs/countgdpp/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/root/.venvs/countgdpp/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Some weights of BertModel were not initialized from the model checkpoint at checkpoints/bert-base-uncased and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/process_folder.py:138: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.pretrain_model_path, map_location="cpu")["model"]
+/root/.venvs/countgdpp/lib/python3.10/site-packages/transformers/modeling_utils.py:1126: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/transformer.py:873: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+final text_encoder_type: checkpoints/bert-base-uncased
+load tokenizer done.
+final text_encoder_type: checkpoints/bert-base-uncased
+load tokenizer done.
+1/15 q01_1 guitars: B0=25, pseudo=3, B2=25, replay_matches=True, no_pseudo=False
+2/15 q01_2 amplifiers: B0=44, pseudo=3, B2=38, replay_matches=True, no_pseudo=False
+3/15 q01_3 chairs: B0=0, pseudo=0, B2=0, replay_matches=True, no_pseudo=True
+4/15 q02_1 plates: B0=28, pseudo=3, B2=31, replay_matches=True, no_pseudo=False
+5/15 q02_2 bowls: B0=31, pseudo=3, B2=31, replay_matches=True, no_pseudo=False
+6/15 q02_3 cups: B0=23, pseudo=3, B2=26, replay_matches=True, no_pseudo=False
+7/15 q03_1 pens: B0=17, pseudo=3, B2=13, replay_matches=True, no_pseudo=False
+8/15 q03_2 rulers: B0=18, pseudo=3, B2=18, replay_matches=True, no_pseudo=False
+9/15 q03_3 pencils: B0=17, pseudo=3, B2=16, replay_matches=True, no_pseudo=False
+10/15 q04_1 strawberries: B0=60, pseudo=3, B2=59, replay_matches=True, no_pseudo=False
+11/15 q04_2 blueberries: B0=43, pseudo=3, B2=32, replay_matches=True, no_pseudo=False
+12/15 q04_3 red currants: B0=84, pseudo=3, B2=84, replay_matches=True, no_pseudo=False
+13/15 q05_1 cherries: B0=20, pseudo=3, B2=15, replay_matches=True, no_pseudo=False
+14/15 q05_2 raspberries: B0=11, pseudo=3, B2=14, replay_matches=True, no_pseudo=False
+15/15 q05_3 blackberries: B0=21, pseudo=3, B2=79, replay_matches=True, no_pseudo=False

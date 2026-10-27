@@ -1,0 +1,56 @@
+{
+  "runner": "p4_apply_freeze.py (P4.6b)",
+  "adapter_sha256": "cf2784bb188527f4b8a06889167a2cc862be942fb26300c7b2293bf4033e8ef8",
+  "freeze": "results/countgdpp/p4_candidate_freeze_20261021.json",
+  "freeze_sha256": "3c4634e79d21d0c58bd7c0e3db0972c3a3eeff6d25996c716b4def1267def4da",
+  "frozen_values": {
+    "b2_threshold": 0.9067394733428955,
+    "fusion_threshold": 0.6551826746408328,
+    "bounds": {
+      "B2": [
+        0.2326723337173462,
+        0.9772246479988098
+      ],
+      "CLIP": [
+        0.1666240692138672,
+        0.3146958649158478
+      ]
+    }
+  },
+  "comparison": ">= threshold; minmax clamp [0,1]; weights 0.5/0.5; no refit, no GT, no top-K",
+  "scores": "results/countgdpp/p4_unseen_v1_clip_20261027",
+  "score_file_sha256": {
+    "u01_1_clip_scores.json": "9398506098b7bb5890b31bef5396ed986fa70de5ba17adc91942b1cf729bc554",
+    "u01_2_clip_scores.json": "78cde58d7f7222af995046d0d13352dc24348785ac5c375af2a09bec31f145fe",
+    "u01_3_clip_scores.json": "f68eef0d8e4397485f3e43ff052a9a34f8a0ce015cd9d2163e4746440905e65d",
+    "u02_1_clip_scores.json": "d6117111f58ba5a4c8ef6213326f84aa6629498f2a89c43f004741ec24b46088",
+    "u02_2_clip_scores.json": "d78ec3b11cd2439f23723c3cde9c6d34761ceca839678842a56c9c79a3fce1ba",
+    "u02_3_clip_scores.json": "0ce48a952e44df6fbecf12e4120e07ee3c9f58876f586fa8d339c096be0a5bca",
+    "u03_1_clip_scores.json": "ba9695be1e3ec54b5fcf9ae3368a9427068ed3dabbaefd47e6856c3699a9a9e7",
+    "u03_2_clip_scores.json": "9a5fd828c01c867303b87c0249d0fc0d71a263a6a30c9ed2546a94d708f7a503",
+    "u03_3_clip_scores.json": "58089b4094620c6f941410201cb7217bbeef70b79a19f93eba98f2e72e8744c0",
+    "u04_1_clip_scores.json": "c418be76b6f11f7bd615c7906e11bc79b2f0e746d0fb74728249313decbde865",
+    "u04_2_clip_scores.json": "79cfdf3bdfddea04a18f608b744bdded2cbc95b21a79f617276e0ea15e2caac1",
+    "u04_3_clip_scores.json": "805d067afe6cf43d851f34d20c8347cac15499d1e498c8744bff40672fb601ba",
+    "u05_1_clip_scores.json": "9394c92e34c683a83e74a3a81041d325630a8a1de8c2a9c4d37b4960c8899510",
+    "u05_2_clip_scores.json": "21d767cce58d8333caa44e1cfc79c35be0e0bd7aedb1c48f5279bc99c4acbfb3",
+    "u05_3_clip_scores.json": "e45caede03c2c3952654475be74fff6f97a997099584ee6150984729e17b8e96",
+    "u06_1_clip_scores.json": "7f7ccef9710883ca63b36d6e5f573dd27433d1fef272abbc8dca6f4b14195471",
+    "u06_2_clip_scores.json": "1176fd16de214cecc576afae94c66e9a8095ef8e6c8f344bcb2233d5d0e02369",
+    "u06_3_clip_scores.json": "bd1af2abc352b95d4ace88e2c0b419b282f31cd3ae537231c54a2dc21298bc90",
+    "u07_1_clip_scores.json": "3cb1410f1d3ee24fc906672d651bbe0e24bc284d1ab603f9a86491de6ecb51b2",
+    "u07_2_clip_scores.json": "75d7d2d652987f9e6a9b1efffcc27a2e80b6ab77f311c5950529c0d83dbae480",
+    "u07_3_clip_scores.json": "3ef416f4405ea1195e5efb86e8a153ecad66fc9a09a41ae27ab795aab5cf3ddd",
+    "u08_1_clip_scores.json": "d7fa9aeb3bb0535222b81a8ab477bf419a0884fe1fb4460775083bfa82b24fa8",
+    "u08_2_clip_scores.json": "f30ad52c03988c23dd0aaf000dd5ab80ae7883555bac5b77ee23810237783996",
+    "u08_3_clip_scores.json": "50d4de628dbcc1825cfdfd4a8812bfd8044037a0ae277b9702657293090d669c",
+    "u09_1_clip_scores.json": "b2b798d526286e5180b0731a4ff06a2b2ddd92f0c09f5ae8cb9cb0f835d78853",
+    "u09_2_clip_scores.json": "060684d5c51c3ef5e4170e68ff31a473618f7580e344f7807fdbac6ac3a8d70f",
+    "u09_3_clip_scores.json": "adaacc6bacbb7932ced69a4558ead09a52824fcf339b1138c9e3a4bd761b77ba",
+    "u10_1_clip_scores.json": "4c9851be81f1b1d2b329c1fdb77740567e0bc52e504b79ef7fd763c865d8052e",
+    "u10_2_clip_scores.json": "0744ee53651b16c7a608f27145156af75964b07d7fbfab7fc1b351d07369da9c",
+    "u10_3_clip_scores.json": "9bf42777aa9b857928b0bb27818b2e3dce0929930ab9bc4b91c54cf8a9937a7f"
+  },
+  "uses_ground_truth": false,
+  "checks": {}
+}

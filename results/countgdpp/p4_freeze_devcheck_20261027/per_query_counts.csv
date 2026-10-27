@@ -1,0 +1,16 @@
+query_id,image_id,prompt,B2_original,B2_threshold,Fusion_50_50
+q01_1,mcac_100,guitars,25,19,24
+q01_2,mcac_100,amplifiers,38,17,5
+q01_3,mcac_100,chairs,0,0,0
+q02_1,mcac_11,plates,31,7,5
+q02_2,mcac_11,bowls,31,6,6
+q02_3,mcac_11,cups,26,3,3
+q03_1,mcac_200,pens,13,7,9
+q03_2,mcac_200,rulers,18,4,5
+q03_3,mcac_200,pencils,16,6,1
+q04_1,mcac_20,strawberries,59,14,13
+q04_2,mcac_20,blueberries,32,27,29
+q04_3,mcac_20,red currants,84,19,20
+q05_1,mcac_27,cherries,15,1,5
+q05_2,mcac_27,raspberries,14,2,4
+q05_3,mcac_27,blackberries,79,0,4

@@ -1,0 +1,107 @@
+{
+  "purpose": "Render existing source points for human review; no inference or visual correctness judgment",
+  "status": "PREPARED_NOT_REVIEWED",
+  "annotations_sha256": "95d9908c367d43184fb1bda392b173107793f90b4595ba74e7e61c3cdbf2eb3f",
+  "files": [
+    {
+      "image_id": "mcac_123",
+      "file": "mcac_123_GT.jpg",
+      "sha256": "bc44e2ed6463fd4fdb9845076c36febe462610005939a5d90754f8d925519ed9",
+      "source_image_sha256": "842067c0c535acb2363565da59570b50f4818b47607369d332421af93fb80e4b",
+      "source_point_counts": [
+        10,
+        27
+      ]
+    },
+    {
+      "image_id": "mcac_121",
+      "file": "mcac_121_GT.jpg",
+      "sha256": "57e5edb34ba19d6035fc206352767aea97ba6c6e33b5adb4e5cdb4dcb8d4e678",
+      "source_image_sha256": "0778f5602f2b473094acfb5f02b08aee08dddfafe3351845b798a14fed486040",
+      "source_point_counts": [
+        3,
+        20
+      ]
+    },
+    {
+      "image_id": "mcac_109",
+      "file": "mcac_109_GT.jpg",
+      "sha256": "7d8ff562e982f0c3aa6ea1d2c7f833ef08cf650de9a7e269093966a52b2eb330",
+      "source_image_sha256": "8ce1484ecb4b4acc8b216dfa7352086be51c1911b5a6986b62663b2afd456620",
+      "source_point_counts": [
+        3,
+        4
+      ]
+    },
+    {
+      "image_id": "mcac_110",
+      "file": "mcac_110_GT.jpg",
+      "sha256": "a1a380f6619bc13b4c169e5c6f37374e6d9dda80761cba4f814be4202545fcc3",
+      "source_image_sha256": "eb40c844a714352560202f99e049d5deb4d3927b49e6ae8d5c6e8e98fc580000",
+      "source_point_counts": [
+        4,
+        7
+      ]
+    },
+    {
+      "image_id": "mcac_63",
+      "file": "mcac_63_GT.jpg",
+      "sha256": "d25f77ea7aa3cf5a2753ccfbc48d7f44ed6534739332f03f725b704f46e07527",
+      "source_image_sha256": "a5506441fa964f7f56bf3efd41ede66e8c31bf48fad6d6a63bfcc4b2318f35e6",
+      "source_point_counts": [
+        3,
+        24
+      ]
+    },
+    {
+      "image_id": "mcac_61",
+      "file": "mcac_61_GT.jpg",
+      "sha256": "f4deb143b37d1196c4b3dbab6b478ad9eb39d8635f26a8c647e8dff2a0ad1d28",
+      "source_image_sha256": "a49dd0279145c1ffc47b622501e22390a297099dcfaf92cb87b3c457c5b701bd",
+      "source_point_counts": [
+        23,
+        30
+      ]
+    },
+    {
+      "image_id": "mcac_88",
+      "file": "mcac_88_GT.jpg",
+      "sha256": "00742019234bd4c9b006f434741bd08e08123a3cb22c457f26801e5bb66b1e11",
+      "source_image_sha256": "3da67743cc1c1c58e26f8fdb5d5675f841aaa967fed056c95bd5fd51cb66d72d",
+      "source_point_counts": [
+        6,
+        22
+      ]
+    },
+    {
+      "image_id": "mcac_72",
+      "file": "mcac_72_GT.jpg",
+      "sha256": "e5ed732fcf735b6478a0aea1fa9f94bb61b35422b513c524b4dcac2304559042",
+      "source_image_sha256": "479e07cb3296a1ca80f6399e01e792e04a2294168a10ad45b89886668946c69a",
+      "source_point_counts": [
+        7,
+        14
+      ]
+    },
+    {
+      "image_id": "mcac_227",
+      "file": "mcac_227_GT.jpg",
+      "sha256": "7a36a62184d1cd1b8245a55ca6f7172d96b915f682b480ed5e51ff5bde234153",
+      "source_image_sha256": "e450e80cbe1972168e870ad1d08c4baa01f7ae94ec33d4d477046909695191e5",
+      "source_point_counts": [
+        30,
+        8
+      ]
+    },
+    {
+      "image_id": "mcac_84",
+      "file": "mcac_84_GT.jpg",
+      "sha256": "2695e735b122e848fc197299e50fa4eb72506921a4ff8a262a3efc45351fb805",
+      "source_image_sha256": "ff877c1f0a419dae0f46ec0eb502db12125f69a697a14f01a7f58b027748d2bd",
+      "source_point_counts": [
+        27,
+        17
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+query_id,image_id,prompt,presence,gt,no_pseudo,pred_B0,pred_B2_original,pred_B2_threshold,pred_Fusion_50_50,B0_target_pts_covered,B0_boxes_with_target,B0_boxes_other_only,B0_boxes_other_query,B0_boxes_no_point,B2_original_target_pts_covered,B2_original_boxes_with_target,B2_original_boxes_other_only,B2_original_boxes_other_query,B2_original_boxes_no_point,B2_threshold_target_pts_covered,B2_threshold_boxes_with_target,B2_threshold_boxes_other_only,B2_threshold_boxes_other_query,B2_threshold_boxes_no_point,Fusion_50_50_target_pts_covered,Fusion_50_50_boxes_with_target,Fusion_50_50_boxes_other_only,Fusion_50_50_boxes_other_query,Fusion_50_50_boxes_no_point
+u01_1,mcac_123,people,present,10,False,14,38,9,1,8,3,11,11,0,10,9,27,27,2,0,0,9,9,0,0,0,1,1,0
+u01_2,mcac_123,dogs,present,27,False,32,31,11,14,27,30,0,0,2,27,29,0,0,2,22,11,0,0,0,26,14,0,0,0
+u01_3,mcac_123,sheep,absent,0,False,20,32,10,4,,0,19,19,1,,0,30,30,2,,0,10,10,0,,0,4,4,0
+u02_1,mcac_121,people,present,3,False,15,20,11,0,3,2,13,13,0,3,2,18,18,0,0,0,11,11,0,0,0,0,0,0
+u02_2,mcac_121,dogs,present,20,False,18,19,13,12,19,18,0,0,0,19,19,0,0,0,14,13,0,0,0,13,12,0,0,0
+u02_3,mcac_121,cats,absent,0,True,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0
+u03_1,mcac_109,people,present,3,False,2,12,0,0,2,2,0,0,0,3,4,6,0,2,0,0,0,0,0,0,0,0,0,0
+u03_2,mcac_109,amplifiers,present,4,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+u03_3,mcac_109,bicycles,absent,0,True,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0
+u04_1,mcac_110,people,present,4,False,4,4,0,0,4,4,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0
+u04_2,mcac_110,guitars,present,7,False,8,9,3,4,7,8,0,0,0,7,9,0,0,0,3,3,0,0,0,5,4,0,0,0
+u04_3,mcac_110,amplifiers,absent,0,True,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0
+u05_1,mcac_63,chairs,present,3,False,24,29,20,2,3,4,20,20,0,3,3,24,23,2,1,1,19,19,0,0,0,2,2,0
+u05_2,mcac_63,beach umbrellas,present,24,False,24,26,19,20,24,24,0,0,0,24,24,0,0,2,19,19,0,0,0,20,20,0,0,0
+u05_3,mcac_63,forks,absent,0,True,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0
+u06_1,mcac_61,chairs,present,23,False,15,49,4,2,20,12,3,0,0,22,18,26,2,5,6,4,0,0,0,4,2,0,0,0
+u06_2,mcac_61,beach umbrellas,present,30,False,31,31,14,26,30,30,0,0,1,30,30,0,0,1,13,13,0,0,1,26,26,0,0,0
+u06_3,mcac_61,blackberries,absent,0,True,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0
+u07_1,mcac_88,people,present,6,False,7,21,9,2,2,2,5,5,0,2,2,19,19,0,2,2,7,7,0,0,0,2,2,0
+u07_2,mcac_88,cars,present,22,False,22,22,9,14,22,21,1,0,0,22,21,1,1,0,9,9,0,0,0,15,14,0,0,0
+u07_3,mcac_88,bicycles,absent,0,False,21,24,9,1,,0,21,20,0,,0,24,23,0,,0,9,9,0,,0,1,1,0
+u08_1,mcac_72,people,present,7,False,16,20,6,1,7,8,8,8,0,7,7,13,13,0,0,0,6,6,0,0,0,1,1,0
+u08_2,mcac_72,cars,present,14,False,13,13,6,8,13,13,0,0,0,13,13,0,0,0,6,6,0,0,0,8,8,0,0,0
+u08_3,mcac_72,boats,absent,0,True,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0
+u09_1,mcac_227,people,present,30,False,29,28,10,4,29,29,0,0,0,29,28,0,0,0,10,10,0,0,0,5,4,0,0,0
+u09_2,mcac_227,boats,present,8,False,8,8,4,6,8,8,0,0,0,8,8,0,0,0,4,4,0,0,0,6,6,0,0,0
+u09_3,mcac_227,trucks,absent,0,True,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0,,0,0,0,0
+u10_1,mcac_84,people,present,27,False,54,72,22,12,25,23,31,1,0,27,28,44,1,0,7,8,14,0,0,5,6,6,0,0
+u10_2,mcac_84,motorbikes,present,17,False,33,80,34,29,16,17,14,9,2,17,20,60,15,0,11,8,26,11,0,12,10,19,10,0
+u10_3,mcac_84,bicycles,absent,0,False,48,75,24,5,,0,48,26,0,,0,75,31,0,,0,24,8,0,,0,5,3,0

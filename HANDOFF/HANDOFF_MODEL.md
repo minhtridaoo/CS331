@@ -1,13 +1,14 @@
-# Handoff Trí — mô hình và thí nghiệm
+# Handoff Trí — dữ liệu P4 và nghiệm thu phần Triệu
 
-Cập nhật 20/10/2026. [Trạng thái chung](HANDOFF.md) · [Work log](../WORKLOG.md)
+**Cập nhật 27/10/2026 sau rà kế hoạch V2.** [Checklist](../roadmap/CHECKLIST_3_GIO.md) · [Kế hoạch T1–T4](../reports/KE_HOACH_SUA_KIEM_CHEO_20261027.md).
 
-Đã có model/checkpoint chạy, B0/B2 5 ảnh/15 query và E1/E2 pilot 2 ảnh. Phần chạy và review nhỏ đã có bằng chứng; không cần rerun inference để tính metric.
+**C1 đã làm:** Trí đọc và chưa duyệt bản kiểm; Triệu cần tự thực hiện T1–T4. Việc đầu tiên của Trí không còn là đọc lại C1.
 
-Phần 2 đã chạy bằng python3; hai run không hậu tố và _r2 có cùng kết quả, đã audit đủ ID/hash/metric. Phần 3 đã điền run và mục 6 đề xuất CLIP, chờ kiểm chéo/duyệt. Không cần lặp evaluator để cập nhật tiến độ.
+1. Kiểm và chia sẻ [gói T0](TRIEU_T1_T4_20261027_v2.zip) cho Triệu; assistant mới chuẩn bị ZIP, chưa gửi/commit/push. Gói chỉ phục vụ T1–T4; dữ liệu P4 DRAFT không chặn Triệu làm.
+2. C2: đã ghi xác nhận nhãn 10 ảnh/30 query của Trí; còn chốt quy tắc chấm và xác nhận lịch sử sử dụng, rồi mới khóa tập.
+3. C3 đã đạt kiểm dev (1)–(4) theo [SUMMARY](../reports/audits/devcheck_20261027/SUMMARY.md). Không cần chạy lại chỉ để ghi tiến độ; chưa chạy bộ mới.
+4. Khi Triệu bàn giao, nghiệm thu theo tiêu chí T1/T2/T3. Hạn đề xuất T1 30/10, T2 01/11, T3 02/11, T4 03/11. Chỉ sửa lỗi/thiếu bằng chứng cụ thể, không tự mở thêm hướng nghiên cứu trong gate kiểm chéo.
 
-**Việc của Trí ngay tiếp:** đọc [PILOT_SUMMARY mục 6–7](../reports/PILOT_SUMMARY.md), chuẩn bị bốn lựa chọn 6C cho P4 (phạm vi, checkpoint/cấu hình, nhãn/phép đo, phân công); phối hợp Triệu kiểm evaluator và duyệt báo cáo. CLIP chỉ là ứng viên sau B2, chưa chọn/chạy. Giữ đối chứng confidence, không chọn negative labels từ GT ảnh test.
+Phần 47 nhãn q03 vẫn riêng cho P4. Model nền CountGD++, CLIP phụ trợ; giữ freeze. Chỉ chạy ảnh mới khi tập khóa và kiểm dev đạt. Assistant hỏi trước nếu chạy evaluator/model/thực nghiệm thay; lượt sửa giao việc không chạy các bước đó.
 
-Kaggle đã chạy đủ 1.190 ảnh; kiểm ngày 20/10: MAE=8.336975, RMSE=24.637626. [Báo cáo benchmark](../reports/BENCHMARK_FSCD147.md). Không cần chạy lại nhánh này để làm phần 2–3 pilot. Chưa train/cải tiến/holdout. Đo thời gian/VRAM chuẩn còn cần làm trước khi báo hiệu năng.
-
-Mỗi buổi thêm mục WORKLOG; khi xong mốc mới đồng bộ trạng thái ROADMAP và việc tiếp HANDOFF. Assistant chạy đánh giá/thực nghiệm thay phải hỏi bạn trước.
+Cuối mỗi buổi cập nhật bảng “Dừng ở đâu” và WORKLOG theo việc thật. Deadline báo cáo 02/12/2026; mục tiêu nội bộ có bản hoàn thiện trước 29/11, không hứa đủ mọi tiêu chí thầy từ một vòng pilot.

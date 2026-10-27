@@ -1,0 +1,252 @@
+{
+  "status": "complete",
+  "variant": "B2",
+  "runner": "run_b2_frozen.py (P4.6b)",
+  "scope": "App-based two-pass B2 on input-only set; not full paper",
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "mcac_123",
+      "query_id": "u01_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_123.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_123",
+      "query_id": "u01_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_123.jpg",
+      "prompt": "dogs"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_123",
+      "query_id": "u01_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_123.jpg",
+      "prompt": "sheep"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_121",
+      "query_id": "u02_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_121.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_121",
+      "query_id": "u02_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_121.jpg",
+      "prompt": "dogs"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_121",
+      "query_id": "u02_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_121.jpg",
+      "prompt": "cats"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_109",
+      "query_id": "u03_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_109.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_109",
+      "query_id": "u03_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_109.jpg",
+      "prompt": "amplifiers"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_109",
+      "query_id": "u03_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_109.jpg",
+      "prompt": "bicycles"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_110",
+      "query_id": "u04_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_110.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_110",
+      "query_id": "u04_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_110.jpg",
+      "prompt": "guitars"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_110",
+      "query_id": "u04_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_110.jpg",
+      "prompt": "amplifiers"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_63",
+      "query_id": "u05_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_63.jpg",
+      "prompt": "chairs"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_63",
+      "query_id": "u05_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_63.jpg",
+      "prompt": "beach umbrellas"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_63",
+      "query_id": "u05_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_63.jpg",
+      "prompt": "forks"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_61",
+      "query_id": "u06_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_61.jpg",
+      "prompt": "chairs"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_61",
+      "query_id": "u06_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_61.jpg",
+      "prompt": "beach umbrellas"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_61",
+      "query_id": "u06_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_61.jpg",
+      "prompt": "blackberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_88",
+      "query_id": "u07_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_88.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_88",
+      "query_id": "u07_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_88.jpg",
+      "prompt": "cars"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_88",
+      "query_id": "u07_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_88.jpg",
+      "prompt": "bicycles"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_72",
+      "query_id": "u08_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_72.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_72",
+      "query_id": "u08_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_72.jpg",
+      "prompt": "cars"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_72",
+      "query_id": "u08_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_72.jpg",
+      "prompt": "boats"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_227",
+      "query_id": "u09_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_227.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_227",
+      "query_id": "u09_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_227.jpg",
+      "prompt": "boats"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_227",
+      "query_id": "u09_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_227.jpg",
+      "prompt": "trucks"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_84",
+      "query_id": "u10_1",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_84.jpg",
+      "prompt": "people"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_84",
+      "query_id": "u10_2",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_84.jpg",
+      "prompt": "motorbikes"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_84",
+      "query_id": "u10_3",
+      "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_84.jpg",
+      "prompt": "bicycles"
+    }
+  ],
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "source_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "adapter_sha256": "535b4484f259394ee43cc6f8f7b49498a818f0b86adcb92915b3a46479c49af5",
+  "pilot_adapter_sha256": "058d60a8f86da39b16fe575328e9ac8a2e4f217ca48709ad6d4d174256a75a38",
+  "input_sha256": "53e91e8151eee327cb058d70e522d4081e89ec02e64b074fce53e57cd69bc28b",
+  "model_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "selection_reference": "test_shanghai_tech.py:get_pseudo_exemplars",
+  "selection_reference_sha256": "8ad806d1557bccb210b1015aa833a78c5c9df94d81b329f39e9fb0ecf8460b18",
+  "tau_sample": 0.23,
+  "tau_final": 0.23,
+  "max_pseudo": 3,
+  "selection": "Max target-word token score on all first-pass proposals, strict > threshold, descending torch.sort CPU, top 3, clamp xyxy",
+  "nms": false,
+  "no_pseudo_policy": "return stage-1 (B0) without second forward (adapter convention, unlike upstream unconditional second pass)",
+  "final_filter": "Unchanged app positive-vs-remaining filter, includes inserted exemplar tokens before period in stage 2",
+  "b0_reference": null,
+  "b0_reference_note": "No external B0 run for these inputs; stage1_* fields are this run's B0, stage1_matches_B0=null",
+  "uses_ground_truth": false,
+  "negative_prompts": false,
+  "synthetic": false,
+  "crop": false,
+  "seed": 42,
+  "resize": {
+    "short_side": 800,
+    "max_size": 1333
+  },
+  "timing": "elapsed_ms = both predict calls including preprocess/capture and selection; excludes model load, replay check, disk/overlay; no warmup",
+  "memory": "peak_vram_mib = peak torch CUDA allocated including resident model, not total device memory",
+  "raw_arrays": "All 900 proposals: normalized cxcywh, sigmoid token scores and input_ids for each executed pass",
+  "device": "NVIDIA RTX A2000 Laptop GPU",
+  "torch_version": "2.5.1+cu121",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "executable": "/root/.venvs/countgdpp/bin/python",
+  "completed_queries": 30
+}

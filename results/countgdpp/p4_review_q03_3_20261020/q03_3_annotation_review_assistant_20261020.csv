@@ -1,0 +1,17 @@
+﻿rank,visual_class,is_target,visual_object_id,duplicate_of_rank,reviewed_by,notes
+1,pen,false,pen_q03_3_01,,assistant_preliminary_visual,black pen; unverified per-box by Trieu
+2,pen,false,pen_q03_3_02,,assistant_preliminary_visual,black pen; unverified per-box by Trieu
+3,pen,false,pen_q03_3_03,,assistant_preliminary_visual,black pen; unverified per-box by Trieu
+4,pen,false,pen_q03_3_04,,assistant_preliminary_visual,black pen; unverified per-box by Trieu
+5,pen,false,pen_q03_3_05,,assistant_preliminary_visual,black pen; unverified per-box by Trieu
+6,pencil,true,pencil_yellow_teal,,assistant_preliminary_visual,yellow-green two-tone pencil; unverified per-box by Trieu
+7,pen,false,pen_q03_3_07,,assistant_preliminary_visual,black pen; unverified per-box by Trieu
+8,pencil,true,pencil_green,,assistant_preliminary_visual,green pencil; unverified per-box by Trieu
+9,pencil,true,pencil_burgundy,,assistant_preliminary_visual,burgundy pencil; unverified per-box by Trieu
+10,pencil,true,pencil_purple,,assistant_preliminary_visual,purple pencil; unverified per-box by Trieu
+11,pencil,true,pencil_blue,,assistant_preliminary_visual,blue pencil; unverified per-box by Trieu
+12,ruler,false,ruler_grey_short,,assistant_preliminary_visual,grey ruler; unverified per-box by Trieu
+13,ruler,false,ruler_grey_long,,assistant_preliminary_visual,grey ruler; unverified per-box by Trieu
+14,ruler,false,ruler_pink,,assistant_preliminary_visual,pink ruler; unverified per-box by Trieu
+15,pencil,true,pencil_brown,,assistant_preliminary_visual,brown pencil; unverified per-box by Trieu
+16,ruler,false,ruler_red,,assistant_preliminary_visual,red ruler; unverified per-box by Trieu

@@ -1,0 +1,26 @@
+{
+  "created": "2026-10-27",
+  "purpose": "Blank box-label package for Triệu: q05_3 (blackberries, GT 3) error analysis; no model run, boxes redrawn from saved predictions",
+  "sources": {
+    "b2": "results/countgdpp/b2_remaining3_20261015/predictions.jsonl",
+    "b0": "results/countgdpp/m4_first5_b0/predictions.jsonl"
+  },
+  "counts": {
+    "B0": 21,
+    "B2_final": 79,
+    "pseudo": 3
+  },
+  "pseudo_area_px": [
+    114425,
+    110390,
+    74000
+  ],
+  "label_type_values": [
+    "target (đúng blackberry, cả quả)",
+    "duplicate (trùng vật đã có object_id)",
+    "part (một phần/hạt của quả)",
+    "wrong_class (ghi actual_class)",
+    "background"
+  ],
+  "q05_2_note": "q05_2 đã có nhãn 16/10: results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json"
+}

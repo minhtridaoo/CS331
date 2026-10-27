@@ -1,6 +1,6 @@
 # Phần 2 — chấm lại pilot và kiểm chéo evaluator
 
-**Cập nhật sau nhận handoff 20/10/2026: ĐÃ CHẠY; output đã được assistant đối chiếu; CHỜ TRIỆU KIỂM CHÉO.** Không cần chạy lại model hoặc evaluator chỉ vì tài liệu cũ còn ghi “chưa chạy”.
+**Cập nhật 27/10/2026 sau yêu cầu sửa của Trí:** run/audit pilot cũ và việc Triệu chấp nhận 24/10 giữ nguyên lịch sử. **Trí chưa duyệt**, yêu cầu Triệu tự chạy evaluator và 7 ca theo [T1 trong kế hoạch V2](../reports/KE_HOACH_SUA_KIEM_CHEO_20261027.md). Đây là yêu cầu mới, chưa được đáp ứng bằng xác nhận đọc audit cũ.
 
 [Trang bắt đầu](../README.md) · [Roadmap](ROADMAP.md) · [Báo cáo pilot](../reports/PILOT_SUMMARY.md).
 
@@ -28,9 +28,11 @@
 
 [SUMMARY](../results/countgdpp/pilot_eval_20261020/SUMMARY.md) · [metrics](../results/countgdpp/pilot_eval_20261020/metrics.json) · [per_query](../results/countgdpp/pilot_eval_20261020/per_query.json) · [manual_check](../results/countgdpp/pilot_eval_20261020/manual_check.json) · [run_config](../results/countgdpp/pilot_eval_20261020/run_config.json).
 
-## 3. Việc còn lại của Triệu — kiểm chéo một lần có ghi nhận
+## 3. Nội dung kiểm đã hoàn thành theo ủy quyền — để tra cứu
 
-Mở [evaluate_pilot.py](../evaluation/evaluate_pilot.py). Đọc luồng `indexed` → `validate_prediction` → `evaluate` → `manual_check`. Ghép theo `(image_id, query_id)`, không theo thứ tự dòng; B2 ghép hai run 6+9 query. Chỉ lấy 15 query của [first5_inputs](../experiments/countgdpp/m4_inputs/first5_inputs.jsonl) trong [manifest](../experiments/countgdpp/m4_inputs/manifest.csv), dù manifest có 30 query.
+**Đã có [bản kiểm 24/10](../reports/TRIEU_KET_QUA_KIEM_CHEO_20261024.md) và [Triệu xác nhận chấp nhận](../reports/audits/TRIEU_ACCEPTANCE_20261024.json).** Người đối chiếu kỹ thuật là assistant; không ghi Triệu tự audit code. Nội dung dưới đây giữ để đọc lại, là nguồn tham khảo. Phần tự chạy T1 mới vẫn chờ Triệu, không dùng bản này để đánh dấu đã làm.
+
+Tham khảo [evaluate_pilot.py](../evaluation/evaluate_pilot.py). Đọc luồng `indexed` → `validate_prediction` → `evaluate` → `manual_check`. Ghép theo `(image_id, query_id)`, không theo thứ tự dòng; B2 ghép hai run 6+9 query. Chỉ lấy 15 query của [first5_inputs](../experiments/countgdpp/m4_inputs/first5_inputs.jsonl) trong [manifest](../experiments/countgdpp/m4_inputs/manifest.csv), dù manifest có 30 query.
 
 Kiểm vài ca dễ nhìn trong per_query và nguồn predictions; đây là các giá trị để đối chiếu, không phải kết quả model cần chạy lại:
 
@@ -43,12 +45,14 @@ Kiểm vài ca dễ nhìn trong per_query và nguồn predictions; đây là cá
 
 Các nguồn predictions được liệt kê và hash trong run_config. Với q05_2, đối chiếu [nhãn đã lưu](../results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json), chỉ số khung và object_id với manual_check. Script chỉ đếm lại nhãn người gán; không tự nhận diện lớp hoặc chấm IoU/AP.
 
+- [x] Assistant đã đối chiếu 15 dòng, bốn ca và q05_2; đọc logic error/null/uncertain/absent.
+- [x] Triệu đã đọc/hiểu/chấp nhận bản kiểm ngày 24/10, ghi ở PILOT_SUMMARY §7 (24/10, lịch sử).
 - [x] Triệu đã đọc phần ghép ID, công thức MAE/RMSE và cách xử lý error/null/uncertain (27/10; thử thêm 5 ca dữ liệu hỏng).
 - [x] Triệu đối chiếu các ca trong bảng với nguồn, kiểm manual q05_2 (27/10; truy ngược q05_3, tự gán nhãn 14 box q05_2 trước khi mở nhãn cũ).
 - [x] Triệu hiểu `n_absent=0` → metric absent=null, không phải sai số bằng 0; presence_recall chỉ là trả count dương (27/10).
 - [x] Ghi tên, ngày và kết luận trong phiếu xác nhận ở cuối [PILOT_SUMMARY](../reports/PILOT_SUMMARY.md) (27/10). [Báo cáo tự kiểm](../reports/TRIEU_TU_KIEM_PHAN2_20261027.md).
 
-Không cần gán nhãn lại 15 query hoặc viết một evaluator thứ hai để hoàn thành phần này. Review định tính Triệu đã chốt 15/15 trước đó; nhiệm vụ hiện tại là kiểm phép chấm và dữ liệu ghép.
+Việc tiếp là Trí đọc và cùng nhóm duyệt báo cáo, theo C1 của [checklist](CHECKLIST_3_GIO.md). Không cần viết evaluator thứ hai. T1 dùng bản copy đủ 15 query, giữ q05_2; xem kế hoạch V2 để có lệnh/fixture/exit code đúng.
 
 ## 4. Lệnh tham khảo khi thật sự cần chạy lại
 
@@ -69,7 +73,10 @@ Mọi lỗi phải được ghi riêng, không chuyển thành count 0. Không s
 
 - [x] Người chạy báo self-test PASS, nguồn được ghi rõ.
 - [x] Output đủ 5 file; số liệu/IDs/hash đã đối chiếu trên file thật.
-- [x] ROADMAP/HANDOFF/WORKLOG đã đồng bộ sau lượt kiểm ngày 20/10.
+- [x] ROADMAP/HANDOFF/WORKLOG đã đồng bộ 27/10; phần tiếp ở CHECKLIST_3_GIO.md.
 - [x] Triệu tự kiểm chéo evaluator ngày 27/10: self-test PASS, tính lại metric khớp, run `pilot_eval_20261027_trieu` giống hệt run 20/10.
+- [x] Triệu xác nhận chấp nhận bản kiểm được ủy quyền 24/10; không gọi là tự audit code.
 
-Phần chạy và audit output đã xong; chỉ còn xác nhận nhóm để đóng Phần 2. Tiếp tục [Phần 3](PHAN_3_TONG_KET.md), không chạy lại inference. Assistant chạy self-test/evaluator/thực nghiệm thay vẫn phải hỏi trước theo yêu cầu của bạn ngày 19/10.
+Phần chạy và audit output đã xong; bản kiểm đã được chấp nhận, còn nhóm duyệt toàn báo cáo pilot. Tiếp tục [Phần 3](PHAN_3_TONG_KET.md), không chạy lại inference. Assistant chạy self-test/evaluator/thực nghiệm thay vẫn phải hỏi trước theo yêu cầu của bạn ngày 19/10.
+
+**Trạng thái mới:** T1 chưa có log Triệu tự chạy theo yêu cầu 27/10. Dùng lệnh và điều kiện nghiệm thu trong kế hoạch V2; không tự chạy thay Triệu hoặc ghi đã PASS các ca giả định.

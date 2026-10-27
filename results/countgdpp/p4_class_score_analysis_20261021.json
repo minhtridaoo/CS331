@@ -1,0 +1,95 @@
+{
+  "analysis": "exploratory_class_score_diagnostic",
+  "cases": {
+    "q03_1": {
+      "prompt": "a photo of pens",
+      "annotation_source": "results/countgdpp/p4_review_q03_1_20261020/q03_1_annotation_review_assistant_20261021.csv",
+      "class_statistics": {
+        "pen": {
+          "n": 6,
+          "b2_mean": 0.9355652829011282,
+          "clip_mean": 0.22736715773741403,
+          "ranks": [
+            1,
+            2,
+            4,
+            6,
+            7,
+            9
+          ]
+        },
+        "pencil": {
+          "n": 6,
+          "b2_mean": 0.872290700674057,
+          "clip_mean": 0.2356769616405169,
+          "ranks": [
+            3,
+            5,
+            8,
+            10,
+            11,
+            12
+          ]
+        },
+        "ruler": {
+          "n": 1,
+          "b2_mean": 0.2765113115310669,
+          "clip_mean": 0.24175673723220825,
+          "ranks": [
+            13
+          ]
+        }
+      }
+    },
+    "q03_3": {
+      "prompt": "a photo of pencils",
+      "annotation_source": "results/countgdpp/p4_review_q03_3_20261020/q03_3_annotation_review_assistant_20261020.csv",
+      "class_statistics": {
+        "pen": {
+          "n": 6,
+          "b2_mean": 0.9329495032628378,
+          "clip_mean": 0.20108203093210855,
+          "ranks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        "pencil": {
+          "n": 6,
+          "b2_mean": 0.8173304597536722,
+          "clip_mean": 0.22739417850971222,
+          "ranks": [
+            6,
+            8,
+            9,
+            10,
+            11,
+            15
+          ]
+        },
+        "ruler": {
+          "n": 4,
+          "b2_mean": 0.3733247220516205,
+          "clip_mean": 0.2326374240219593,
+          "ranks": [
+            12,
+            13,
+            14,
+            16
+          ]
+        }
+      }
+    }
+  },
+  "label_status": "assistant_preliminary",
+  "limitations": [
+    "Development cases only",
+    "Visual labels pending independent verification",
+    "No new model or threshold trained",
+    "Class averages are descriptive, not calibrated probabilities"
+  ]
+}

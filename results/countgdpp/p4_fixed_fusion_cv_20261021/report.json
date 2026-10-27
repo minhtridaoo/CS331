@@ -1,0 +1,296 @@
+{
+  "experiment": "fixed_half_half_score_fusion",
+  "method": "train_only_minmax_then_equal_weight",
+  "evaluation": "five_fold_leave_one_image_out",
+  "scope": "exploratory_dev_only",
+  "weight_b2": 0.5,
+  "weight_clip": 0.5,
+  "baselines": {
+    "B2_original": {
+      "MAE": 22.0,
+      "RMSE": 30.090973175799196,
+      "exact_count": 1
+    },
+    "B2_threshold": {
+      "MAE": 4.6,
+      "RMSE": 6.618156843109719,
+      "exact_count": 1
+    },
+    "CLIP_threshold": {
+      "MAE": 6.8,
+      "RMSE": 8.846845012017937,
+      "exact_count": 0
+    }
+  },
+  "fusion": {
+    "MAE": 5.8,
+    "RMSE": 7.79315939355364,
+    "exact_count": 0
+  },
+  "folds": [
+    {
+      "test_image": "mcac_100",
+      "train_ids": [
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q04_1",
+        "q04_2",
+        "q04_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_ids": [
+        "q01_1",
+        "q01_2",
+        "q01_3"
+      ],
+      "bounds": {
+        "B2": [
+          0.2326723337173462,
+          0.9745987057685852
+        ],
+        "CLIP": [
+          0.1666240692138672,
+          0.3146958649158478
+        ]
+      },
+      "threshold": 0.6744302370289061
+    },
+    {
+      "test_image": "mcac_11",
+      "train_ids": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q04_1",
+        "q04_2",
+        "q04_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_ids": [
+        "q02_1",
+        "q02_2",
+        "q02_3"
+      ],
+      "bounds": {
+        "B2": [
+          0.2326723337173462,
+          0.9772246479988098
+        ],
+        "CLIP": [
+          0.1666240692138672,
+          0.3146958649158478
+        ]
+      },
+      "threshold": 0.6594611740144817
+    },
+    {
+      "test_image": "mcac_20",
+      "train_ids": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_ids": [
+        "q04_1",
+        "q04_2",
+        "q04_3"
+      ],
+      "bounds": {
+        "B2": [
+          0.2326723337173462,
+          0.9772246479988098
+        ],
+        "CLIP": [
+          0.1788729876279831,
+          0.3146958649158478
+        ]
+      },
+      "threshold": 0.6415306366792124
+    },
+    {
+      "test_image": "mcac_200",
+      "train_ids": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q04_1",
+        "q04_2",
+        "q04_3",
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "test_ids": [
+        "q03_1",
+        "q03_2",
+        "q03_3"
+      ],
+      "bounds": {
+        "B2": [
+          0.2326723337173462,
+          0.9772246479988098
+        ],
+        "CLIP": [
+          0.1666240692138672,
+          0.3146958649158478
+        ]
+      },
+      "threshold": 0.6353434409948895
+    },
+    {
+      "test_image": "mcac_27",
+      "train_ids": [
+        "q01_1",
+        "q01_2",
+        "q01_3",
+        "q02_1",
+        "q02_2",
+        "q02_3",
+        "q03_1",
+        "q03_2",
+        "q03_3",
+        "q04_1",
+        "q04_2",
+        "q04_3"
+      ],
+      "test_ids": [
+        "q05_1",
+        "q05_2",
+        "q05_3"
+      ],
+      "bounds": {
+        "B2": [
+          0.23300479352474213,
+          0.9772246479988098
+        ],
+        "CLIP": [
+          0.1666240692138672,
+          0.3042253851890564
+        ]
+      },
+      "threshold": 0.6066628744383873
+    }
+  ],
+  "per_query": {
+    "q01_1": {
+      "image_id": "mcac_100",
+      "gt": 25,
+      "combined_count": 24,
+      "selected_threshold": 0.6744302370289061
+    },
+    "q01_2": {
+      "image_id": "mcac_100",
+      "gt": 11,
+      "combined_count": 1,
+      "selected_threshold": 0.6744302370289061
+    },
+    "q01_3": {
+      "image_id": "mcac_100",
+      "gt": 1,
+      "combined_count": 0,
+      "selected_threshold": 0.6744302370289061
+    },
+    "q02_1": {
+      "image_id": "mcac_11",
+      "gt": 15,
+      "combined_count": 4,
+      "selected_threshold": 0.6594611740144817
+    },
+    "q02_2": {
+      "image_id": "mcac_11",
+      "gt": 3,
+      "combined_count": 6,
+      "selected_threshold": 0.6594611740144817
+    },
+    "q02_3": {
+      "image_id": "mcac_11",
+      "gt": 2,
+      "combined_count": 3,
+      "selected_threshold": 0.6594611740144817
+    },
+    "q04_1": {
+      "image_id": "mcac_20",
+      "gt": 6,
+      "combined_count": 13,
+      "selected_threshold": 0.6415306366792124
+    },
+    "q04_2": {
+      "image_id": "mcac_20",
+      "gt": 24,
+      "combined_count": 29,
+      "selected_threshold": 0.6415306366792124
+    },
+    "q04_3": {
+      "image_id": "mcac_20",
+      "gt": 39,
+      "combined_count": 18,
+      "selected_threshold": 0.6415306366792124
+    },
+    "q03_1": {
+      "image_id": "mcac_200",
+      "gt": 6,
+      "combined_count": 12,
+      "selected_threshold": 0.6353434409948895
+    },
+    "q03_2": {
+      "image_id": "mcac_200",
+      "gt": 6,
+      "combined_count": 5,
+      "selected_threshold": 0.6353434409948895
+    },
+    "q03_3": {
+      "image_id": "mcac_200",
+      "gt": 6,
+      "combined_count": 1,
+      "selected_threshold": 0.6353434409948895
+    },
+    "q05_1": {
+      "image_id": "mcac_27",
+      "gt": 2,
+      "combined_count": 6,
+      "selected_threshold": 0.6066628744383873
+    },
+    "q05_2": {
+      "image_id": "mcac_27",
+      "gt": 4,
+      "combined_count": 6,
+      "selected_threshold": 0.6066628744383873
+    },
+    "q05_3": {
+      "image_id": "mcac_27",
+      "gt": 3,
+      "combined_count": 12,
+      "selected_threshold": 0.6066628744383873
+    }
+  },
+  "limitations": [
+    "No independent holdout",
+    "Fusion design motivated by prior pilot observations",
+    "Count metrics do not verify correct object class",
+    "Normalization and threshold fitted on training images",
+    "No claim of generalization or improvement"
+  ]
+}

@@ -1,0 +1,30 @@
+{"schema_version": 1, "image_id": "mcac_123", "query_id": "u01_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_123.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_123", "query_id": "u01_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_123.jpg", "prompt": "dogs"}
+{"schema_version": 1, "image_id": "mcac_123", "query_id": "u01_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_123.jpg", "prompt": "sheep"}
+{"schema_version": 1, "image_id": "mcac_121", "query_id": "u02_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_121.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_121", "query_id": "u02_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_121.jpg", "prompt": "dogs"}
+{"schema_version": 1, "image_id": "mcac_121", "query_id": "u02_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_121.jpg", "prompt": "cats"}
+{"schema_version": 1, "image_id": "mcac_109", "query_id": "u03_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_109.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_109", "query_id": "u03_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_109.jpg", "prompt": "amplifiers"}
+{"schema_version": 1, "image_id": "mcac_109", "query_id": "u03_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_109.jpg", "prompt": "bicycles"}
+{"schema_version": 1, "image_id": "mcac_110", "query_id": "u04_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_110.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_110", "query_id": "u04_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_110.jpg", "prompt": "guitars"}
+{"schema_version": 1, "image_id": "mcac_110", "query_id": "u04_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_110.jpg", "prompt": "amplifiers"}
+{"schema_version": 1, "image_id": "mcac_63", "query_id": "u05_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_63.jpg", "prompt": "chairs"}
+{"schema_version": 1, "image_id": "mcac_63", "query_id": "u05_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_63.jpg", "prompt": "beach umbrellas"}
+{"schema_version": 1, "image_id": "mcac_63", "query_id": "u05_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_63.jpg", "prompt": "forks"}
+{"schema_version": 1, "image_id": "mcac_61", "query_id": "u06_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_61.jpg", "prompt": "chairs"}
+{"schema_version": 1, "image_id": "mcac_61", "query_id": "u06_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_61.jpg", "prompt": "beach umbrellas"}
+{"schema_version": 1, "image_id": "mcac_61", "query_id": "u06_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_61.jpg", "prompt": "blackberries"}
+{"schema_version": 1, "image_id": "mcac_88", "query_id": "u07_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_88.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_88", "query_id": "u07_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_88.jpg", "prompt": "cars"}
+{"schema_version": 1, "image_id": "mcac_88", "query_id": "u07_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_88.jpg", "prompt": "trucks"}
+{"schema_version": 1, "image_id": "mcac_72", "query_id": "u08_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_72.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_72", "query_id": "u08_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_72.jpg", "prompt": "cars"}
+{"schema_version": 1, "image_id": "mcac_72", "query_id": "u08_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_72.jpg", "prompt": "boats"}
+{"schema_version": 1, "image_id": "mcac_227", "query_id": "u09_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_227.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_227", "query_id": "u09_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_227.jpg", "prompt": "boats"}
+{"schema_version": 1, "image_id": "mcac_227", "query_id": "u09_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_227.jpg", "prompt": "trucks"}
+{"schema_version": 1, "image_id": "mcac_84", "query_id": "u10_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_84.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_84", "query_id": "u10_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_84.jpg", "prompt": "motorbikes"}
+{"schema_version": 1, "image_id": "mcac_84", "query_id": "u10_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_84.jpg", "prompt": "trucks"}

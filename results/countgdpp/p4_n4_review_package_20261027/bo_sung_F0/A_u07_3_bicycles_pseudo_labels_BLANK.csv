@@ -1,0 +1,4 @@
+query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
+u07_3,bicycles,pseudo,P1,680.9,253.4,818.4,424.1,,,,,,
+u07_3,bicycles,pseudo,P2,196.0,542.9,470.9,724.4,,,,,,
+u07_3,bicycles,pseudo,P3,768.2,596.7,876.9,719.3,,,,,,

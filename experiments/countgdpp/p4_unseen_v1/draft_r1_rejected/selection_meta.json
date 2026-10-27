@@ -1,0 +1,147 @@
+{
+  "status": "DRAFT_NOT_LOCKED",
+  "created": "2026-10-27",
+  "rule_script_sha256": "71d7569e336f77bffc2ee428032cfe8ca1ef23d12db97c7a27ec4d923d64fe42",
+  "mucca_zip_md5": "b182e445445dad017493ffb35803f816",
+  "seed": 331,
+  "n_images": 10,
+  "min_points": 3,
+  "max_points": 40,
+  "eligible_pool": [
+    "mcac_60",
+    "mcac_61",
+    "mcac_63",
+    "mcac_72",
+    "mcac_75",
+    "mcac_76",
+    "mcac_79",
+    "mcac_83",
+    "mcac_84",
+    "mcac_85",
+    "mcac_87",
+    "mcac_88",
+    "mcac_89",
+    "mcac_93",
+    "mcac_95",
+    "mcac_96",
+    "mcac_109",
+    "mcac_110",
+    "mcac_111",
+    "mcac_119",
+    "mcac_120",
+    "mcac_121",
+    "mcac_122",
+    "mcac_123",
+    "mcac_124",
+    "mcac_191",
+    "mcac_222",
+    "mcac_224",
+    "mcac_227"
+  ],
+  "chosen": [
+    "mcac_222",
+    "mcac_123",
+    "mcac_87",
+    "mcac_76",
+    "mcac_83",
+    "mcac_120",
+    "mcac_72",
+    "mcac_224",
+    "mcac_96",
+    "mcac_95"
+  ],
+  "dev_excluded": [
+    "mcac_100",
+    "mcac_11",
+    "mcac_20",
+    "mcac_200",
+    "mcac_27"
+  ],
+  "super_categories": {
+    "tableware": [
+      "plates",
+      "bowls",
+      "cups",
+      "forks",
+      "glasses",
+      "knives",
+      "spoons"
+    ],
+    "furniture": [
+      "chairs",
+      "desks"
+    ],
+    "fruit": [
+      "cherries",
+      "raspberries",
+      "strawberries",
+      "blueberries",
+      "blackberries",
+      "red currants",
+      "grapes",
+      "lemons",
+      "apples",
+      "pears",
+      "bananas",
+      "oranges"
+    ],
+    "person": [
+      "people"
+    ],
+    "beach": [
+      "beach umbrellas"
+    ],
+    "vehicle": [
+      "cars",
+      "motorbikes",
+      "bicycles",
+      "trucks",
+      "boats"
+    ],
+    "music": [
+      "amplifiers",
+      "guitars"
+    ],
+    "animal": [
+      "cats",
+      "dogs",
+      "cows",
+      "sheeps",
+      "goats"
+    ],
+    "building": [
+      "balconies",
+      "windows"
+    ],
+    "smoking": [
+      "cigaretts",
+      "lighters"
+    ],
+    "locks": [
+      "keys",
+      "padlocks",
+      "key holders"
+    ],
+    "stationery": [
+      "pens",
+      "rulers",
+      "pencils"
+    ]
+  },
+  "prompt_fix": {
+    "sheeps": "sheep",
+    "cigaretts": "cigarettes"
+  },
+  "image_sha256": {
+    "mcac_222": "a1eb1e87fcde7125abb0ccf1f99a9d400f81896eaa4dcbd665663d927003bd56",
+    "mcac_123": "842067c0c535acb2363565da59570b50f4818b47607369d332421af93fb80e4b",
+    "mcac_87": "056a1329b8a6263882664c34a40a1c8ff15765b505eea2614cfff6374adb6f4b",
+    "mcac_76": "a9bf86a18d93ae3300ff65a048c956595fc0e8710b017c5ebbd40e3b884e5c94",
+    "mcac_83": "0865717b394115a10a2ff2c75a21583c87459e333054396940573410762c534c",
+    "mcac_120": "9ba3b26b39a04c6770b2adea3159e6f8945b0206fa90f93c26174296dfeb34cf",
+    "mcac_72": "479e07cb3296a1ca80f6399e01e792e04a2294168a10ad45b89886668946c69a",
+    "mcac_224": "d15812323cabd26fb0e75c1734cb99e816c6e9fa1db8408e9face4b6a5124948",
+    "mcac_96": "b3ffc41aa88d4aad5eecb2084fafc28c2da651003e994e711d7141e9b55aeac6",
+    "mcac_95": "267e4200e2e250889b7333d14b82fab951dd3156f134771d91dae2dd342c75fa"
+  }
+}

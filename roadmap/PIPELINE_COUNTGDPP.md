@@ -1,8 +1,10 @@
 # Pipeline kỹ thuật CS331 — CountGD++
 
-**Cập nhật 20/10/2026, theo ROADMAP V4.6.** Đây là protocol kỹ thuật để tra cấu hình; bắt đầu công việc mỗi buổi ở [README](../README.md), xem trạng thái ở [ROADMAP](ROADMAP.md) và [HANDOFF hiện hành](../HANDOFF/HANDOFF.md).
+**Ưu tiên trạng thái mới nhất 27/10:** Trí đã đọc C1 và chưa duyệt; Triệu tự làm T1–T4 theo [kế hoạch V2](../reports/KE_HOACH_SUA_KIEM_CHEO_20261027.md), hạn đề xuất 30/10–03/11. Việc chấp nhận bản assistant 24/10 không thay yêu cầu tự chạy mới. Trí chọn B, p4_unseen_v1 DRAFT; adapter đã viết, kiểm (1) từ điểm dev đạt, (2)–(4) chưa kiểm đầy đủ. T1 không sửa evaluator; fixtures đủ 15 query, giữ q05_2. Các mô tả giai đoạn trước bên dưới là nguồn tham khảo nếu khác điểm tiếp tục này.
 
-**Đã có:** smoke 3/3; B0/B2 pilot 5 ảnh/15 query; E1/E2 trên 2 ảnh/6 query; review định tính Trí/Triệu đều 15/15; bản Triệu chốt v1 đã làm rõ guitar/q04_2. **Còn chốt:** [phần 2 evaluator](PHAN_2_DANH_GIA.md) và [phần 3 tổng kết pilot](PHAN_3_TONG_KET.md). Evaluator đã chạy ngày 20/10, output/hash/15 dòng đã audit; còn Triệu kiểm chéo và nhóm duyệt báo cáo. Mục 6 báo cáo có đề xuất CLIP sau B2; chưa có phương pháp cải tiến được kiểm chứng.
+**Cập nhật 27/10/2026, theo ROADMAP V4.8.** Đây là protocol kỹ thuật để tra cấu hình; bắt đầu công việc mỗi buổi ở [README](../README.md), xem trạng thái ở [ROADMAP](ROADMAP.md) và [HANDOFF hiện hành](../HANDOFF/HANDOFF.md).
+
+**Đã có:** smoke 3/3; B0/B2 pilot 5 ảnh/15 query; E1/E2 trên 2 ảnh/6 query; review định tính Trí/Triệu đều 15/15; bản Triệu chốt v1 đã làm rõ guitar/q04_2. **Còn chốt:** [phần 2 evaluator](PHAN_2_DANH_GIA.md) và [phần 3 tổng kết pilot](PHAN_3_TONG_KET.md). Evaluator đã chạy ngày 20/10, output/hash/15 dòng đã audit; Triệu đã chấp nhận bản kiểm được ủy quyền ngày 24/10; còn nhóm duyệt báo cáo. P4 đã thử CLIP/CV/Fusion và khóa ứng viên đến P4.5c; chưa có đánh giá độc lập trên ảnh mới. [Bước tiếp P4.6a–b](P4_TIEP_THEO.md) và [audit](../reports/P4_AUDIT_20261022.md). CountGD++ vẫn là model đếm; CLIP chỉ chấm crop, không phải CLIP-Count.
 
 **Nhánh benchmark đã hoàn thành lượt chạy:** FSCD-147 1.190 ảnh, MAE=8.336975, RMSE=24.637626; count metrics đã đối chiếu ngày 20/10. [Báo cáo](../reports/BENCHMARK_FSCD147.md). Cấu hình có text + synthetic + pseudo + adaptive crop. Các B0/B2 bên dưới chỉ là cấu hình thành phần của pilot, không phải toàn bộ nhánh đó.
 
@@ -19,7 +21,7 @@
 
 ## 2. Dữ liệu và chia tập
 
-**Pilot đã chạy:** 5 ảnh/15 query để khám phá lỗi. **Kế hoạch mở rộng dev:** 20–30 ảnh, chưa hoàn thành và chưa phải benchmark kết luận. Bộ đầu tiên chọn ảnh dễ kiểm tra; ưu tiên ảnh thật nhiều loại vật, mật độ vừa để kiểm nhãn/vị trí. Ghi rõ thiên lệch chọn ảnh dễ; sau đó mở rộng điều kiện khó có kiểm soát.
+**Pilot đã chạy:** 5 ảnh/15 query để khám phá lỗi. **Kế hoạch 20–30 ảnh dev trước đây chưa hoàn thành; không bắt buộc mở lại để đóng pilot.** Hướng tiếp hiện tại là khóa dữ liệu kiểm tra mới sau freeze theo P4_TIEP_THEO, đề xuất 10 ảnh/30 query nếu đủ nguồn/nhãn. Quy mô và split phải chốt trước dự đoán. Bộ đầu tiên chọn ảnh dễ kiểm tra; ưu tiên ảnh thật nhiều loại vật, mật độ vừa để kiểm nhãn/vị trí. Ghi rõ thiên lệch chọn ảnh dễ; sau đó mở rộng điều kiện khó có kiểm soát.
 
 Mỗi ảnh ưu tiên có qX và qY thuộc hai loại khác hẳn nhau cùng hiện diện, kèm số lượng thật; thêm qAbsent đã xác nhận không có trong ảnh. Có cả cặp X/Y khác số lượng và bằng số lượng. Lớp vắng mặt dễ nhầm có thể thêm sau, phân tầng riêng. Ảnh mơ hồ/che khuất cần quy tắc đếm hoặc loại khỏi chỉ số đòi hỏi nhãn chắc chắn, báo số loại.
 
@@ -160,3 +162,5 @@ Các commit là snapshot đã đọc, không tuyên bố luôn là nhánh mới 
 - [Fantastic Tractor-Dogs — ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ae50a5245a775b10c621b0f5b28eb460-Abstract-Conference.html).
 
 Khi triển khai xác minh snapshot khớp checkpoint, log phiên bản thực dùng; đổi commit phải lưu lý do/khác biệt. Không trình bày trọng số tác giả như sản phẩm nhóm tự huấn luyện.
+
+**Buổi tiếp theo có 3 giờ:** theo [CHECKLIST_3_GIO](CHECKLIST_3_GIO.md), chia sẻ T0 → tiếp C2/C3 → ghi C4. C1 đã đọc, Trí chưa duyệt và yêu cầu Triệu tự làm T1–T4 V2. Chưa chạy ảnh mới; chỉ đánh dấu sau bằng chứng.

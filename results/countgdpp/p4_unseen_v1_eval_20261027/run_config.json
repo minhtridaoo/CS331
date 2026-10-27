@@ -1,0 +1,12 @@
+{
+  "scorer_sha256": "d48190ca738442d1b48786f5eff3b38ddf3cdc97fbf4d064273a519f744890d7",
+  "locked_sha256": {
+    "inputs.jsonl": "53e91e8151eee327cb058d70e522d4081e89ec02e64b074fce53e57cd69bc28b",
+    "manifest.csv": "9161d8f44fb498e61633acdb025e2f1932e15d1300b7db669cfd7150c55daa38"
+  },
+  "b2_predictions": "results/countgdpp/p4_unseen_v1_b2_20261027/predictions.jsonl",
+  "b2_sha256": "bae674d7a171edaedb8cbd61b9e28a233953e4eaf3a46dc833c7a4f3e0db7fc3",
+  "freeze_out": "results/countgdpp/p4_unseen_v1_freeze_20261027",
+  "kept_sha256": "4c947c86fd1b9b0601a8cf0e320ae2d6970899f854b58c2a2db00164e28b6b3a",
+  "note": "B0 = stage 1 of the same run (reference). Object columns are an automatic point-in-box proxy, not the §4 human review."
+}

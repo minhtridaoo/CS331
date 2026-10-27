@@ -1,0 +1,4 @@
+query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
+u06_2,beach umbrellas,pseudo,P1,2263.3,738.6,2466.9,866.4,,,,,,
+u06_2,beach umbrellas,pseudo,P2,2068.7,817.0,2278.6,957.4,,,,,,
+u06_2,beach umbrellas,pseudo,P3,1845.9,953.7,2036.9,1072.9,,,,,,

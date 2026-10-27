@@ -1,0 +1,19 @@
+query      B2_orig  B2_thr  Fusion
+q01_1           25      19      24
+q01_2           38      17       5
+q01_3            0       0       0
+q02_1           31       7       5
+q02_2           31       6       6
+q02_3           26       3       3
+q03_1           13       7       9
+q03_2           18       4       5
+q03_3           16       6       1
+q04_1           59      14      13
+q04_2           32      27      29
+q04_3           84      19      20
+q05_1           15       1       5
+q05_2           14       2       4
+q05_3           79       0       4
+CHECK audit: PASS
+CHECK reference_scores: PASS
+Saved: D:\MINHTRIHOCCODE\HOCKI5\CS331\results\countgdpp\p4_freeze_e2e_devcheck_20261027

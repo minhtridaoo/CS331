@@ -1,0 +1,4 @@
+query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
+u02_1,people,pseudo,P1,373.2,244.6,455.3,423.0,,,,,,
+u02_1,people,pseudo,P2,499.3,262.9,565.3,422.8,,,,,,
+u02_1,people,pseudo,P3,638.0,260.9,722.4,419.0,,,,,,

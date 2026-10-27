@@ -1,22 +1,26 @@
 # Pipeline phân công — Bạn và Triệu
 
-**Điểm tiếp tục 20/10:** phần 2–3 pilot đã có hướng dẫn riêng; evaluator đã chạy/audit output; tổng kết đã điền kết quả và đề xuất P4, chờ Triệu kiểm chéo và nhóm duyệt. [Phần 2](PHAN_2_DANH_GIA.md) · [Phần 3](PHAN_3_TONG_KET.md) · [Roadmap hiện hành](ROADMAP.md) · [Work log chính](../WORKLOG.md).
+**Ưu tiên trạng thái mới nhất 27/10:** Trí đã đọc C1 và chưa duyệt; Triệu tự làm T1–T4 theo [kế hoạch V2](../reports/KE_HOACH_SUA_KIEM_CHEO_20261027.md), hạn đề xuất 30/10–03/11. Việc chấp nhận bản assistant 24/10 không thay yêu cầu tự chạy mới. Trí chọn B, p4_unseen_v1 DRAFT; adapter đã viết, kiểm (1) từ điểm dev đạt, (2)–(4) chưa kiểm đầy đủ. T1 không sửa evaluator; fixtures đủ 15 query, giữ q05_2. Các mô tả giai đoạn trước bên dưới là nguồn tham khảo nếu khác điểm tiếp tục này.
 
-**Cập nhật 20/10/2026. Áp dụng cho CountGD++, roadmap V4.6.**
+**Điểm tiếp tục 27/10:** pilot đã đủ phần chạy/chấm/viết, Triệu đã chấp nhận bản kiểm evaluator 24/10; còn nhóm duyệt. P4 đã có CLIP/CV/Fusion/freeze đến P4.5c; Trí chuẩn bị dữ liệu mới và runner trong lúc chờ Triệu kiểm 47 nhãn. [Việc tiếp cụ thể](P4_TIEP_THEO.md) · [Roadmap](ROADMAP.md) · [Work log](../WORKLOG.md).
+
+**Cập nhật 27/10/2026. Áp dụng cho CountGD++, roadmap V4.8.**
 [Handoff chung](../HANDOFF/HANDOFF.md) · [Handoff của bạn](../HANDOFF/HANDOFF_MODEL.md) · [Handoff Triệu](../HANDOFF/HANDOFF_TRIEU.md) · [Protocol nghiên cứu](PIPELINE_COUNTGDPP.md)
 
 Benchmark của Trí đã chạy đủ FSCD-147 1.190 ảnh; count metrics được kiểm ngày 20/10, MAE=8.336975, RMSE=24.637626. [Báo cáo](../reports/BENCHMARK_FSCD147.md). Nhánh này không thay phần 2–3 của pilot.
 
 ## 1. Mục tiêu chung và phần chịu trách nhiệm
 
-Cùng ảnh, đổi X sang Y phải đếm đúng loại được hỏi; hỏi lớp vắng mặt phải trả 0. Bắt đầu B0 một lượt, sau đó B2 có pseudo-exemplar. Chưa train và chưa chọn module cải tiến trước thực nghiệm.
+Cùng ảnh, đổi X sang Y phải đếm đúng loại được hỏi; hỏi lớp vắng mặt phải trả 0. Đã thử B0 một lượt và B2 có pseudo-exemplar; P4 thử bộ lọc sau B2 bằng CLIP/Fusion, chưa train trọng số. Có dùng nhãn dev chọn ngưỡng, chưa kiểm tập mới.
 
 - **Bạn: nhánh mô hình.** Môi trường GPU, trọng số, chương trình inference, B0/B2, thí nghiệm ngưỡng và tài nguyên.
 - **Triệu: nhánh dữ liệu và đánh giá.** Chọn/kiểm nhãn ảnh, chia tập, lập bảng đầu vào, lập trình evaluator và phân tích lỗi. Đây là một nhánh kỹ thuật có sản phẩm code.
 - **Cả hai:** thống nhất giao diện dữ liệu, kiểm tra chéo nhãn/vị trí, giải thích kết quả, chọn một can thiệp rồi cùng viết báo cáo.
 - Thời gian theo mốc hoàn thành, không phải deadline chính thức. Phân công chưa đồng nghĩa Triệu đã thực hiện việc nào.
 
-## 2. Hai nhánh chạy song song
+## 2. Khung phân công lúc khởi động — để tra lịch sử
+
+Các mốc/diagram dưới đây là khung ban đầu, không phải yêu cầu làm lại. Việc hiện tại theo P4_TIEP_THEO; evaluator đã có, Triệu cần kiểm code/output thay vì bắt đầu viết lại.
 
 ~~~mermaid
 flowchart LR
@@ -45,7 +49,7 @@ flowchart LR
 | M5 | B2, ghi mẫu và cả hai lượt | Dự đoán và pseudo-exemplar; chính sách không có mẫu |
 | M6 | E1/E2 tách ngưỡng, E3 nếu cần | Các run riêng, cấu hình cố định; chưa chọn bằng holdout |
 
-**Bước hiện tại: B0/B2 và review của Trí đã đủ 5 ảnh/15 query.** Chẩn đoán token 5 query; M6/E1/E2 trên 2 ảnh/6 query. q05_2 final đã có nhãn 14 bbox; Trí đã chạy phần 2, assistant đã audit; còn kiểm chéo nhóm và chốt phần 3; Triệu đã chốt review định tính 15/15 (guitar/q04_2 đã làm rõ), chuyển sang kiểm evaluator. Tài nguyên, evaluator/G1 chính thức và query absent còn chờ; chưa kết luận hiệu quả cải tiến.
+**Bước hiện tại:** Trí đã hoàn thành B0/B2, evaluator, nội dung pilot và thăm dò P4 đến freeze/audit. Chuẩn bị P4.6a–b; chưa chạy ảnh mới. Triệu đã chấp nhận kiểm evaluator; còn 47 nhãn q03 độc lập và duyệt chung. Tài nguyên/absent/holdout mới chưa hoàn thành; không suy kết quả dev thành hiệu quả tổng quát.
 
 Bạn chịu trách nhiệm chuyển đầu ra gốc của repo sang định dạng chung. Không yêu cầu Triệu đọc riêng từng định dạng nội bộ của B0/B2.
 
@@ -64,7 +68,7 @@ Triệu không cần chờ GPU hoặc cài CountGD++ để làm T1–T4. Có th�
 
 ## 5. Định dạng bàn giao v1 — hai bên phải dùng chung
 
-Đây là schema đã dùng cho B0/B2 pilot. Đã có predictions.jsonl chuẩn hóa 15 query; evaluator chuẩn bị 19/10 đã được Trí chạy ngày 20/10, đủ 5 output/run và đã audit; còn Triệu xác nhận kiểm chéo để đóng phần 2.
+Đây là schema đã dùng cho B0/B2 pilot. Đã có predictions.jsonl chuẩn hóa 15 query; evaluator chuẩn bị 19/10 đã được Trí chạy ngày 20/10, đủ 5 output/run và đã audit; Triệu đã chấp nhận bản kiểm được ủy quyền ngày 24/10, còn duyệt chung pilot.
 
 ### 5.1. Triệu → bạn
 
@@ -155,8 +159,12 @@ Thêm ca kiểm tra có ý nghĩa: thiếu một ID; ID trùng; error/null; coun
 Sau mỗi mốc có bằng chứng, nối thêm [work log](../WORKLOG.md), đồng bộ handoff và pipeline theo yêu cầu người dùng. Cuối mỗi buổi, cập nhật handoff cá nhân: việc xong, đường dẫn/lệnh tái chạy, kết quả kiểm tra, lỗi còn lại, bước kế tiếp. Chỉ ghi “xong” khi có sản phẩm kiểm được. Không cần đợi người kia hoàn thành toàn nhánh mới ghép G1.
 
 
-## 9. Phần 2–3 hiện hành, cập nhật 20/10
+## 9. Phần 2–3 và P4 hiện hành, cập nhật 22/10
 
 [Phần 2](PHAN_2_DANH_GIA.md) chỉ rõ code, input, lệnh self-test/đánh giá và đáp án mong đợi. [Phần 3](PHAN_3_TONG_KET.md) chỉ rõ bản báo cáo phải sửa. Trong bản evaluator ban đầu, bảng từng query xuất per_query.json thay vì CSV; cùng nội dung/khóa schema. Nếu cần CSV để báo cáo thì xuất thêm có kiểm tra, không là điều kiện bắt buộc để chốt pilot.
 
 M0–M6, T1–T6 và G0–G4 phía trên là khung đầy đủ; hoàn thành pilot nhỏ không đồng nghĩa mọi gate dev/absent/holdout đã đạt. Người dùng tự chạy; assistant muốn chạy đánh giá thay phải hỏi trước.
+
+[Hướng dẫn P4 tiếp theo](P4_TIEP_THEO.md) tách rõ đóng pilot, nhãn P4, dữ liệu mới và runner dùng freeze. Không cần thực hiện lại toàn bộ kế hoạch 20–30 ảnh dev cũ trước khi làm bước tiếp đã chốt này.
+
+**Buổi tiếp theo có 3 giờ:** theo [CHECKLIST_3_GIO](CHECKLIST_3_GIO.md), chia sẻ T0 → tiếp C2/C3 → ghi C4. C1 đã đọc, Trí chưa duyệt và yêu cầu Triệu tự làm T1–T4 V2. Chưa chạy ảnh mới; chỉ đánh dấu sau bằng chứng.

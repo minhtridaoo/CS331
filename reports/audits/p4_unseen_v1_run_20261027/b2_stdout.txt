@@ -1,0 +1,47 @@
+Validated 30 queries / 10 images; b0_reference=none
+/root/.venvs/countgdpp/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/root/.venvs/countgdpp/lib/python3.10/site-packages/torch/functional.py:534: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3595.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Some weights of BertModel were not initialized from the model checkpoint at checkpoints/bert-base-uncased and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/process_folder.py:138: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.pretrain_model_path, map_location="cpu")["model"]
+/root/.venvs/countgdpp/lib/python3.10/site-packages/transformers/modeling_utils.py:1126: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+/mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/CountGDPlusPlus/models/GroundingDINO/transformer.py:873: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+final text_encoder_type: checkpoints/bert-base-uncased
+load tokenizer done.
+final text_encoder_type: checkpoints/bert-base-uncased
+load tokenizer done.
+1/30 u01_1 people: B0=14, pseudo=3, B2=38, replay_matches=None, no_pseudo=False
+2/30 u01_2 dogs: B0=32, pseudo=3, B2=31, replay_matches=None, no_pseudo=False
+3/30 u01_3 sheep: B0=20, pseudo=3, B2=32, replay_matches=None, no_pseudo=False
+4/30 u02_1 people: B0=15, pseudo=3, B2=20, replay_matches=None, no_pseudo=False
+5/30 u02_2 dogs: B0=18, pseudo=3, B2=19, replay_matches=None, no_pseudo=False
+6/30 u02_3 cats: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+7/30 u03_1 people: B0=2, pseudo=2, B2=12, replay_matches=None, no_pseudo=False
+8/30 u03_2 amplifiers: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+9/30 u03_3 bicycles: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+10/30 u04_1 people: B0=4, pseudo=3, B2=4, replay_matches=None, no_pseudo=False
+11/30 u04_2 guitars: B0=8, pseudo=3, B2=9, replay_matches=None, no_pseudo=False
+12/30 u04_3 amplifiers: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+13/30 u05_1 chairs: B0=24, pseudo=3, B2=29, replay_matches=None, no_pseudo=False
+14/30 u05_2 beach umbrellas: B0=24, pseudo=3, B2=26, replay_matches=None, no_pseudo=False
+15/30 u05_3 forks: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+16/30 u06_1 chairs: B0=15, pseudo=3, B2=49, replay_matches=None, no_pseudo=False
+17/30 u06_2 beach umbrellas: B0=31, pseudo=3, B2=31, replay_matches=None, no_pseudo=False
+18/30 u06_3 blackberries: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+19/30 u07_1 people: B0=7, pseudo=3, B2=21, replay_matches=None, no_pseudo=False
+20/30 u07_2 cars: B0=22, pseudo=3, B2=22, replay_matches=None, no_pseudo=False
+21/30 u07_3 bicycles: B0=21, pseudo=3, B2=24, replay_matches=None, no_pseudo=False
+22/30 u08_1 people: B0=16, pseudo=3, B2=20, replay_matches=None, no_pseudo=False
+23/30 u08_2 cars: B0=13, pseudo=3, B2=13, replay_matches=None, no_pseudo=False
+24/30 u08_3 boats: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+25/30 u09_1 people: B0=29, pseudo=3, B2=28, replay_matches=None, no_pseudo=False
+26/30 u09_2 boats: B0=8, pseudo=3, B2=8, replay_matches=None, no_pseudo=False
+27/30 u09_3 trucks: B0=0, pseudo=0, B2=0, replay_matches=None, no_pseudo=True
+28/30 u10_1 people: B0=54, pseudo=3, B2=72, replay_matches=None, no_pseudo=False
+29/30 u10_2 motorbikes: B0=33, pseudo=3, B2=80, replay_matches=None, no_pseudo=False
+30/30 u10_3 bicycles: B0=48, pseudo=3, B2=75, replay_matches=None, no_pseudo=False

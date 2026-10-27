@@ -1,0 +1,681 @@
+{
+  "model": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "processor_use_fast": false,
+  "experiment": "plural_vs_singular_prompt",
+  "scope": "exploratory_development_only",
+  "cases": {
+    "q03_1": {
+      "old_prompt": "a photo of pens",
+      "new_prompt": "a photo of a pen",
+      "annotation_source": "results/countgdpp/p4_review_q03_1_20261020/q03_1_annotation_review_assistant_20261021.csv",
+      "rows": [
+        {
+          "rank": 1,
+          "visual_box": [
+            490,
+            40,
+            519,
+            237
+          ],
+          "plural_score": 0.21985240280628204,
+          "singular_score": 0.22982057929039001
+        },
+        {
+          "rank": 2,
+          "visual_box": [
+            375,
+            40,
+            407,
+            237
+          ],
+          "plural_score": 0.224356546998024,
+          "singular_score": 0.23606373369693756
+        },
+        {
+          "rank": 3,
+          "visual_box": [
+            522,
+            257,
+            539,
+            431
+          ],
+          "plural_score": 0.22998251020908356,
+          "singular_score": 0.22053301334381104
+        },
+        {
+          "rank": 4,
+          "visual_box": [
+            334,
+            41,
+            368,
+            235
+          ],
+          "plural_score": 0.22948071360588074,
+          "singular_score": 0.2464849054813385
+        },
+        {
+          "rank": 5,
+          "visual_box": [
+            477,
+            249,
+            495,
+            437
+          ],
+          "plural_score": 0.2372378408908844,
+          "singular_score": 0.2600186765193939
+        },
+        {
+          "rank": 6,
+          "visual_box": [
+            453,
+            50,
+            479,
+            233
+          ],
+          "plural_score": 0.23460005223751068,
+          "singular_score": 0.24994006752967834
+        },
+        {
+          "rank": 7,
+          "visual_box": [
+            414,
+            41,
+            445,
+            235
+          ],
+          "plural_score": 0.2291634976863861,
+          "singular_score": 0.24468691647052765
+        },
+        {
+          "rank": 8,
+          "visual_box": [
+            501,
+            251,
+            517,
+            433
+          ],
+          "plural_score": 0.22742046415805817,
+          "singular_score": 0.2502366602420807
+        },
+        {
+          "rank": 9,
+          "visual_box": [
+            527,
+            50,
+            557,
+            237
+          ],
+          "plural_score": 0.2267497330904007,
+          "singular_score": 0.23824340105056763
+        },
+        {
+          "rank": 10,
+          "visual_box": [
+            544,
+            250,
+            561,
+            438
+          ],
+          "plural_score": 0.2271127849817276,
+          "singular_score": 0.2534998655319214
+        },
+        {
+          "rank": 11,
+          "visual_box": [
+            566,
+            252,
+            584,
+            435
+          ],
+          "plural_score": 0.24497467279434204,
+          "singular_score": 0.27293118834495544
+        },
+        {
+          "rank": 12,
+          "visual_box": [
+            455,
+            251,
+            473,
+            436
+          ],
+          "plural_score": 0.24733349680900574,
+          "singular_score": 0.2660660445690155
+        },
+        {
+          "rank": 13,
+          "visual_box": [
+            49,
+            299,
+            442,
+            343
+          ],
+          "plural_score": 0.24175673723220825,
+          "singular_score": 0.25858038663864136
+        }
+      ],
+      "results": {
+        "Plural": {
+          "correct_topk": 1,
+          "topk": 6,
+          "auc": 0.16666666666666666,
+          "top_ranks": [
+            12,
+            11,
+            13,
+            5,
+            6,
+            3
+          ]
+        },
+        "Singular": {
+          "correct_topk": 0,
+          "topk": 6,
+          "auc": 0.14285714285714285,
+          "top_ranks": [
+            11,
+            12,
+            5,
+            13,
+            10,
+            8
+          ]
+        }
+      },
+      "class_means": {
+        "pen": {
+          "plural_mean": 0.22736715773741403,
+          "singular_mean": 0.24087326725323996
+        },
+        "pencil": {
+          "plural_mean": 0.2356769616405169,
+          "singular_mean": 0.253880908091863
+        },
+        "ruler": {
+          "plural_mean": 0.24175673723220825,
+          "singular_mean": 0.25858038663864136
+        }
+      }
+    },
+    "q03_2": {
+      "old_prompt": "a photo of rulers",
+      "new_prompt": "a photo of a ruler",
+      "annotation_source": "results/countgdpp/p4_review_q03_2_20261020/q03_2_annotation_review_assistant_20261020.csv",
+      "rows": [
+        {
+          "rank": 1,
+          "visual_box": [
+            48,
+            374,
+            423,
+            414
+          ],
+          "plural_score": 0.25883808732032776,
+          "singular_score": 0.28866687417030334
+        },
+        {
+          "rank": 2,
+          "visual_box": [
+            48,
+            227,
+            328,
+            266
+          ],
+          "plural_score": 0.27297836542129517,
+          "singular_score": 0.3000848889350891
+        },
+        {
+          "rank": 3,
+          "visual_box": [
+            49,
+            300,
+            441,
+            340
+          ],
+          "plural_score": 0.24814577400684357,
+          "singular_score": 0.27642467617988586
+        },
+        {
+          "rank": 4,
+          "visual_box": [
+            47,
+            155,
+            307,
+            194
+          ],
+          "plural_score": 0.2902737557888031,
+          "singular_score": 0.32144612073898315
+        },
+        {
+          "rank": 5,
+          "visual_box": [
+            48,
+            87,
+            258,
+            121
+          ],
+          "plural_score": 0.2669975161552429,
+          "singular_score": 0.29844868183135986
+        },
+        {
+          "rank": 6,
+          "visual_box": [
+            44,
+            445,
+            562,
+            477
+          ],
+          "plural_score": 0.2380850911140442,
+          "singular_score": 0.2628343105316162
+        },
+        {
+          "rank": 7,
+          "visual_box": [
+            490,
+            41,
+            519,
+            238
+          ],
+          "plural_score": 0.1788729876279831,
+          "singular_score": 0.19626373052597046
+        },
+        {
+          "rank": 8,
+          "visual_box": [
+            376,
+            41,
+            406,
+            238
+          ],
+          "plural_score": 0.19737215340137482,
+          "singular_score": 0.21448594331741333
+        },
+        {
+          "rank": 9,
+          "visual_box": [
+            414,
+            43,
+            444,
+            237
+          ],
+          "plural_score": 0.19571137428283691,
+          "singular_score": 0.2158847451210022
+        },
+        {
+          "rank": 10,
+          "visual_box": [
+            453,
+            51,
+            479,
+            233
+          ],
+          "plural_score": 0.20357169210910797,
+          "singular_score": 0.22423401474952698
+        },
+        {
+          "rank": 11,
+          "visual_box": [
+            527,
+            50,
+            557,
+            236
+          ],
+          "plural_score": 0.18825219571590424,
+          "singular_score": 0.2061225324869156
+        },
+        {
+          "rank": 12,
+          "visual_box": [
+            334,
+            42,
+            367,
+            236
+          ],
+          "plural_score": 0.20391452312469482,
+          "singular_score": 0.22059516608715057
+        },
+        {
+          "rank": 13,
+          "visual_box": [
+            501,
+            251,
+            517,
+            430
+          ],
+          "plural_score": 0.22530372440814972,
+          "singular_score": 0.2474265843629837
+        },
+        {
+          "rank": 14,
+          "visual_box": [
+            478,
+            249,
+            495,
+            433
+          ],
+          "plural_score": 0.22722260653972626,
+          "singular_score": 0.24553415179252625
+        },
+        {
+          "rank": 15,
+          "visual_box": [
+            522,
+            257,
+            538,
+            429
+          ],
+          "plural_score": 0.20807155966758728,
+          "singular_score": 0.22592316567897797
+        },
+        {
+          "rank": 16,
+          "visual_box": [
+            543,
+            250,
+            561,
+            436
+          ],
+          "plural_score": 0.2157134860754013,
+          "singular_score": 0.2410741150379181
+        },
+        {
+          "rank": 17,
+          "visual_box": [
+            566,
+            251,
+            583,
+            433
+          ],
+          "plural_score": 0.23003625869750977,
+          "singular_score": 0.25606274604797363
+        },
+        {
+          "rank": 18,
+          "visual_box": [
+            455,
+            250,
+            472,
+            432
+          ],
+          "plural_score": 0.2354629933834076,
+          "singular_score": 0.2577217221260071
+        }
+      ],
+      "results": {
+        "Plural": {
+          "correct_topk": 6,
+          "topk": 6,
+          "auc": 1.0,
+          "top_ranks": [
+            4,
+            2,
+            5,
+            1,
+            3,
+            6
+          ]
+        },
+        "Singular": {
+          "correct_topk": 6,
+          "topk": 6,
+          "auc": 1.0,
+          "top_ranks": [
+            4,
+            2,
+            5,
+            1,
+            3,
+            6
+          ]
+        }
+      },
+      "class_means": {
+        "ruler": {
+          "plural_mean": 0.2625530983010928,
+          "singular_mean": 0.2913175920645396
+        },
+        "pen": {
+          "plural_mean": 0.1946158210436503,
+          "singular_mean": 0.21293102204799652
+        },
+        "pencil": {
+          "plural_mean": 0.223635104795297,
+          "singular_mean": 0.2456237475077311
+        }
+      }
+    },
+    "q03_3": {
+      "old_prompt": "a photo of pencils",
+      "new_prompt": "a photo of a pencil",
+      "annotation_source": "results/countgdpp/p4_review_q03_3_20261020/q03_3_annotation_review_assistant_20261020.csv",
+      "rows": [
+        {
+          "rank": 1,
+          "visual_box": [
+            489,
+            39,
+            520,
+            237
+          ],
+          "plural_score": 0.19477711617946625,
+          "singular_score": 0.2149178683757782
+        },
+        {
+          "rank": 2,
+          "visual_box": [
+            334,
+            41,
+            368,
+            235
+          ],
+          "plural_score": 0.21098914742469788,
+          "singular_score": 0.23300756514072418
+        },
+        {
+          "rank": 3,
+          "visual_box": [
+            413,
+            41,
+            445,
+            234
+          ],
+          "plural_score": 0.20428170263767242,
+          "singular_score": 0.22610469162464142
+        },
+        {
+          "rank": 4,
+          "visual_box": [
+            452,
+            50,
+            479,
+            233
+          ],
+          "plural_score": 0.20595456659793854,
+          "singular_score": 0.22706083953380585
+        },
+        {
+          "rank": 5,
+          "visual_box": [
+            375,
+            40,
+            407,
+            237
+          ],
+          "plural_score": 0.1942063719034195,
+          "singular_score": 0.21297304332256317
+        },
+        {
+          "rank": 6,
+          "visual_box": [
+            521,
+            257,
+            539,
+            431
+          ],
+          "plural_score": 0.21893224120140076,
+          "singular_score": 0.2158510833978653
+        },
+        {
+          "rank": 7,
+          "visual_box": [
+            527,
+            49,
+            557,
+            236
+          ],
+          "plural_score": 0.1962832808494568,
+          "singular_score": 0.21374666690826416
+        },
+        {
+          "rank": 8,
+          "visual_box": [
+            478,
+            249,
+            495,
+            436
+          ],
+          "plural_score": 0.22970254719257355,
+          "singular_score": 0.2512715756893158
+        },
+        {
+          "rank": 9,
+          "visual_box": [
+            543,
+            250,
+            561,
+            438
+          ],
+          "plural_score": 0.2254667580127716,
+          "singular_score": 0.2441675066947937
+        },
+        {
+          "rank": 10,
+          "visual_box": [
+            566,
+            252,
+            584,
+            435
+          ],
+          "plural_score": 0.2241852730512619,
+          "singular_score": 0.24798725545406342
+        },
+        {
+          "rank": 11,
+          "visual_box": [
+            454,
+            251,
+            473,
+            436
+          ],
+          "plural_score": 0.22484752535820007,
+          "singular_score": 0.24448652565479279
+        },
+        {
+          "rank": 12,
+          "visual_box": [
+            49,
+            298,
+            441,
+            342
+          ],
+          "plural_score": 0.22367462515830994,
+          "singular_score": 0.2539486885070801
+        },
+        {
+          "rank": 13,
+          "visual_box": [
+            44,
+            372,
+            424,
+            417
+          ],
+          "plural_score": 0.2193486988544464,
+          "singular_score": 0.2531265616416931
+        },
+        {
+          "rank": 14,
+          "visual_box": [
+            48,
+            85,
+            258,
+            123
+          ],
+          "plural_score": 0.2329801470041275,
+          "singular_score": 0.25983351469039917
+        },
+        {
+          "rank": 15,
+          "visual_box": [
+            501,
+            252,
+            517,
+            433
+          ],
+          "plural_score": 0.24123072624206543,
+          "singular_score": 0.26022669672966003
+        },
+        {
+          "rank": 16,
+          "visual_box": [
+            46,
+            227,
+            328,
+            268
+          ],
+          "plural_score": 0.25454622507095337,
+          "singular_score": 0.28537818789482117
+        }
+      ],
+      "results": {
+        "Plural": {
+          "correct_topk": 4,
+          "topk": 6,
+          "auc": 0.7833333333333333,
+          "top_ranks": [
+            16,
+            15,
+            14,
+            8,
+            9,
+            11
+          ]
+        },
+        "Singular": {
+          "correct_topk": 2,
+          "topk": 6,
+          "auc": 0.6,
+          "top_ranks": [
+            16,
+            15,
+            14,
+            12,
+            13,
+            8
+          ]
+        }
+      },
+      "class_means": {
+        "pen": {
+          "plural_mean": 0.20108203093210855,
+          "singular_mean": 0.22130177915096283
+        },
+        "pencil": {
+          "plural_mean": 0.22739417850971222,
+          "singular_mean": 0.24399844060341516
+        },
+        "ruler": {
+          "plural_mean": 0.2326374240219593,
+          "singular_mean": 0.2630717381834984
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Prompt revision motivated by observed development errors",
+    "Annotations for q03 cases are preliminary",
+    "TopK uses the true object count for diagnosis",
+    "No independent holdout evaluation",
+    "No model fine-tuning or threshold optimization",
+    "Cosine scores are not calibrated probabilities"
+  ]
+}

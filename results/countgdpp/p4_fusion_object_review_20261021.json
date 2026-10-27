@@ -1,0 +1,226 @@
+{
+  "analysis": "exploratory_four_query_object_review",
+  "source_fusion": "results/countgdpp/p4_fixed_fusion_cv_20261021/report.json",
+  "source_cv": "results/countgdpp/p4_count_cv_20261020/per_query.csv",
+  "annotation_sources": {
+    "q03_1": "results/countgdpp/p4_review_q03_1_20261020/q03_1_annotation_review_assistant_20261021.csv",
+    "q03_2": "results/countgdpp/p4_review_q03_2_20261020/q03_2_annotation_review_assistant_20261020.csv",
+    "q03_3": "results/countgdpp/p4_review_q03_3_20261020/q03_3_annotation_review_assistant_20261020.csv",
+    "q05_2": "results/countgdpp/b2_remaining3_20261015/q05_2/manual_crosscheck_20261016.json"
+  },
+  "results": {
+    "q03_1": {
+      "B2": {
+        "kept": 10,
+        "correct": 6,
+        "wrong": 4,
+        "duplicate": 0,
+        "missed": 0,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "CLIP": {
+        "kept": 1,
+        "correct": 0,
+        "wrong": 1,
+        "duplicate": 0,
+        "missed": 6,
+        "kept_ranks": [
+          12
+        ]
+      },
+      "Fusion": {
+        "kept": 12,
+        "correct": 6,
+        "wrong": 6,
+        "duplicate": 0,
+        "missed": 0,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    "q03_2": {
+      "B2": {
+        "kept": 4,
+        "correct": 4,
+        "wrong": 0,
+        "duplicate": 0,
+        "missed": 2,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "CLIP": {
+        "kept": 5,
+        "correct": 5,
+        "wrong": 0,
+        "duplicate": 0,
+        "missed": 1,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "Fusion": {
+        "kept": 5,
+        "correct": 5,
+        "wrong": 0,
+        "duplicate": 0,
+        "missed": 1,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "q03_3": {
+      "B2": {
+        "kept": 6,
+        "correct": 0,
+        "wrong": 6,
+        "duplicate": 0,
+        "missed": 6,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ]
+      },
+      "CLIP": {
+        "kept": 1,
+        "correct": 0,
+        "wrong": 1,
+        "duplicate": 0,
+        "missed": 6,
+        "kept_ranks": [
+          16
+        ]
+      },
+      "Fusion": {
+        "kept": 1,
+        "correct": 1,
+        "wrong": 0,
+        "duplicate": 0,
+        "missed": 5,
+        "kept_ranks": [
+          15
+        ]
+      }
+    },
+    "q05_2": {
+      "B2": {
+        "kept": 2,
+        "correct": 2,
+        "wrong": 0,
+        "duplicate": 0,
+        "missed": 2,
+        "kept_ranks": [
+          3,
+          7
+        ]
+      },
+      "CLIP": {
+        "kept": 13,
+        "correct": 4,
+        "wrong": 8,
+        "duplicate": 1,
+        "missed": 0,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14
+        ]
+      },
+      "Fusion": {
+        "kept": 6,
+        "correct": 4,
+        "wrong": 2,
+        "duplicate": 0,
+        "missed": 0,
+        "kept_ranks": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  "totals": {
+    "B2": {
+      "kept": 22,
+      "correct": 12,
+      "wrong": 10,
+      "duplicate": 0,
+      "missed": 10
+    },
+    "CLIP": {
+      "kept": 20,
+      "correct": 9,
+      "wrong": 10,
+      "duplicate": 1,
+      "missed": 13
+    },
+    "Fusion": {
+      "kept": 24,
+      "correct": 16,
+      "wrong": 8,
+      "duplicate": 0,
+      "missed": 6
+    }
+  },
+  "limitations": [
+    "Selected development queries only.",
+    "Three queries share one original image.",
+    "q03 labels are preliminary visual annotations.",
+    "Thresholds came from development-image cross-validation.",
+    "Fusion design was proposed after reviewing pilot results.",
+    "Not an independent holdout or localization benchmark."
+  ]
+}

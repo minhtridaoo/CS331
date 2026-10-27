@@ -1,0 +1,190 @@
+{
+  "status": "DRAFT_NOT_LOCKED",
+  "rule": "r2_stratified_hard_absent",
+  "created": "2026-10-27",
+  "strata": {
+    "people_animal": [
+      "mcac_119",
+      "mcac_120",
+      "mcac_121",
+      "mcac_122",
+      "mcac_123",
+      "mcac_124"
+    ],
+    "people_music": [
+      "mcac_109",
+      "mcac_110",
+      "mcac_111"
+    ],
+    "chairs_beach": [
+      "mcac_60",
+      "mcac_61",
+      "mcac_63"
+    ],
+    "people_car_truck": [
+      "mcac_72",
+      "mcac_76",
+      "mcac_79",
+      "mcac_83",
+      "mcac_88",
+      "mcac_93",
+      "mcac_191"
+    ],
+    "people_motorbike_boat": [
+      "mcac_75",
+      "mcac_84",
+      "mcac_85",
+      "mcac_87",
+      "mcac_89",
+      "mcac_95",
+      "mcac_96",
+      "mcac_222",
+      "mcac_224",
+      "mcac_227"
+    ]
+  },
+  "rule_script_sha256": "5f84f87908319910b86d18d8f71764c23b502f29b9520205a302703c42d6ea3b",
+  "mucca_zip_md5": "b182e445445dad017493ffb35803f816",
+  "seed": 331,
+  "n_images": 10,
+  "per_stratum": 2,
+  "min_points": 3,
+  "max_points": 40,
+  "eligible_pool": [
+    "mcac_60",
+    "mcac_61",
+    "mcac_63",
+    "mcac_72",
+    "mcac_75",
+    "mcac_76",
+    "mcac_79",
+    "mcac_83",
+    "mcac_84",
+    "mcac_85",
+    "mcac_87",
+    "mcac_88",
+    "mcac_89",
+    "mcac_93",
+    "mcac_95",
+    "mcac_96",
+    "mcac_109",
+    "mcac_110",
+    "mcac_111",
+    "mcac_119",
+    "mcac_120",
+    "mcac_121",
+    "mcac_122",
+    "mcac_123",
+    "mcac_124",
+    "mcac_191",
+    "mcac_222",
+    "mcac_224",
+    "mcac_227"
+  ],
+  "chosen": [
+    "mcac_123",
+    "mcac_121",
+    "mcac_109",
+    "mcac_110",
+    "mcac_63",
+    "mcac_61",
+    "mcac_88",
+    "mcac_72",
+    "mcac_227",
+    "mcac_84"
+  ],
+  "dev_excluded": [
+    "mcac_100",
+    "mcac_11",
+    "mcac_20",
+    "mcac_200",
+    "mcac_27"
+  ],
+  "super_categories": {
+    "tableware": [
+      "plates",
+      "bowls",
+      "cups",
+      "forks",
+      "glasses",
+      "knives",
+      "spoons"
+    ],
+    "furniture": [
+      "chairs",
+      "desks"
+    ],
+    "fruit": [
+      "cherries",
+      "raspberries",
+      "strawberries",
+      "blueberries",
+      "blackberries",
+      "red currants",
+      "grapes",
+      "lemons",
+      "apples",
+      "pears",
+      "bananas",
+      "oranges"
+    ],
+    "person": [
+      "people"
+    ],
+    "beach": [
+      "beach umbrellas"
+    ],
+    "vehicle": [
+      "cars",
+      "motorbikes",
+      "bicycles",
+      "trucks",
+      "boats"
+    ],
+    "music": [
+      "amplifiers",
+      "guitars"
+    ],
+    "animal": [
+      "cats",
+      "dogs",
+      "cows",
+      "sheeps",
+      "goats"
+    ],
+    "building": [
+      "balconies",
+      "windows"
+    ],
+    "smoking": [
+      "cigaretts",
+      "lighters"
+    ],
+    "locks": [
+      "keys",
+      "padlocks",
+      "key holders"
+    ],
+    "stationery": [
+      "pens",
+      "rulers",
+      "pencils"
+    ]
+  },
+  "prompt_fix": {
+    "sheeps": "sheep",
+    "cigaretts": "cigarettes"
+  },
+  "image_sha256": {
+    "mcac_123": "842067c0c535acb2363565da59570b50f4818b47607369d332421af93fb80e4b",
+    "mcac_121": "0778f5602f2b473094acfb5f02b08aee08dddfafe3351845b798a14fed486040",
+    "mcac_109": "8ce1484ecb4b4acc8b216dfa7352086be51c1911b5a6986b62663b2afd456620",
+    "mcac_110": "eb40c844a714352560202f99e049d5deb4d3927b49e6ae8d5c6e8e98fc580000",
+    "mcac_63": "a5506441fa964f7f56bf3efd41ede66e8c31bf48fad6d6a63bfcc4b2318f35e6",
+    "mcac_61": "a49dd0279145c1ffc47b622501e22390a297099dcfaf92cb87b3c457c5b701bd",
+    "mcac_88": "3da67743cc1c1c58e26f8fdb5d5675f841aaa967fed056c95bd5fd51cb66d72d",
+    "mcac_72": "479e07cb3296a1ca80f6399e01e792e04a2294168a10ad45b89886668946c69a",
+    "mcac_227": "e450e80cbe1972168e870ad1d08c4baa01f7ae94ec33d4d477046909695191e5",
+    "mcac_84": "ff877c1f0a419dae0f46ec0eb502db12125f69a697a14f01a7f58b027748d2bd"
+  }
+}

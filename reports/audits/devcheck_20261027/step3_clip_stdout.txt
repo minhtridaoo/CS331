@@ -1,0 +1,17 @@
+INPUT VALIDATION PASS: 15 queries, 481 boxes
+PASS q01_1: 25 boxes
+PASS q01_2: 38 boxes
+PASS q01_3: 0 boxes
+PASS q02_1: 31 boxes
+PASS q02_2: 31 boxes
+PASS q02_3: 26 boxes
+PASS q03_1: 13 boxes
+PASS q03_2: 18 boxes
+PASS q03_3: 16 boxes
+PASS q04_1: 59 boxes
+PASS q04_2: 32 boxes
+PASS q04_3: 84 boxes
+PASS q05_1: 15 boxes
+PASS q05_2: 14 boxes
+PASS q05_3: 79 boxes
+TOTAL QUERIES: 15  TOTAL SCORED BOXES: 481  OUTPUT: /mnt/d/MINHTRIHOCCODE/HOCKI5/CS331/results/countgdpp/p4_clip_devcheck_20261027

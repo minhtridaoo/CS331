@@ -1,0 +1,114 @@
+{
+  "status": "FROZEN_CONFIG_REPRODUCED",
+  "frozen_config": "results/countgdpp/p4_candidate_freeze_20261021.json",
+  "frozen_config_sha256": "3c4634e79d21d0c58bd7c0e3db0972c3a3eeff6d25996c716b4def1267def4da",
+  "source_checksums_verified": true,
+  "normalization_verified": true,
+  "metrics_verified": true,
+  "results": {
+    "B2": {
+      "MAE": 4.333333333333333,
+      "RMSE": 6.526867548832288,
+      "exact": 1
+    },
+    "Fusion": {
+      "MAE": 4.4,
+      "RMSE": 6.470445631227162,
+      "exact": 1
+    }
+  },
+  "per_query": {
+    "q01_1": {
+      "image_id": "mcac_100",
+      "gt": 25,
+      "B2": 19,
+      "Fusion": 24
+    },
+    "q01_2": {
+      "image_id": "mcac_100",
+      "gt": 11,
+      "B2": 17,
+      "Fusion": 5
+    },
+    "q01_3": {
+      "image_id": "mcac_100",
+      "gt": 1,
+      "B2": 0,
+      "Fusion": 0
+    },
+    "q02_1": {
+      "image_id": "mcac_11",
+      "gt": 15,
+      "B2": 7,
+      "Fusion": 5
+    },
+    "q02_2": {
+      "image_id": "mcac_11",
+      "gt": 3,
+      "B2": 6,
+      "Fusion": 6
+    },
+    "q02_3": {
+      "image_id": "mcac_11",
+      "gt": 2,
+      "B2": 3,
+      "Fusion": 3
+    },
+    "q03_1": {
+      "image_id": "mcac_200",
+      "gt": 6,
+      "B2": 7,
+      "Fusion": 9
+    },
+    "q03_2": {
+      "image_id": "mcac_200",
+      "gt": 6,
+      "B2": 4,
+      "Fusion": 5
+    },
+    "q03_3": {
+      "image_id": "mcac_200",
+      "gt": 6,
+      "B2": 6,
+      "Fusion": 1
+    },
+    "q04_1": {
+      "image_id": "mcac_20",
+      "gt": 6,
+      "B2": 14,
+      "Fusion": 13
+    },
+    "q04_2": {
+      "image_id": "mcac_20",
+      "gt": 24,
+      "B2": 27,
+      "Fusion": 29
+    },
+    "q04_3": {
+      "image_id": "mcac_20",
+      "gt": 39,
+      "B2": 19,
+      "Fusion": 20
+    },
+    "q05_1": {
+      "image_id": "mcac_27",
+      "gt": 2,
+      "B2": 1,
+      "Fusion": 5
+    },
+    "q05_2": {
+      "image_id": "mcac_27",
+      "gt": 4,
+      "B2": 2,
+      "Fusion": 4
+    },
+    "q05_3": {
+      "image_id": "mcac_27",
+      "gt": 3,
+      "B2": 0,
+      "Fusion": 4
+    }
+  },
+  "scope": "development_fit_reproducibility_only",
+  "independent_test": false
+}

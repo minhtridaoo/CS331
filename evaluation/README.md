@@ -1,9 +1,11 @@
-# Evaluator pilot
+# Evaluator pilot và script P4
 
-[Hướng dẫn tự chạy phần 2](../roadmap/PHAN_2_DANH_GIA.md).
+**Ưu tiên trạng thái mới nhất 27/10:** Trí đã đọc C1 và chưa duyệt; Triệu tự làm T1–T4 theo [kế hoạch V2](../reports/KE_HOACH_SUA_KIEM_CHEO_20261027.md), hạn đề xuất 30/10–03/11. Việc chấp nhận bản assistant 24/10 không thay yêu cầu tự chạy mới. Trí chọn B, p4_unseen_v1 DRAFT; adapter đã viết, kiểm (1) từ điểm dev đạt, (2)–(4) chưa kiểm đầy đủ. T1 không sửa evaluator; fixtures đủ 15 query, giữ q05_2. Các mô tả giai đoạn trước bên dưới là nguồn tham khảo nếu khác điểm tiếp tục này.
 
-`evaluate_pilot.py` là script CPU dùng thư viện chuẩn, đọc predictions đã có; không train hoặc gọi model. Được chuẩn bị ngày 19/10; Minhtri đã báo self-test PASS và có output pilot ngày 20/10. Không còn ở trạng thái chỉ kiểm cú pháp. Lượt hỗ trợ Triệu ngày 21/10 chỉ đọc/đối chiếu nguồn và output, không chạy lại evaluator hoặc self-test.
+**Cập nhật 27/10/2026.** [Phần 2](../roadmap/PHAN_2_DANH_GIA.md) · [Checklist tiếp tục](../roadmap/CHECKLIST_3_GIO.md).
 
-Xem [bản kiểm chéo cho Triệu](../reports/TRIEU_EVALUATOR_CROSSCHECK_20261021.md) và [kết quả ngày 24/10](../reports/TRIEU_KET_QUA_KIEM_CHEO_20261024.md). Triệu đã đọc/hiểu và đồng ý dùng kết quả kiểm kỹ thuật do assistant thực hiện; nhóm vẫn chờ duyệt toàn báo cáo. Không cần chạy lại chỉ vì câu “chưa chạy” trong tài liệu lịch sử.
+Evaluator pilot đã được Minhtri chạy 20/10, output đã audit. Self-test PASS theo người chạy, chưa có stdout riêng. Ngày 24/10 Triệu đã đọc/hiểu/chấp nhận bản kiểm được ủy quyền cho assistant; không yêu cầu kiểm lại hoặc chạy lại để cập nhật tiến độ. Run chính `pilot_eval_20261020`, _r2 cùng dữ liệu; nhãn q05_2 không phải AP/IoU benchmark.
 
-Kết quả lưu riêng trong `results/countgdpp/pilot_eval_<ngày>`, không ghi đè B0/B2 gốc. `manual_check` chỉ tổng hợp nhãn thủ công q05_2, không phải evaluator định vị tự động toàn tập.
+Script P4 có CLIP scorer và CV/Fusion/diagnostic trên dev. Scorer hiện gắn đường dẫn 15 query cũ; B2 runner trong experiments cũng phụ thuộc B0 pilot cũ. Cần adapter nhận input/output/B0 tương ứng trước ảnh mới; xem C3 checklist. Freeze có sẵn, chưa có runner ảnh mới đạt kiểm; không refit theo test.
+
+Assistant phải hỏi trước nếu chạy evaluator/model/thực nghiệm thay. Lượt 27/10 chỉ pull, đối chiếu artifact và cập nhật tài liệu; giữ nguyên code/dự đoán gốc.

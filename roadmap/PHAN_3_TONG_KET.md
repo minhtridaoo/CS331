@@ -1,37 +1,32 @@
-# Phần 3 — duyệt tổng kết pilot và chuẩn bị sang P4
+# Phần 3 — duyệt tổng kết pilot
 
-**Cập nhật 24/10/2026: báo cáo đã điền run/kết quả/đề xuất; Triệu đã chấp nhận bản kiểm do assistant thực hiện; CHỜ NHÓM DUYỆT BÁO CÁO.** File cần sửa duy nhất cho phần này: [reports/PILOT_SUMMARY.md](../reports/PILOT_SUMMARY.md).
+**Cập nhật 27/10/2026: C1 đã đọc, Trí CHƯA DUYỆT; Triệu cần hoàn thành T1–T4 V2.** [Kế hoạch có lệnh/đầu vào/tiêu chí](../reports/KE_HOACH_SUA_KIEM_CHEO_20261027.md).
 
-Phần 2 đã có output được đối chiếu; Phần 3 không phải việc chạy model. “P2/P3” trong handoff gửi kèm là tên tắt Phần 2/3 này, không phải thí nghiệm E2/E3 hoặc cell Kaggle.
+Phần 2 là chấm lại dự đoán B0/B2; Phần 3 là viết/chốt báo cáo. Hai việc này khác E2/E3 và khác nhánh cải tiến P4. Không cần làm thêm P4.6 để được đóng phần tổng kết pilot.
 
 ## Đã có, không cần làm lại
 
-- Thông tin Minhtri chạy ngày 20/10, self-test PASS theo xác nhận người chạy, run `pilot_eval_20261020`.
-- MAE/RMSE/coverage và q05_2 được kiểm trên file thật; run `_r2` cho cùng kết quả.
-- Review định tính Trí/Triệu đều 15/15; guitar/q04_2 đã giải thích.
-- Mục 6 **đã có** đề xuất dùng CLIP làm bộ lọc sau B2. Đây chưa phải phương pháp được nhóm chọn. Repo đã có artifact score/khảo sát P4; cần đồng bộ log và audit riêng, chưa xác nhận hiệu quả.
+- Thông tin Minhtri chạy ngày 20/10, self-test PASS theo người chạy; output/ID/hash/metrics đã audit, _r2 cùng dữ liệu.
+- B0/B2 MAE 19.4/22.0; review định tính Trí/Triệu 15/15 và các giới hạn nguồn.
+- Kết quả benchmark FSCD-147 tách riêng, không đồng nhất với adapter B2.
+- Mục 6 cập nhật kết quả P4 đã chạy ngày 20–21/10: CLIP/CV/Fusion/freeze; ghi rõ dev, nhãn tạm và chưa có holdout. [Audit 22/10](../reports/P4_AUDIT_20261022.md).
 
-## Việc tiếp theo
+## Việc còn lại để đóng báo cáo
 
-1. **Triệu:** đã đọc/hiểu và đồng ý dùng [kết quả kiểm kỹ thuật do assistant thực hiện](../reports/TRIEU_KET_QUA_KIEM_CHEO_20261024.md); xác nhận trực tiếp ngày 24/10 đã ghi ở PILOT_SUMMARY mục 7. Cùng Trí duyệt báo cáo; không ghi Triệu đã tự audit code.
-2. **Trí:** đọc mục 6 đã làm rõ trong PILOT_SUMMARY; xác nhận muốn thử giả thuyết lọc khung sai loại. Phiên bản tối thiểu đề xuất dùng crop + query, chưa dùng tên lớp dễ nhầm lấy từ nhãn thật ảnh kiểm tra.
-3. **Cả hai:** duyệt kết luận và giới hạn; quyết định “đóng pilot, chuyển sang chuẩn bị P4” hoặc chỉ rõ một điểm cần sửa. Chưa cần hoàn tất toàn bộ bộ dữ liệu P4 để đóng báo cáo pilot.
-4. Trước lần thử P4, chốt checkpoint CLIP, quy tắc crop/prompt/score, nhãn và đối chứng. Giữ B2 gốc; thêm đối chứng chỉ lọc confidence để kiểm liệu lợi ích có vượt việc giảm số khung đơn thuần. Chọn tham số trên dev, chưa mở holdout.
+Triệu tự chạy T1 (30/10), gán/kiểm T2 (01/11), phân tích T3 (02/11). T4 ngày 03/11 hai người nghiệm thu, ghi rõ bằng chứng và giới hạn còn lại. Hạn đề xuất, chưa xác nhận đã nhận/xong. Giữ bản audit 24/10 như lịch sử; thêm mục việc Triệu tự làm thật, không đổi tác giả audit.
 
-## Checklist nghiệm thu báo cáo
+Không yêu cầu P4.6/47 nhãn q03 hoặc ablation mới để đóng vòng kiểm chéo. Trí tiếp chuẩn bị P4 song song; phần chưa biết cơ chế có thể báo là giới hạn, không bắt biến giả thuyết thành kết luận.
 
-- [x] Phạm vi 5 ảnh/15 query dev, E1/E2 chỉ 2 ảnh/6 query rõ ràng.
-- [x] Có run thực tế, cùng IDs và coverage, số liệu khớp bằng chứng.
-- [x] Tách kết quả chấm lại khỏi dữ liệu/review kế thừa.
-- [x] Review Triệu chốt 15/15; không gọi là metric định vị chính thức.
-- [x] Benchmark FSCD-147 để riêng; B2 adapter không được gọi là toàn bộ pipeline paper.
-- [x] Mục 6 có giả thuyết, ứng viên và đối chứng ở trạng thái đề xuất.
-- [x] Triệu xác nhận đã đọc/hiểu và đồng ý dùng bản kiểm kỹ thuật do assistant thực hiện ngày 24/10; không coi là Triệu tự audit code.
-- [ ] Nhóm duyệt báo cáo, ghi người/ngày và quyết định đóng pilot.
-- [ ] Nhóm thống nhất kế hoạch P4; đồng bộ/audit artifact CLIP đã có trước khi chốt hiệu quả hoặc bước chạy tiếp; chưa có xác nhận holdout.
+## Checklist
 
-Ngày 21/10 đã bổ sung [Q02_1_DETAILED_REVIEW.md](<../workspace Trí and Triệu/Triệu/Q02_1_DETAILED_REVIEW.md>) và bằng chứng từ cuộc trò chuyện Triệu ngày 19/10. Giữ giới hạn nguồn/độ chắc chắn, không coi mọi nhóm là nhãn bbox đã được Triệu phân xử. [Bản hướng dẫn kiểm evaluator ngày 21/10](../reports/TRIEU_EVALUATOR_CROSSCHECK_20261021.md) là tài liệu tham chiếu; xác nhận đọc/chấp nhận của Triệu đã ghi ngày 24/10.
+- [x] Có run, coverage, IDs và số liệu đối chiếu.
+- [x] Có bằng chứng lỗi X/Y; giới hạn của review thủ công được nêu.
+- [x] Phân biệt pilot, benchmark, P4 dev CV và dev-fit.
+- [x] Mục 6 đã cập nhật theo artifact, không còn ghi chưa chạy CLIP.
+- [x] Triệu đọc/hiểu/chấp nhận bản kiểm được ủy quyền ngày 24/10; không ghi là tự audit code.
+- [ ] Triệu bàn giao đủ T1–T3 theo tiêu chí V2.
+- [ ] T4 nhóm duyệt báo cáo, ghi người/ngày/quyết định đóng pilot.
 
-Lưu ý cập nhật trạng thái P4: repo đã có score CLIP và report khảo sát count; chưa audit toàn bộ trong lượt kiểm evaluator này. Trí cần đồng bộ log nguồn chạy và nhóm duyệt riêng, không đọc “chưa có kết quả CLIP” trong tài liệu ngày 20/10 như trạng thái hiện tại.
+**Việc làm trong 3 giờ:** [CHECKLIST_3_GIO](CHECKLIST_3_GIO.md); protocol ở [P4_TIEP_THEO](P4_TIEP_THEO.md), bắt đầu chuẩn bị dữ liệu mới rồi runner dùng freeze. Đây là nghiên cứu tiếp; không bổ sung vào checklist nghiệm thu pilot trên. 47 nhãn P4 cũng là việc kiểm riêng, chưa phải đã được Triệu xác nhận.
 
 [Roadmap](ROADMAP.md) · [Handoff](../HANDOFF/HANDOFF.md) · [Nhật ký](../WORKLOG.md).

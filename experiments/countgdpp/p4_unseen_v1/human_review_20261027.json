@@ -1,0 +1,45 @@
+{
+  "review_status": "USER_CONFIRMED_RECORDED",
+  "recorded_date": "2026-10-27",
+  "reviewer": "Trí",
+  "recorded_by": "assistant",
+  "source": "Direct user message in current chat",
+  "thread_id": "01a1152c-b973-7483-bd60-ee5b65a89bf9",
+  "user_statement_verbatim": "tôi kiểm thì thấy oki hết á bạn diền giúp tôi vs tôi thấy data của mucca làm chính xác hết á",
+  "scope": {
+    "image_count": 10,
+    "present_queries": 20,
+    "absent_queries": 10
+  },
+  "interpretation": "User confirms current reviewed subset; no class, prompt or GT changes requested. No claim about all of MUCCA.",
+  "independent_assistant_visual_review": false,
+  "second_reviewer_confirmed": false,
+  "protocol_approval_recorded": false,
+  "prior_usage_confirmation_recorded": false,
+  "dataset_locked": false,
+  "serialization_note": "Excel save added one entirely empty unnamed trailing column to absent_candidates.csv; removed on export to preserve the original ten-column schema. All original data columns were unchanged before confirmation.",
+  "files": [
+    {
+      "path": "absent_candidates.csv",
+      "before_sha256": "c23ce8984d1ba4ae8d888315b970037e19a00fe10aa3bb453e185d3bfa2160d6",
+      "after_sha256": "eeb635b93cfeecad42805befd9445b582d8ce36888d1c33db6402226d835d478",
+      "rows": 10,
+      "changed_columns": [
+        "human_check",
+        "checked_by",
+        "date",
+        "note"
+      ]
+    },
+    {
+      "path": "manifest.csv",
+      "before_sha256": "74d593e071ccffa11466ea8e714eb753567171d7670aae9570a7627d4224fac3",
+      "after_sha256": "ef8808a8dee94fd7c23f9fcace3289472ca113e185cbdacd6b23604ef07e5457",
+      "rows": 30,
+      "changed_columns": [
+        "verified_by",
+        "uncertainty_note"
+      ]
+    }
+  ]
+}

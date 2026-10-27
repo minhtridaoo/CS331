@@ -1,0 +1,413 @@
+{
+  "u01_1": {
+    "1": [
+      "B2_threshold"
+    ],
+    "2": [
+      "B2_threshold"
+    ],
+    "3": [
+      "B2_threshold"
+    ],
+    "6": [
+      "B2_threshold"
+    ],
+    "8": [
+      "B2_threshold"
+    ],
+    "10": [
+      "B2_threshold"
+    ],
+    "15": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "17": [
+      "B2_threshold"
+    ],
+    "19": [
+      "B2_threshold"
+    ]
+  },
+  "u02_1": {
+    "1": [
+      "B2_threshold"
+    ],
+    "2": [
+      "B2_threshold"
+    ],
+    "3": [
+      "B2_threshold"
+    ],
+    "4": [
+      "B2_threshold"
+    ],
+    "5": [
+      "B2_threshold"
+    ],
+    "6": [
+      "B2_threshold"
+    ],
+    "8": [
+      "B2_threshold"
+    ],
+    "9": [
+      "B2_threshold"
+    ],
+    "10": [
+      "B2_threshold"
+    ],
+    "11": [
+      "B2_threshold"
+    ],
+    "18": [
+      "B2_threshold"
+    ]
+  },
+  "u07_1": {
+    "1": [
+      "B2_threshold"
+    ],
+    "2": [
+      "B2_threshold"
+    ],
+    "3": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "4": [
+      "B2_threshold"
+    ],
+    "5": [
+      "B2_threshold"
+    ],
+    "6": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "9": [
+      "B2_threshold"
+    ],
+    "13": [
+      "B2_threshold"
+    ],
+    "17": [
+      "B2_threshold"
+    ]
+  },
+  "u08_1": {
+    "1": [
+      "B2_threshold"
+    ],
+    "2": [
+      "B2_threshold"
+    ],
+    "3": [
+      "B2_threshold"
+    ],
+    "4": [
+      "B2_threshold"
+    ],
+    "5": [
+      "B2_threshold"
+    ],
+    "17": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ]
+  },
+  "u01_3": {
+    "1": [
+      "B2_threshold"
+    ],
+    "2": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "3": [
+      "B2_threshold"
+    ],
+    "4": [
+      "B2_threshold"
+    ],
+    "5": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "6": [
+      "B2_threshold"
+    ],
+    "7": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "8": [
+      "B2_threshold"
+    ],
+    "11": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "15": [
+      "B2_threshold"
+    ]
+  },
+  "u07_3": {
+    "1": [
+      "B2_threshold"
+    ],
+    "2": [
+      "B2_threshold"
+    ],
+    "3": [
+      "B2_threshold"
+    ],
+    "4": [
+      "B2_threshold"
+    ],
+    "5": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "7": [
+      "B2_threshold"
+    ],
+    "8": [
+      "B2_threshold"
+    ],
+    "12": [
+      "B2_threshold"
+    ],
+    "16": [
+      "B2_threshold"
+    ]
+  },
+  "u10_3": {
+    "1": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "2": [
+      "B2_threshold"
+    ],
+    "3": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "4": [
+      "B2_threshold"
+    ],
+    "5": [
+      "B2_threshold"
+    ],
+    "6": [
+      "B2_threshold"
+    ],
+    "7": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "8": [
+      "B2_threshold"
+    ],
+    "9": [
+      "B2_threshold"
+    ],
+    "10": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "11": [
+      "B2_threshold"
+    ],
+    "12": [
+      "B2_threshold"
+    ],
+    "13": [
+      "B2_threshold"
+    ],
+    "14": [
+      "B2_threshold"
+    ],
+    "15": [
+      "B2_threshold"
+    ],
+    "16": [
+      "B2_threshold"
+    ],
+    "17": [
+      "B2_threshold"
+    ],
+    "18": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "19": [
+      "B2_threshold"
+    ],
+    "20": [
+      "B2_threshold"
+    ],
+    "22": [
+      "B2_threshold"
+    ],
+    "23": [
+      "B2_threshold"
+    ],
+    "27": [
+      "B2_threshold"
+    ],
+    "73": [
+      "B2_threshold"
+    ]
+  },
+  "u06_2": {
+    "1": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "2": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "3": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "4": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "5": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "6": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "7": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "8": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "9": [
+      "B2_threshold"
+    ],
+    "10": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "11": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "12": [
+      "Fusion_50_50"
+    ],
+    "13": [
+      "Fusion_50_50"
+    ],
+    "14": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "15": [
+      "Fusion_50_50"
+    ],
+    "16": [
+      "Fusion_50_50"
+    ],
+    "17": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "18": [
+      "Fusion_50_50"
+    ],
+    "19": [
+      "Fusion_50_50"
+    ],
+    "21": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "22": [
+      "Fusion_50_50"
+    ],
+    "23": [
+      "Fusion_50_50"
+    ],
+    "24": [
+      "Fusion_50_50"
+    ],
+    "25": [
+      "Fusion_50_50"
+    ],
+    "27": [
+      "Fusion_50_50"
+    ],
+    "29": [
+      "Fusion_50_50"
+    ],
+    "30": [
+      "Fusion_50_50"
+    ]
+  },
+  "u07_2": {
+    "1": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "2": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "3": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "4": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "5": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "6": [
+      "Fusion_50_50"
+    ],
+    "7": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "8": [
+      "Fusion_50_50"
+    ],
+    "9": [
+      "Fusion_50_50"
+    ],
+    "10": [
+      "Fusion_50_50"
+    ],
+    "15": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "16": [
+      "Fusion_50_50"
+    ],
+    "17": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ],
+    "22": [
+      "B2_threshold",
+      "Fusion_50_50"
+    ]
+  }
+}

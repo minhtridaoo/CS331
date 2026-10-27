@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 38,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 26,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 13,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 16,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 84,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 15,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 79,
+    "output_file": "results/countgdpp/p4_clip_devcheck_20261027/q05_3_clip_scores.json"
+  }
+]
