@@ -1,5 +1,9 @@
 # Đang ở đâu trong pipeline và lịch đến 02/12 (cập nhật 27/10 khuya)
 
+> **Đồng bộ Git đã xác nhận — 27/10/2026:** đã push commit [`e877541`](https://github.com/minhtridaoo/CS331/commit/e8775412f84f0927a6fe692f1f106bf53aacd369) lên `origin/main`; HEAD local khớp remote. Code, kết quả P4.6, gói N4 và phân công đã có trên GitHub. Bản ZIP sao lưu trong `quá khứ/`, dữ liệu MUCCA gốc và checkpoint vẫn ở máy.
+> **Việc tiếp theo:** Trí gửi đường dẫn [giao việc cho Triệu](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md), nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới. Triệu làm N4 tầng A (V1–V2); chưa xác nhận đã nhận/hoàn thành.
+> **Trạng thái ưu tiên:** P4.6a–b đã xong; tập 10 ảnh/30 query đã khóa và P4.6c–d phần count đã chạy. Hiện ở N4 review khung, chưa chọn nhánh cải tiến P/R. Các hướng dẫn chuẩn bị C2/C3 và câu “chưa push/chưa chạy ảnh mới” còn lại bên dưới mô tả thời điểm trước; không phải việc phải làm lại. Lượt đồng bộ Git này không chạy thí nghiệm.
+
 ## 1. Pipeline toàn đồ án
 
 ```
@@ -30,7 +34,7 @@ Song song: Triệu làm nốt kiểm chéo pilot (q05_3, phân tích B2/B0) → 
 
 | Khi nào | Việc của Trí | Thời gian tập trung | Ghi chú |
 |---|---|---:|---|
-| **28/10** | (a) Commit + push toàn bộ file local (lệnh ở §4) và gửi Triệu [GIAO_VIEC](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md); (b) đọc [đánh giá Triệu](../reports/DANH_GIA_TRIEU_TU_KIEM_20261027.md), nghiệm thu phần đạt; (c) chốt quy tắc dữ liệu mới ([§4 kế hoạch](KE_HOACH_CAI_TIEN_20261027.md)): dev 20 + test 40, trộn cặp khác hẳn và cặp dễ nhầm | **45 phút** | (a) là việc **chặn** Triệu: chưa push thì Triệu không có gói |
+| **28/10** | (a) Commit + push **đã xong 27/10**; tiếp gửi Triệu [GIAO_VIEC](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md); (b) đọc [đánh giá Triệu](../reports/DANH_GIA_TRIEU_TU_KIEM_20261027.md), nghiệm thu phần đạt; (c) chốt quy tắc dữ liệu mới ([§4 kế hoạch](KE_HOACH_CAI_TIEN_20261027.md)): dev 20 + test 40, trộn cặp khác hẳn và cặp dễ nhầm | **45 phút** | Gói đã có trên GitHub; còn gửi đường dẫn và xác nhận Triệu đã nhận |
 | 31/10–02/11 | Khi Triệu xong N4: cùng assistant xem bảng E1–E4 và **chọn P hay R** | 45 phút | Quá 31/10 thì chọn bằng chỉ báo tự động |
 | 03–08/11 | Assistant rút và chia tập. Trí kiểm absent/GT **dev 20 ảnh** (Triệu kiểm test 40), rồi khóa. Duyệt pilot chung | **2 giờ** | Làm theo HUONG_DAN như lần trước |
 | 09–15/11 | Cho phép assistant viết code + chạy dev (GPU local khoảng 1 giờ / cấu hình / 60 query). Trí đọc bảng dev, quyết tham số | **1,5 giờ** | Không cần Kaggle |
@@ -50,7 +54,7 @@ Song song: Triệu làm nốt kiểm chéo pilot (q05_3, phân tích B2/B0) → 
 | Kiểm absent/GT 60 ảnh quá tốn | Quá 08/11 | Giảm còn dev 15 + test 30, ghi lý do **trước** khi chạy |
 | GPU 4 GB không đủ (CLIP chen giữa 2 lượt) | Lỗi OOM | Chạy 3 bước tách rời (đã thiết kế); bí quá thì dùng Kaggle |
 
-## 4. Lệnh commit/push cho 28/10 (Trí tự chạy)
+## 4. Commit/push đã xong 27/10; lệnh bên dưới chỉ để tham khảo
 
 ```powershell
 cd D:\MINHTRIHOCCODE\HOCKI5\CS331

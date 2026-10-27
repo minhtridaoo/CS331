@@ -1,5 +1,9 @@
 # Roadmap CS331 — CountGD++ và lỗi đếm sai đối tượng
 
+> **Đồng bộ Git đã xác nhận — 27/10/2026:** đã push commit [`e877541`](https://github.com/minhtridaoo/CS331/commit/e8775412f84f0927a6fe692f1f106bf53aacd369) lên `origin/main`; HEAD local khớp remote. Code, kết quả P4.6, gói N4 và phân công đã có trên GitHub. Bản ZIP sao lưu trong `quá khứ/`, dữ liệu MUCCA gốc và checkpoint vẫn ở máy.
+> **Việc tiếp theo:** Trí gửi đường dẫn [giao việc cho Triệu](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md), nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới. Triệu làm N4 tầng A (V1–V2); chưa xác nhận đã nhận/hoàn thành.
+> **Trạng thái ưu tiên:** P4.6a–b đã xong; tập 10 ảnh/30 query đã khóa và P4.6c–d phần count đã chạy. Hiện ở N4 review khung, chưa chọn nhánh cải tiến P/R. Các hướng dẫn chuẩn bị C2/C3 và câu “chưa push/chưa chạy ảnh mới” còn lại bên dưới mô tả thời điểm trước; không phải việc phải làm lại. Lượt đồng bộ Git này không chạy thí nghiệm.
+
 **V4.9 — cập nhật 27/10/2026 sau pull phần Triệu (d6db189).** [Trang bắt đầu](../README.md) · [Nhật ký](../WORKLOG.md) · [Handoff](../HANDOFF/HANDOFF.md).
 
 **P4.6b đã đạt kiểm dev; P4.6a đã xác nhận nhãn, còn chốt quy tắc/lịch sử sử dụng và khóa.** Phần chạy/chấm/viết pilot của Trí đã đủ để chờ duyệt; Triệu đã chấp nhận bản kiểm kỹ thuật được ủy quyền ngày 24/10; Trí đọc và chưa duyệt ngày 27/10, yêu cầu T1–T4 V2. Chưa đánh giá hai ứng viên trên tập ảnh mới độc lập. CountGD++ vẫn là model đếm; CLIP chỉ chấm crop, không phải CLIP-Count.

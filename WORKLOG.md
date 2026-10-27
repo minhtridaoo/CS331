@@ -2,7 +2,7 @@
 
 **Cập nhật 27/10/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
-**Điểm tiếp tục:** C1 chưa duyệt, Triệu T0–T4. Trí đã xác nhận nhãn của 10 ảnh (20 present + 10 absent), assistant ghi theo tin nhắn 27/10. Chưa khóa: còn chốt quy tắc chấm và xác nhận lịch sử sử dụng ảnh. C3/dev (1)–(4) đã đạt ở phiên song song; chưa chạy ảnh mới. Xem [checklist](roadmap/CHECKLIST_3_GIO.md).
+**Điểm tiếp tục:** đã push e877541 lên origin/main và kiểm HEAD khớp remote ngày 27/10. P4.6 count đã xong; N4 tầng A giao Triệu. Trí gửi đường dẫn giao việc, nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới; chưa có quyết định chọn P/R.
 
 ## Cách dùng nhật ký
 
@@ -19,6 +19,20 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 27/10/2026 — đồng bộ Git theo yêu cầu Trí
+
+**Đã thực hiện:** fetch origin, xác nhận main không lệch remote; rà 448 file và commit `e8775412f84f0927a6fe692f1f106bf53aacd369`, rồi `git push origin main` thành công. `git ls-remote --heads origin main` trả đúng cùng commit với HEAD local.
+
+**Nội dung đã lên GitHub:** code runner/chấm P4, dữ liệu truy vấn đã khóa, kết quả dev và p4_unseen_v1, ảnh/gói N4 và q05, gói giao việc cho Triệu, báo cáo, roadmap/handoff. Dung lượng file trước nén khoảng 68,5 MiB; không file nào vượt 100 MB.
+
+**Kiểm trước push:** phân tích cú pháp Python và JSON/JSONL đạt; kiểm ZIP CRC đạt; không tìm thấy dấu xung đột hoặc token truy cập theo mẫu đã quét. Các artifact và script được stage giữ nguyên byte. Ba hash dữ liệu LOCKED khớp selection_meta. Git whitespace chỉ còn CRLF cần bảo toàn và dấu xuống dòng Markdown có chủ ý trong tài liệu nguồn; không sửa dữ liệu đã khóa để làm đẹp kiểm định dạng.
+
+**Giữ tại máy:** checkpoint, data_external và 7 ZIP snapshot trong `quá khứ/`. Đã thêm quy tắc bỏ qua snapshot, giữ nguyên các file. `.gitattributes` bảo toàn byte của dữ liệu/đầu ra đã khóa và adapter có hash khi clone trên Windows; không đổi freeze, GT hay dự đoán.
+
+**Phạm vi:** chỉ đồng bộ Git và tài liệu, không chạy evaluator/self-test/inference/train, không gửi tin cho Triệu, không ký nghiệm thu thay nhóm. Gói đã có trên GitHub không có nghĩa Triệu đã nhận hoặc hoàn thành.
+
+**Bước tiếp:** Trí gửi đường dẫn `HANDOFF/GIAO_VIEC_TRIEU_20261028.md`, đọc và nghiệm thu phần đạt của bản tự kiểm, chốt quy tắc dữ liệu v2. Triệu làm N4 tầng A V1–V2; sau đó mới chọn P/R. Bản cập nhật nhật ký/handoff này là commit tài liệu tiếp nối e877541.
 
 ## 27/10/2026 (khuya, cuối ngày) — giao N4 cho Triệu, lập việc cho Triệu, chốt vị trí pipeline
 

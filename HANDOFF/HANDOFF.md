@@ -1,5 +1,9 @@
 # Handoff CS331 — bắt đầu session mới tại đây
 
+> **Đồng bộ Git đã xác nhận — 27/10/2026:** đã push commit [`e877541`](https://github.com/minhtridaoo/CS331/commit/e8775412f84f0927a6fe692f1f106bf53aacd369) lên `origin/main`; HEAD local khớp remote. Code, kết quả P4.6, gói N4 và phân công đã có trên GitHub. Bản ZIP sao lưu trong `quá khứ/`, dữ liệu MUCCA gốc và checkpoint vẫn ở máy.
+> **Việc tiếp theo:** Trí gửi đường dẫn [giao việc cho Triệu](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md), nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới. Triệu làm N4 tầng A (V1–V2); chưa xác nhận đã nhận/hoàn thành.
+> **Trạng thái ưu tiên:** P4.6a–b đã xong; tập 10 ảnh/30 query đã khóa và P4.6c–d phần count đã chạy. Hiện ở N4 review khung, chưa chọn nhánh cải tiến P/R. Các hướng dẫn chuẩn bị C2/C3 và câu “chưa push/chưa chạy ảnh mới” còn lại bên dưới mô tả thời điểm trước; không phải việc phải làm lại. Lượt đồng bộ Git này không chạy thí nghiệm.
+
 **Bản tổng hợp để chuyển session:** [BAT_DAU_SESSION_MOI.md](../BAT_DAU_SESSION_MOI.md). Trạng thái mới hơn trong checklist/WORKLOG vẫn được ưu tiên.
 
 **Cập nhật 27/10/2026, sau pull phần Triệu.** [Checklist 3 giờ + điểm dừng](../roadmap/CHECKLIST_3_GIO.md) · [Roadmap V4.8](../roadmap/ROADMAP.md) · [WORKLOG](../WORKLOG.md).
@@ -7,7 +11,7 @@
 > **MỚI NHẤT — 27/10 khuya (Trí nghỉ, giao việc):**
 > - **Vị trí pipeline + lịch đến 02/12:** [roadmap/VI_TRI_PIPELINE_20261028.md](../roadmap/VI_TRI_PIPELINE_20261028.md).
 > - **N4 giao Triệu** (hạn 30/10). Trí đã chấm u01_1 (9/9: 7 wrong_class chó, 2 multi_object chó). Việc của Triệu V1–V7, kèm gợi ý V8–V10 làm thay Trí: [HANDOFF/GIAO_VIEC_TRIEU_20261028.md](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md). Gói gửi: `HANDOFF/TRIEU_GIAO_VIEC_20261028.zip` (thay ZIP V2 cũ chưa gửi).
-> - **Việc đầu tiên của Trí ngày 28/10 (45 phút):** commit + push (lệnh ở §4 file vị trí pipeline) → gửi Triệu file giao việc → nghiệm thu bản tự kiểm của Triệu → chốt quy tắc dữ liệu dev 20 + test 40.
+> - **Việc đầu tiên của Trí ngày 28/10 (45 phút):** commit + push **đã xong 27/10** → gửi Triệu file giao việc → nghiệm thu bản tự kiểm của Triệu → chốt quy tắc dữ liệu dev 20 + test 40.
 
 ## Việc đầu tiên của phiên tiếp theo
 

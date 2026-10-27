@@ -1,5 +1,9 @@
 # Checklist làm tiếp — buổi 3 giờ, lập ngày 27/10/2026
 
+> **Đồng bộ Git đã xác nhận — 27/10/2026:** đã push commit [`e877541`](https://github.com/minhtridaoo/CS331/commit/e8775412f84f0927a6fe692f1f106bf53aacd369) lên `origin/main`; HEAD local khớp remote. Code, kết quả P4.6, gói N4 và phân công đã có trên GitHub. Bản ZIP sao lưu trong `quá khứ/`, dữ liệu MUCCA gốc và checkpoint vẫn ở máy.
+> **Việc tiếp theo:** Trí gửi đường dẫn [giao việc cho Triệu](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md), nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới. Triệu làm N4 tầng A (V1–V2); chưa xác nhận đã nhận/hoàn thành.
+> **Trạng thái ưu tiên:** P4.6a–b đã xong; tập 10 ảnh/30 query đã khóa và P4.6c–d phần count đã chạy. Hiện ở N4 review khung, chưa chọn nhánh cải tiến P/R. Các hướng dẫn chuẩn bị C2/C3 và câu “chưa push/chưa chạy ảnh mới” còn lại bên dưới mô tả thời điểm trước; không phải việc phải làm lại. Lượt đồng bộ Git này không chạy thí nghiệm.
+
 **Mở file này mỗi khi bắt đầu session mới.** Trạng thái chung: [HANDOFF](../HANDOFF/HANDOFF.md). Chỉ đánh dấu xong khi có artifact hoặc xác nhận; kế hoạch không phải kết quả đã thực hiện.
 
 ## 0. Điểm tiếp tục hiện tại
@@ -78,26 +82,26 @@ Môi trường được ghi trong lịch sử: CountGD++ từng chạy WSL tại
 
 ### C4 — bàn giao 15 phút cuối, bắt buộc dù chưa xong C2/C3
 
-- [ ] Ghi việc **đã làm thật**, file/code/output mới, lệnh cuối, kết quả/lỗi vào [WORKLOG](../WORKLOG.md).
-- [ ] Điền bảng “Dừng ở đâu” ngay dưới; checkbox nào chưa đủ bằng chứng thì giữ trống.
-- [ ] Đổi “Việc đầu tiên chưa làm” ở đầu checklist và HANDOFF sang đúng checkpoint tiếp theo.
-- [ ] Kiểm `git status --short --branch`; chỉ ghi commit/push nếu thực sự thực hiện. File local vẫn còn sau đổi session, nhưng không tự xuất hiện ở máy Triệu/GitHub nếu chưa push.
+- [x] Ghi việc **đã làm thật**, file/code/output mới, lệnh cuối, kết quả/lỗi vào [WORKLOG](../WORKLOG.md).
+- [x] Điền bảng “Dừng ở đâu” ngay dưới; checkbox nào chưa đủ bằng chứng thì giữ trống.
+- [x] Đổi “Việc đầu tiên chưa làm” ở đầu checklist và HANDOFF sang đúng checkpoint tiếp theo.
+- [x] Kiểm `git status --short --branch`; chỉ ghi commit/push nếu thực sự thực hiện. File local vẫn còn sau đổi session, nhưng không tự xuất hiện ở máy Triệu/GitHub nếu chưa push.
 
 ## 3. Dừng ở đâu — cập nhật cuối mỗi buổi
 
 | Trường | Hiện tại sau rà giao việc V2 ngày 27/10 |
 |---|---|
-| Mốc đã xác nhận | C1: Trí đọc, chưa duyệt. C2: B, đã ghi xác nhận nhãn 10 ảnh/30 query, chưa khóa. C3: code đã viết, kiểm (1) từ điểm lưu sẵn đạt 15/15; (2)–(4) **ĐẠT 27/10, trùng tuyệt đối** ([SUMMARY](../reports/audits/devcheck_20261027/SUMMARY.md)) |
-| Việc đầu tiên cần tiếp | **Trí 28/10 (45 phút):** push (lệnh §4 [roadmap/VI_TRI_PIPELINE_20261028.md](../roadmap/VI_TRI_PIPELINE_20261028.md)) → gửi Triệu [HANDOFF/GIAO_VIEC_TRIEU_20261028.md](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md) → nghiệm thu bản tự kiểm → chốt quy tắc dữ liệu. **Triệu:** N4 tầng A trước 30/10 (Trí đã chấm u01_1). Sau N4: chọn nhánh P hoặc R |
-| Pilot còn chờ gì | Triệu tự làm T1–T4 theo yêu cầu mới; Trí tiếp C2/C3 song song |
+| Mốc đã xác nhận | C1: Trí đọc, chưa duyệt chung. C2 đã khóa theo selection_meta; C3/dev (1)–(4) đạt. P4.6c–d count đã chạy trên 30 query. N4 đang review, không đánh dấu hoàn thành. |
+| Việc đầu tiên cần tiếp | **Push đã xong.** Trí gửi HANDOFF/GIAO_VIEC_TRIEU_20261028.md cho Triệu, nghiệm thu bản tự kiểm và chốt quy tắc dữ liệu dev/test mới. Triệu: N4 tầng A V1–V2 trước 30/10; sau đó nhóm chọn P hoặc R. |
+| Pilot còn chờ gì | Triệu bổ sung q05_3, 2 ca uncertain/absent và phân tích; Trí nghiệm thu, rồi duyệt chung. Không mở lại C2/C3 đã xong. |
 | Danh sách dữ liệu / trạng thái khóa | B, 10 ảnh/30 query (20 present + 10 absent). **LOCKED 27/10 17:07:55**, Trí xác nhận; u07_3/u10_3 đổi trucks→bicycles trước khi khóa; quy ước chấm §4. **P4.6c đã chạy 27/10** ([kết quả](../reports/P4_6_UNSEEN_RESULTS_20261027.md)) |
 | Runner / log kiểm dev | **P4.6b ĐẠT 27/10: (1)–(4) đều PASS, trùng tuyệt đối** ([SUMMARY](../reports/audits/devcheck_20261027/SUMMARY.md)). Lệnh đã dùng: `run_b2_frozen.py`, `p4_clip_score.py`, `p4_apply_freeze.py` (thư mục experiments/countgdpp). Thứ tự kiểm dev: (1) apply_freeze trên điểm đã lưu, CPU: `python experiments/countgdpp/p4_apply_freeze.py --scores results/countgdpp/p4_clip_all15_20261020 --run-id p4_freeze_devcheck_<ngày> --check-audit results/countgdpp/p4_freeze_audit_20261021.json`; (2) WSL GPU: `run_b2_frozen.py --inputs experiments/countgdpp/m4_inputs/first5_inputs.jsonl --run-id p4_b2_devcheck_<ngày> --b0-reference results/countgdpp/m4_first5_b0/predictions.jsonl`; (3) `p4_clip_score.py` trên predictions của (2); (4) apply_freeze trên điểm mới với `--reference-scores results/countgdpp/p4_clip_all15_20261020 --check-audit …` |
-| Lệnh thực nghiệm cuối đã kiểm / output | Phiên song song: p4_apply_freeze.py trên p4_clip_devcheck_20261027 với --check-audit và --reference-scores → cả hai PASS; output results/countgdpp/p4_freeze_e2e_devcheck_20261027/. Lượt hiện tại chỉ ghi CSV/xác nhận, không chạy model. |
-| Lỗi đang chặn / cách tái hiện | Không còn chờ xác nhận nhãn. Còn chốt quy tắc chấm/lịch sử sử dụng và khóa. C3 đã đạt; T0 cần chia sẻ nếu chưa gửi. |
-| Cập nhật gần nhất, không chạy thực nghiệm | Ghi xác nhận Trí vào 10 dòng absent và 30 dòng manifest; human_review_20261027.json lưu nguồn tin nhắn. Không đổi input/GT/prompt/freeze, không khóa tập. |
-| Run đã mở trên ảnh mới | Chưa chạy |
+| Lệnh thực nghiệm cuối đã kiểm / output | Theo WORKLOG và log đã lưu: evaluation/p4_unseen_score.py --run-id p4_unseen_v1_eval_20261027 → results/countgdpp/p4_unseen_v1_eval_20261027/. Lượt hiện tại chỉ kiểm tệp và đồng bộ Git. |
+| Lỗi đang chặn / cách tái hiện | Không có lỗi Git đang chặn. Còn chờ nhãn N4 tầng A của Triệu để chọn P/R; dữ liệu và phương pháp v2 chưa được chốt. |
+| Cập nhật gần nhất, không chạy thực nghiệm | Push e877541 thành công; HEAD local = origin/main khi kiểm bằng ls-remote. 448 file, nguyên byte artifact đã khóa; không chạy evaluator/inference/train. |
+| Run đã mở trên ảnh mới | Đã chạy p4_unseen_v1_b2_20261027 → p4_unseen_v1_clip_20261027 → p4_unseen_v1_freeze_20261027; kết quả count tại p4_unseen_v1_eval_20261027. |
 | Việc Triệu còn cần bàn giao | Theo [HANDOFF/GIAO_VIEC_TRIEU_20261028.md](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md): V1–V2 N4 tầng A (30/10); V3 q05_3, V4 2 ca thử, V5 phân tích B2/B0 (01/11); V6 N4 tầng B (02/11); V7 duyệt chung (03/11). 47 nhãn q03 đề xuất tạm hoãn |
-| Git | HEAD d6db189; tài liệu/P4 local chưa commit/push; snapshot/stash còn giữ |
+| Git | Đã push e877541 lên origin/main; bản cập nhật nhật ký tiếp nối commit này. Snapshot local được giữ và bỏ qua bằng .gitignore; không apply stash cũ. |
 
 ## 4. Sau 3 giờ hôm nay, làm tiếp theo thứ tự nào?
 
