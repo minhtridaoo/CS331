@@ -1,4 +1,4 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u10_3,bicycles,pseudo,P1,513.7,90.3,556.6,123.7,,,,,,
-u10_3,bicycles,pseudo,P2,450.3,71.7,511.1,115.8,,,,,,
-u10_3,bicycles,pseudo,P3,507.3,121.1,550.8,190.4,,,,,,
+u10_3,bicycles,pseudo,P1,513.7,90.3,556.6,123.7,multi_object,motorcycles,,"gom 2 nguoi dang chay xe may, nhin tu phia sau nguoi, 1 nguoi truoc(ao xanh) va 1 nguoi sau(ao den)",Trieu,2026-10-28
+u10_3,bicycles,pseudo,P2,450.3,71.7,511.1,115.8,multi_object,cars,,gom 2-3 xe o to dang noi duoi nhau,Trieu,2026-10-28
+u10_3,bicycles,pseudo,P3,507.3,121.1,550.8,190.4,wrong_class,motorcycles,,"1 nguoi dang chay xe may, gom du xe, dang cho gi do mau xanh va che nguoi lai",Trieu,2026-10-28

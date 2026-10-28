@@ -1,4 +1,4 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u02_1,people,pseudo,P1,373.2,244.6,455.3,423.0,,,,,,
-u02_1,people,pseudo,P2,499.3,262.9,565.3,422.8,,,,,,
-u02_1,people,pseudo,P3,638.0,260.9,722.4,419.0,,,,,,
+u02_1,people,pseudo,P1,373.2,244.6,455.3,423,multi_object,dogs,,"gom 3 con cho, 1 con o giua mau nau, con ben trai mau trang+dau nau, con dang sau mau den",Trieu,2026-10-28
+u02_1,people,pseudo,P2,499.3,262.9,565.3,422.8,wrong_class,dogs,,1 con cho mau trang,Trieu,2026-10-28
+u02_1,people,pseudo,P3,638,260.9,722.4,419,multi_object,dogs,,"gom 3 con cho, con o giua va con ben phai mau nau, con ben trai mau den",Trieu,2026-10-28

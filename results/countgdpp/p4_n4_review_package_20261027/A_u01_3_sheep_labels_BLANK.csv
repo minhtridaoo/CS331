@@ -1,11 +1,11 @@
 query_id,prompt,rank,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u01_3,sheep,1,311.6,476.7,425.3,683.1,,,,,,
-u01_3,sheep,2,422.1,446.6,507.5,552.5,,,,,,
-u01_3,sheep,3,925.2,517.5,1056.3,696.5,,,,,,
-u01_3,sheep,4,474.0,516.4,617.3,696.9,,,,,,
-u01_3,sheep,5,1016.1,505.4,1151.9,658.0,,,,,,
-u01_3,sheep,6,85.1,489.9,228.3,672.7,,,,,,
-u01_3,sheep,7,404.5,519.2,477.1,693.4,,,,,,
-u01_3,sheep,8,671.7,509.7,765.0,680.4,,,,,,
-u01_3,sheep,11,214.9,452.2,351.9,649.4,,,,,,
-u01_3,sheep,15,832.5,473.8,936.6,704.1,,,,,,
+u01_3,sheep,1,311.6,476.7,425.3,683.1,wrong_class,dogs,,,Trieu,2026-10-28
+u01_3,sheep,2,422.1,446.6,507.5,552.5,uncertain,dogs,,"khong ro 1 con hay cum: than 1 con trang bi day va dau 2-3 con khac che, anh mo",Trieu,2026-10-28
+u01_3,sheep,3,925.2,517.5,1056.3,696.5,wrong_class,dogs,,,Trieu,2026-10-28
+u01_3,sheep,4,474,516.4,617.3,696.9,wrong_class,dogs,,,Trieu,2026-10-28
+u01_3,sheep,5,1016.1,505.4,1151.9,658,multi_object,dogs,,"cum 5-6 con, khong xac dinh duoc con chinh.",Trieu,2026-10-28
+u01_3,sheep,6,85.1,489.9,228.3,672.7,multi_object,dogs,,"2 con crop deu nhau, nhung con co dau mau nau de quan sat thay hon con mau trang",Trieu,2026-10-28
+u01_3,sheep,7,404.5,519.2,477.1,693.4,wrong_class,dogs,,,Trieu,2026-10-28
+u01_3,sheep,8,671.7,509.7,765,680.4,wrong_class,dogs,,,Trieu,2026-10-28
+u01_3,sheep,11,214.9,452.2,351.9,649.4,wrong_class,dogs,,,Trieu,2026-10-28
+u01_3,sheep,15,832.5,473.8,936.6,704.1,wrong_class,dogs,,,Trieu,2026-10-28

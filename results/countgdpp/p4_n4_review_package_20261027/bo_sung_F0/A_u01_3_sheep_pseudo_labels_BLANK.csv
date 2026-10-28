@@ -1,4 +1,4 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u01_3,sheep,pseudo,P1,786.1,438.4,928.0,582.4,,,,,,
-u01_3,sheep,pseudo,P2,922.7,518.9,1055.8,694.1,,,,,,
-u01_3,sheep,pseudo,P3,307.0,475.2,425.2,671.6,,,,,,
+u01_3,sheep,pseudo,P1,786.1,438.4,928,582.4,multi_object,dogs,,gom 4-5 con cho,Trieu,2026-10-28
+u01_3,sheep,pseudo,P2,922.7,518.9,1055.8,694.1,wrong_class,dogs,,gom 4-5 con cho nhung chu the van co the nhan biet duoc la con cho co dau mau nau,Trieu,2026-10-28
+u01_3,sheep,pseudo,P3,307,475.2,425.2,671.6,wrong_class,dogs,,gom 4-5 con cho nhung chu the van co the nhan biet duoc la con cho co dau dom den,Trieu,2026-10-28

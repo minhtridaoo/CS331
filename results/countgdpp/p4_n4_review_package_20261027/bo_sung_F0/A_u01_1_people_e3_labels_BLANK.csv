@@ -1,10 +1,10 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u01_1,people,e3,#4,817.5,200.6,873.8,353.9,,,,,,
-u01_1,people,e3,#5,759.6,199.1,814.6,338.7,,,,,,
-u01_1,people,e3,#14,48.7,197.0,97.3,322.3,,,,,,
-u01_1,people,e3,#18,441.5,85.3,767.1,617.8,,,,,,
-u01_1,people,e3,#21,655.1,248.0,688.4,356.1,,,,,,
-u01_1,people,e3,#23,704.3,205.6,738.9,304.9,,,,,,
-u01_1,people,e3,#29,516.4,255.6,540.2,309.6,,,,,,
-u01_1,people,e3,#36,-0.9,201.6,23.3,306.3,,,,,,
-u01_1,people,e3,#38,723.0,197.9,759.0,278.5,,,,,,
+u01_1,people,e3,#4,817.5,200.6,873.8,353.9,target,people,p1,,Trieu,2026-10-28
+u01_1,people,e3,#5,759.6,199.1,814.6,338.7,target,people,p2,,Trieu,2026-10-28
+u01_1,people,e3,#14,48.7,197,97.3,322.3,target,people,p3,,Trieu,2026-10-28
+u01_1,people,e3,#18,441.5,85.3,767.1,617.8,target,people,p4,"cung nguoi voi mau pseudo P2 (file pseudo), khong phai p2",Trieu,2026-10-28
+u01_1,people,e3,#21,655.1,248,688.4,356.1,part,people,,1 nua than duoi ,Trieu,2026-10-28
+u01_1,people,e3,#23,704.3,205.6,738.9,304.9,uncertain,people,,"crop ra 2 nguoi, 1 nguoi nu do nau(lay center nhieu hon) va 1 nguoi nam do trang, deu bi che 1 phan boi nguoi p4",Trieu,2026-10-28
+u01_1,people,e3,#29,516.4,255.6,540.2,309.6,part,people,,thay duoc 1 chan ,Trieu,2026-10-28
+u01_1,people,e3,#36,-0.9,201.6,23.3,306.3,part,people,,1 nua nguoi theo chieu doc bi out ra khoi khung hinh,Trieu,2026-10-28
+u01_1,people,e3,#38,723,197.9,759,278.5,uncertain,people,,"crop ra 2 nguoi, 1 nguoi nu do nau va 1 nguoi nam do trang(lay center nhieu hon), deu bi che 1 phan boi nguoi p4",Trieu,2026-10-28

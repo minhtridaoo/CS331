@@ -1,4 +1,4 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u08_1,people,pseudo,P1,554.9,269.2,674.8,333.2,,,,,,
-u08_1,people,pseudo,P2,531.1,310.1,646.1,379.9,,,,,,
-u08_1,people,pseudo,P3,588.2,229.9,701.1,293.5,,,,,,
+u08_1,people,pseudo,P1,554.9,269.2,674.8,333.2,wrong_class,cars,,"co 3 xe o to, ria trai ben duoi la mau trang, o giua la mau den, ria phai ben tren la mau do; de dang nhan thay chu the la o to mau den",Trieu,2026-10-29
+u08_1,people,pseudo,P2,531.1,310.1,646.1,379.9,wrong_class,cars,,"co 3 xe o to, ria trai ben duoi la mau xanh nhat, o giua la mau trang, ria phai ben tren la mau den; de dang nhan thay chu the la o to mau trang",Trieu,2026-10-29
+u08_1,people,pseudo,P3,588.2,229.9,701.1,293.5,wrong_class,cars,,"co 2 xe o to, ria trai ben duoi la mau den, o giua la mau do; de dang nhan thay chu the la o to mau do",Trieu,2026-10-29

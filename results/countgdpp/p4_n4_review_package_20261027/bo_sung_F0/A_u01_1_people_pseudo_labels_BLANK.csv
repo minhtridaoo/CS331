@@ -1,4 +1,4 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u01_1,people,pseudo,P1,63.7,504.4,270.5,684.1,,,,,,
-u01_1,people,pseudo,P2,432.0,88.3,778.8,616.2,,,,,,
-u01_1,people,pseudo,P3,1010.3,505.7,1162.6,643.4,,,,,,
+u01_1,people,pseudo,P1,63.7,504.4,270.5,684.1,multi_object,dogs,,gom 5-6 con cho,Trieu,2026-10-28
+u01_1,people,pseudo,P2,432,88.3,778.8,616.2,target,people,p1,1 nguoi chinh thay du; phia sau co tay 1 nguoi va 4-5 nguoi xa; duoi chan co nhieu cho trong khung,Trieu,2026-10-28
+u01_1,people,pseudo,P3,1010.3,505.7,1162.6,643.4,multi_object,dogs,,gom 5-6 con cho,Trieu,2026-10-28

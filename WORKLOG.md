@@ -2,7 +2,9 @@
 
 **Cập nhật 27/10/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
-**Điểm tiếp tục:** đã push e877541 lên origin/main và kiểm HEAD khớp remote ngày 27/10. P4.6 count đã xong; N4 tầng A giao Triệu. Trí gửi đường dẫn giao việc, nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới; chưa có quyết định chọn P/R.
+**Điểm tiếp tục (29/10):** Triệu đã gán xong N4 tầng A (V1 78 khung + V2 39 dòng), chờ commit/push và Trí ghép bảng tra; tiếp theo V3.
+
+**Điểm tiếp tục (27/10):** đã push e877541 lên origin/main và kiểm HEAD khớp remote ngày 27/10. P4.6 count đã xong; N4 tầng A giao Triệu. Trí gửi đường dẫn giao việc, nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới; chưa có quyết định chọn P/R.
 
 ## Cách dùng nhật ký
 
@@ -19,6 +21,22 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 28–29/10/2026 — Triệu: N4 tầng A (V1 + V2)
+
+**Người thực hiện:** Triệu tự gán nhãn từng khung; assistant chỉ hướng dẫn, đối chiếu với ảnh crop và chuẩn hóa cột `date` (không đổi nhãn). Review mù: không mở `_KEY_mo_sau_khi_review/` và file `A_u01_1_people_labels_TRI_20261027.csv`.
+
+**V1, gói chính** (`results/countgdpp/p4_n4_review_package_20261027/A_*_labels_*.csv`, 7 query, 78 khung): wrong_class 71, multi_object 6, uncertain 1, **target 0**. Mô hình vẽ gần như cùng các khung cho "people" và "sheep" (mcac_123), "people" và "bicycles" (mcac_88), tức là gần như bỏ qua prompt.
+
+**V2, bổ sung** (`.../bo_sung_F0/A_*_{pseudo,e3}_labels_BLANK.csv`):
+- 21 mẫu tự chọn (E1): **1/21 đúng loại** (u01_1 P2, một người); còn lại wrong_class 10, multi_object 10. Riêng 4 query people: 1/12. u07_1 P2 và u07_3 P2 gần như cùng một khung (taxi) dù prompt khác nhau.
+- 18 ứng viên E3 (khung bị lọc xóa): target 13, part 3, uncertain 2. u01_1: 4/9 người thật bị xóa (GT 10); u02_1: 2/2 (mẹ bế con + người đi bộ; GT 3 nếu tính em bé); **u08_1: 7/7, bằng GT 7**, trong khi khung giữ lại toàn ô tô. u01_1 E3 #18 trùng người với mẫu pseudo P2: mô hình lấy người này làm mẫu ở lượt 1 rồi lọc mất ở lượt 2.
+
+**Kiểm tra:** assistant đọc lại mọi CSV, đối chiếu crop; Triệu đã sửa theo góp ý (thiếu reviewer/actual_class, thống nhất multi_object chỉ khi không có vật chính). Cột `date` bị Excel đổi (`########`, `10/28/2026`, năm nhảy 2027/2028) đã chuẩn hóa về `2026-10-28`/`2026-10-29` cho dòng reviewer=Trieu, các cột khác giữ nguyên byte nội dung.
+
+**Điểm chưa rõ:** u02_1 E3 #16 note cũ vẫn ghi "không biết xác định target", nhãn đã chốt là target p2. Chưa ghép với bảng tra/khóa, chưa tính E1–E4 chính thức; chọn P hay R vẫn là quyết định của nhóm.
+
+**Trạng thái:** V1 + V2 Chờ kiểm (Trí). **Bước tiếp:** Triệu commit + push, báo Trí; Trí/assistant ghép bảng tra và tính E1–E4. Triệu làm tiếp V3 (q05_3).
 
 ## 27/10/2026 — đồng bộ Git theo yêu cầu Trí
 

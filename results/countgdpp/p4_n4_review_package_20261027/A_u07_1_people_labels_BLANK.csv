@@ -1,10 +1,10 @@
 query_id,prompt,rank,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u07_1,people,1,351.2,701.8,646.4,864.7,,,,,,
-u07_1,people,2,450.4,290.2,733.9,475.5,,,,,,
-u07_1,people,3,898.8,501.7,1170.2,693.4,,,,,,
-u07_1,people,4,903.3,241.8,1153.2,417.6,,,,,,
-u07_1,people,5,699.2,479.3,943.3,648.1,,,,,,
-u07_1,people,6,215.5,367.1,501.6,586.7,,,,,,
-u07_1,people,9,690.5,2.2,932.1,159.6,,,,,,
-u07_1,people,13,592.6,88.2,849.2,251.6,,,,,,
-u07_1,people,17,200.8,542.4,470.3,719.6,,,,,,
+u07_1,people,1,351.2,701.8,646.4,864.7,wrong_class,cars,,,Trieu,2026-10-28
+u07_1,people,2,450.4,290.2,733.9,475.5,wrong_class,cars,,chu the la xe o to mau trang nhung co nguoi lai xe may o goc tren ben phai; trong o to co nguoi lai xe,Trieu,2026-10-28
+u07_1,people,3,898.8,501.7,1170.2,693.4,wrong_class,cars,,,Trieu,2026-10-28
+u07_1,people,4,903.3,241.8,1153.2,417.6,wrong_class,cars,,,Trieu,2026-10-28
+u07_1,people,5,699.2,479.3,943.3,648.1,wrong_class,cars,,chu the la xe o to mau do nhung co nguoi lai xe may o ben canh xe o to; trong o to co 2 nguoi,Trieu,2026-10-28
+u07_1,people,6,215.5,367.1,501.6,586.7,wrong_class,cars,,trong o to co 1 nguoi lai xe va 1 nguoi ngoi canh,Trieu,2026-10-28
+u07_1,people,9,690.5,2.2,932.1,159.6,wrong_class,cars,,trong o to co nguoi lai xe nhung khong nhin ro duoc + 1 nguoi lai xe may o ria phai,Trieu,2026-10-28
+u07_1,people,13,592.6,88.2,849.2,251.6,wrong_class,cars,,trong o to co nguoi lai xe nhung khong nhin ro duoc + 1 nguoi lai xe may o giua ria duoi ,Trieu,2026-10-28
+u07_1,people,17,200.8,542.4,470.3,719.6,wrong_class,cars,,"trong o to co1 nguoi lai xe, kha nang co them 1 nguoi mac ao do nhung khong nhin ro",Trieu,2026-10-28

@@ -1,4 +1,4 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u07_1,people,pseudo,P1,696.2,472.9,940.5,658.3,,,,,,
-u07_1,people,pseudo,P2,194.6,543.3,468.3,726.7,,,,,,
-u07_1,people,pseudo,P3,595.3,91.2,843.9,260.6,,,,,,
+u07_1,people,pseudo,P1,696.2,472.9,940.5,658.3,multi_object,cars,,"1 nguoi dang chay xe may+1 o to do + 1 o to den ngoai ria ben phai; o to mau do chiem nhieu dien tich anh nhat, ben trong kha nang co nguoi ngoi; ben canh o to do la nguoi lai xe may",Trieu,2026-10-29
+u07_1,people,pseudo,P2,194.6,543.3,468.3,726.7,wrong_class,cars,,ben trong co 1 nguoi lai xe,Trieu,2026-10-29
+u07_1,people,pseudo,P3,595.3,91.2,843.9,260.6,multi_object,cars,,"xe o to mau trang ria ben trai co 1 nguoi lai xe o trong; truoc xe o to mau trang la 1 nguoi lai xe may; o giua co 1 o to mau xanh den, co nguoi lai; ria tren ben phai co 1 o to mau xanh la",Trieu,2026-10-29

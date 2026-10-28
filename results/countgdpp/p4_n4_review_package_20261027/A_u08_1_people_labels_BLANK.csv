@@ -1,7 +1,7 @@
 query_id,prompt,rank,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u08_1,people,1,466.3,339.6,571.0,405.9,,,,,,
-u08_1,people,2,533.2,310.4,645.5,378.8,,,,,,
-u08_1,people,3,154.3,91.2,248.5,146.8,,,,,,
-u08_1,people,4,587.6,230.1,701.3,292.0,,,,,,
-u08_1,people,5,555.5,269.0,675.7,331.7,,,,,,
-u08_1,people,17,203.2,109.7,291.1,165.6,,,,,,
+u08_1,people,1,466.3,339.6,571,405.9,wrong_class,cars,,,Trieu,2026-10-28
+u08_1,people,2,533.2,310.4,645.5,378.8,wrong_class,cars,,,Trieu,2026-10-28
+u08_1,people,3,154.3,91.2,248.5,146.8,wrong_class,cars,,kha nang co 1 nguoi o xe ben canh cung mau,Trieu,2026-10-28
+u08_1,people,4,587.6,230.1,701.3,292,wrong_class,cars,,,Trieu,2026-10-28
+u08_1,people,5,555.5,269,675.7,331.7,wrong_class,cars,,,Trieu,2026-10-28
+u08_1,people,17,203.2,109.7,291.1,165.6,wrong_class,cars,,"kha nang co 1 nguoi o tren xe, xe nay la xe duoc de cap o #3",Trieu,2026-10-28

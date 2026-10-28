@@ -1,10 +1,10 @@
 query_id,prompt,rank,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u01_1,people,1,309.2,473.9,424.1,681.8,,,,,,
-u01_1,people,2,81.9,493,248.4,680.3,,,,,,
-u01_1,people,3,925,515.5,1055.7,697.3,,,,,,
-u01_1,people,6,404.3,513.7,477.8,690.2,,,,,,
-u01_1,people,8,671.2,509.6,763.7,681,,,,,,
-u01_1,people,10,210.6,449.1,353.1,654.6,,,,,,
-u01_1,people,15,995.3,490.6,1157.3,668.1,,,,,,
-u01_1,people,17,833.3,472.5,938.3,706.8,,,,,,
-u01_1,people,19,471.4,514.9,615.5,695.6,,,,,,
+u01_1,people,1,309.2,473.9,424.1,681.8,wrong_class,dogs,,,Trieu,2026-10-28
+u01_1,people,2,81.9,493,248.4,680.3,multi_object,dogs,,gom 2 con cho va 1 con chi xuat hien phan dau,Trieu,2026-10-28
+u01_1,people,3,925,515.5,1055.7,697.3,wrong_class,dogs,,co 1 con cho dau mau nau o giua la de nhin thay nhat,Trieu,2026-10-28
+u01_1,people,6,404.3,513.7,477.8,690.2,wrong_class,dogs,,,Trieu,2026-10-28
+u01_1,people,8,671.2,509.6,763.7,681,wrong_class,dogs,,,Trieu,2026-10-28
+u01_1,people,10,210.6,449.1,353.1,654.6,wrong_class,dogs,,co 1 con cho nau o giua la de nhin thay nhat,Trieu,2026-10-28
+u01_1,people,15,995.3,490.6,1157.3,668.1,multi_object,dogs,,gom 6 con cho kha nhau,Trieu,2026-10-28
+u01_1,people,17,833.3,472.5,938.3,706.8,wrong_class,dogs,,,Trieu,2026-10-28
+u01_1,people,19,471.4,514.9,615.5,695.6,wrong_class,dogs,,o goc phai co doi chan cua con nguoi,Trieu,2026-10-28
