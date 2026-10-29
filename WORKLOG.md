@@ -2,6 +2,8 @@
 
 **Cập nhật 27/10/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (30/10):** V1–V3 đã push (be4da26, 415af3b). V5 xong (mục V5 trong báo cáo tự kiểm), đề xuất nhánh P đã gửi Trí, bàn ở buổi 03/11. Tiếp theo V4 rồi V6.
+
 **Điểm tiếp tục (29/10, tối):** V1 + V2 đã push (be4da26), chờ Trí ghép bảng tra. V3 q05_3 xong 103/103 khung, chờ commit; tiếp theo V5 rồi V4.
 
 **Điểm tiếp tục (27/10):** đã push e877541 lên origin/main và kiểm HEAD khớp remote ngày 27/10. P4.6 count đã xong; N4 tầng A giao Triệu. Trí gửi đường dẫn giao việc, nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới; chưa có quyết định chọn P/R.
@@ -21,6 +23,14 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 29–30/10/2026 — Triệu: V5 phân tích B2 so với B0
+
+**Người thực hiện:** Triệu tự tính bằng Excel ([reports/audits/TRIEU_TINH_TAY.xlsx](reports/audits/TRIEU_TINH_TAY.xlsx), sheet `TRIEU_TINH_TAY` và `tap_moi` mới) trên kết quả đã lưu, đối chiếu với nhãn V2 + V3 của mình, tự viết kết luận. Không chạy model/evaluator. Assistant đưa công thức, kiểm số, góp ý câu chữ.
+
+**Kết quả:** Pilot 15 query: 6/4/5, MAE B0 19.4 / B2 22.0, bỏ q05_3 thì 19.5 / 18.14. Tập mới 30 query: **2 improved / 15 worsened / 13 unchanged**, MAE 6.77 / 13.00, bỏ u10_2 vẫn 6.45 / 11.28. Mẫu tự chọn ở 7 query review: 1/21 đúng loại, cả 7 query worsened (query được chọn để soi lỗi). q05_3: B2 thêm 58 khung, đúng bằng 58 khung `part`. Hai cơ chế: mẫu sai loại, và mẫu đúng loại nhưng chia vật thành mảnh. Chi tiết: [mục V5](reports/TRIEU_TU_KIEM_PHAN2_20261027.md). Đề xuất: [reports/TRIEU_DE_XUAT_NHANH_P_20261029.md](reports/TRIEU_DE_XUAT_NHANH_P_20261029.md) (đã gửi Trí).
+
+**Trạng thái:** V5 Chờ kiểm (Trí); chọn P/R ở buổi 03/11. **Bước tiếp:** Triệu commit + push; làm V4 (2 ca thử evaluator), rồi V6.
 
 ## 29/10/2026 — Triệu: V3 gán nhãn khung q05_3
 
