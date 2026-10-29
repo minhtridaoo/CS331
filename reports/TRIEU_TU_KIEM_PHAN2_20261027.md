@@ -100,3 +100,25 @@ Nguyên văn trong chat ngày 27/10 (chỉ thêm dấu câu; "[13]" là bản s�
 > Nên ghi rõ ở q05_3, thực chất B2 kém hơn B0 thì cũng tùy trường hợp nữa chứ không thể ghi tổng quát như vậy được, các số liệu đó ghi vào báo cáo được đó.
 
 Đã ghi vào [PILOT_SUMMARY](PILOT_SUMMARY.md) mục 7, thêm lưu ý độ nhạy q05_3 vào mục 3, đánh dấu checklist [PHAN_2](../roadmap/PHAN_2_DANH_GIA.md) và đồng bộ ROADMAP/HANDOFF_TRIEU.
+
+## V3 (29/10) — gán nhãn từng khung q05_3 blackberries (GT 3): XONG 103/103
+
+**Giao việc:** [GIAO_VIEC_TRIEU_20261028](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md) §3. **Gói:** [q05_error_analysis_package_20261027](../results/countgdpp/q05_error_analysis_package_20261027), khung vẽ lại từ dự đoán đã lưu (B0 `m4_first5_b0`, B2 `b2_remaining3_20261015`), không chạy model.
+
+**Cách làm:** Triệu tự gán nhãn cả 103 khung (3 mẫu pseudo + 21 B0 + 79 B2 final), từng khung một, bằng app [box_label_app.py](../evaluation/box_label_app.py). App chỉ hiện crop, ảnh toàn cảnh, tọa độ và các khung chồng lên, rồi ghi đúng các cột nhãn vào CSV; app không gợi ý nhãn. Assistant hướng dẫn quy ước, kiểm tính nhất quán và tính bảng; Triệu sửa 1 nhãn (B2 rank 2: `wrong_class` → `part`, khớp note) và 2 lỗi gõ trong note sau khi kiểm.
+
+**Quy ước:** `object_id` b1 = quả trên cùng bên phải có cuống, b2 = quả trên cùng ở giữa, b3 = quả dưới bên phải sau dâu tây/cherry. `target` = khung rank nhỏ nhất ôm trọn quả; `duplicate` = khung sau ôm trọn cùng quả; `part` = một phần/hạt của blackberry. Trùng hoặc một phần của quả khác loại vẫn ghi `wrong_class` (ghi trong note). Xét trùng trong từng lần đếm, không chéo B0/B2.
+
+**Mẫu pseudo (3):** P1 = b1 `target`, P2 = b2 `target`, P3 = `wrong_class` raspberries (quả sau, bị một quả raspberry khác che nửa). Cả 3 mẫu là khung cả quả; 2/3 đúng loại.
+
+```
+B0 21 = 3 target + 0 duplicate + 0 part  + 18 wrong_class + 0 background
+        wrong_class: 11 blueberries, 4 raspberries, 2 cherries, 1 strawberries
+B2 79 = 2 target + 0 duplicate + 58 part + 19 wrong_class + 0 background
+        wrong_class: 11 blueberries, 7 raspberries (gồm 2 khung một phần quả, 1 khung trùng), 1 cherries
+        part theo quả: b1 23, b2 21, b3 14
+```
+
+**Quả blackberry nào không có khung target?** B0: không có (b2 rank 2, b3 rank 11, b1 rank 16). **B2: quả b1**, chỉ có 23 khung `part`; kiểm tọa độ: B2 không có khung lớn nào ở vị trí b1, dù b1 chính là mẫu pseudo P1.
+
+**Nhận xét sự kiện (chưa phải phân tích V5):** B0 đếm 21 vì nhận nhầm quả mọng khác loại (18/21). B2 vẫn nhầm loại (19) và thêm 58 khung khoanh từng hạt, đồng thời mất khung cả quả của b1. B2 có một mẫu pseudo là raspberry, và số khung raspberry sai loại tăng 4 → 7; chưa đủ để nói mẫu sai là nguyên nhân. Chỉ một ảnh/một query, không suy rộng.

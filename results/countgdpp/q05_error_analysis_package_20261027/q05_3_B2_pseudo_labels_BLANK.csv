@@ -1,4 +1,4 @@
 rank,x1,y1,x2,y2,score,area_px,label_type,actual_class,object_id,uncertain,note,reviewer,date
-1,1153.4,189.9,1519.9,502.1,0.4391,114425,,,,,,,
-2,596.2,261.6,932.9,589.4,0.4383,110390,,,,,,,
-3,60.9,431.0,388.9,656.7,0.4277,74000,,,,,,,
+1,1153.4,189.9,1519.9,502.1,0.4391,114425,target,blackberries,b1,,,Trieu,2026-10-29
+2,596.2,261.6,932.9,589.4,0.4383,110390,target,blackberries,b2,,,Trieu,2026-10-29
+3,60.9,431,388.9,656.7,0.4277,74000,wrong_class,raspberries,,,"trai raspberry nam ngoai cung ben trai, box khoanh du nhung bat buoc phai cat 1 phan cua trai raspberry khac nam o truoc, phan nay che di 1/2 trai duoc xac dinh lam chu the",Trieu,2026-10-29

@@ -1,22 +1,22 @@
-rank,x1,y1,x2,y2,score,area_px,label_type,actual_class,object_id,uncertain,note,reviewer,date
-1,1393.3,930.0,1672.4,1137.1,0.4116,57815,,,,,,,
-2,596.2,261.6,932.9,589.4,0.4383,110390,,,,,,,
-3,1232.6,825.6,1478.9,1000.7,0.4003,43103,,,,,,,
-4,406.2,459.5,665.1,660.3,0.3718,51975,,,,,,,
-5,1118.3,926.9,1389.0,1166.8,0.4056,64964,,,,,,,
-6,60.9,431.0,388.9,656.7,0.4277,74000,,,,,,,
-7,1532.5,878.9,1736.8,1079.7,0.3987,41020,,,,,,,
-8,82.7,712.9,334.5,923.3,0.4102,52986,,,,,,,
-9,1442.1,1038.9,1698.7,1256.9,0.4058,55935,,,,,,,
-10,343.9,681.5,605.3,925.7,0.3955,63806,,,,,,,
-11,1231.4,474.7,1540.2,724.7,0.4216,77197,,,,,,,
-12,112.1,521.1,450.5,762.7,0.3757,81728,,,,,,,
-13,671.2,577.1,845.4,718.8,0.3418,24669,,,,,,,
-14,941.3,617.3,1369.4,938.2,0.3682,137404,,,,,,,
-15,589.5,710.8,918.4,1036.8,0.3523,107230,,,,,,,
-16,1153.4,189.9,1519.9,502.1,0.4391,114425,,,,,,,
-17,888.4,345.4,1218.4,526.4,0.3247,59708,,,,,,,
-18,461.9,617.4,669.9,749.7,0.333,27533,,,,,,,
-19,984.5,894.2,1181.7,1082.9,0.3849,37219,,,,,,,
-20,599.2,680.8,744.5,790.3,0.2497,15915,,,,,,,
-21,824.9,456.2,1219.3,824.7,0.2482,145331,,,,,,,
+﻿rank,x1,y1,x2,y2,score,area_px,label_type,actual_class,object_id,uncertain,note,reviewer,date
+1,1393.3,930.0,1672.4,1137.1,0.4116,57815,wrong_class,blueberries,,,"1 trai blueberry, bi che 1 phan boi 1 trai blueberry khac nam o truoc",Trieu,2026-10-29
+2,596.2,261.6,932.9,589.4,0.4383,110390,target,blackberries,b2,,box cat day du trai blackberry,Trieu,2026-10-29
+3,1232.6,825.6,1478.9,1000.7,0.4003,43103,wrong_class,blueberries,,,"1 trai blueberry duoc cat day du, co 1 phan ben trai duoi bi che boi 1 trai blueberry ben trai và 1 phan(it) bi che boi 1 trai blueberry ben phai",Trieu,2026-10-29
+4,406.2,459.5,665.1,660.3,0.3718,51975,wrong_class,raspberries,,,"1 trai raspberry duoc cat kha day du(1 it nam ngoai box), goc tren ria ben phai co 1 phan cua trai blackberry",Trieu,2026-10-29
+5,1118.3,926.9,1389.0,1166.8,0.4056,64964,wrong_class,blueberries,,,1 trai blueberry duoc cat day du,Trieu,2026-10-29
+6,60.9,431.0,388.9,656.7,0.4277,74000,wrong_class,raspberries,,,"1 trai raspberry duoc cat day du, nhung bi che 1/2 boi 1 trai raspberry khac nam phia truoc",Trieu,2026-10-29
+7,1532.5,878.9,1736.8,1079.7,0.3987,41020,wrong_class,blueberries,,,"1 trai blueberry duoc cat day du, nhung bi che 1/2 boi 1 trai blueberry khac nam phia truoc",Trieu,2026-10-29
+8,82.7,712.9,334.5,923.3,0.4102,52986,wrong_class,blueberries,,,1 trai blueberry duoc cat day du,Trieu,2026-10-29
+9,1442.1,1038.9,1698.7,1256.9,0.4058,55935,wrong_class,blueberries,,,1 trai blueberry duoc cat day du,Trieu,2026-10-29
+10,343.9,681.5,605.3,925.7,0.3955,63806,wrong_class,blueberries,,,1 trai blueberry duoc cat day du,Trieu,2026-10-29
+11,1231.4,474.7,1540.2,724.7,0.4216,77197,target,blackberries,b3,,"trai blackberry b3 khong chi bi che 1 phan boi dau va cherry, ma con bi che 1 it boi cuong xanh cua trai cherry",Trieu,2026-10-29
+12,112.1,521.1,450.5,762.7,0.3757,81728,wrong_class,raspberries,,,"1 trai raspberry duoc cat day du, ria duoi co 2 trai blueberries",Trieu,2026-10-29
+13,671.2,577.1,845.4,718.8,0.3418,24669,wrong_class,blueberries,,,"1 trai blueberry duoc cat day du, ria phai co 1 trai strawberry(che 1 it), ria duoi co 1 blueberry va 1 raspberry(che 1 it)",Trieu,2026-10-29
+14,941.3,617.3,1369.4,938.2,0.3682,137404,wrong_class,cherries,,,"1 trai cherry duoc cat day du, phia duoi co 2 trai blueberries, phia sau co: ria tren ben phai co 1 trai blackberry(b3), ria tren ben trai co 1 trai strawberry",Trieu,2026-10-29
+15,589.5,710.8,918.4,1036.8,0.3523,107230,wrong_class,raspberries,,,"1 trai raspberry duoc cat day du, phia sau co: ria tren ben phai la 1 strawberry, ria tren ben trai la 1 blueberry",Trieu,2026-10-29
+16,1153.4,189.9,1519.9,502.1,0.4391,114425,target,blackberries,b1,,"b1 duoc cat day du,b1 nam sau b3, nam canh 1 trai cherry va bi che 1 phan boi cuong cua cherry(ria tren ben phai)",Trieu,2026-10-29
+17,888.4,345.4,1218.4,526.4,0.3247,59708,wrong_class,cherries,,,"1 trai cherry nam giua b1 va b2, duoc cat kha day du, phia sau co: ria tren ben trai la b2, ria tren ben phai la b1",Trieu,2026-10-29
+18,461.9,617.4,669.9,749.7,0.333,27533,wrong_class,blueberries,,,"1 trai blueberry duoc cat day du, phia duoi co 2 trai blueberries khac va che 1 it, phia sau la 1 trai raspberry",Trieu,2026-10-29
+19,984.5,894.2,1181.7,1082.9,0.3849,37219,wrong_class,blueberries,,,"1 trai blueberry duoc cat day du, ben phai bi che 1 phan boi 1 trai blueberry khac nam phia truoc, phia sau co 1 trai cherry",Trieu,2026-10-29
+20,599.2,680.8,744.5,790.3,0.2497,15915,wrong_class,blueberries,,,"1 trai blueberry duoc cat day du, bi che 1/2 boi 1 trai raspberry nam phia truoc",Trieu,2026-10-29
+21,824.9,456.2,1219.3,824.7,0.2482,145331,wrong_class,strawberries,,,"1 trai strawberry duoc cat day du, phia truoc co: ben phai co 1 trai cherry va che 1 phan cua trai strawberry, ben duoi ria trai co 1 trai raspberry va che 1 it",Trieu,2026-10-29

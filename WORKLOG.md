@@ -2,7 +2,7 @@
 
 **Cập nhật 27/10/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
-**Điểm tiếp tục (29/10):** Triệu đã gán xong N4 tầng A (V1 78 khung + V2 39 dòng), chờ commit/push và Trí ghép bảng tra; tiếp theo V3.
+**Điểm tiếp tục (29/10, tối):** V1 + V2 đã push (be4da26), chờ Trí ghép bảng tra. V3 q05_3 xong 103/103 khung, chờ commit; tiếp theo V5 rồi V4.
 
 **Điểm tiếp tục (27/10):** đã push e877541 lên origin/main và kiểm HEAD khớp remote ngày 27/10. P4.6 count đã xong; N4 tầng A giao Triệu. Trí gửi đường dẫn giao việc, nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới; chưa có quyết định chọn P/R.
 
@@ -21,6 +21,14 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 29/10/2026 — Triệu: V3 gán nhãn khung q05_3
+
+**Người thực hiện:** Triệu tự gán 103/103 khung (3 mẫu pseudo + 21 B0 + 79 B2 final) trong `results/countgdpp/q05_error_analysis_package_20261027/*_labels_BLANK.csv`, từng khung một bằng app mới [evaluation/box_label_app.py](evaluation/box_label_app.py) (chỉ hiển thị và ghi cột nhãn; không gợi ý nhãn, không chạy model). Assistant hướng dẫn quy ước, kiểm nhất quán, tính bảng; điền ngày còn trống cho 3 dòng pseudo.
+
+**Kết quả:** B0 21 = 3 target + 18 wrong_class. B2 79 = 2 target + 58 part + 19 wrong_class. B0 có target cho cả 3 quả; **B2 không có khung target cho quả b1** (chỉ 23 part), dù b1 là mẫu pseudo P1. Chi tiết: [mục V3](reports/TRIEU_TU_KIEM_PHAN2_20261027.md).
+
+**Trạng thái:** V3 Chờ kiểm (Trí). **Bước tiếp:** Triệu commit + push; làm V5 (phân tích B2/B0, dùng V2 + V3), rồi V4.
 
 ## 28–29/10/2026 — Triệu: N4 tầng A (V1 + V2)
 
