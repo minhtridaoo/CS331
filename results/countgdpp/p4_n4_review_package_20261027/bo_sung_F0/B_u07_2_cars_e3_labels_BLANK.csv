@@ -1,8 +1,8 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u07_2,cars,e3,#11,-37.1,683.9,120.6,858.0,,,,,,
-u07_2,cars,e3,#12,244.9,40.6,671.0,295.3,,,,,,
-u07_2,cars,e3,#13,373.3,-5.0,571.3,97.9,,,,,,
-u07_2,cars,e3,#14,1201.7,-5.8,1305.2,93.8,,,,,,
-u07_2,cars,e3,#19,305.7,-8.1,401.8,28.0,,,,,,
-u07_2,cars,e3,#20,535.6,-10.4,674.7,43.3,,,,,,
-u07_2,cars,e3,#21,-13.4,85.6,43.0,195.2,,,,,,
+u07_2,cars,e3,#11,-37.1,683.9,120.6,858.0,target,cars,c15,"1 xe o to mau do, bi mep trai anh cat, anh chi chup duoc 1/2 xe nen box da crop du",Trieu,2026-11-02
+u07_2,cars,e3,#12,244.9,40.6,671.0,295.3,target,cars,c16,"xe o to van co dong chu mau xanh o than xe + dong chu mau xanh kem theo logo o dau xe, la xe van duoc nhac toi o c11 va c6",Trieu,2026-11-02
+u07_2,cars,e3,#13,373.3,-5.0,571.3,97.9,target,cars,c17,"xe o to mau xam dam, bi xe c16 che 1 phan nhung box da crop du",Trieu,2026-11-02
+u07_2,cars,e3,#14,1201.7,-5.8,1305.2,93.8,target,cars,c18,"xe o to mau den,bi mep phai anh cat,anh chi chup duoc 1/2 xe nen box da crop du",Trieu,2026-11-02
+u07_2,cars,e3,#19,305.7,-8.1,401.8,28.0,target,cars,c19,"xe mau xanh duong, bi mep anh(phia tren ben trai) cat di 3/4 xe nen chi thay duoc phan dau xe, box da crop du",Trieu,2026-11-02
+u07_2,cars,e3,#20,535.6,-10.4,674.7,43.3,target,cars,c20,"xe mau nau, bi mep anh(phia tren ben trai) cat di 2/3 xe nen chi thay duoc phan dau xe, box da crop du",Trieu,2026-11-02
+u07_2,cars,e3,#21,-13.4,85.6,43.0,195.2,target,cars,c21,"xe mau nau hoac mau do,la xe nam phia sau xe c6, bi mep trai anh cat di 3/4 xe nen chi thay duoc phan dau xe, box da crop du",Trieu,2026-11-02

@@ -1,4 +1,4 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u06_2,beach umbrellas,pseudo,P1,2263.3,738.6,2466.9,866.4,,,,,,
-u06_2,beach umbrellas,pseudo,P2,2068.7,817.0,2278.6,957.4,,,,,,
-u06_2,beach umbrellas,pseudo,P3,1845.9,953.7,2036.9,1072.9,,,,,,
+u06_2,beach umbrellas,pseudo,P1,2263.3,738.6,2466.9,866.4,target,beach umbrellas,u8,"du soc trang-xanh nuoc bien, ben duoi co 1 nguoi phu nu+1 em be dang nam",Trieu,2026-11-02
+u06_2,beach umbrellas,pseudo,P2,2068.7,817.0,2278.6,957.4,target,beach umbrellas,u1,"du soc trang-xanh nuoc bien, ben duoi du co 1 co gai mac bikini mau vang dang ngoi tren cai ghe mau xanh nuoc bien",Trieu,2026-11-02
+u06_2,beach umbrellas,pseudo,P3,1845.9,953.7,2036.9,1072.9,target,beach umbrellas,u5,"du soc trang-xanh nuoc bien, ben duoi co ghe mau xanh",Trieu,2026-11-02

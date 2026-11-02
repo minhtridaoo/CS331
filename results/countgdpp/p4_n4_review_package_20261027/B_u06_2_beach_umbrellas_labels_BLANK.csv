@@ -1,28 +1,28 @@
 query_id,prompt,rank,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u06_2,beach umbrellas,1,2068.5,816.4,2277.7,955.5,,,,,,
-u06_2,beach umbrellas,2,2644.5,548.1,2837.4,662.9,,,,,,
-u06_2,beach umbrellas,3,1386.2,1217.8,1608.3,1331.2,,,,,,
-u06_2,beach umbrellas,4,1625.9,1069.2,1838.0,1192.1,,,,,,
-u06_2,beach umbrellas,5,1845.0,953.5,2036.3,1070.7,,,,,,
-u06_2,beach umbrellas,6,2692.9,224.4,2890.6,331.5,,,,,,
-u06_2,beach umbrellas,7,2527.5,1121.0,2710.0,1252.8,,,,,,
-u06_2,beach umbrellas,8,2262.1,737.9,2465.5,865.3,,,,,,
-u06_2,beach umbrellas,9,2787.7,16.5,2915.3,95.1,,,,,,
-u06_2,beach umbrellas,10,638.7,1609.7,850.9,1748.9,,,,,,
-u06_2,beach umbrellas,11,148.3,1587.5,343.9,1728.9,,,,,,
-u06_2,beach umbrellas,12,2298.6,1237.7,2479.8,1349.0,,,,,,
-u06_2,beach umbrellas,13,2833.6,121.0,2996.7,210.9,,,,,,
-u06_2,beach umbrellas,14,1127.1,1327.8,1332.0,1494.4,,,,,,
-u06_2,beach umbrellas,15,1483.3,1757.8,1709.9,1923.3,,,,,,
-u06_2,beach umbrellas,16,1240.4,1898.3,1456.9,2009.9,,,,,,
-u06_2,beach umbrellas,17,2472.9,632.5,2656.9,743.5,,,,,,
-u06_2,beach umbrellas,18,1663.8,739.4,1827.1,834.9,,,,,,
-u06_2,beach umbrellas,19,1788.8,1476.0,1971.8,1599.1,,,,,,
-u06_2,beach umbrellas,21,922.7,1494.8,1129.7,1647.4,,,,,,
-u06_2,beach umbrellas,22,1253.7,893.3,1402.8,1008.2,,,,,,
-u06_2,beach umbrellas,23,624.1,1368.8,808.3,1468.4,,,,,,
-u06_2,beach umbrellas,24,383.0,1721.0,604.2,1878.5,,,,,,
-u06_2,beach umbrellas,25,167.3,1886.7,381.9,2009.2,,,,,,
-u06_2,beach umbrellas,27,568.2,1527.7,753.1,1639.6,,,,,,
-u06_2,beach umbrellas,29,1994.4,1384.2,2168.6,1490.7,,,,,,
-u06_2,beach umbrellas,30,2299.9,476.8,2468.8,577.1,,,,,,
+u06_2,beach umbrellas,1,2068.5,816.4,2277.7,955.5,target,beach umbrellas,u1,"du soc trang-xanh nuoc bien, ben duoi du co 1 co gai mac bikini mau vang dang ngoi tren cai ghe mau xanh nuoc bien, la chiec du P2 ben pseudo",Trieu,2026-11-02
+u06_2,beach umbrellas,2,2644.5,548.1,2837.4,662.9,target,beach umbrellas,u2,"du mau trang, o tren co 3 phan chu nam o vi tri khac nhau, nhung noi dung deu la ""Corona extra""",Trieu,2026-11-02
+u06_2,beach umbrellas,3,1386.2,1217.8,1608.3,1331.2,target,beach umbrellas,u3,"du soc trang-xanh nuoc bien, ben duoi co nguoi dan ong dang nam",Trieu,2026-11-02
+u06_2,beach umbrellas,4,1625.9,1069.2,1838.0,1192.1,target,beach umbrellas,u4,"du soc trang-vang, ben duoi co 1 cai ghe mau vang",Trieu,2026-11-02
+u06_2,beach umbrellas,5,1845.0,953.5,2036.3,1070.7,target,beach umbrellas,u5,"du soc trang-xanh nuoc bien, ben duoi co ghe mau xanh, la chiec du P3 ben pseudo",Trieu,2026-11-02
+u06_2,beach umbrellas,6,2692.9,224.4,2890.6,331.5,target,beach umbrellas,u6,du mau xanh tiffany,Trieu,2026-11-02
+u06_2,beach umbrellas,7,2527.5,1121.0,2710.0,1252.8,target,beach umbrellas,u7,"du mau xanh navy, ria phai tren cung la 1 cai du khac mau vang",Trieu,2026-11-02
+u06_2,beach umbrellas,8,2262.1,737.9,2465.5,865.3,target,beach umbrellas,u8,"du soc trang-xanh nuoc bien, ben duoi co 1 nguoi phu nu+1 em be dang nam, la chiec du P1 ben pseudo",Trieu,2026-11-02
+u06_2,beach umbrellas,9,2787.7,16.5,2915.3,95.1,wrong_class,pool floats,,1 cai phao mau trang trong suot,Trieu,2026-11-02
+u06_2,beach umbrellas,10,638.7,1609.7,850.9,1748.9,target,beach umbrellas,u9,"du soc trang-xanh nuoc bien, ben duoi co 1 nguoi dan ong dang nam, ria ben trai tren cung co 1 cai du khac soc xanh nuoc bien-xanh la",Trieu,2026-11-02
+u06_2,beach umbrellas,11,148.3,1587.5,343.9,1728.9,target,beach umbrellas,u10,du co hoa tiet dang soc dong tam trang-den,Trieu,2026-11-02
+u06_2,beach umbrellas,12,2298.6,1237.7,2479.8,1349.0,target,beach umbrellas,u11,"du co hoa tiet dang soc dong tam trang-xanh duong- xanh navy dan xen, tren du co 1 vat mau xanh(khong ro la vat gi nhung giong 1 cai khan)",Trieu,2026-11-02
+u06_2,beach umbrellas,13,2833.6,121.0,2996.7,210.9,target,beach umbrellas,u12,du co hoa tiet nhieu duong ke dan xen trang-xanh da troi nhat,Trieu,2026-11-02
+u06_2,beach umbrellas,14,1127.1,1327.8,1332.0,1494.4,target,beach umbrellas,u30,du soc trang-xanh nuoc bien,Trieu,2026-11-02
+u06_2,beach umbrellas,15,1483.3,1757.8,1709.9,1923.3,target,beach umbrellas,u13,"du mau vang, o tren co nhieu phan logo nam o vi tri khac nhau, logo dang vong trang+ o chu nhat mau do ben trong, logo nay co ve la logo cua hang lipton",Trieu,2026-11-02
+u06_2,beach umbrellas,16,1240.4,1898.3,1456.9,2009.9,target,beach umbrellas,u14,"du mau vang, o tren co nhieu phan logo nam o vi tri khac nhau, logo dang vong trang + chiec la mau xanh ben canh, logo nay co ve la logo cua hang lipton",Trieu,2026-11-02
+u06_2,beach umbrellas,17,2472.9,632.5,2656.9,743.5,target,beach umbrellas,u15,"du soc trang-den, phia tren co 1 vat mau xanh tiffany(co the la 1 chiec khan tam)",Trieu,2026-11-02
+u06_2,beach umbrellas,18,1663.8,739.4,1827.1,834.9,target,beach umbrellas,u16,"du co hoa tiet dang soc dong tam trang-xanh duong- xanh navy dan xen, ben canh la 1 cai phao mau trang trong suot+mau giong cau vong",Trieu,2026-11-02
+u06_2,beach umbrellas,19,1788.8,1476.0,1971.8,1599.1,target,beach umbrellas,u17,"du co mau chu dao la mau cam+vang, co hoa tiet cay co mau den xung quanh vien du",Trieu,2026-11-02
+u06_2,beach umbrellas,21,922.7,1494.8,1129.7,1647.4,target,beach umbrellas,u18,"du co soc trang-xanh nuoc bien, co 1 chiec khan tam mau trang nam tren du",Trieu,2026-11-02
+u06_2,beach umbrellas,22,1253.7,893.3,1402.8,1008.2,target,beach umbrellas,u19,du co mau xam,Trieu,2026-11-02
+u06_2,beach umbrellas,23,624.1,1368.8,808.3,1468.4,target,beach umbrellas,u20,du co hoa tiet dang soc dong tam trang-vang,Trieu,2026-11-02
+u06_2,beach umbrellas,24,383.0,1721.0,604.2,1878.5,target,beach umbrellas,u21,"du co soc trang-vang nhat, ben duoi la 1 co gai mac bikini mau hong",Trieu,2026-11-02
+u06_2,beach umbrellas,25,167.3,1886.7,381.9,2009.2,target,beach umbrellas,u22,"du co soc trang-xanh nuoc bien, ria duoi ben trai bi 1 chiec du mau xanh la che len tren 1 phan",Trieu,2026-11-02
+u06_2,beach umbrellas,27,568.2,1527.7,753.1,1639.6,target,beach umbrellas,u23,"du soc xanh nuoc bien-xanh la, la cai du nam ben canh du u9",Trieu,2026-11-02
+u06_2,beach umbrellas,29,1994.4,1384.2,2168.6,1490.7,target,beach umbrellas,u24,"du co mau chu dao la mau vang +xanh nuoc bien nhat, co hoa tiet cay co xung quanh vien du",Trieu,2026-11-02
+u06_2,beach umbrellas,30,2299.9,476.8,2468.8,577.1,target,beach umbrellas,u25,"du co hoa tiet dang soc dong tam trang-xanh duong- xanh navy dan xen, ben tren du la 1 cai khan mau tiffany(co hoa tiet bong hoa) va 1 cai khan mau nau",Trieu,2026-11-02

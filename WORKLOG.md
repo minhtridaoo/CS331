@@ -2,6 +2,8 @@
 
 **Cập nhật 02/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (02/11 tối, Triệu):** V4 đã push (fecbc42). V6 xong 58/58 (mục V6 trong báo cáo tự kiểm), chờ commit. Tiếp theo V7 duyệt chung với Trí (03/11); Trí ghép nhãn tầng B với `_KEY_`.
+
 **Điểm tiếp tục (02/11, Triệu):** V4 xong (mục V4 trong báo cáo tự kiểm), chờ commit. Tiếp theo V6 (N4 tầng B), rồi V7 với Trí.
 
 **Điểm tiếp tục (30/10):** V1–V3 đã push (be4da26, 415af3b). V5 xong (mục V5 trong báo cáo tự kiểm), đề xuất nhánh P đã gửi Trí, bàn ở buổi 03/11. Tiếp theo V4 rồi V6.
@@ -25,6 +27,14 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 02/11/2026 — Triệu: V6 N4 tầng B
+
+**Người thực hiện:** Triệu tự gán 58/58 dòng (khung chính u06_2 27 + u07_2 14, review mù; mẫu pseudo 3 + 3; ứng viên E3 4 + 7) trong `results/countgdpp/p4_n4_review_package_20261027/B_*` và `bo_sung_F0/B_*`, bằng app [evaluation/box_label_app.py](evaluation/box_label_app.py) `--set n4b`. Assistant mở rộng app cho gói N4 tầng B (6 sheet, 7 nhãn, id dùng chung trong query, chồng lấn giữa các sheet; ảnh nền là `*_overview.jpg` vì máy Triệu không có ảnh gốc MUCCA), kiểm trên bản sao CSV trước khi dùng, kiểm id nhất quán sau khi gán. Không mở `_KEY_`, không chạy model.
+
+**Kết quả:** Mẫu pseudo 6/6 đúng loại (tầng A: 1/12 ở query có mặt). E3 11/11 là vật thật. Trước lọc B2 tìm được 30/30 dù, 21/22 xe; lọc điểm còn 14 / 9, Fusion 26 / 14. u06_2 chỉ 1 khung sai loại (phao) và vẫn được ít nhất một bộ lọc giữ. Kết luận: ở ca đang tốt, bộ lọc cuối gây hại (E3), mẫu tự chọn không. Chi tiết: [mục V6](reports/TRIEU_TU_KIEM_PHAN2_20261027.md).
+
+**Trạng thái:** V6 Chờ kiểm (Trí ghép với `_KEY_`). **Bước tiếp:** Triệu commit + push; V7 duyệt chung 03/11.
 
 ## 02/11/2026 — Triệu: V4 hai ca thử evaluator
 

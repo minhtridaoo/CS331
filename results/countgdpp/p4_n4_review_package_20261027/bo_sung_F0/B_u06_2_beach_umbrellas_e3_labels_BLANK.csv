@@ -1,5 +1,5 @@
 query_id,prompt,kind,tag,x1,y1,x2,y2,label_type,actual_class,object_id,note,reviewer,date
-u06_2,beach umbrellas,e3,#20,2622.4,1057.8,2827.6,1171.6,,,,,,
-u06_2,beach umbrellas,e3,#26,1967.2,1478.5,2128.8,1564.7,,,,,,
-u06_2,beach umbrellas,e3,#28,47.6,1944.4,251.7,2017.1,,,,,,
-u06_2,beach umbrellas,e3,#31,2912.4,443.3,3019.4,518.2,,,,,,
+u06_2,beach umbrellas,e3,#20,2622.4,1057.8,2827.6,1171.6,target,beach umbrellas,u26,"du mau vang, co cac phan logo va phan chu nam o nhung vi tri khac nhau, chu co noi dung la Sinalco(mau do) va logo co dang hinh tron mau do + chu Sinalco mau trang o ben trong, la cai du nam ben canh du u7 ben u06_2_main",Trieu,2026-11-02
+u06_2,beach umbrellas,e3,#26,1967.2,1478.5,2128.8,1564.7,target,beach umbrellas,u27,"du co mau chu dao la mau vang +xanh nuoc bien nhat, co hoa tiet cay co xung quanh vien du, la cai du nam ben canh u24(nam ben canh, phia duoi khung hinh u24)",Trieu,2026-11-02
+u06_2,beach umbrellas,e3,#28,47.6,1944.4,251.7,2017.1,target,beach umbrellas,u28,"du mau xanh la, co hoa tiet hinh cay co, la chiec du de len chiec du u22",Trieu,2026-11-02
+u06_2,beach umbrellas,e3,#31,2912.4,443.3,3019.4,518.2,target,beach umbrellas,u29,du soc trang-den,Trieu,2026-11-02

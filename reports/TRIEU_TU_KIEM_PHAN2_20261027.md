@@ -197,3 +197,33 @@ Kết luận của Triệu (nguyên văn):
 > 3. unchanged’ chỉ có nghĩa là sai số của B2 bằng sai số của B0, không có nghĩa là không có gì sai. Ví dụ ở tập mới, 3/13 query unchanged là cả hai cùng sai (u03_2 amplifiers: GT 4, cả hai đếm 0). Vì vậy khi đọc bảng improved/worsened/unchanged, cần xem thêm số đếm thực tế.
 
 Ghi chú: "cách c" = bỏ query khỏi metric nhưng ghi tên vào `uncertain_excluded` (cách a = coi GT là 0, cách b = giữ GT không chắc). Câu 3 là hạn chế thật của bảng so sánh, áp dụng cho cả pilot và tập mới. Đây là kiểm bằng GT giả; chưa có query `uncertain` thật nào trong dữ liệu.
+
+## V6 (02/11) — N4 tầng B (u06_2 beach umbrellas, u07_2 cars): XONG 58/58
+
+**Giao việc:** [GIAO_VIEC_TRIEU_20261028](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md) §1. **Gói:** [p4_n4_review_package_20261027](../results/countgdpp/p4_n4_review_package_20261027) — tầng B: 2 sheet khung chính (27 + 14, review mù), `bo_sung_F0/` 2 × 3 mẫu pseudo và 4 + 7 ứng viên E3. Không mở `_KEY_mo_sau_khi_review/`.
+
+**Cách làm:** Triệu gán nhãn từng khung bằng [box_label_app.py](../evaluation/box_label_app.py) `--set n4b` (app được mở rộng cho gói này: 6 sheet, 7 nhãn, `object_id` dùng chung trong một query). Ảnh gốc MUCCA không có trên máy Triệu, nên ảnh nền là `*_overview.jpg` của gói (cùng kích thước gốc, có khung vàng vẽ sẵn); khung đỏ là khung đang xét. Làm sheet chính trước, phần bổ sung sau. Assistant kiểm tính nhất quán (đủ cột, id trùng, mẫu pseudo so với khung chính bằng IoU); Triệu sửa id theo kiểm: 3 mẫu pseudo u06_2 (u1/u2/u3 → u8/u1/u5), P1 u07_2 (c11 → c13), rank 14 u06_2 (u12 → u30, cây dù khác), E3 #11 u07_2 (c14 → c15). Quy ước thêm: vật bị **mép ảnh** cắt mà khung ôm hết phần nhìn thấy → `target`; khung hụt phần vật còn thấy trong ảnh → `target` nếu hụt ít, `part` nếu chỉ khoảng một nửa trở xuống (ghi lý do trong note).
+
+| Sheet | u06_2 (GT 30) | u07_2 (GT 22) |
+|---|---|---|
+| Khung chính | 27 = 26 target (26 cây dù khác nhau) + 1 wrong_class (`pool floats`, rank 9) | 14 = 14 target (14 xe khác nhau) |
+| Mẫu pseudo | 3/3 target (= khung chính rank 8, 1, 5; IoU 0.97–0.98) | 3/3 target (= rank 17, 5, 2) |
+| Ứng viên E3 | 4/4 target, đều là cây dù mới (u26–u29) | 7/7 target, đều là xe mới (c15–c21) |
+| Vật khác nhau tìm được trước khi lọc | **30** | **21** |
+
+Số đếm từng cách ([P4_6_UNSEEN_RESULTS](P4_6_UNSEEN_RESULTS_20261027.md), `per_query.csv`):
+
+| query | GT | B0 | B2 gốc | B2 lọc điểm | Fusion |
+|---|---:|---:|---:|---:|---:|
+| u06_2 | 30 | 31 | 31 | 14 | 26 |
+| u07_2 | 22 | 22 | 22 | 9 | 14 |
+
+Ghi chú: rank 18 của u07_2 bị cả hai bộ lọc xóa và không có điểm GT nên không nằm trong gói; chưa ai xem khung này.
+
+Kết luận (assistant soạn từ ý Triệu nêu khi trả lời; Triệu yêu cầu viết thử, đọc và sửa số dù/xe bị mép ảnh cắt):
+
+> 1. Ở tầng B, mẫu pseudo đúng loại **6/6**, khác hẳn tầng A (**1/12** ở query có mặt). Khi model đã làm tốt thì mẫu tự chọn cũng đúng, nên kiểm mẫu (nhánh P) có lẽ không làm hỏng các ca này (chưa chạy CLIP thật để kiểm). Tuy đúng loại nhưng 3 mẫu thường **giống nhau về ngoại hình** (u06_2: cả 3 là dù sọc trắng–xanh; u07_2: 2 taxi đen–vàng + 1 xe đỏ). Vật khác ngoại hình vẫn được giữ nhiều ở sheet chính, nên chưa thấy việc này làm mất vật; đây là giả thuyết, cần xem điểm từng khung mới kiểm được.
+> 2. Cả **11/11** khung E3 là vật thật (u06_2: 4 dù; u07_2: 7 ô tô). Trước khi lọc, B2 đã tìm được gần đủ vật (30/30 dù, 21/22 xe), nhưng hai bộ lọc cuối vẫn **xóa nhầm** 4 dù và 7 xe. Ở ô tô, 6/7 xe bị xóa là xe bị mép ảnh cắt, chỉ còn một phần, có lẽ vì vậy bị chấm điểm thấp. Ở dù, 2/4 cây bị mép ảnh cắt khoảng một nửa, nhưng 2/4 cây không bị cắt mà vẫn bị xóa, lý do chưa rõ. Giống tầng A (E3 13/18 là vật thật): bộ lọc cuối xóa nhầm vật đúng ở cả ca đang kém lẫn ca đang tốt.
+> 3. Ở tầng B, mẫu tự chọn đã đúng 6/6, nên nhánh P (chưa chạy) có lẽ sẽ giữ nguyên các mẫu này và không làm hỏng ca đang tốt. Ngược lại, bộ lọc cuối làm kết quả **tệ đi rõ rệt**: u06_2 từ 31 xuống 14 (lọc điểm) / 26 (Fusion), GT 30; u07_2 từ 22 xuống 9 / 14, GT 22. Trước khi lọc, B2 gần như đếm đúng (sai 1 và 0). Bộ lọc xóa cả vật nhận diện được rõ ràng (2 cây dù không bị cắt), trong khi vẫn giữ cái phao sai loại. Vậy ở ca đang tốt, **bộ lọc cuối (lỗi E3)** mới là thứ gây hại, không phải mẫu tự chọn. Điều này ủng hộ việc sửa ở mẫu (P) thay vì chữa bằng bộ lọc sau lượt 2, nhưng chỉ dựa trên 2 query nên cần kiểm thêm trên tập dev.
+
+Giới hạn: tầng B chỉ có 2 query, chọn vì "Fusion giữ nhiều khung hơn lọc điểm", không phải mẫu ngẫu nhiên. Nhãn khung chính là review mù, nhưng chưa đối chiếu với bảng tra (`_KEY_`) để biết bộ lọc nào giữ khung nào; việc đó để Trí ghép.
