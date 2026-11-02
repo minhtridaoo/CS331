@@ -24,6 +24,12 @@ Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
 
+## 02/11/2026 — push 13 file đánh giá và tiến độ theo yêu cầu Trí
+
+Đã kiểm đúng repo CS331, đúng 13 file Markdown; rà dấu xung đột, mẫu thông tin đăng nhập và git diff --check. Stage rõ danh sách, commit `22a10e2c8b48d9124d4e3cce94dec3b68f6c4a85`, chạy `git push origin main` thành công. `git ls-remote --heads origin main` trùng HEAD sau push. Ba báo cáo N4/rà soát/V3–V5 và 10 tài liệu tiến độ đã có trên GitHub; Triệu có thể pull để đọc.
+
+Đồng bộ ghi chú hiện hành và bảng resume để bỏ trạng thái chưa push. Bản ghi này là commit tài liệu tiếp nối. Không sửa nhãn, code hoặc cấu hình; không chạy thí nghiệm và không gửi tin thay Trí. Bước tiếp vẫn là V4/V6, thống nhất nhãn N4 còn vướng và V7 duyệt chung; đề xuất P/T và hạn dời chưa tự trở thành quyết định.
+
 ## 02/11/2026 — đồng bộ tiến độ sau pull theo yêu cầu Trí
 
 **Đã làm:** kiểm git status/log và hai commit: HEAD hiện 71009c8, có 415af3b. Không còn unmerged paths hoặc marker xung đột trong WORKLOG. Snapshot trước pull 2026-11-02_truoc_pull_71009c8.zip hiện có. Lượt này không pull lại, không apply stash; ghi nhận việc hợp nhất trước đó theo WORKLOG và thông tin Trí cung cấp.
