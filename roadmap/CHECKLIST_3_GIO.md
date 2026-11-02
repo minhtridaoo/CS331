@@ -1,5 +1,7 @@
 # Checklist làm tiếp — buổi 3 giờ, lập ngày 27/10/2026
 
+> **Trạng thái hiện hành — đồng bộ 02/11/2026:** HEAD `71009c8` đã gồm `415af3b` (V3 + app gán nhãn) và `71009c8` (V5 + đề xuất P). V3/V5 đã nộp; xem [đánh giá đã lưu](../reports/DANH_GIA_TRIEU_V3_V5_20261102.md). Còn V4 (hạn gốc 01/11), V6 (hạn gốc 02/11), V7 duyệt chung dự kiến 03/11. **Dời V4/V6 sang 04/11 chỉ là đề xuất, chưa có xác nhận trong lượt này.** N4 A còn ca nhãn cần thống nhất; app mới dành cho q05 không tự chứng minh N4 đã được sửa. P/T, C6 và dữ liệu dev/test mới đang ở mức đề xuất, chưa duyệt hoặc chạy. Các mốc cũ bên dưới giữ để tra lịch sử; ưu tiên ghi chú này và bảng resume. Tài liệu local chưa commit/push.
+
 > **Đồng bộ Git đã xác nhận — 27/10/2026:** đã push commit [`e877541`](https://github.com/minhtridaoo/CS331/commit/e8775412f84f0927a6fe692f1f106bf53aacd369) lên `origin/main`; HEAD local khớp remote. Code, kết quả P4.6, gói N4 và phân công đã có trên GitHub. Bản ZIP sao lưu trong `quá khứ/`, dữ liệu MUCCA gốc và checkpoint vẫn ở máy.
 > **Việc tiếp theo:** Trí gửi đường dẫn [giao việc cho Triệu](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md), nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới. Triệu làm N4 tầng A (V1–V2); chưa xác nhận đã nhận/hoàn thành.
 > **Trạng thái ưu tiên:** P4.6a–b đã xong; tập 10 ảnh/30 query đã khóa và P4.6c–d phần count đã chạy. Hiện ở N4 review khung, chưa chọn nhánh cải tiến P/R. Các hướng dẫn chuẩn bị C2/C3 và câu “chưa push/chưa chạy ảnh mới” còn lại bên dưới mô tả thời điểm trước; không phải việc phải làm lại. Lượt đồng bộ Git này không chạy thí nghiệm.
@@ -91,17 +93,17 @@ Môi trường được ghi trong lịch sử: CountGD++ từng chạy WSL tại
 
 | Trường | Hiện tại sau rà giao việc V2 ngày 27/10 |
 |---|---|
-| Mốc đã xác nhận | C1: Trí đọc, chưa duyệt chung. C2 đã khóa theo selection_meta; C3/dev (1)–(4) đạt. P4.6c–d count đã chạy trên 30 query. N4 đang review, không đánh dấu hoàn thành. |
-| Việc đầu tiên cần tiếp | **Push đã xong.** Trí gửi HANDOFF/GIAO_VIEC_TRIEU_20261028.md cho Triệu, nghiệm thu bản tự kiểm và chốt quy tắc dữ liệu dev/test mới. Triệu: N4 tầng A V1–V2 trước 30/10; sau đó nhóm chọn P hoặc R. |
-| Pilot còn chờ gì | Triệu bổ sung q05_3, 2 ca uncertain/absent và phân tích; Trí nghiệm thu, rồi duyệt chung. Không mở lại C2/C3 đã xong. |
+| Mốc đã xác nhận | C2 khóa, C3/dev đạt; P4.6 count đã chạy. V1–V2 đủ bài nộp, còn nhãn N4 cần thống nhất. V3 và V5 đã nộp trong 415af3b/71009c8; đánh giá đã lưu ngày 02/11, chờ Trí nghiệm thu. |
+| Việc đầu tiên cần tiếp | Triệu tiếp V4 (2 ca thử) và V6 (N4 B), rà các ca N4 còn vướng. Trí/nhóm dự kiến V7 ngày 03/11, quyết biến thể và dữ liệu. Hạn dời 04/11 chưa được xác nhận; chưa tự chạy hoặc chọn nhánh. |
+| Pilot còn chờ gì | V3/q05_3 và V5/phân tích đã nộp; còn V4, nghiệm thu của Trí và V7 duyệt chung. Không giao lại V3/V5 từ đầu; sửa các điểm diễn giải theo đánh giá khi cần. |
 | Danh sách dữ liệu / trạng thái khóa | B, 10 ảnh/30 query (20 present + 10 absent). **LOCKED 27/10 17:07:55**, Trí xác nhận; u07_3/u10_3 đổi trucks→bicycles trước khi khóa; quy ước chấm §4. **P4.6c đã chạy 27/10** ([kết quả](../reports/P4_6_UNSEEN_RESULTS_20261027.md)) |
 | Runner / log kiểm dev | **P4.6b ĐẠT 27/10: (1)–(4) đều PASS, trùng tuyệt đối** ([SUMMARY](../reports/audits/devcheck_20261027/SUMMARY.md)). Lệnh đã dùng: `run_b2_frozen.py`, `p4_clip_score.py`, `p4_apply_freeze.py` (thư mục experiments/countgdpp). Thứ tự kiểm dev: (1) apply_freeze trên điểm đã lưu, CPU: `python experiments/countgdpp/p4_apply_freeze.py --scores results/countgdpp/p4_clip_all15_20261020 --run-id p4_freeze_devcheck_<ngày> --check-audit results/countgdpp/p4_freeze_audit_20261021.json`; (2) WSL GPU: `run_b2_frozen.py --inputs experiments/countgdpp/m4_inputs/first5_inputs.jsonl --run-id p4_b2_devcheck_<ngày> --b0-reference results/countgdpp/m4_first5_b0/predictions.jsonl`; (3) `p4_clip_score.py` trên predictions của (2); (4) apply_freeze trên điểm mới với `--reference-scores results/countgdpp/p4_clip_all15_20261020 --check-audit …` |
 | Lệnh thực nghiệm cuối đã kiểm / output | Theo WORKLOG và log đã lưu: evaluation/p4_unseen_score.py --run-id p4_unseen_v1_eval_20261027 → results/countgdpp/p4_unseen_v1_eval_20261027/. Lượt hiện tại chỉ kiểm tệp và đồng bộ Git. |
-| Lỗi đang chặn / cách tái hiện | Không có lỗi Git đang chặn. Còn chờ nhãn N4 tầng A của Triệu để chọn P/R; dữ liệu và phương pháp v2 chưa được chốt. |
-| Cập nhật gần nhất, không chạy thực nghiệm | Push e877541 thành công; HEAD local = origin/main khi kiểm bằng ls-remote. 448 file, nguyên byte artifact đã khóa; không chạy evaluator/inference/train. |
+| Lỗi đang chặn / cách tái hiện | Không còn xung đột Git. V4/V6 chưa có bài nộp theo đánh giá 02/11; N4 A còn nhãn/ID cần thống nhất. Phương pháp, dữ liệu v2 và hạn dời chưa được nhóm chốt. |
+| Cập nhật gần nhất, không chạy thực nghiệm | 02/11: git status --short, git log và git show 415af3b/71009c8; đọc bài nộp và đánh giá có sẵn. Đồng bộ tài liệu local; output là WORKLOG, handoff và checklist này. Không chạy evaluator/model/app. |
 | Run đã mở trên ảnh mới | Đã chạy p4_unseen_v1_b2_20261027 → p4_unseen_v1_clip_20261027 → p4_unseen_v1_freeze_20261027; kết quả count tại p4_unseen_v1_eval_20261027. |
-| Việc Triệu còn cần bàn giao | Theo [HANDOFF/GIAO_VIEC_TRIEU_20261028.md](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md): V1–V2 N4 tầng A (30/10); V3 q05_3, V4 2 ca thử, V5 phân tích B2/B0 (01/11); V6 N4 tầng B (02/11); V7 duyệt chung (03/11). 47 nhãn q03 đề xuất tạm hoãn |
-| Git | Đã push e877541 lên origin/main; bản cập nhật nhật ký tiếp nối commit này. Snapshot local được giữ và bỏ qua bằng .gitignore; không apply stash cũ. |
+| Việc Triệu còn cần bàn giao | V4: uncertain/absent > 0 (hạn gốc 01/11); V6: N4 B (hạn gốc 02/11); V7: duyệt cùng Trí dự kiến 03/11. Đề xuất dời V4/V6 sang 04/11 chưa được xác nhận. V3/V5 đã nộp; 47 nhãn q03 tạm hoãn. |
+| Git | HEAD=71009c8, đã có cả 415af3b; không còn unmerged paths. Snapshot trước pull 2026-11-02_truoc_pull_71009c8.zip hiện có. Giữ các thay đổi local và lịch sử hai bên; chưa commit/push. Không pull lại hoặc apply stash. |
 
 ## 4. Sau 3 giờ hôm nay, làm tiếp theo thứ tự nào?
 

@@ -1,5 +1,7 @@
 # Giao việc cho Triệu — từ 28/10/2026
 
+> **Trạng thái hiện hành — đồng bộ 02/11/2026:** HEAD `71009c8` đã gồm `415af3b` (V3 + app gán nhãn) và `71009c8` (V5 + đề xuất P). V3/V5 đã nộp; xem [đánh giá đã lưu](../reports/DANH_GIA_TRIEU_V3_V5_20261102.md). Còn V4 (hạn gốc 01/11), V6 (hạn gốc 02/11), V7 duyệt chung dự kiến 03/11. **Dời V4/V6 sang 04/11 chỉ là đề xuất, chưa có xác nhận trong lượt này.** N4 A còn ca nhãn cần thống nhất; app mới dành cho q05 không tự chứng minh N4 đã được sửa. P/T, C6 và dữ liệu dev/test mới đang ở mức đề xuất, chưa duyệt hoặc chạy. Các mốc cũ bên dưới giữ để tra lịch sử; ưu tiên ghi chú này và bảng resume. Tài liệu local chưa commit/push.
+
 **Người giao:** Trí (assistant soạn theo yêu cầu của Trí, 27/10 khuya). **Hạn báo cáo môn: 02/12/2026.**
 Gói file kèm theo: `HANDOFF/TRIEU_GIAO_VIEC_20261028.zip`. Nếu Trí đã push thì lấy thẳng trong repo, cùng đường dẫn.
 Bản này **thay** ZIP V2 cũ (`TRIEU_T1_T4_20261027_v2.zip`, chưa từng gửi).
@@ -18,11 +20,11 @@ Bản này **thay** ZIP V2 cũ (`TRIEU_T1_T4_20261027_v2.zip`, chưa từng gử
 
 | # | Việc | Ước lượng | Hạn | Ưu tiên |
 |---|---|---:|---|---|
-| **V1** | **N4 tầng A**, gói chính: 7 query, 78 khung (gồm u01_1 chấm lại độc lập) | 60 phút | **30/10** | Cao nhất |
-| **V2** | **N4 tầng A**, phần bổ sung `bo_sung_F0/`: 21 mẫu tự chọn + 18 ứng viên E3 | 30 phút | **30/10** | Cao nhất |
-| V3 | q05_3: gán nhãn 79 khung B2 + 21 khung B0 + 3 mẫu; bảng phân rã (đúng / trùng / một phần / sai loại / bỏ sót) | 90 phút | 01/11 | Cao |
+| **V1** ✅ 29/10 | **N4 tầng A**, gói chính: 7 query, 78 khung (gồm u01_1 chấm lại độc lập) | 60 phút | **30/10** | Cao nhất |
+| **V2** ✅ 29/10 | **N4 tầng A**, phần bổ sung `bo_sung_F0/`: 21 mẫu tự chọn + 18 ứng viên E3 | 30 phút | **30/10** | Cao nhất |
+| V3 ✅ 29/10 | q05_3: gán nhãn 79 khung B2 + 21 khung B0 + 3 mẫu; bảng phân rã (đúng / trùng / một phần / sai loại / bỏ sót) | 90 phút | 01/11 | Cao |
 | V4 | Thêm 2 ca thử evaluator: GT `uncertain`; query `absent` mà model đếm > 0 | 15 phút | 01/11 | Vừa |
-| V5 | Phân tích B2 so với B0: bảng chênh lệch từng query (pilot), liên hệ với mẫu tự chọn (dùng V2 + V3), thêm kết quả tập mới; 2–3 đề xuất cải thiện | 45 phút | 01/11 | Cao |
+| V5 ✅ 30/10 | Phân tích B2 so với B0: bảng chênh lệch từng query (pilot), liên hệ với mẫu tự chọn (dùng V2 + V3), thêm kết quả tập mới; 2–3 đề xuất cải thiện | 45 phút | 01/11 | Cao |
 | V6 | N4 tầng B: 2 query, 41 khung + 6 mẫu + 11 E3 | 40 phút | 02/11 | Vừa |
 | V7 | Duyệt chung PILOT_SUMMARY §7 với Trí | 20 phút | 03/11 | Cao |
 | — | 47 nhãn q03 (dev cũ) | — | **Tạm hoãn** | Đề xuất bỏ: N4 trên tập mới đã thay vai trò này; Trí quyết |

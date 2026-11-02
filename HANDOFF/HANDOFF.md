@@ -1,5 +1,9 @@
 # Handoff CS331 — bắt đầu session mới tại đây
 
+> **Trạng thái hiện hành — đồng bộ 02/11/2026:** HEAD `71009c8` đã gồm `415af3b` (V3 + app gán nhãn) và `71009c8` (V5 + đề xuất P). V3/V5 đã nộp; xem [đánh giá đã lưu](../reports/DANH_GIA_TRIEU_V3_V5_20261102.md). Còn V4 (hạn gốc 01/11), V6 (hạn gốc 02/11), V7 duyệt chung dự kiến 03/11. **Dời V4/V6 sang 04/11 chỉ là đề xuất, chưa có xác nhận trong lượt này.** N4 A còn ca nhãn cần thống nhất; app mới dành cho q05 không tự chứng minh N4 đã được sửa. P/T, C6 và dữ liệu dev/test mới đang ở mức đề xuất, chưa duyệt hoặc chạy. Các mốc cũ bên dưới giữ để tra lịch sử; ưu tiên ghi chú này và bảng resume. Tài liệu local chưa commit/push.
+
+> **Điểm tiếp tục sau rà lại 29/10:** đọc [RA_SOAT_TRIEU_N4_20261029](../reports/RA_SOAT_TRIEU_N4_20261029.md). Triệu nộp đủ V1–V2, qua kiểm cấu trúc 117 dòng; chưa phải đã phân xử độc lập mọi nhãn. V3–V5 hạn 01/11, V6 02/11, V7 duyệt chung 03/11 còn chờ. Lỗi khoanh chó/xe có trước review; điểm token mẫu ảnh lấn át token chữ ở các ca raw đã kiểm. Rà ca multi_object/part/uncertain bằng biên bbox thật và thống nhất ID khi ghép. **Chưa chốt P/R; không dùng kết luận “E1 chiếm ưu thế, bỏ R” bên dưới làm quyết định đã được chứng minh.** Trí chưa ký nghiệm thu; không có run mới.
+
 > **Đồng bộ Git đã xác nhận — 27/10/2026:** đã push commit [`e877541`](https://github.com/minhtridaoo/CS331/commit/e8775412f84f0927a6fe692f1f106bf53aacd369) lên `origin/main`; HEAD local khớp remote. Code, kết quả P4.6, gói N4 và phân công đã có trên GitHub. Bản ZIP sao lưu trong `quá khứ/`, dữ liệu MUCCA gốc và checkpoint vẫn ở máy.
 > **Việc tiếp theo:** Trí gửi đường dẫn [giao việc cho Triệu](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md), nghiệm thu phần kiểm chéo đã đạt và chốt quy tắc dữ liệu mới. Triệu làm N4 tầng A (V1–V2); chưa xác nhận đã nhận/hoàn thành.
 > **Trạng thái ưu tiên:** P4.6a–b đã xong; tập 10 ảnh/30 query đã khóa và P4.6c–d phần count đã chạy. Hiện ở N4 review khung, chưa chọn nhánh cải tiến P/R. Các hướng dẫn chuẩn bị C2/C3 và câu “chưa push/chưa chạy ảnh mới” còn lại bên dưới mô tả thời điểm trước; không phải việc phải làm lại. Lượt đồng bộ Git này không chạy thí nghiệm.
@@ -7,6 +11,16 @@
 **Bản tổng hợp để chuyển session:** [BAT_DAU_SESSION_MOI.md](../BAT_DAU_SESSION_MOI.md). Trạng thái mới hơn trong checklist/WORKLOG vẫn được ưu tiên.
 
 **Cập nhật 27/10/2026, sau pull phần Triệu.** [Checklist 3 giờ + điểm dừng](../roadmap/CHECKLIST_3_GIO.md) · [Roadmap V4.8](../roadmap/ROADMAP.md) · [WORKLOG](../WORKLOG.md).
+
+> **MỚI NHẤT — 02/11:** đã pull `71009c8`. Triệu nộp **V3** (q05_3, 103 khung: B2 tăng 58 khung `part` dù 2/3 mẫu đúng loại) và **V5** (tập mới: B2 kém B0 ở 15/30 query; đề xuất nhánh P). Cả hai đạt kiểm. **Chưa có V4 (2 ca thử) và V6 (tầng B, hạn 02/11).** Đánh giá: [reports/DANH_GIA_TRIEU_V3_V5_20261102.md](../reports/DANH_GIA_TRIEU_V3_V5_20261102.md).
+> - Bằng chứng mới ([RA_SOAT](../reports/RA_SOAT_TRIEU_N4_20261029.md) §3): ở lượt 2, điểm khung = max(token chữ, token mẫu ảnh), nên ô tô giữ nhờ điểm mẫu 0,97 dù điểm chữ "people" chỉ 0,04. Gợi ý thêm biến thể **T (chấm lượt 2 chỉ bằng token chữ)** cạnh P; R giữ dự phòng; C6 bắt buộc.
+> - **Buổi 03/11:** Trí + Triệu duyệt pilot (V7), chốt danh sách biến thể thử trên dev và quy tắc dữ liệu dev 20 + test 40. Nhắc Triệu V4 + V6, hạn 04/11.
+
+> **MỚI NHẤT — 29/10:** đã pull `be4da26`. **Triệu xong N4 tầng A (V1 + V2) đúng hạn**; nhãn đạt kiểm (117 dòng, tọa độ không đổi; Trí và Triệu đồng ý 9/9 ở u01_1). Kết quả: [reports/N4_KET_QUA_TANG_A_20261029.md](../reports/N4_KET_QUA_TANG_A_20261029.md).
+> - Khung bộ lọc giữ trong 7 query lỗi: **0 vật đúng** (lọc điểm 0/78, Fusion 0/14). Hỏi "people" ở mcac_88 thì 21/21 khung trùng khung "cars".
+> - Mẫu tự chọn: **1/21 đúng loại** (E1 chiếm ưu thế). Người thật bị lọc mất: 13/18 ứng viên E3.
+> - **Đề xuất: nhánh P** (kiểm mẫu bằng CLIP + điều kiện một vật), C6 làm đối chứng bắt buộc, **bỏ nhánh R** (R sẽ cứu nhầm chó/ô tô). **Chờ Trí quyết.**
+> - Triệu tiếp V3 q05_3, V4, V5 (hạn 01/11) và V6 tầng B (02/11).
 
 > **MỚI NHẤT — 27/10 khuya (Trí nghỉ, giao việc):**
 > - **Vị trí pipeline + lịch đến 02/12:** [roadmap/VI_TRI_PIPELINE_20261028.md](../roadmap/VI_TRI_PIPELINE_20261028.md).

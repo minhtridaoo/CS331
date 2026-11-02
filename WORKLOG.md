@@ -1,6 +1,6 @@
 # WORKLOG CS331 — nhật ký chung
 
-**Cập nhật 27/10/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+**Cập nhật 02/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
 **Điểm tiếp tục (30/10):** V1–V3 đã push (be4da26, 415af3b). V5 xong (mục V5 trong báo cáo tự kiểm), đề xuất nhánh P đã gửi Trí, bàn ở buổi 03/11. Tiếp theo V4 rồi V6.
 
@@ -24,6 +24,38 @@ Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
 
+## 02/11/2026 — đồng bộ tiến độ sau pull theo yêu cầu Trí
+
+**Đã làm:** kiểm git status/log và hai commit: HEAD hiện 71009c8, có 415af3b. Không còn unmerged paths hoặc marker xung đột trong WORKLOG. Snapshot trước pull 2026-11-02_truoc_pull_71009c8.zip hiện có. Lượt này không pull lại, không apply stash; ghi nhận việc hợp nhất trước đó theo WORKLOG và thông tin Trí cung cấp.
+
+**Nguồn:** bài nộp V3/V5 trong reports/TRIEU_TU_KIEM_PHAN2_20261027.md, đề xuất TRIEU_DE_XUAT_NHANH_P_20261029.md và đánh giá DANH_GIA_TRIEU_V3_V5_20261102.md đã có. Đây là đồng bộ trạng thái, không phải chạy lại kiểm định hay phân xử nhãn độc lập.
+
+**Đã đồng bộ:** README, BAT_DAU, handoff chung/riêng, giao việc, roadmap, checklist/resume, vị trí pipeline và kế hoạch cải tiến. Ghi V3/V5 đã nộp, không tiếp tục giao lại như việc còn trắng. V4/V6 còn chờ; 04/11 là hạn dời đề xuất, không ký cam kết thay Triệu. P/T và lựa chọn dữ liệu vẫn chờ Trí/nhóm quyết. App q05 đã được nộp, chưa chạy app hoặc coi là đã sửa N4 trong lượt này.
+
+**Bảo toàn:** giữ các mục lịch sử của cả hai bên và thay đổi local trước lượt này. Snapshot tài liệu trước sửa: quá khứ/2026-11-02_truoc_dong_bo_tien_do_*.zip. Không sửa CSV/code/GT/prediction/freeze, không chạy evaluator/model, không commit/push.
+
+**Bước tiếp:** Triệu bàn giao V4/V6 và thống nhất các ca N4 còn vướng; Trí cùng Triệu dự kiến duyệt V7 ngày 03/11, quyết phương án và thời hạn. Chỉ thực thi thí nghiệm sau khi được cho phép.
+
+## 02/11/2026 — pull 71009c8, kiểm V3/V5 của Triệu
+
+**Yêu cầu của Trí:** check GitHub, Triệu báo xong việc.
+
+**Git:**
+- Local có 10 file docs ngày 29/10 chưa push và 2 báo cáo untracked (N4_KET_QUA, RA_SOAT).
+- Snapshot `quá khứ/2026-11-02_truoc_pull_71009c8.zip` → stash → `pull --ff-only` (be4da26 → 71009c8: 415af3b V3 + app, 71009c8 V5 + đề xuất) → stash pop.
+- Xung đột duy nhất ở WORKLOG, giữ cả hai phía (mục Triệu lên trên).
+- Xóa stash tạm; stash a34cf35 giữ nguyên. Không commit/push.
+
+**Kiểm** ([reports/DANH_GIA_TRIEU_V3_V5_20261102.md](reports/DANH_GIA_TRIEU_V3_V5_20261102.md)):
+- V3: 103/103 nhãn, rank/tọa độ trùng gói gốc. B0 = 3 target + 18 sai loại; B2 = 2 target + 58 part + 19 sai loại.
+- V5: số khớp khi tính lại (2/15/13; bỏ u10_2 thì 6.45 / 11.28).
+- V4 và V6 **chưa có** (V6 0/58 dòng; hạn 02/11).
+- App `evaluation/box_label_app.py` không đọc `_KEY_`, có hiện khung chồng.
+
+**Đính chính:** báo cáo N4_KET_QUA của assistant có diễn giải quá mức ("bỏ qua prompt", "bỏ R"); đã thêm dòng trỏ tới RA_SOAT §5. Gợi ý biến thể T (chấm lượt 2 chỉ bằng token chữ), dựa trên cơ chế điểm mẫu ảnh lấn át điểm chữ ở RA_SOAT §3.
+
+**Bước tiếp theo:** buổi 03/11 (V7, chọn biến thể, chốt dữ liệu); Triệu làm V4 + V6 trước 04/11.
+
 ## 29–30/10/2026 — Triệu: V5 phân tích B2 so với B0
 
 **Người thực hiện:** Triệu tự tính bằng Excel ([reports/audits/TRIEU_TINH_TAY.xlsx](reports/audits/TRIEU_TINH_TAY.xlsx), sheet `TRIEU_TINH_TAY` và `tap_moi` mới) trên kết quả đã lưu, đối chiếu với nhãn V2 + V3 của mình, tự viết kết luận. Không chạy model/evaluator. Assistant đưa công thức, kiểm số, góp ý câu chữ.
@@ -39,6 +71,55 @@ Bước tiếp theo + người làm:
 **Kết quả:** B0 21 = 3 target + 18 wrong_class. B2 79 = 2 target + 58 part + 19 wrong_class. B0 có target cho cả 3 quả; **B2 không có khung target cho quả b1** (chỉ 23 part), dù b1 là mẫu pseudo P1. Chi tiết: [mục V3](reports/TRIEU_TU_KIEM_PHAN2_20261027.md).
 
 **Trạng thái:** V3 Chờ kiểm (Trí). **Bước tiếp:** Triệu commit + push; làm V5 (phân tích B2/B0, dùng V2 + V3), rồi V4.
+
+## 29/10/2026 — xem kỹ chất lượng nhãn N4 theo phản hồi của Trí
+
+**Yêu cầu:** Trí thấy N4 chưa ổn, hỏi đánh giá chất lượng. Assistant đọc nhãn và dựng ảnh đối chiếu với biên bbox thật từ tọa độ/ảnh gốc, không chạy model hay sửa CSV.
+
+**Bằng chứng:** cùng u07_1 people, final #5 / pseudo P1 chồng IoU 0,8900 nhưng nhãn wrong_class / multi_object; final #13 / pseudo P3 chồng 0,9029 cũng đổi nhãn như vậy. Cả bốn actual_class=cars. Đây là hai cặp cần giải thích/phân xử, không tự kết luận khác nhãn là sai khi bbox vẫn có khác biệt. Chi tiết bổ sung §7 của [báo cáo rà](reports/RA_SOAT_TRIEU_N4_20261029.md).
+
+**Trạng thái:** V1–V2 đủ bài nộp, kiểm cấu trúc đạt; chất lượng phân rã lỗi còn chờ thống nhất, chưa phải bộ nhãn cuối đã nghiệm thu. Nhận diện chó/xe sai loại vẫn có giá trị. **Tiếp:** đối chiếu hai cặp và các nhãn multi_object/part/uncertain bằng biên thật; chuẩn hóa tiêu chí trước khi sửa nhãn. Triệu tiếp V3–V7 theo lịch. Không đổi quyết định nhóm, freeze hoặc model.
+
+## 29/10/2026 — rà lại bài nộp Triệu, phân biệt lỗi model, công cụ và diễn giải
+
+**Yêu cầu của Trí:** kiểm việc giao lần trước đã đủ chưa và N4 lỗi do Triệu hay tính năng. **Người rà:** assistant. Chỉ đọc artifact/code/ảnh và đối chiếu, không evaluator/self-test/inference/train.
+
+**Đã kiểm:** HEAD và remote main cùng `be4da26`; 17 CSV N4 A có 117 dòng, ID/prompt/tọa độ khớp gói e877541 và prediction. Ba JSON evaluator run Triệu trùng nội dung run 20/10; stdout self-test cũ có PASS. V3 103 dòng trắng, V6 58 dòng trắng; chưa có bằng chứng mới cho V4/V5 hoặc duyệt chung V7. V1–V2 đã nộp đủ, không đồng nghĩa mọi nhãn đã được phân xử độc lập.
+
+**Chẩn đoán chỉ đọc raw đã lưu:** u08_1 rank 1 (ô tô) có điểm chữ 0,0770, mẫu ảnh 0,9700, final 0,9700; rank 9 (người) 0,4448 / 0,1564 / 0,4448. Code lọc final lấy max gồm cả token mẫu ảnh, nên lọc điểm có thể giữ xe và loại người. Prompt vẫn có trong input_ids; khung sai có trước review của Triệu. Không suy rộng thành nguyên nhân duy nhất hay can thiệp đã được thử.
+
+**Lưu ý chất lượng:** crop nới 15% mỗi phía nhưng không vẽ biên bbox thật; label_type gộp loại lỗi và hình dạng; object_id u01_1 chưa nhất quán xuyên pseudo/E3. Không sửa nhãn người. Nhận định trước “E1 chiếm ưu thế, bỏ R” của assistant mạnh hơn bằng chứng; quyết định P/R vẫn chờ, cần tầng B/đối chứng trên dev được cho phép.
+
+**Output:** [reports/RA_SOAT_TRIEU_N4_20261029.md](reports/RA_SOAT_TRIEU_N4_20261029.md). Snapshot tài liệu trước sửa ở `quá khứ/2026-10-29_truoc_ra_soat_N4_*.zip`. Đồng bộ ghi chú ưu tiên README/HANDOFF/ROADMAP và bảng resume; giữ bản tổng hợp trước làm lịch sử. Không thay code, CSV, GT, predictions hoặc freeze; không commit/push/gửi tin.
+
+**Bước tiếp:** Trí đọc bản rà và quyết nghiệm thu phạm vi đã đủ; rà ca mơ hồ theo bbox thật. Triệu tiếp V3/V5/V4 hạn 01/11, V6 hạn 02/11; V7 hai người duyệt 03/11. Chưa đánh dấu chọn nhánh hay chạy tập mới v2.
+
+## 29/10/2026 — pull be4da26, kiểm N4 tầng A của Triệu, ghép bảng tra, đề xuất nhánh
+
+**Yêu cầu của Trí:** Triệu báo đã xong; pull về và kiểm.
+
+**Git:** máy sạch. HEAD 26e9907 (Trí đã push e877541 + 26e9907). Fetch thấy `be4da26` (Triệu, 29/10 00:26): 17 CSV N4 tầng A + WORKLOG. `pull --ff-only` không xung đột. Không commit/push.
+
+**Kiểm nhãn** (chỉ đọc file):
+- 117/117 dòng có nhãn hợp lệ, đủ actual_class/reviewer/date.
+- So với gói gốc e877541: ID/rank khớp; tọa độ trùng về giá trị (Excel chỉ bỏ `.0`).
+- Trí và Triệu đồng ý 9/9 ở u01_1.
+- Đúng hạn 30/10. Chưa có V3–V7.
+
+**Ghép với `_KEY_mo_sau_khi_review/rank_kept_by.json`** ([reports/N4_KET_QUA_TANG_A_20261029.md](reports/N4_KET_QUA_TANG_A_20261029.md)):
+- Khung giữ trong 7 query lỗi: lọc điểm 0/78 đúng, Fusion 0/14 đúng.
+- Mẫu tự chọn đúng loại 1/21 (10 bao nhiều vật, 10 sai loại).
+- E3: 13 người thật + 3 một phần / 18.
+- So khung giữa các prompt trên cùng ảnh: mcac_88 "people" và "cars" trùng 21/21 khung; mcac_84 "motorbikes" và "bicycles" trùng 73/80.
+
+**Đề xuất:** nhánh P (P1 + điều kiện một vật) làm nhánh chính, C6 bắt buộc, bỏ R (R cứu theo điểm CountGD++, mà điểm này đang ưu tiên loại sai). Rủi ro: lượt 2 có thể bị ảnh chi phối, nên phải thử nhanh trên dev. Chỉ báo tự động lạc quan hơn nhãn người (E1 3/21 so với 1/21).
+
+**Đồng bộ:** BAT_DAU, README, HANDOFF, HANDOFF_TRIEU, GIAO_VIEC (V1/V2 ✅), CHECKLIST, VI_TRI_PIPELINE (bước [5] tầng A xong, đang ở [6]), KE_HOACH_CAI_TIEN.
+
+**Bước tiếp theo:**
+- Trí quyết nhánh và chốt quy tắc dữ liệu.
+- Assistant viết bản v2 của p4_select_unseen để rút dev 20 + test 40.
+- Triệu làm V3–V6.
 
 ## 28–29/10/2026 — Triệu: N4 tầng A (V1 + V2)
 
