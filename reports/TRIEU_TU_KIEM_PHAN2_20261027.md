@@ -180,3 +180,20 @@ q05_3 (pilot, [mục V3](#v3-2910--gán-nhãn-từng-khung-q05_3-blackberries-gt
 ### Bước 4 — đề xuất cải thiện
 
 Đề xuất đầy đủ nằm ở [TRIEU_DE_XUAT_NHANH_P_20261029.md](TRIEU_DE_XUAT_NHANH_P_20261029.md) (đã gửi Trí, bàn ở buổi 03/11). Tóm tắt: chọn nhánh P của Trí (kiểm loại mẫu bằng CLIP, không đạt thì quay về B0) cho cơ chế 1; bổ sung bước chống chia mảnh sau lượt 2 cho cơ chế 2; bước kiểm "một vật" chưa có bằng chứng riêng, để ablation trả lời. Giới hạn: quay về B0 không sửa lỗi sẵn có của B0 ở 3 query vắng mặt. Chưa chạy thí nghiệm nào mới.
+
+## V4 (02/11) — 2 ca thử evaluator: GT `uncertain`; query vắng mặt mà model đếm > 0: ĐẠT
+
+**Giao việc:** [GIAO_VIEC_TRIEU_20261028](../HANDOFF/GIAO_VIEC_TRIEU_20261028.md) §1. **Cách làm:** như Bước 6, nhưng làm hỏng **GT** thay vì predictions. Triệu tạo 2 bản sao `experiments/countgdpp/m4_inputs/manifest.csv` trong thư mục nháp ngoài repo (`C:\Users\diosodumb\Documents\CS331_nhap`), mỗi bản sửa đúng một dòng (assistant `diff` với file gốc để xác nhận); file gốc và predictions không đổi. Triệu tự chạy `evaluate_pilot.py --manifest <bản sao> --out <thư mục nháp>`; output nằm ngoài repo. Assistant đối chiếu với code và Excel V5.
+
+| Ca | Sửa trong bản sao manifest | Evaluator | Kết quả chính |
+|---|---|---|---|
+| A | q05_3: `present` → `uncertain` (giữ GT 3) | **Chạy** | `uncertain_excluded = [mcac_27, q05_3]`, `eligible_queries 14`, paired 14. q05_3 giữ số đếm (B0 21, B2 79) nhưng `gt_count` và sai số = `null`. MAE B0 **19.5**, B2 **18.14**; 6/3/5 — trùng số "bỏ q05_3" Triệu tự tính bằng Excel ở V5 bước 1 |
+| B | q01_1 guitars: `present, 25` → `absent, 0` (B0 và B2 thật đều đếm 25) | **Chạy** | `n_present 14`, `n_absent 1`, `FPR_absent 1.0`, `MeanAbsentCount 25.0` (cả B0 và B2). B0 `MAE_present` 20.79 = 291/14 (không gồm q01_1), MAE chung 21.07 = 316/15 (có gồm). q01_1 ghi `unchanged` (sai 25 và 25) |
+
+Kết luận của Triệu (nguyên văn):
+
+> 1. chọn cách c vì việc bỏ trường hợp không chắc chắn sẽ cho kết quả chuẩn xác hơn là xét trường hợp đó = 0 hay tính luôn cả trường hợp đó
+> 2. Lỗi đếm ra vật ở ảnh không có vật được báo ở chỉ số FPR_absent và MeanAbsentCount, còn MAE_present thì không bị ảnh hưởng, vì q01_1 không còn là query có mặt
+> 3. unchanged’ chỉ có nghĩa là sai số của B2 bằng sai số của B0, không có nghĩa là không có gì sai. Ví dụ ở tập mới, 3/13 query unchanged là cả hai cùng sai (u03_2 amplifiers: GT 4, cả hai đếm 0). Vì vậy khi đọc bảng improved/worsened/unchanged, cần xem thêm số đếm thực tế.
+
+Ghi chú: "cách c" = bỏ query khỏi metric nhưng ghi tên vào `uncertain_excluded` (cách a = coi GT là 0, cách b = giữ GT không chắc). Câu 3 là hạn chế thật của bảng so sánh, áp dụng cho cả pilot và tập mới. Đây là kiểm bằng GT giả; chưa có query `uncertain` thật nào trong dữ liệu.

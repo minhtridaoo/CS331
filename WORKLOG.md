@@ -2,6 +2,8 @@
 
 **Cập nhật 02/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (02/11, Triệu):** V4 xong (mục V4 trong báo cáo tự kiểm), chờ commit. Tiếp theo V6 (N4 tầng B), rồi V7 với Trí.
+
 **Điểm tiếp tục (30/10):** V1–V3 đã push (be4da26, 415af3b). V5 xong (mục V5 trong báo cáo tự kiểm), đề xuất nhánh P đã gửi Trí, bàn ở buổi 03/11. Tiếp theo V4 rồi V6.
 
 **Điểm tiếp tục (29/10, tối):** V1 + V2 đã push (be4da26), chờ Trí ghép bảng tra. V3 q05_3 xong 103/103 khung, chờ commit; tiếp theo V5 rồi V4.
@@ -23,6 +25,14 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 02/11/2026 — Triệu: V4 hai ca thử evaluator
+
+**Người thực hiện:** Triệu tạo 2 bản sao `manifest.csv` ngoài repo (`C:\Users\diosodumb\Documents\CS331_nhap`), mỗi bản sửa một dòng, tự chạy `evaluation/evaluate_pilot.py --manifest <bản sao> --out <thư mục nháp>` và tự viết kết luận. Assistant kiểm `diff` bản sao, đối chiếu kết quả với code. File gốc, predictions và kết quả trong repo không đổi.
+
+**Kết quả:** Ca A (q05_3 `uncertain`): chạy, loại q05_3 (`uncertain_excluded`, 14 query), MAE 19.5 / 18.14 khớp Excel V5. Ca B (q01_1 `absent`, GT 0): chạy, `FPR_absent 1.0`, `MeanAbsentCount 25`, `MAE_present` không gồm q01_1. Hạn chế ghi thêm: `unchanged` chỉ là sai số bằng nhau; ở tập mới 3/13 query unchanged là cả hai cùng sai. Chi tiết: [mục V4](reports/TRIEU_TU_KIEM_PHAN2_20261027.md).
+
+**Trạng thái:** V4 Chờ kiểm (Trí). **Bước tiếp:** Triệu commit + push; làm V6 (N4 tầng B); V7 duyệt chung.
 
 ## 02/11/2026 — push 13 file đánh giá và tiến độ theo yêu cầu Trí
 
