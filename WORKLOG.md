@@ -2,6 +2,8 @@
 
 **Cập nhật 02/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (03/11, Triệu):** V6 đã push (cb4fe58). Triệu nhận nhánh P (Trí đề xuất chia: Triệu P, Trí R). Đã chuẩn bị runner P1 + notebook Colab A100, **chưa chạy model**. Tiếp: Triệu push, chạy notebook trên Colab (kiểm tái hiện B0/B2 trên pilot trước), gửi kết quả; tập dev 30 ảnh chờ nhóm khóa.
+
 **Điểm tiếp tục (02/11 tối, Triệu):** V4 đã push (fecbc42). V6 xong 58/58 (mục V6 trong báo cáo tự kiểm), chờ commit. Tiếp theo V7 duyệt chung với Trí (03/11); Trí ghép nhãn tầng B với `_KEY_`.
 
 **Điểm tiếp tục (02/11, Triệu):** V4 xong (mục V4 trong báo cáo tự kiểm), chờ commit. Tiếp theo V6 (N4 tầng B), rồi V7 với Trí.
@@ -27,6 +29,16 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 03/11/2026 — Triệu: chuẩn bị nhánh P1 trên Colab (chưa chạy)
+
+**Người thực hiện:** assistant viết code theo yêu cầu của Triệu ("tiến hành P, làm trên Colab"), theo kế hoạch Trí §3.2–3.4. File mới: `experiments/countgdpp/pseudo_clip_verifier.py`, `run_b2_verified_pseudo.py`, `colab_p1_verified_pseudo.ipynb`, `COLAB_P1_HUONG_DAN.md`. Không sửa runner B2/B0 cũ, không đổi freeze.
+
+**Đã kiểm (CPU, không chạy model):** chọn ứng viên trùng `select_pseudo` và trùng mẫu B2 đã lưu ở 45/45 query (pilot 15 + p4_unseen_v1 30, đọc `stage1_raw.npz`); `--check-inputs` qua bước kiểm input (dừng ở checkpoint vì máy Triệu chưa có file .pth); ô tóm tắt notebook chạy đúng trên dữ liệu giả lập. MUCCA zip của Triệu có md5 `b182e445…` khớp Zenodo.
+
+**Chưa có:** kết quả GPU. Trên Colab, notebook kiểm trước: (A) CLIP chấm lại 663 khung p4_unseen_v1 so với điểm đã lưu; (B) lượt 1 khớp B0 và B2 chạy lại khớp B2 đã lưu trên 15 query pilot. Chỉ dùng số P1 khi (B) đạt. Pilot chỉ để dò lỗi; `tau_pseudo`/`M` chính thức chọn trên dev 30 ảnh sau khi khóa.
+
+**Trạng thái:** Chưa chạy. **Bước tiếp:** Triệu commit + push, chạy notebook, gửi phần in ra của Ô 8 và Ô 10.
 
 ## 02/11/2026 — Triệu: V6 N4 tầng B
 
