@@ -16,6 +16,7 @@ Example (from CS331 root):
 """
 import argparse
 import ast
+import hashlib
 import json
 import os
 import re
@@ -29,6 +30,11 @@ from pseudo_clip_verifier import MODEL_ID, REVISION, TEMPLATE, ClipVerifier, cho
 
 TAU = .23
 MAX_PSEUDO = 3
+
+
+def source_sha(path):
+    """sha256 sau khi đưa xuống dòng về CRLF: hash audit 14/10 tính trên bản checkout Windows (CRLF), clone Linux/Colab là LF."""
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")).hexdigest()
 
 
 def read_predictions(paths):
@@ -81,10 +87,10 @@ def main():
     checkpoint = REPO / "checkpoints/countgd_plusplus.pth"
     if sha(checkpoint) != audit["checkpoint_sha256"] or audit.get("review_decision") != "compatible_with_pinned_B0_app":
         raise ValueError("Checkpoint audit mismatch")
-    if sha(REPO / "process_folder.py") != SOURCE_HASH:
+    if source_sha(REPO / "process_folder.py") != SOURCE_HASH:
         raise ValueError("Stock source changed")
     for source, digest in audit["review_source_sha256"].items():
-        if sha(REPO / source) != digest:
+        if source_sha(REPO / source) != digest:
             raise ValueError("Reviewed model code changed")
     refs = {}
     for name, paths in (("B0", args.b0_reference), ("B2", args.b2_reference)):
@@ -100,7 +106,8 @@ def main():
     out = ROOT / "results/countgdpp" / args.run_id; out.mkdir(exist_ok=False)
     variants = (["B2"] if args.replay_b2 else []) + [f"tau{t:.3f}" for t in taus]
     config = dict(status="running", variant="P1", runner="run_b2_verified_pseudo.py", scope="P1 verified pseudo-exemplars; dev only until tau/M are locked",
-        inputs=rows, checkpoint_sha256=audit["checkpoint_sha256"], source_sha256=SOURCE_HASH, adapter_sha256=sha(Path(__file__)),
+        inputs=rows, checkpoint_sha256=audit["checkpoint_sha256"], source_sha256=SOURCE_HASH, source_hash_eol="CRLF-normalized before sha256",
+        adapter_sha256=sha(Path(__file__)),
         verifier_sha256=sha(Path(__file__).with_name("pseudo_clip_verifier.py")), b2_adapter_sha256=sha(Path(__file__).with_name("run_b2_frozen.py")),
         input_sha256=sha(inputs), model_commit="8489f836d75eb407ae778c56cff1f72cc6f8baae", tau_sample=TAU, tau_final=TAU, max_pseudo=MAX_PSEUDO,
         m=args.m, tau_pseudo=taus, outputs={v: f"predictions_{v}.jsonl" for v in variants},
