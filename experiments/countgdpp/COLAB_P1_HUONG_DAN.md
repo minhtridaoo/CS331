@@ -12,9 +12,9 @@
    - Sau khi file đã lên GitHub: https://colab.research.google.com/github/minhtridaoo/CS331/blob/main/experiments/countgdpp/colab_p1_verified_pseudo.ipynb
    - Hoặc trên Colab: **File > Upload notebook**, chọn file `.ipynb` trong máy.
 2. **Runtime > Change runtime type** → chọn **A100 GPU** → Save.
-3. Chạy từng ô (Shift+Enter) từ Ô 1 đến Ô 4. Ô 2 sẽ hỏi quyền Google Drive: chọn tài khoản của bạn, cho phép.
-4. Ô 4 cài xong sẽ nhắc: **Runtime > Restart session**. Làm theo, rồi chạy tiếp **từ Ô 5** (không chạy lại Ô 1–4).
-5. Chạy Ô 5 → Ô 10. Gửi lại phần in ra của **Ô 8** và **Ô 10**.
+3. Chạy từng ô (Shift+Enter) từ Ô 1 đến Ô 10. Ô 2 sẽ hỏi quyền Google Drive: chọn tài khoản của bạn, cho phép.
+4. Ô 4 tạo môi trường riêng `/content/venv310` (Python 3.10, torch 2.5.1+cu121, giống máy Trí), vì Colab mặc định là Python 3.13 không cài được torch 2.5.1. Không cần Restart session. Nếu lỡ restart thì chạy lại từ Ô 5.
+5. Gửi lại phần in ra của **Ô 5**, **Ô 8** và **Ô 10**.
 6. Xong việc: **Runtime > Disconnect and delete runtime** để khỏi tốn compute unit.
 
 Kết quả và checkpoint được lưu ở Drive `MyDrive/CS331_colab/`. Lần sau Ô 7 lấy checkpoint từ Drive, không tải lại.
