@@ -1,6 +1,8 @@
 # WORKLOG CS331 — nhật ký chung
 
-**Cập nhật 02/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+**Cập nhật 03/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+
+**Điểm tiếp tục (03/11 tối, Triệu):** Pilot P1 đã chạy trên Colab T4 (2 lần, run `p1_pilot_colab_20261103_1519` và `_1528`, lưu ở Drive của Triệu). Kiểm A đạt; Kiểm C đạt (T4 tự khớp tuyệt đối 6 cách × 15/15); Kiểm B lệch A2000 do đổi GPU (lượt 1 lệch tối đa 1 khung). Notebook + hướng dẫn + báo cáo gửi Trí [reports/TRIEU_P1_COLAB_T4_20261103.md](reports/TRIEU_P1_COLAB_T4_20261103.md) đã sửa trong máy, chờ Triệu push. Chờ Trí (mục 4 của báo cáo): đồng ý T4 làm máy chuẩn và tiêu chí tái hiện mới; khóa tập dev 30 ảnh.
 
 **Điểm tiếp tục (03/11, Triệu):** V6 đã push (cb4fe58). Triệu nhận nhánh P (Trí đề xuất chia: Triệu P, Trí R). Đã chuẩn bị runner P1 + notebook Colab A100, **chưa chạy model**. Tiếp: Triệu push, chạy notebook trên Colab (kiểm tái hiện B0/B2 trên pilot trước), gửi kết quả; tập dev 30 ảnh chờ nhóm khóa.
 
@@ -29,6 +31,26 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 03/11/2026 — Triệu: chạy pilot P1 trên Colab T4, kiểm tái hiện
+
+**Người thực hiện:** Triệu chạy `experiments/countgdpp/colab_p1_verified_pseudo.ipynb` trên Colab T4 (code commit 9606a59); assistant hướng dẫn sửa lỗi cài đặt và đọc kết quả. Lệnh: `run_b2_verified_pseudo.py --inputs experiments/countgdpp/m4_inputs/first5_inputs.jsonl --tau-pseudo 0.20 0.22 0.24 0.26 0.28 --m 10 --replay-b2 --b0-reference results/countgdpp/m4_first5_b0/predictions.jsonl --b2-reference (b2_two_images_20261015 + b2_remaining3_20261015) --reference-mode report`.
+
+**Run ID:** `p1_pilot_colab_20261103_1519` (lần 1) và `p1_pilot_colab_20261103_1528` (lần 2, cùng lệnh). Output ở Google Drive của Triệu `MyDrive/CS331_colab/<run_id>/`, **chưa đưa vào repo**.
+
+**Sửa notebook (trong máy, chưa push):** tìm file build CUDA ops không phân biệt hoa/thường (setuptools mới viết tên chữ thường); đặt `MPLBACKEND=Agg`; Ô 7 tải trọng số BERT bằng `download_bert.py`; thêm Ô 11 (Kiểm C); GPU mặc định của notebook đổi sang T4. Cập nhật `COLAB_P1_HUONG_DAN.md` (mục kết quả 03/11). Báo cáo gửi Trí: `reports/TRIEU_P1_COLAB_T4_20261103.md` (Claude soạn theo yêu cầu Triệu).
+
+**Kiểm tra và kết quả:**
+- Môi trường: Python 3.10.22, torch 2.5.1+cu121, transformers 4.44.2, numpy 2.2.6, pillow 10.4.0, Tesla T4.
+- Kiểm A đạt: 663 khung p4_unseen_v1, CLIP lệch lớn nhất 3.28e-07.
+- Kiểm B không khớp tuyệt đối với A2000: lượt 1 khớp 1/15, B2 khớp 1/15 (chỉ q01_3, 0 khung). Lượt 1: 10/15 cùng số khung, 5 query lệch đúng 1 khung (q01_2, q02_1, q04_1, q04_2, q05_2); query cùng số khung lệch điểm tối đa 0.023. A2000 tự khớp 15/15 (B2 15/10 có `stage1_matches_B0: true`), nên lệch do đổi GPU. Nguyên nhân cụ thể chưa kiểm (giả thuyết: TF32 của cuDNN trên A2000 Ampere).
+- Kiểm C đạt: lần 2 khớp lần 1 tuyệt đối ở 6 cách (B2, tau 0.20–0.28) × 15/15 (lượt 1, id mẫu, khung và điểm cuối).
+- Mẫu B2 T4 trùng A2000 ở 14/15 query. q04_3 khác 1 mẫu (đề xuất 3 thay vì 4) và B2 đổi 84 → 61 (GT 39); q02_2 cùng 3 mẫu nhưng B2 30 so với 31. MAE B2 pilot: T4 20.40, A2000 22.00; chênh lệch hoàn toàn do 2 query này.
+- Số pilot (chỉ dò lỗi, không dùng chọn tau): MAE present B0 19.47 (assistant tính từ bảng số đếm), B2 20.40, tau 0.20 = 20.40 (trùng B2 cả 15 query), tau 0.22/0.24/0.26/0.28 = 22.87/22.33/22.80/22.73; số query không còn mẫu 1/2/4/7/9 (B2 là 1).
+
+**Lỗi/điểm chưa rõ:** nhóm chưa chốt tiêu chí tái hiện khi đổi GPU. Đề xuất (chờ Trí): Colab T4 làm máy chuẩn; tiêu chí = Kiểm A + Kiểm C 15/15; Kiểm B chỉ ghi mức lệch so với A2000; không trộn số T4 với số A2000 trong một bảng.
+
+**Trạng thái:** Đã chạy; Kiểm A, Kiểm C đạt; chờ nhóm chốt tiêu chí. **Bước tiếp:** Triệu push notebook + hướng dẫn + báo cáo, nhắn Trí đọc báo cáo trong repo; nhóm khóa tập dev 30 ảnh rồi chạy P1 trên dev để chọn `tau_pseudo`/`M`.
 
 ## 03/11/2026 — Triệu: chuẩn bị nhánh P1 trên Colab (chưa chạy)
 
