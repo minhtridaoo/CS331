@@ -2,6 +2,8 @@
 
 **Cập nhật 04/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (04/11 khuya, Triệu):** Đã soạn quy tắc rút tập dev/test v2 + script `experiments/countgdpp/select_dev_test_v2.py`, đề xuất ở `reports/TRIEU_DE_XUAT_QUY_TAC_DU_LIEU_V2_20261104.md`. **Chưa rút ảnh thật.** Chờ Trí duyệt quy tắc và 5 câu ở mục 4 (cỡ 20+40 hay 30+50, khoảng điểm, cách lấy cặp dễ nhầm, thêm vắng mặt dễ, seed); sau đó Triệu rút, hai người kiểm nhãn rồi khóa.
+
 **Điểm tiếp tục (04/11 tối, Triệu):** Ô 12 đã chạy trên Colab T4 cho run `p1_pilot_colab_20261103_1519` (output `_controls_clip`, `_controls`, `_controls_eval` trên Drive của Triệu). Công cụ chạy đủ; số pilot chỉ để kiểm code. Đã kiểm: tau 0.20 cùng số đếm với B2 nhưng CLIP đổi mẫu ở q01_2 và q03_3 (đính chính câu 03/11). Điểm mở: bộ lọc khóa trên điểm B2 loại gần hết khung B0, nên C6 = B0+F bị thiệt, cần Trí chọn cách làm C6 (báo cáo 03/11, mục 6).
 
 **Điểm tiếp tục (04/11, Triệu):** Đã viết công cụ bảng đối chứng (Trí §3.5): `experiments/countgdpp/p1_controls.py` + `evaluation/evaluate_research.py` + Ô 12 của notebook. Đã kiểm trên số liệu A2000 đã lưu; **chưa chạy CLIP trên Colab**. Tiếp: Triệu push, chạy Ô 1–5 + Ô 12 trên T4, gửi phần in ra. Vẫn chờ Trí trả lời báo cáo 03/11 (tiêu chí T4, tập dev).
@@ -35,6 +37,16 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 04/11/2026 — Triệu: soạn quy tắc và script rút tập dev/test v2 (chưa rút)
+
+**Người thực hiện:** assistant viết theo yêu cầu của Triệu ("làm hướng 2"), dựa trên §4 của `roadmap/KE_HOACH_CAI_TIEN_20261027.md` và §5.1 kế hoạch Trí. File mới: `experiments/countgdpp/select_dev_test_v2.py`, `reports/TRIEU_DE_XUAT_QUY_TAC_DU_LIEU_V2_20261104.md`. Không sửa `p4_select_unseen.py` hay `p4_unseen_v1/`.
+
+**Quy tắc nháp:** pool = MUCCA trừ 5 ảnh pilot và 10 ảnh p4_unseen_v1; mỗi ảnh 1 cặp có mặt (3–40 điểm mỗi lớp); lấy hết ảnh có cặp khác siêu nhóm, phần còn lại lấy cặp cùng siêu nhóm, xoay vòng qua siêu nhóm; chia dev/test theo ảnh, đúng tỉ lệ theo loại cặp rồi theo siêu nhóm; 1 truy vấn vắng mặt (ưu tiên cùng siêu nhóm với Y), tùy chọn thêm 1 vắng mặt dễ. Script chỉ đọc nhãn MUCCA; kiểm md5 zip và sha256 `annotations.json`/`class_mapping.json`.
+
+**Đã kiểm (CPU):** `--stats` trên bản MUCCA ở `Downloads`: 185 ảnh chưa dùng, 19 ảnh có cặp khác hẳn (13 người–xe), 90 ảnh chỉ có cặp dễ nhầm (3–40 điểm); khớp con số 19 trong kế hoạch thực thi. Rút thử trong bản sao tạm ngoài repo với seed chỉ để kiểm (987654), cỡ 20+40, 30+50 và 20+40 có `--easy-absent`: đạt mọi bài kiểm (cỡ, không trùng, không dùng ảnh đã loại, đủ 19 ảnh khác hẳn, 2 có mặt + 1/2 vắng mặt mỗi ảnh, GT = số điểm, lớp vắng mặt không có nhãn, inputs không chứa GT, tỉ lệ dev mỗi nhóm lệch < 1 ảnh, chạy lại ra file giống hệt, không ghi đè). Kết quả rút thử đã xóa và không ghi danh sách ảnh.
+
+**Trạng thái:** Chờ Trí duyệt. **Bước tiếp:** Triệu push, nhắn Trí đọc báo cáo; sau khi duyệt Triệu rút bằng seed thật, Trí + Triệu kiểm vắng mặt/GT, khóa trước khi chạy model.
 
 ## 04/11/2026 — Triệu: chạy Ô 12 (bảng đối chứng) trên Colab T4, pilot
 
