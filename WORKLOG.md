@@ -2,6 +2,8 @@
 
 **Cập nhật 04/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (04/11 tối, Triệu):** Ô 12 đã chạy trên Colab T4 cho run `p1_pilot_colab_20261103_1519` (output `_controls_clip`, `_controls`, `_controls_eval` trên Drive của Triệu). Công cụ chạy đủ; số pilot chỉ để kiểm code. Đã kiểm: tau 0.20 cùng số đếm với B2 nhưng CLIP đổi mẫu ở q01_2 và q03_3 (đính chính câu 03/11). Điểm mở: bộ lọc khóa trên điểm B2 loại gần hết khung B0, nên C6 = B0+F bị thiệt, cần Trí chọn cách làm C6 (báo cáo 03/11, mục 6).
+
 **Điểm tiếp tục (04/11, Triệu):** Đã viết công cụ bảng đối chứng (Trí §3.5): `experiments/countgdpp/p1_controls.py` + `evaluation/evaluate_research.py` + Ô 12 của notebook. Đã kiểm trên số liệu A2000 đã lưu; **chưa chạy CLIP trên Colab**. Tiếp: Triệu push, chạy Ô 1–5 + Ô 12 trên T4, gửi phần in ra. Vẫn chờ Trí trả lời báo cáo 03/11 (tiêu chí T4, tập dev).
 
 **Điểm tiếp tục (03/11 tối, Triệu):** Pilot P1 đã chạy trên Colab T4 (2 lần, run `p1_pilot_colab_20261103_1519` và `_1528`, lưu ở Drive của Triệu). Kiểm A đạt; Kiểm C đạt (T4 tự khớp tuyệt đối 6 cách × 15/15); Kiểm B lệch A2000 do đổi GPU (lượt 1 lệch tối đa 1 khung). Notebook + hướng dẫn + báo cáo gửi Trí [reports/TRIEU_P1_COLAB_T4_20261103.md](reports/TRIEU_P1_COLAB_T4_20261103.md) đã sửa trong máy, chờ Triệu push. Chờ Trí (mục 4 của báo cáo): đồng ý T4 làm máy chuẩn và tiêu chí tái hiện mới; khóa tập dev 30 ảnh.
@@ -33,6 +35,20 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 04/11/2026 — Triệu: chạy Ô 12 (bảng đối chứng) trên Colab T4, pilot
+
+**Người thực hiện:** Triệu chạy Ô 1–5 và Ô 12 của notebook (commit 0c77c39) trên Colab T4; assistant đọc kết quả. Nguồn: run `p1_pilot_colab_20261103_1519`. Output trên Drive của Triệu: `p1_pilot_colab_20261103_1519_controls_clip/`, `_controls/`, `_controls_eval/` (chưa vào repo).
+
+**Kết quả kỹ thuật:** CLIP chấm đủ 7 nguồn × 15 query = 3.322 khung; evaluator chạy xong. B0 19.47 và B2 20.40 khớp Ô 10 của run gốc.
+
+**Số pilot (15 query có mặt, 5 ảnh; ngưỡng S/F được khớp trên chính 5 ảnh này nên F/S-only lạc quan):** MAE B0 19.47, B0+S 10.00, B0+F (C6) 8.73, B2 20.40, B2+S (S-only) 4.87, B2+F (F) 4.60; P / P+F theo tau 0.20–0.28: 20.40/4.53, 22.87/4.80, 22.33/4.87, 22.80/4.93, 22.73/6.60. P+F so với F: −0.07, +0.20, +0.27, +0.33, +2.00 (chỉ tau 0.28 có khoảng tin cậy không chứa 0, theo hướng kém hơn). F so với C6: −4.13, khoảng tin cậy 95% [−7.93, −1.73]. Trên pilot chưa thấy kiểm mẫu bằng CLIP thêm được gì so với F; pilot không đủ để kết luận.
+
+**Điểm mở 1 (đã kiểm, đính chính):** tau 0.20 có cùng số đếm với B2 ở 15/15 query nhưng CLIP đã đổi mẫu ở 2 query (ô kiểm của Triệu đọc `predictions_B2`, `predictions_tau0.200`, `candidates.jsonl` của run 1519). q01_2: mẫu B2 = đề xuất 25, 42, 17 (cosine 0.199, 0.202, 0.199) → P lấy 42, 11, 28. q03_3: bỏ đề xuất 6 (0.195), thay bằng 3. Số đếm trùng là tình cờ; khung/điểm cuối khác nên B2+S khác tau0.200+S. **Đính chính:** câu assistant nói ngày 03/11 "ở tau 0.20, CLIP giữ lại cả 3 mẫu ở mọi query, nên P y hệt B2" là sai; dòng "tau 0.20 = 20.40 (trùng B2 cả 15 query)" ở mục 03/11 chỉ đúng về số đếm. Báo cáo 03/11 đã ghi đính chính.
+
+**Điểm mở 2 (cần Trí quyết):** bộ lọc khóa 21/10 được khớp trên điểm lượt 2. Điểm lượt 1 thấp hơn hẳn (pilot A2000: trung vị 0.434 so với 0.672; điểm ≥ 0.907 chỉ 2% so với 27%), nên B0+F đếm 0 ở 11/15 query. C6 làm theo đúng chữ "cùng cách lọc" vì vậy bị thiệt và chưa trả lời được câu "có cần lượt 2 không". Hai cách: giữ luật khóa (đúng chữ kế hoạch) hoặc chọn lại ngưỡng cho từng nguồn trên dev mới theo cùng quy tắc chọn. Ghi vào báo cáo `reports/TRIEU_P1_COLAB_T4_20261103.md` mục 6 và hướng dẫn Colab.
+
+**Trạng thái:** Công cụ đã chạy được; số pilot không dùng để kết luận. **Bước tiếp:** Triệu push tài liệu; Trí trả lời mục 4 và mục 6 của báo cáo.
 
 ## 04/11/2026 — Triệu: công cụ bảng đối chứng cho nhánh P (chưa chạy trên Colab)
 

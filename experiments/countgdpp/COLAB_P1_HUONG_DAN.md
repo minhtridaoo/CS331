@@ -31,6 +31,8 @@ Kế hoạch Trí §3.5 bắt buộc so P với F, P+F, B0+F (C6) và S-only, kh
 
 **Lưu ý pilot:** ngưỡng S và F được khớp trên chính 5 ảnh pilot, nên trên pilot F và S-only trông tốt hơn thực tế. Chạy Ô 12 trên pilot chỉ để kiểm code; bảng có ý nghĩa là bảng trên tập dev mới.
 
+**Lưu ý C6 (thấy khi chạy 04/11):** luật khóa được khớp trên điểm lượt 2, còn điểm lượt 1 thấp hơn hẳn (pilot A2000: trung vị 0.434 so với 0.672). Vì vậy B0+F và B0+S loại gần hết khung B0 (pilot T4: B0+F đếm 0 ở 11/15 query). Cách làm C6 chờ Trí chọn, xem [báo cáo 03/11](../../reports/TRIEU_P1_COLAB_T4_20261103.md) mục 6.
+
 ## Cách chính: Colab trên trình duyệt
 
 1. Mở notebook:
