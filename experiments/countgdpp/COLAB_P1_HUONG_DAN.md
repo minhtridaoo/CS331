@@ -20,15 +20,26 @@ Hai lần chạy pilot: `p1_pilot_colab_20261103_1519` và `p1_pilot_colab_20261
 
 **Hệ quả:** chỉ so B0/B2/P **trong cùng một lần chạy T4** (runner đã chạy lại B2 bằng `--replay-b2`); không trộn số T4 với số A2000 trong một bảng. Đề xuất (chờ nhóm chốt): dùng Colab T4 làm máy chạy chuẩn, thay tiêu chí "Kiểm B 15/15" bằng Kiểm A + Kiểm C 15/15, còn Kiểm B chỉ ghi lại mức lệch so với A2000. Số MAE theo tau của pilot này chỉ để dò lỗi, chưa dùng chọn `tau_pseudo`.
 
+## Bảng đối chứng (Ô 12, thêm 04/11)
+
+Kế hoạch Trí §3.5 bắt buộc so P với F, P+F, B0+F (C6) và S-only, không chỉ với B2. Ô 12 dựng đủ bảng này từ **một lần chạy P1**, không chạy lại CountGD++:
+
+1. [p1_controls.py](p1_controls.py): lấy 3 loại nguồn khung của cùng lần chạy (B0 = lượt 1, B2, từng `tau`), gọi `p4_clip_score.py` (giữ nguyên) chấm CLIP mọi khung, rồi áp bộ lọc đã khóa 21/10 của `p4_apply_freeze.py`. Mỗi nguồn X ra 3 cách: X (giữ hết), X+S (điểm CountGD++ ≥ ngưỡng đã khóa), X+F (Fusion 50/50). Tên trong kế hoạch: F = `B2+F`, S-only = `B2+S`, C6 = `B0+F`, P+F = `tau…+F`. Không đọc GT. Bộ lọc được khớp trên khung B2 của pilot; với khung B0 và P, điểm CountGD++ của chính khung đó thay cho điểm B2 (cùng luật, không khớp lại).
+2. [evaluate_research.py](../../evaluation/evaluate_research.py): đọc GT, tính MAE/RMSE chung, MAE có mặt, `MeanAbsentCount`, `FPR_absent` (kế hoạch §5.2), số query không còn mẫu, và so từng cặp (tốt hơn/kém hơn/bằng, chênh MAE, khoảng tin cậy 95% bootstrap theo ảnh, 5000 lần, seed 331). Tùy chọn `--annotations`: số vật đúng được giữ theo điểm-nằm-trong-khung của MUCCA (chỉ là xấp xỉ, cần cột `class_id` trong manifest).
+
+**Đã kiểm (CPU, số liệu A2000 đã lưu, chưa chạy CLIP mới):** trên pilot, `B2+S` và `B2+F` khớp audit freeze 21/10 ở 15/15 query (MAE 4.33 và 4.40). Trên p4_unseen_v1, B0/B2/B2+S/B2+F khớp `p4_unseen_score.py` ở mọi chỉ số (có mặt, vắng mặt, chung, xấp xỉ điểm-trong-khung, 2 khoảng tin cậy). Đường gọi CLIP mới chỉ kiểm được bước kiểm đầu vào (`--check-inputs`); chạy CLIP thật cần Colab.
+
+**Lưu ý pilot:** ngưỡng S và F được khớp trên chính 5 ảnh pilot, nên trên pilot F và S-only trông tốt hơn thực tế. Chạy Ô 12 trên pilot chỉ để kiểm code; bảng có ý nghĩa là bảng trên tập dev mới.
+
 ## Cách chính: Colab trên trình duyệt
 
 1. Mở notebook:
    - Sau khi file đã lên GitHub: https://colab.research.google.com/github/minhtridaoo/CS331/blob/main/experiments/countgdpp/colab_p1_verified_pseudo.ipynb
    - Hoặc trên Colab: **File > Upload notebook**, chọn file `.ipynb` trong máy.
 2. **Runtime > Change runtime type** → chọn **T4 GPU** → Save. T4 khoảng 2 compute unit/giờ, A100 khoảng 11–13 (quỹ 200 unit/tháng); CountGD++ chỉ cần vài GB VRAM nên T4 đủ. Kết quả cũ trong repo chạy trên RTX A2000 (WSL), nên trên T4 Kiểm B lệch nhỏ (xem mục kết quả 03/11); đề xuất dùng Colab T4 làm máy chạy chuẩn, chờ Trí đồng ý.
-3. Chạy từng ô (Shift+Enter) từ Ô 1 đến Ô 10. Ô 11 (Kiểm C) chỉ chạy khi trên Drive đã có một lần chạy T4 trước để đối chiếu. Ô 2 sẽ hỏi quyền Google Drive: chọn tài khoản của bạn, cho phép.
+3. Chạy từng ô (Shift+Enter) từ Ô 1 đến Ô 10. Ô 11 (Kiểm C) chỉ chạy khi trên Drive đã có một lần chạy T4 trước để đối chiếu. Ô 12 (bảng đối chứng) chạy được ngay sau Ô 1–5 nếu Drive đã có một lần chạy P1. Ô 2 sẽ hỏi quyền Google Drive: chọn tài khoản của bạn, cho phép.
 4. Ô 4 tạo môi trường riêng `/content/venv310` (Python 3.10, torch 2.5.1+cu121, giống máy Trí), vì Colab mặc định là Python 3.13 không cài được torch 2.5.1. Colab cũng có sẵn CUDA 13 + gcc 13, nên **lần đầu** Ô 4 tải bộ CUDA 12.1 chính thức của NVIDIA (~4 GB) vào `/content/cuda-12.1`, build CUDA ops bằng gcc-12 cho T4/A100/L4 và lưu file build vào `MyDrive/CS331_colab/wheels`; các phiên sau cài thẳng từ file đó. Không cần Restart session. Nếu lỡ restart thì chạy lại từ Ô 5.
-5. Gửi lại phần in ra của **Ô 5**, **Ô 8**, **Ô 10** (và **Ô 11** nếu chạy).
+5. Gửi lại phần in ra của **Ô 5**, **Ô 8**, **Ô 10** (và **Ô 11**, **Ô 12** nếu chạy).
 6. Xong việc: **Runtime > Disconnect and delete runtime** để khỏi tốn compute unit.
 
 Kết quả và checkpoint được lưu ở Drive `MyDrive/CS331_colab/`. Lần sau Ô 7 lấy checkpoint từ Drive, không tải lại.

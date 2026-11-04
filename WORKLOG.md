@@ -1,6 +1,8 @@
 # WORKLOG CS331 — nhật ký chung
 
-**Cập nhật 03/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+**Cập nhật 04/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+
+**Điểm tiếp tục (04/11, Triệu):** Đã viết công cụ bảng đối chứng (Trí §3.5): `experiments/countgdpp/p1_controls.py` + `evaluation/evaluate_research.py` + Ô 12 của notebook. Đã kiểm trên số liệu A2000 đã lưu; **chưa chạy CLIP trên Colab**. Tiếp: Triệu push, chạy Ô 1–5 + Ô 12 trên T4, gửi phần in ra. Vẫn chờ Trí trả lời báo cáo 03/11 (tiêu chí T4, tập dev).
 
 **Điểm tiếp tục (03/11 tối, Triệu):** Pilot P1 đã chạy trên Colab T4 (2 lần, run `p1_pilot_colab_20261103_1519` và `_1528`, lưu ở Drive của Triệu). Kiểm A đạt; Kiểm C đạt (T4 tự khớp tuyệt đối 6 cách × 15/15); Kiểm B lệch A2000 do đổi GPU (lượt 1 lệch tối đa 1 khung). Notebook + hướng dẫn + báo cáo gửi Trí [reports/TRIEU_P1_COLAB_T4_20261103.md](reports/TRIEU_P1_COLAB_T4_20261103.md) đã sửa trong máy, chờ Triệu push. Chờ Trí (mục 4 của báo cáo): đồng ý T4 làm máy chuẩn và tiêu chí tái hiện mới; khóa tập dev 30 ảnh.
 
@@ -31,6 +33,18 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 04/11/2026 — Triệu: công cụ bảng đối chứng cho nhánh P (chưa chạy trên Colab)
+
+**Người thực hiện:** assistant viết code theo yêu cầu của Triệu ("làm hướng 1"). File mới: `experiments/countgdpp/p1_controls.py`, `evaluation/evaluate_research.py` (tên theo kế hoạch Trí §3.4). Notebook `colab_p1_verified_pseudo.ipynb` thêm Ô 12; `COLAB_P1_HUONG_DAN.md` thêm mục "Bảng đối chứng". Không sửa `p4_clip_score.py`, `p4_apply_freeze.py`, file freeze hay runner cũ.
+
+**Làm gì:** từ một lần chạy P1, lấy nguồn khung B0 (lượt 1), B2 và từng tau; CLIP chấm mọi khung bằng `p4_clip_score.py`; áp bộ lọc đã khóa 21/10 → mỗi nguồn X có X, X+S, X+F. Tên theo Trí §3.5: F = B2+F, S-only = B2+S, C6 = B0+F, P+F = tau+F. Evaluator tính MAE/RMSE chung, MAE có mặt, MeanAbsentCount, FPR_absent (§5.2), so cặp kèm bootstrap theo ảnh (5000, seed 331), tùy chọn xấp xỉ điểm-trong-khung MUCCA. Với khung B0/P, điểm CountGD++ của khung thay cho điểm B2 trong luật đã khóa (không khớp lại).
+
+**Đã kiểm (CPU, bản sao tạm ngoài repo, dùng số liệu A2000 đã lưu):** pilot: B2+S/B2+F khớp `p4_freeze_audit_20261021.json` ở 15/15 query (MAE 4.33/4.40), B0 19.40, B2 22.00. p4_unseen_v1: B0/B2/B2+S/B2+F khớp `p4_unseen_v1_eval_20261027/metrics.json` ở mọi chỉ số (có mặt, vắng mặt, chung, xấp xỉ điểm-trong-khung) và 2 khoảng tin cậy. `--check-inputs` của `p4_clip_score.py` nhận file nguồn (45 query, 1404 khung). Ô 12 chạy thử với CLIP giả lập đúng luồng chép file từ/về Drive. Trong các bài kiểm này CLIP của khung B0 là số giả, nên B0+F/B0+S ở đó không có ý nghĩa.
+
+**Chưa có:** chạy CLIP thật trên Colab; bảng đối chứng của lần chạy T4. Trên pilot, ngưỡng S/F được khớp trên chính 5 ảnh này nên F và S-only trông tốt hơn thực tế: chỉ để kiểm code, không kết luận.
+
+**Trạng thái:** Đã viết, chờ chạy. **Bước tiếp:** Triệu push, mở notebook từ GitHub, chạy Ô 1–5 rồi Ô 12 (T4, vài phút), gửi phần in ra.
 
 ## 03/11/2026 — Triệu: chạy pilot P1 trên Colab T4, kiểm tái hiện
 
