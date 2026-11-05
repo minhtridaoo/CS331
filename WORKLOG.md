@@ -40,6 +40,26 @@ Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
 
+## 05/11/2026 (khuya, sau) — kiểm lại các phần Triệu trước khi duyệt
+
+**Yêu cầu của Trí:** double-check các phần Trí đã đồng ý duyệt.
+
+**Đã kiểm** ([reports/KIEM_LAI_TRUOC_DUYET_20261105.md](reports/KIEM_LAI_TRUOC_DUYET_20261105.md)):
+- Đọc toàn bộ code P1 (`run_b2_verified_pseudo.py`, `pseudo_clip_verifier.py`): đúng thiết kế, không đọc GT.
+- `p1_controls.py`: dùng ngưỡng đã khóa; D2 chưa có.
+- `select_dev_test_v2.py --stats` trên MUCCA local ra 185/19/90, khớp báo cáo.
+- V4 tính tay khớp (19.50/18.14, 20.79, 21.07).
+- V6 xem crop u06_2: nhãn đúng.
+
+**Kết luận:** duyệt được, giữ nguyên quyết định 05/11.
+
+**Lưu ý:**
+- `evaluate_research.py` dừng khi gặp GT `uncertain`; đã dặn Triệu ở W4, assistant sửa trước 09/11.
+- Nhãn tầng A chưa nhất quán giữa wrong_class và multi_object; không đổi kết luận 1/12.
+- Output pilot P1 ở Drive, chờ W2.
+
+**Git:** commit + push để Triệu thấy lưu ý W4 trước khi làm.
+
 ## 05/11/2026 (khuya) — Trí chốt D1–D10, giao việc đợt 2 cho Triệu
 
 **Yêu cầu của Trí:** hôm nay chưa làm được, nên plan việc cho Triệu; việc gì Triệu cần Trí duyệt thì "oki luôn" để Triệu làm tiếp. Từ 06/11 Trí làm tiếp.
