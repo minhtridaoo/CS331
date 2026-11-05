@@ -2,6 +2,8 @@
 
 **Cập nhật 05/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (05/11 chiều, Triệu):** W1 xong: đã rút tập dev/test v2 **một lần** ở `experiments/countgdpp/dev_test_v2/` (dev 20 ảnh/60 query, test 40 ảnh/120 query, `DRAFT_NOT_LOCKED`); assistant kiểm đạt (mục 05/11 chiều bên dưới), chờ Triệu commit. Tiếp: Trí kiểm absent/GT 20 ảnh dev (07–08/11); Triệu làm W3 rồi W4 kiểm 40 ảnh test (hạn 08/11); W5 khóa sau khi cả hai tập đã kiểm.
+
 **Điểm tiếp tục (05/11, nhận bài nộp):** đã pull 71264bd; V4/V6 và P1/code/báo cáo đã nhận. Trí đọc báo cáo T4 mục 4/6 và đề xuất dữ liệu v2 mục 4; nhận output gốc trên Drive để đối chiếu rồi nghiệm thu, không giao lại V4/V6 từ đầu. V7 chưa được xác nhận trong lượt này.
 
 **Điểm tiếp tục (05/11, Triệu):** Kết quả P1 pilot trên T4 (2 lần chạy + 3 thư mục bảng đối chứng) đã có trong repo ở `results/countgdpp/p1_pilot_colab_20261103_*` (không có `.npz`/ảnh theo D10), chờ Triệu commit. Vẫn chờ Trí trả lời 2 báo cáo (đầu `HANDOFF/HANDOFF.md`).
@@ -41,6 +43,36 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 05/11/2026 (chiều) — Triệu: W1 rút tập dev/test v2 (DRAFT, chưa khóa)
+
+*Mục này do assistant soạn theo yêu cầu của Triệu.*
+
+**Người thực hiện:** Triệu chạy lệnh trên máy (Python `ai_new` 3.10, MUCCA 1.0 ở `C:/Users/diosodumb/Downloads/MUCCA_1.0`); assistant kiểm thư mục output (chỉ đọc).
+
+**Lệnh đã chạy** (trong `C:\Users\diosodumb\Documents\CS331`, đúng [GIAO_VIEC_TRIEU_20261106.md](HANDOFF/GIAO_VIEC_TRIEU_20261106.md) §2, chỉ thêm `--mucca` vì repo không có `data_external/`):
+1. `select_dev_test_v2.py --stats --mucca C:/Users/diosodumb/Downloads/MUCCA_1.0`: còn 185 ảnh chưa dùng (đã loại 15 ảnh pilot + `p4_unseen_v1`); với 3–40 điểm có 19 ảnh khác hẳn, 90 ảnh dễ nhầm. Khớp báo cáo 04/11.
+2. `select_dev_test_v2.py --n-dev 20 --n-test 40 --mucca C:/Users/diosodumb/Downloads/MUCCA_1.0 --out experiments/countgdpp/dev_test_v2`. **Rút một lần, không rút lại.**
+
+**Output:** `experiments/countgdpp/dev_test_v2/`: `dev/inputs.jsonl`, `dev/manifest.csv`, `test/inputs.jsonl`, `test/manifest.csv`, `absent_candidates.csv`, `selection_meta.json` (status `DRAFT_NOT_LOCKED`, seed 331).
+
+| tập | ảnh | query | khác hẳn + dễ nhầm | absent loại khó | GT có mặt: trung vị / max / tổng điểm |
+|---|---:|---:|---|---:|---|
+| dev | 20 | 60 | 6 + 14 | 15/20 | 10 / 34 / 516 |
+| test | 40 | 120 | 13 + 27 | 29/40 | 9 / 38 / 981 |
+
+**Assistant đã kiểm** (script tạm ngoài repo, chỉ đọc; tất cả đạt):
+- Đúng 6 file, chỉ xuống dòng LF. Tham số trong `selection_meta.json` đúng D3–D7: seed 331, 20 + 40, 3–40 điểm, không `--easy-absent`. `rule_script_sha256` bằng hash script trên đĩa và bản đã commit.
+- 60 ảnh không lặp, dev và test không trùng nhau, không dùng 5 ảnh pilot và 10 ảnh `p4_unseen_v1` (LOCKED). Lấy đủ 19 ảnh khác hẳn. `image_sha256` khớp ảnh MUCCA trên máy.
+- `inputs.jsonl` không có GT và khớp từng dòng với `manifest.csv`; header manifest đúng `FIELDS` của evaluator.
+- Mỗi ảnh có 2 query có mặt (GT = số điểm MUCCA, trong 3–40) và 1 query vắng mặt (`gt_count` 0). Lớp vắng mặt và 5 lớp dự phòng đều không có nhãn trong ảnh.
+- `absent_candidates.csv`: 60 dòng khớp manifest, tất cả `PENDING`, chưa ai ký.
+
+**Chưa làm:** chưa kiểm bằng mắt (đó là W4 của Triệu và phần kiểm dev của Trí). Không rút lần hai để thử tính tất định (đã thử ở bản rút thử 04/11).
+
+**Thêm:** dòng `/experiments/countgdpp/dev_test_v2/** -text` trong `.gitattributes` (giống `p4_unseen_v1/**`), để Git không đổi xuống dòng khi checkout trên Windows. Nhờ vậy hash khi khóa ở W5 và `manifest_sha256` của evaluator giống nhau giữa Windows và Colab. Khi điền `absent_candidates.csv` thì sửa bằng VS Code (giữ LF), không dùng Excel.
+
+**Trạng thái:** Chờ kiểm (DRAFT, chưa khóa). **Bước tiếp:** Triệu commit + push; Trí kiểm absent/GT 20 ảnh dev (07–08/11); Triệu làm W3, rồi W4 kiểm 40 ảnh test (hạn 08/11); W5 khóa sau khi cả hai tập đã kiểm.
 
 ## 05/11/2026 — Triệu: đưa kết quả P1 pilot từ Drive vào repo
 

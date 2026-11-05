@@ -3,6 +3,7 @@
 
 # Preserve exact bytes for frozen data, predictions and hashed adapters.
 /experiments/countgdpp/p4_unseen_v1/** -text
+/experiments/countgdpp/dev_test_v2/** -text
 /results/countgdpp/** -text
 /experiments/countgdpp/run_b2_frozen.py -text
 /experiments/countgdpp/p4_*.py -text

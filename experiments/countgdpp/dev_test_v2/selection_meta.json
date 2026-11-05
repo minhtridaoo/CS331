@@ -1,0 +1,479 @@
+{
+  "status": "DRAFT_NOT_LOCKED",
+  "rule": "v2_draft_distinct_all_plus_confusable_round_robin",
+  "rule_script_sha256": "f751f0b3b103dc9ab4b8a6920df3066a1e936093485739a659d6558d22af5299",
+  "mucca_zip_md5": "b182e445445dad017493ffb35803f816",
+  "mucca_file_sha256": {
+    "annotations.json": "95d9908c367d43184fb1bda392b173107793f90b4595ba74e7e61c3cdbf2eb3f",
+    "class_mapping.json": "4a9daeaef21b27e13db42c986a397fb97035f886d0094ea55bc409be1a9b355d"
+  },
+  "seed": 331,
+  "n_dev": 20,
+  "n_test": 40,
+  "min_points": 3,
+  "max_points": 40,
+  "easy_absent": false,
+  "excluded": {
+    "pilot": [
+      "mcac_100",
+      "mcac_11",
+      "mcac_20",
+      "mcac_200",
+      "mcac_27"
+    ],
+    "p4_unseen_v1": [
+      "mcac_109",
+      "mcac_110",
+      "mcac_121",
+      "mcac_123",
+      "mcac_227",
+      "mcac_61",
+      "mcac_63",
+      "mcac_72",
+      "mcac_84",
+      "mcac_88"
+    ]
+  },
+  "eligible": {
+    "distinct": [
+      "mcac_60",
+      "mcac_75",
+      "mcac_76",
+      "mcac_79",
+      "mcac_83",
+      "mcac_85",
+      "mcac_87",
+      "mcac_89",
+      "mcac_93",
+      "mcac_95",
+      "mcac_96",
+      "mcac_111",
+      "mcac_119",
+      "mcac_120",
+      "mcac_122",
+      "mcac_124",
+      "mcac_191",
+      "mcac_222",
+      "mcac_224"
+    ],
+    "confusable": {
+      "animal": [
+        "mcac_113",
+        "mcac_115",
+        "mcac_116",
+        "mcac_118",
+        "mcac_168",
+        "mcac_171"
+      ],
+      "building": [
+        "mcac_128",
+        "mcac_129",
+        "mcac_130",
+        "mcac_131",
+        "mcac_132",
+        "mcac_135",
+        "mcac_136",
+        "mcac_138"
+      ],
+      "fruit": [
+        "mcac_19",
+        "mcac_21",
+        "mcac_23",
+        "mcac_25",
+        "mcac_26",
+        "mcac_28",
+        "mcac_29",
+        "mcac_30",
+        "mcac_31",
+        "mcac_33",
+        "mcac_37",
+        "mcac_38",
+        "mcac_39",
+        "mcac_40",
+        "mcac_41",
+        "mcac_42",
+        "mcac_43",
+        "mcac_44",
+        "mcac_45",
+        "mcac_46",
+        "mcac_48",
+        "mcac_56",
+        "mcac_228",
+        "mcac_229"
+      ],
+      "furniture": [
+        "mcac_142",
+        "mcac_143",
+        "mcac_144",
+        "mcac_145",
+        "mcac_146",
+        "mcac_147"
+      ],
+      "locks": [
+        "mcac_151",
+        "mcac_152",
+        "mcac_153",
+        "mcac_154",
+        "mcac_156",
+        "mcac_157",
+        "mcac_159",
+        "mcac_160",
+        "mcac_163",
+        "mcac_164"
+      ],
+      "music": [
+        "mcac_99",
+        "mcac_102",
+        "mcac_103",
+        "mcac_104",
+        "mcac_218"
+      ],
+      "smoking": [
+        "mcac_148"
+      ],
+      "stationery": [
+        "mcac_201",
+        "mcac_204",
+        "mcac_206"
+      ],
+      "tableware": [
+        "mcac_1",
+        "mcac_4",
+        "mcac_6",
+        "mcac_7",
+        "mcac_8",
+        "mcac_9",
+        "mcac_10",
+        "mcac_12",
+        "mcac_13",
+        "mcac_14",
+        "mcac_15",
+        "mcac_16",
+        "mcac_17",
+        "mcac_18",
+        "mcac_210",
+        "mcac_211",
+        "mcac_212",
+        "mcac_213",
+        "mcac_214"
+      ],
+      "vehicle": [
+        "mcac_74",
+        "mcac_86",
+        "mcac_173",
+        "mcac_176",
+        "mcac_178",
+        "mcac_190",
+        "mcac_194",
+        "mcac_197"
+      ]
+    }
+  },
+  "strata": {
+    "confusable:animal": [
+      "mcac_113",
+      "mcac_116",
+      "mcac_168",
+      "mcac_171"
+    ],
+    "confusable:building": [
+      "mcac_130",
+      "mcac_131",
+      "mcac_135",
+      "mcac_136"
+    ],
+    "confusable:fruit": [
+      "mcac_19",
+      "mcac_25",
+      "mcac_39",
+      "mcac_43",
+      "mcac_228"
+    ],
+    "confusable:furniture": [
+      "mcac_142",
+      "mcac_143",
+      "mcac_145",
+      "mcac_146",
+      "mcac_147"
+    ],
+    "confusable:locks": [
+      "mcac_151",
+      "mcac_152",
+      "mcac_159",
+      "mcac_160",
+      "mcac_164"
+    ],
+    "confusable:music": [
+      "mcac_99",
+      "mcac_103",
+      "mcac_104",
+      "mcac_218"
+    ],
+    "confusable:smoking": [
+      "mcac_148"
+    ],
+    "confusable:stationery": [
+      "mcac_201",
+      "mcac_204",
+      "mcac_206"
+    ],
+    "confusable:tableware": [
+      "mcac_9",
+      "mcac_12",
+      "mcac_14",
+      "mcac_15",
+      "mcac_212"
+    ],
+    "confusable:vehicle": [
+      "mcac_86",
+      "mcac_173",
+      "mcac_178",
+      "mcac_190",
+      "mcac_197"
+    ],
+    "distinct:animal-person": [
+      "mcac_119",
+      "mcac_120",
+      "mcac_122",
+      "mcac_124"
+    ],
+    "distinct:beach-furniture": [
+      "mcac_60"
+    ],
+    "distinct:music-person": [
+      "mcac_111"
+    ],
+    "distinct:person-vehicle": [
+      "mcac_75",
+      "mcac_76",
+      "mcac_79",
+      "mcac_83",
+      "mcac_85",
+      "mcac_87",
+      "mcac_89",
+      "mcac_93",
+      "mcac_95",
+      "mcac_96",
+      "mcac_191",
+      "mcac_222",
+      "mcac_224"
+    ]
+  },
+  "dev_quota": {
+    "distinct:beach-furniture": 1,
+    "distinct:person-vehicle": 4,
+    "distinct:music-person": 0,
+    "distinct:animal-person": 1,
+    "confusable:music": 1,
+    "confusable:building": 1,
+    "confusable:furniture": 2,
+    "confusable:tableware": 2,
+    "confusable:animal": 1,
+    "confusable:locks": 2,
+    "confusable:stationery": 1,
+    "confusable:smoking": 0,
+    "confusable:vehicle": 2,
+    "confusable:fruit": 2
+  },
+  "dev": [
+    "mcac_9",
+    "mcac_43",
+    "mcac_60",
+    "mcac_79",
+    "mcac_85",
+    "mcac_96",
+    "mcac_99",
+    "mcac_116",
+    "mcac_119",
+    "mcac_130",
+    "mcac_145",
+    "mcac_146",
+    "mcac_152",
+    "mcac_164",
+    "mcac_190",
+    "mcac_191",
+    "mcac_197",
+    "mcac_206",
+    "mcac_212",
+    "mcac_228"
+  ],
+  "test": [
+    "mcac_12",
+    "mcac_14",
+    "mcac_15",
+    "mcac_19",
+    "mcac_25",
+    "mcac_39",
+    "mcac_75",
+    "mcac_76",
+    "mcac_83",
+    "mcac_86",
+    "mcac_87",
+    "mcac_89",
+    "mcac_93",
+    "mcac_95",
+    "mcac_103",
+    "mcac_104",
+    "mcac_111",
+    "mcac_113",
+    "mcac_120",
+    "mcac_122",
+    "mcac_124",
+    "mcac_131",
+    "mcac_135",
+    "mcac_136",
+    "mcac_142",
+    "mcac_143",
+    "mcac_147",
+    "mcac_148",
+    "mcac_151",
+    "mcac_159",
+    "mcac_160",
+    "mcac_168",
+    "mcac_171",
+    "mcac_173",
+    "mcac_178",
+    "mcac_201",
+    "mcac_204",
+    "mcac_218",
+    "mcac_222",
+    "mcac_224"
+  ],
+  "super_categories": {
+    "tableware": [
+      "plates",
+      "bowls",
+      "cups",
+      "forks",
+      "glasses",
+      "knives",
+      "spoons"
+    ],
+    "furniture": [
+      "chairs",
+      "desks"
+    ],
+    "fruit": [
+      "cherries",
+      "raspberries",
+      "strawberries",
+      "blueberries",
+      "blackberries",
+      "red currants",
+      "grapes",
+      "lemons",
+      "apples",
+      "pears",
+      "bananas",
+      "oranges"
+    ],
+    "person": [
+      "people"
+    ],
+    "beach": [
+      "beach umbrellas"
+    ],
+    "vehicle": [
+      "cars",
+      "motorbikes",
+      "bicycles",
+      "trucks",
+      "boats"
+    ],
+    "music": [
+      "amplifiers",
+      "guitars"
+    ],
+    "animal": [
+      "cats",
+      "dogs",
+      "cows",
+      "sheeps",
+      "goats"
+    ],
+    "building": [
+      "balconies",
+      "windows"
+    ],
+    "smoking": [
+      "cigaretts",
+      "lighters"
+    ],
+    "locks": [
+      "keys",
+      "padlocks",
+      "key holders"
+    ],
+    "stationery": [
+      "pens",
+      "rulers",
+      "pencils"
+    ]
+  },
+  "prompt_fix": {
+    "sheeps": "sheep",
+    "cigaretts": "cigarettes"
+  },
+  "image_sha256": {
+    "mcac_60": "c98085b55a7e03ec527857590be316b957763f5bc9cecdc694e79d3dfcd7c90c",
+    "mcac_75": "fc28d9b3ae9caa24dd379e7911716cb8c773f9d5a74773a999be5bf0471578db",
+    "mcac_76": "a9bf86a18d93ae3300ff65a048c956595fc0e8710b017c5ebbd40e3b884e5c94",
+    "mcac_79": "3989feefd9a3bf53c9f1f0ba4a40b52f6535daa1a8850b627a8ed9f47dd23580",
+    "mcac_83": "0865717b394115a10a2ff2c75a21583c87459e333054396940573410762c534c",
+    "mcac_85": "82343b6ccbaab0c0236ad73cbfe1306610376a6d904886277eaa74b290232d49",
+    "mcac_87": "056a1329b8a6263882664c34a40a1c8ff15765b505eea2614cfff6374adb6f4b",
+    "mcac_89": "a4ca5bf23410238258853b1e37c6d1133ed2e290aa271f03b51b74cdbc6a0f09",
+    "mcac_93": "e64df23718a56a3d8904d858fe808d82ae83f27f2534948fe3547b7cb5443f56",
+    "mcac_95": "267e4200e2e250889b7333d14b82fab951dd3156f134771d91dae2dd342c75fa",
+    "mcac_96": "b3ffc41aa88d4aad5eecb2084fafc28c2da651003e994e711d7141e9b55aeac6",
+    "mcac_111": "fa01d858c621f20486757ace90b287d0ac789f1a4489c4fc71f4cb2250e965ed",
+    "mcac_119": "75b2e0b77f9efad83e2871ff007602dfa4f1488fd8d9d0b98069e4f5655c5355",
+    "mcac_120": "9ba3b26b39a04c6770b2adea3159e6f8945b0206fa90f93c26174296dfeb34cf",
+    "mcac_122": "fcf9d867cebc6007966afba31b9058387c9d995549046dffb6cc765c806a8848",
+    "mcac_124": "48281a1aaca5556f675c7206597cca40d4fce866d2d0e445bfbc2a24eb0b9041",
+    "mcac_191": "e48c4b2023ba73df3adb3ff329252b6447d1e3519a8fbf6adf187bdb4a07cb64",
+    "mcac_222": "a1eb1e87fcde7125abb0ccf1f99a9d400f81896eaa4dcbd665663d927003bd56",
+    "mcac_224": "d15812323cabd26fb0e75c1734cb99e816c6e9fa1db8408e9face4b6a5124948",
+    "mcac_99": "6220e3c47b306051f1ff65319ce1b555fec2a6f059885ec4e5f4b6a267a61e1a",
+    "mcac_136": "6c85101bc4eeabbe1025a023672f2cde82366fcf2a5f3850683d7c30cb25d0ef",
+    "mcac_143": "af27425a6df50ea0b786b614274057836d8463095103a97320f3348995135088",
+    "mcac_212": "08d8124e2d10a3a5c105282fda238563b46915f284a69a6108ca1dfc45611b28",
+    "mcac_171": "e8b8074fced57e6c3a62647447de6eb689fdbc91708e932019c036a3d8e5e5ec",
+    "mcac_159": "6711009509b10912facbb0097ad40d730b6763a26a1778acbe817a4bee7bc86e",
+    "mcac_206": "ff05be6fbd1836932882d1de60787215b89ced20cb26122b10448f3e65a8ac0d",
+    "mcac_148": "a7c19eca2026b69de67abee149aa7ef2671fc2572da12ff5d8c51d8ccc420ded",
+    "mcac_197": "9b14982e6afaefac7239d6a2f9ff65a0142cb77e9085a5a50ad6a3695c428156",
+    "mcac_43": "c5ade1993ead9e1ea2f43b1f66befb8a605f5f415cc6d19b3be5eca0bf1e022f",
+    "mcac_15": "2493cd5da3d27c626613a375205407f2ccc5a8af6f6a910c93132755749e34d9",
+    "mcac_19": "ba6e1badd4fc22b96559abc03b56a1fe5383918483b94f50fd331d138d2a5f02",
+    "mcac_116": "182f10df7c0615e93860ad79fc1bece130d79cb441f6d6bd1d195433435f9747",
+    "mcac_190": "0f6a395484ed216d1b9b27151c42495003609ade256df0ed581c4a76059b8c98",
+    "mcac_145": "323321fa661072f454667291cb399235c39037bdf5348b83bf88c2f2b64c8697",
+    "mcac_160": "4ac98c0b904e115e5c0b9c363ad0e443d6042895d7ca475bbc5f08cdc461a9f0",
+    "mcac_135": "fa8e72a2a16b63a657aec536f5d82b14f7762af422d9c320b987d79d736e2890",
+    "mcac_204": "d5d82fafe226c27d0016baef8b5238e70f012fbef220a86d048e555be323d18f",
+    "mcac_218": "f2a2b69e5c33424bacc8e082904fecaf94680027f3d1e965b8705eb9b3963af3",
+    "mcac_146": "3f7a080a814195c47cfdef8db2eed2c06108a348cd22b96e3e2f4b2806a1d1e5",
+    "mcac_201": "411467b3a3c277b5d912d577f6374e6bf6dc743cc87474eec999556d71abad29",
+    "mcac_104": "5f9fe3c6f80b2922fa71be731137501be4982b79437a698c30bca40cbc462206",
+    "mcac_130": "c35eb85da3a889526059e413c6f8c9f9a0ec0ccc03a4f6848b6dd403b6e115b6",
+    "mcac_12": "dc5a7b36c52b6af338aa11086773e1edab576f63d953c8fe3fb0dca806fc8e6e",
+    "mcac_151": "69b56ff6b1a56825a65bd0114a7ebde84828514aa57910e05ece050d243fc67a",
+    "mcac_168": "f4e71767295a69e4ee57b0cbc3cc8a44b238c0603be60a8f4e65a6de8b20f52c",
+    "mcac_86": "c891a500edb1835f17029b7c7287160c23569001d8ce87c019cc3b7dc039e3c5",
+    "mcac_25": "ccf6e01e794534d5ddee255331591b6515ee0a9d3d4971a2c38b5a786f5ca184",
+    "mcac_9": "cdeaaab7569202cfffd7770419754cc5e35950e0a6f6311a5c46a7c7e934b5ba",
+    "mcac_164": "f1c14427842fd3b4166eb57d1bc449c60ec91d52bd22a1c7bb32acf9cdafb926",
+    "mcac_142": "73d54c05110cf8fe1b8f457ad112600a8c8b6e277fadf9803198197834276b96",
+    "mcac_103": "6b429744070bdadc48e3394d86829857b75b2c14ffa2bf1fbcc97d13a420fa89",
+    "mcac_39": "03a8d5dde2cadd7dc1ffaaa432a7a4de0ce21069c3c3c9a21ab03639ad61f046",
+    "mcac_113": "e04a68f83e53d98dd1c42cb0008c18462b3f695c7724d45dec0d83981836a100",
+    "mcac_173": "a52b3359175401747b44b67bdf8124023755f4b71dd222fb792cbe65ce333870",
+    "mcac_131": "a802ab1f8647a54db239b70fc08a7ff263e9c4118059d3b8543496f34fc18d90",
+    "mcac_152": "96bba0c53762ee9a2f21013a54a6c98117dcda3649f1b33d7dfb973a42bcc44c",
+    "mcac_14": "907d0bff315ca82604f7a43b9e09fae73d882ee10d8644ec88ab6df51198eb74",
+    "mcac_178": "0bf8931fee53bd81376c2fcebea04c6e3bb8c84db7ddf1f0dce2a5607ce51b0c",
+    "mcac_147": "c937a244114527b5b9c741db966b2b48e387399aa25348f1ef8dbc6c65db9a15",
+    "mcac_228": "571124dda8485f8a6518b7d024995f73be2c480fedf51052720ecec6519bee0a"
+  }
+}

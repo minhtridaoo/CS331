@@ -1,5 +1,9 @@
 # Handoff CS331 — bắt đầu session mới tại đây
 
+> **MỚI NHẤT — 05/11 chiều (Triệu): W1 xong, tập dev/test v2 đã rút (DRAFT, chưa khóa).** Thư mục `experiments/countgdpp/dev_test_v2/`: dev 20 ảnh/60 query, test 40 ảnh/120 query, seed 331, đúng lệnh ở [GIAO_VIEC_TRIEU_20261106.md](GIAO_VIEC_TRIEU_20261106.md) §2. Assistant đã kiểm cấu trúc và nhãn so với MUCCA (đạt, chi tiết ở [WORKLOG](../WORKLOG.md) mục 05/11 chiều); chưa ai kiểm bằng mắt.
+> - **Trí (07–08/11):** kiểm absent/GT 20 ảnh dev: các dòng `split=dev` trong `experiments/countgdpp/dev_test_v2/absent_candidates.csv` và `dev/manifest.csv`. Sửa CSV bằng VS Code, không dùng Excel (`.gitattributes` đã thêm `-text` cho thư mục này để giữ hash).
+> - **Triệu:** W3, rồi W4 kiểm 40 ảnh test (hạn 08/11). W5 khóa sau khi cả hai tập đã kiểm.
+
 > **MỚI NHẤT — 04/11 (Triệu), Trí cần đọc và trả lời trong repo:** (1) [TRIEU_P1_COLAB_T4_20261103.md](../reports/TRIEU_P1_COLAB_T4_20261103.md) mục 4 (Colab T4 làm máy chuẩn, tiêu chí tái hiện mới, cách so, khi nào khóa dev) và mục 6 (cách làm C6: bộ lọc khóa trên điểm lượt 2 loại gần hết khung B0); (2) [TRIEU_DE_XUAT_QUY_TAC_DU_LIEU_V2_20261104.md](../reports/TRIEU_DE_XUAT_QUY_TAC_DU_LIEU_V2_20261104.md) mục 4 (5 câu về quy tắc rút dev/test v2; chưa rút ảnh). Pilot P1 đã chạy trên T4 (Kiểm A, Kiểm C đạt); công cụ bảng đối chứng F/P+F/C6/S-only đã chạy. Chi tiết: [WORKLOG](../WORKLOG.md) mục 03–04/11.
 
 > **Kiểm lại trước duyệt (05/11 khuya):** các phần của Triệu **duyệt được** ([chi tiết](../reports/KIEM_LAI_TRUOC_DUYET_20261105.md)). Code P1 đúng thiết kế, `--stats` khớp, V4 tính tay khớp. Lưu ý: `evaluate_research.py` chưa nhận GT `uncertain` (đã dặn Triệu ở W4; assistant sửa trước 09/11).

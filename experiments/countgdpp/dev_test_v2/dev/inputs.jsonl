@@ -1,0 +1,60 @@
+{"schema_version": 1, "image_id": "mcac_9", "query_id": "d01_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_9.jpg", "prompt": "plates"}
+{"schema_version": 1, "image_id": "mcac_9", "query_id": "d01_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_9.jpg", "prompt": "cups"}
+{"schema_version": 1, "image_id": "mcac_9", "query_id": "d01_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_9.jpg", "prompt": "forks"}
+{"schema_version": 1, "image_id": "mcac_43", "query_id": "d02_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_43.jpg", "prompt": "bananas"}
+{"schema_version": 1, "image_id": "mcac_43", "query_id": "d02_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_43.jpg", "prompt": "oranges"}
+{"schema_version": 1, "image_id": "mcac_43", "query_id": "d02_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_43.jpg", "prompt": "pears"}
+{"schema_version": 1, "image_id": "mcac_60", "query_id": "d03_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_60.jpg", "prompt": "chairs"}
+{"schema_version": 1, "image_id": "mcac_60", "query_id": "d03_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_60.jpg", "prompt": "beach umbrellas"}
+{"schema_version": 1, "image_id": "mcac_60", "query_id": "d03_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_60.jpg", "prompt": "cats"}
+{"schema_version": 1, "image_id": "mcac_79", "query_id": "d04_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_79.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_79", "query_id": "d04_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_79.jpg", "prompt": "cars"}
+{"schema_version": 1, "image_id": "mcac_79", "query_id": "d04_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_79.jpg", "prompt": "boats"}
+{"schema_version": 1, "image_id": "mcac_85", "query_id": "d05_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_85.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_85", "query_id": "d05_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_85.jpg", "prompt": "motorbikes"}
+{"schema_version": 1, "image_id": "mcac_85", "query_id": "d05_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_85.jpg", "prompt": "boats"}
+{"schema_version": 1, "image_id": "mcac_96", "query_id": "d06_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_96.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_96", "query_id": "d06_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_96.jpg", "prompt": "motorbikes"}
+{"schema_version": 1, "image_id": "mcac_96", "query_id": "d06_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_96.jpg", "prompt": "cars"}
+{"schema_version": 1, "image_id": "mcac_99", "query_id": "d07_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_99.jpg", "prompt": "amplifiers"}
+{"schema_version": 1, "image_id": "mcac_99", "query_id": "d07_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_99.jpg", "prompt": "guitars"}
+{"schema_version": 1, "image_id": "mcac_99", "query_id": "d07_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_99.jpg", "prompt": "key holders"}
+{"schema_version": 1, "image_id": "mcac_116", "query_id": "d08_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_116.jpg", "prompt": "cats"}
+{"schema_version": 1, "image_id": "mcac_116", "query_id": "d08_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_116.jpg", "prompt": "dogs"}
+{"schema_version": 1, "image_id": "mcac_116", "query_id": "d08_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_116.jpg", "prompt": "goats"}
+{"schema_version": 1, "image_id": "mcac_119", "query_id": "d09_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_119.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_119", "query_id": "d09_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_119.jpg", "prompt": "dogs"}
+{"schema_version": 1, "image_id": "mcac_119", "query_id": "d09_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_119.jpg", "prompt": "cows"}
+{"schema_version": 1, "image_id": "mcac_130", "query_id": "d10_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_130.jpg", "prompt": "balconies"}
+{"schema_version": 1, "image_id": "mcac_130", "query_id": "d10_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_130.jpg", "prompt": "windows"}
+{"schema_version": 1, "image_id": "mcac_130", "query_id": "d10_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_130.jpg", "prompt": "grapes"}
+{"schema_version": 1, "image_id": "mcac_145", "query_id": "d11_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_145.jpg", "prompt": "chairs"}
+{"schema_version": 1, "image_id": "mcac_145", "query_id": "d11_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_145.jpg", "prompt": "desks"}
+{"schema_version": 1, "image_id": "mcac_145", "query_id": "d11_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_145.jpg", "prompt": "lemons"}
+{"schema_version": 1, "image_id": "mcac_146", "query_id": "d12_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_146.jpg", "prompt": "chairs"}
+{"schema_version": 1, "image_id": "mcac_146", "query_id": "d12_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_146.jpg", "prompt": "desks"}
+{"schema_version": 1, "image_id": "mcac_146", "query_id": "d12_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_146.jpg", "prompt": "pencils"}
+{"schema_version": 1, "image_id": "mcac_152", "query_id": "d13_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_152.jpg", "prompt": "keys"}
+{"schema_version": 1, "image_id": "mcac_152", "query_id": "d13_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_152.jpg", "prompt": "padlocks"}
+{"schema_version": 1, "image_id": "mcac_152", "query_id": "d13_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_152.jpg", "prompt": "key holders"}
+{"schema_version": 1, "image_id": "mcac_164", "query_id": "d14_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_164.jpg", "prompt": "keys"}
+{"schema_version": 1, "image_id": "mcac_164", "query_id": "d14_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_164.jpg", "prompt": "key holders"}
+{"schema_version": 1, "image_id": "mcac_164", "query_id": "d14_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_164.jpg", "prompt": "padlocks"}
+{"schema_version": 1, "image_id": "mcac_190", "query_id": "d15_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_190.jpg", "prompt": "cars"}
+{"schema_version": 1, "image_id": "mcac_190", "query_id": "d15_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_190.jpg", "prompt": "trucks"}
+{"schema_version": 1, "image_id": "mcac_190", "query_id": "d15_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_190.jpg", "prompt": "boats"}
+{"schema_version": 1, "image_id": "mcac_191", "query_id": "d16_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_191.jpg", "prompt": "people"}
+{"schema_version": 1, "image_id": "mcac_191", "query_id": "d16_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_191.jpg", "prompt": "trucks"}
+{"schema_version": 1, "image_id": "mcac_191", "query_id": "d16_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_191.jpg", "prompt": "boats"}
+{"schema_version": 1, "image_id": "mcac_197", "query_id": "d17_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_197.jpg", "prompt": "cars"}
+{"schema_version": 1, "image_id": "mcac_197", "query_id": "d17_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_197.jpg", "prompt": "trucks"}
+{"schema_version": 1, "image_id": "mcac_197", "query_id": "d17_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_197.jpg", "prompt": "boats"}
+{"schema_version": 1, "image_id": "mcac_206", "query_id": "d18_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_206.jpg", "prompt": "rulers"}
+{"schema_version": 1, "image_id": "mcac_206", "query_id": "d18_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_206.jpg", "prompt": "pencils"}
+{"schema_version": 1, "image_id": "mcac_206", "query_id": "d18_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_206.jpg", "prompt": "pens"}
+{"schema_version": 1, "image_id": "mcac_212", "query_id": "d19_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_212.jpg", "prompt": "forks"}
+{"schema_version": 1, "image_id": "mcac_212", "query_id": "d19_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_212.jpg", "prompt": "knives"}
+{"schema_version": 1, "image_id": "mcac_212", "query_id": "d19_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_212.jpg", "prompt": "plates"}
+{"schema_version": 1, "image_id": "mcac_228", "query_id": "d20_1", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_228.jpg", "prompt": "lemons"}
+{"schema_version": 1, "image_id": "mcac_228", "query_id": "d20_2", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_228.jpg", "prompt": "apples"}
+{"schema_version": 1, "image_id": "mcac_228", "query_id": "d20_3", "image_path": "data_external/mucca_zenodo_19231375/MUCCA_1.0/images/mcac_228.jpg", "prompt": "red currants"}
