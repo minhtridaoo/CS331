@@ -18,6 +18,9 @@
 | **W2** | Đưa output P1 pilot từ Drive vào repo: `predictions_*.jsonl`, `run_config.json`, bảng đối chứng (`_controls_eval`) của run `p1_pilot_colab_20261103_1519` và `_1528`. **Không** đưa `.npz` hay ảnh | 15 phút | 06/11 | Có: để assistant kiểm độc lập |
 | W3 | Ghi xác nhận duyệt pilot (V7) của Triệu vào PILOT_SUMMARY §7 (Trí đã đồng ý ngày 05/11) | 10 phút | 06/11 | Không |
 | **W4** | **Kiểm absent/GT tập test 40 ảnh** theo `HUONG_DAN_KIEM_DU_LIEU.md` (Trí kiểm tập dev 20 ảnh) | khoảng 2 giờ | **08/11** | **Có**: chưa khóa thì chưa chạy được |
+
+> **Lưu ý W4 (thêm 05/11 khuya, xem [kiểm lại](../reports/KIEM_LAI_TRUOC_DUYET_20261105.md)):** `evaluate_research.py` chưa nhận GT `uncertain`. Nếu lớp absent nhìn thấy trong ảnh thì **đổi sang lớp dự phòng kế tiếp**, ghi lý do, **không** ghi `uncertain`. GT có mặt mà nghi ngờ thì ghi vào `uncertainty_note`, giữ số điểm MUCCA.
+
 | W5 | Khi cả dev lẫn test đã kiểm xong: khóa (`status=LOCKED`, người/ngày, hash) | 10 phút | 08/11 | Có |
 | **W6** | **Chạy trên T4 với tập dev** (lệnh ở §3). **Không chạy test** | khoảng 2–3 giờ GPU | **10/11** | Có |
 | W7 | Bắt đầu viết Related Work (CountGD++, PseCo, DAVE, PrACo++/MUCCA, VA-Count) | khoảng 2 giờ | 20/11 | Không |
@@ -51,6 +54,7 @@ run_b2_verified_pseudo.py --inputs experiments/countgdpp/dev_test_v2/dev/inputs.
 | Ai | Việc | Hạn |
 |---|---|---|
 | Trí | Kiểm absent/GT tập **dev 20 ảnh** (khoảng 1 giờ) | 07–08/11 |
+| Assistant | Thêm xử lý GT `uncertain` vào `evaluate_research.py` (giống evaluator pilot) | 09/11 |
 | Assistant | Viết công cụ ngoại tuyến cho: (a) biến thể **T** (chấm lượt 2 chỉ bằng token chữ); (b) **chọn lại ngưỡng S/F riêng từng nguồn** trên dev; (c) chấm theo luật D9. Kiểm trên raw pilot | 09/11 |
 | Assistant | Kiểm độc lập output P1 pilot (W2) và kết quả dev (W6) | sau W2, W6 |
 

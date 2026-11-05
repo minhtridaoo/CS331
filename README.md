@@ -1,5 +1,7 @@
 # CS331 — mở trang này để làm tiếp
 
+> **Kiểm lại trước duyệt (05/11 khuya):** các phần của Triệu **duyệt được** ([chi tiết](reports/KIEM_LAI_TRUOC_DUYET_20261105.md)). Code P1 đúng thiết kế, `--stats` khớp, V4 tính tay khớp. Lưu ý: `evaluate_research.py` chưa nhận GT `uncertain` (đã dặn Triệu ở W4; assistant sửa trước 09/11).
+
 > **MỚI NHẤT — 05/11 tối: ĐÃ CHỐT D1–D10** (Trí đồng ý toàn bộ khuyến nghị qua chat; nghiệm thu V3–V6; đồng ý duyệt pilot, chờ Triệu ghi xác nhận).
 > - **Triệu làm tiếp, không cần chờ Trí:** [HANDOFF/GIAO_VIEC_TRIEU_20261106.md](HANDOFF/GIAO_VIEC_TRIEU_20261106.md). Gồm W1 rút dữ liệu dev 20 + test 40 (06/11); W2 đưa output P1 vào repo; W3 ghi duyệt pilot; W4 kiểm test 40 ảnh; W5 khóa (08/11); W6 chạy dev trên T4 (10/11).
 > - **Trí 07–08/11:** kiểm absent/GT tập dev 20 ảnh (khoảng 1 giờ), sau khi Triệu rút xong W1. **Assistant (khi Trí mở phiên):** viết công cụ ngoại tuyến cho T, chọn lại ngưỡng S/F riêng từng nguồn, chấm theo luật D9 (trước 09/11).
