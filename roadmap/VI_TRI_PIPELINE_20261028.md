@@ -15,7 +15,7 @@
           ▼
 [5] N4 review khung ✅ tầng A xong 29/10 (Triệu; tầng B còn lại, hạn 02/11)
           ▼
-[6] Chọn nhánh cải tiến v2 ◀── BẠN ĐANG Ở ĐÂY (họp 03/11; thêm biến thể T theo RA_SOAT §3): đề xuất P (bằng chứng ở reports/N4_KET_QUA_TANG_A_20261029.md); Trí quyết
+[6] Chọn biến thể ✅ chốt D1–D10 ngày 05/11 → [7] dữ liệu v2 ◀── BẠN ĐANG Ở ĐÂY (Triệu rút 06/11): P1 đã code + pilot T4; Trí chốt D1–D10 ngày 06/11 (reports/KE_HOACH_TIEP_THEO_20261105.md): đề xuất P (bằng chứng ở reports/N4_KET_QUA_TANG_A_20261029.md); Trí quyết
           ▼
 [7] Tập dữ liệu mới: dev 20 + test 40 ảnh, kiểm absent/GT, khóa                   03–08/11
           ▼

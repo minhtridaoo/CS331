@@ -1,6 +1,8 @@
 # WORKLOG CS331 — nhật ký chung
 
-**Cập nhật 04/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+**Cập nhật 05/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
+
+**Điểm tiếp tục (05/11, nhận bài nộp):** đã pull 71264bd; V4/V6 và P1/code/báo cáo đã nhận. Trí đọc báo cáo T4 mục 4/6 và đề xuất dữ liệu v2 mục 4; nhận output gốc trên Drive để đối chiếu rồi nghiệm thu, không giao lại V4/V6 từ đầu. V7 chưa được xác nhận trong lượt này.
 
 **Điểm tiếp tục (04/11 khuya, Triệu):** Đã soạn quy tắc rút tập dev/test v2 + script `experiments/countgdpp/select_dev_test_v2.py`, đề xuất ở `reports/TRIEU_DE_XUAT_QUY_TAC_DU_LIEU_V2_20261104.md`. **Chưa rút ảnh thật.** Chờ Trí duyệt quy tắc và 5 câu ở mục 4 (cỡ 20+40 hay 30+50, khoảng điểm, cách lấy cặp dễ nhầm, thêm vắng mặt dễ, seed); sau đó Triệu rút, hai người kiểm nhãn rồi khóa.
 
@@ -37,6 +39,58 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 05/11/2026 (khuya) — Trí chốt D1–D10, giao việc đợt 2 cho Triệu
+
+**Yêu cầu của Trí:** hôm nay chưa làm được, nên plan việc cho Triệu; việc gì Triệu cần Trí duyệt thì "oki luôn" để Triệu làm tiếp. Từ 06/11 Trí làm tiếp.
+
+**Ghi nhận theo ủy quyền đó:**
+- D1–D10 chốt đúng như khuyến nghị (KE_HOACH_TIEP_THEO §3).
+- Trí nghiệm thu V3–V6 và đồng ý duyệt pilot (PILOT_SUMMARY §7). Phần xác nhận của Triệu còn chờ (W3).
+
+**Đã tạo:** [HANDOFF/GIAO_VIEC_TRIEU_20261106.md](HANDOFF/GIAO_VIEC_TRIEU_20261106.md):
+- W1 rút dữ liệu bằng lệnh mặc định (`--n-dev 20 --n-test 40`; mặc định trùng D3–D7);
+- W2 đưa output P1 vào repo; W3 ghi duyệt pilot;
+- W4 kiểm test 40; W5 khóa; W6 chạy dev trên T4 (lưới tau 0.18–0.28, M = 10, tùy chọn M = 5; T và chọn lại ngưỡng tính ngoại tuyến từ raw);
+- W7 Related Work.
+- Phân việc: Trí kiểm dev 20; assistant viết công cụ ngoại tuyến trước 09/11.
+
+**Git:** commit + push các file tiến độ để Triệu đọc được (theo yêu cầu để Triệu làm tiếp).
+
+## 05/11/2026 (tối) — kiểm nội dung bài nộp Triệu 02–04/11 và lập kế hoạch từ 06/11
+
+**Yêu cầu của Trí:** check bài Triệu vừa push và lên kế hoạch tối ưu từng bước; Trí bắt đầu làm từ 06/11.
+
+**Đã kiểm (chỉ đọc file, không chạy model):**
+- V4: hai ca thử cho số khớp V5.
+- V6: 58/58 dòng, tọa độ không đổi.
+- Ghép tầng B với `_KEY_`: Fusion giữ 26/26 và 14/14 khung đúng, lọc điểm giữ 13/14 và 9/9; mẫu tự chọn đúng 6/6; E3 11/11 là vật thật.
+- P1: có code; runner lưu `stage2_*_raw.npz`, nên biến thể T tính ngoại tuyến được.
+- Pilot T4: Kiểm A + C đạt, Kiểm B lệch nhẹ do khác GPU.
+- Đề xuất dữ liệu v2: script hợp lệ, chưa rút thật.
+- Output P1 nằm trên Drive, chưa vào repo.
+
+**Kết luận:** bộ lọc cuối chỉ giúp khi model đã đúng, và vẫn xóa nhầm vật đúng. Mẫu tự chọn sai đúng ở ca model nhầm. Đề xuất thử P không kèm lọc, T, P+T; C6 với ngưỡng chọn lại riêng từng nguồn; luật chọn cuối D9 chốt trước khi xem dev.
+
+**Output:** [reports/KE_HOACH_TIEP_THEO_20261105.md](reports/KE_HOACH_TIEP_THEO_20261105.md): bảng kiểm, 10 quyết định D1–D10 có khuyến nghị, lịch 06/11–02/12 chia việc 3 bên, phương án dự phòng.
+
+**Đồng bộ:** BAT_DAU, README, HANDOFF, HANDOFF_TRIEU, GIAO_VIEC (V4/V6 ✅), CHECKLIST, VI_TRI_PIPELINE. Không commit/push.
+
+**Bước tiếp theo:** 06/11 Trí chốt D1–D10 + duyệt V7 với Triệu.
+
+## 05/11/2026 — pull phần việc mới của Triệu
+
+**Yêu cầu:** Trí nhờ pull vì Triệu báo mới xong task. Trước pull, nhánh main sạch tại `3b7df25`; fetch thấy 9 commit mới. Chạy `git pull --ff-only origin main` thành công tới `71264bd04d6f56a318229f7ffc1de4286faac876`, 19 file; không xung đột, không cần stash hoặc ghép thay đổi local. `git ls-remote --heads origin main` khớp HEAD.
+
+**Đã nhận:** V4 (báo cáo 2 ca evaluator); V6 (6 CSV tầng B, báo cáo 58/58); app gán nhãn mở rộng; runner kiểm mẫu CLIP/P1 + notebook Colab; công cụ đối chứng + evaluator nghiên cứu; báo cáo chạy T4; đề xuất/script rút dev/test v2. Xem `reports/TRIEU_TU_KIEM_PHAN2_20261027.md` mục V4/V6, `reports/TRIEU_P1_COLAB_T4_20261103.md`, `reports/TRIEU_DE_XUAT_QUY_TAC_DU_LIEU_V2_20261104.md`.
+
+**Kiểm lượt này:** đọc thay đổi và báo cáo đã lưu; ba SHA256 input/manifest/absent của tập LOCKED đều khớp `selection_meta.json`; freeze giống trước pull. Không chạy code mới, evaluator, self-test, inference hoặc training; không kiểm độc lập lại 58 nhãn.
+
+**Giới hạn nghiệm thu:** báo cáo P1 cho biết các run `p1_pilot_colab_20261103_1519`, `_1528` và output bảng đối chứng đang ở Drive của Triệu, chưa vào repo. V4 lưu output ngoài repo. Vì vậy lượt này xác nhận đã nhận bài nộp, chưa xác nhận độc lập số liệu chạy, nguyên nhân lệch GPU/TF32 hay hiệu quả P1. Chưa có quyết định thay Trí về T4, C6, dữ liệu v2 hoặc duyệt chung V7. Theo báo cáo, chưa rút bộ dev/test thật.
+
+**Bước tiếp + người làm:** Trí xem báo cáo T4 mục 4/6 và đề xuất dữ liệu v2 mục 4; nhận output gốc từ Triệu để đối chiếu, nghiệm thu phần nộp và thống nhất nhãn N4 còn vướng. Sau khi chốt quy tắc mới rút/kiểm/khóa dữ liệu. Không cần làm lại V4/V6 từ đầu chỉ vì hướng dẫn 02/11 còn ghi chờ.
+
+**Tài liệu:** đồng bộ README, HANDOFF, ROADMAP, checklist/resume và BAT_DAU_SESSION_MOI; giữ toàn bộ mục WORKLOG cũ. Cập nhật tiến độ local chưa commit/push; lượt này chỉ có yêu cầu pull.
 
 ## 04/11/2026 — Triệu: soạn quy tắc và script rút tập dev/test v2 (chưa rút)
 
