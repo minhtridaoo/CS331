@@ -10,7 +10,7 @@
 
 ## Kết quả chạy trên Colab T4 (03/11/2026, commit 9606a59)
 
-Hai lần chạy pilot: `p1_pilot_colab_20261103_1519` và `p1_pilot_colab_20261103_1528`, lưu ở Drive `MyDrive/CS331_colab/` (chưa đưa vào repo). Bản gửi Trí kèm đề xuất cần quyết: [TRIEU_P1_COLAB_T4_20261103.md](../../reports/TRIEU_P1_COLAB_T4_20261103.md).
+Hai lần chạy pilot: `p1_pilot_colab_20261103_1519` và `p1_pilot_colab_20261103_1528`, lưu ở Drive `MyDrive/CS331_colab/`; từ 05/11 đã có trong repo ở `results/countgdpp/` (chỉ file nhỏ theo D10; raw `.npz` và ảnh ở Drive). Bản gửi Trí kèm đề xuất cần quyết: [TRIEU_P1_COLAB_T4_20261103.md](../../reports/TRIEU_P1_COLAB_T4_20261103.md).
 
 - **Môi trường (Ô 5):** Python 3.10.22, torch 2.5.1+cu121, transformers 4.44.2, numpy 2.2.6, pillow 10.4.0, Tesla T4.
 - **Kiểm A (Ô 8): đạt.** 663 khung, CLIP lệch lớn nhất 3.28e-07.

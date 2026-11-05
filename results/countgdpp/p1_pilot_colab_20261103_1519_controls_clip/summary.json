@@ -1,0 +1,632 @@
+[
+  {
+    "query_id": "B0__q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 45,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 29,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 23,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 17,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 17,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 44,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 84,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 20,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 10,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "B0__q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 21,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B0__q05_3_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 38,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 30,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 26,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 13,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 16,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 61,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 15,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "B2__q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 79,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/B2__q05_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 38,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 30,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 26,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 13,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 16,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 61,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 15,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p200__q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 79,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p200__q05_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 45,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 28,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 13,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 84,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 15,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p220__q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 79,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p220__q05_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 45,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 30,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 23,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 17,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 84,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 15,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p240__q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 79,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p240__q05_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 45,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 29,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 23,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 17,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 17,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 59,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 32,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 86,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 15,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p260__q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 82,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p260__q05_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q01_1",
+    "image_id": "mcac_100",
+    "n_boxes": 25,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q01_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q01_2",
+    "image_id": "mcac_100",
+    "n_boxes": 45,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q01_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q01_3",
+    "image_id": "mcac_100",
+    "n_boxes": 0,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q01_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q02_1",
+    "image_id": "mcac_11",
+    "n_boxes": 29,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q02_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q02_2",
+    "image_id": "mcac_11",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q02_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q02_3",
+    "image_id": "mcac_11",
+    "n_boxes": 23,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q02_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q03_1",
+    "image_id": "mcac_200",
+    "n_boxes": 17,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q03_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q03_2",
+    "image_id": "mcac_200",
+    "n_boxes": 18,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q03_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q03_3",
+    "image_id": "mcac_200",
+    "n_boxes": 17,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q03_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q04_1",
+    "image_id": "mcac_20",
+    "n_boxes": 56,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q04_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q04_2",
+    "image_id": "mcac_20",
+    "n_boxes": 31,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q04_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q04_3",
+    "image_id": "mcac_20",
+    "n_boxes": 84,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q04_3_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q05_1",
+    "image_id": "mcac_27",
+    "n_boxes": 22,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q05_1_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q05_2",
+    "image_id": "mcac_27",
+    "n_boxes": 14,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q05_2_clip_scores.json"
+  },
+  {
+    "query_id": "tau0p280__q05_3",
+    "image_id": "mcac_27",
+    "n_boxes": 80,
+    "output_file": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip/tau0p280__q05_3_clip_scores.json"
+  }
+]

@@ -2,6 +2,8 @@
 
 **Cập nhật 04/11/2026.** Ghi mỗi buổi tại đây; xem trạng thái tổng thể ở [ROADMAP](roadmap/ROADMAP.md). [Trang bắt đầu](README.md) · [Handoff](HANDOFF/HANDOFF.md).
 
+**Điểm tiếp tục (05/11, Triệu):** Kết quả P1 pilot trên T4 (2 lần chạy + 3 thư mục bảng đối chứng) đã có trong repo ở `results/countgdpp/p1_pilot_colab_20261103_*` (không có `.npz`/ảnh theo D10), chờ Triệu commit. Vẫn chờ Trí trả lời 2 báo cáo (đầu `HANDOFF/HANDOFF.md`).
+
 **Điểm tiếp tục (04/11 khuya, Triệu):** Đã soạn quy tắc rút tập dev/test v2 + script `experiments/countgdpp/select_dev_test_v2.py`, đề xuất ở `reports/TRIEU_DE_XUAT_QUY_TAC_DU_LIEU_V2_20261104.md`. **Chưa rút ảnh thật.** Chờ Trí duyệt quy tắc và 5 câu ở mục 4 (cỡ 20+40 hay 30+50, khoảng điểm, cách lấy cặp dễ nhầm, thêm vắng mặt dễ, seed); sau đó Triệu rút, hai người kiểm nhãn rồi khóa.
 
 **Điểm tiếp tục (04/11 tối, Triệu):** Ô 12 đã chạy trên Colab T4 cho run `p1_pilot_colab_20261103_1519` (output `_controls_clip`, `_controls`, `_controls_eval` trên Drive của Triệu). Công cụ chạy đủ; số pilot chỉ để kiểm code. Đã kiểm: tau 0.20 cùng số đếm với B2 nhưng CLIP đổi mẫu ở q01_2 và q03_3 (đính chính câu 03/11). Điểm mở: bộ lọc khóa trên điểm B2 loại gần hết khung B0, nên C6 = B0+F bị thiệt, cần Trí chọn cách làm C6 (báo cáo 03/11, mục 6).
@@ -37,6 +39,16 @@ Lỗi/điểm chưa rõ:
 Trạng thái: Chưa làm / Đang làm / Chờ kiểm / Đã xác nhận
 Bước tiếp theo + người làm:
 ```
+
+## 05/11/2026 — Triệu: đưa kết quả P1 pilot từ Drive vào repo
+
+**Người thực hiện:** Triệu tải 5 thư mục từ `MyDrive/CS331_colab/` (file `Downloads/cs331_colab.zip`, 23,3 MB, 433 mục); assistant giải nén vào thư mục tạm, kiểm rồi chép vào `results/countgdpp/`.
+
+**Đã chép:** `p1_pilot_colab_20261103_1519/` và `p1_pilot_colab_20261103_1528/` **chỉ file nhỏ** (`run_config.json`, 6 `predictions_*.jsonl`, `candidates.jsonl`; bỏ raw `.npz` và ảnh theo D10 của Trí, bản đủ ở Drive), `p1_pilot_colab_20261103_1519_controls/` (5 file), `_controls_clip/` (107 file), `_controls_eval/` (3 file). File trong repo giống từng byte với file trong zip.
+
+**Đã kiểm:** cả 2 lần chạy có status complete, 15 query, đủ raw và ảnh; `run_config.json` của `_controls` ghi đúng hash run_config và 6 file predictions của 1519, đúng hash run_config của `_clip`; `_controls_clip` có 105 file điểm; `_controls_eval` ghi đúng hash file đếm và file khung giữ. Lần 1528 so với 1519: predictions và candidates giống hệt trừ `run_id`, `overlay_path`, `stage1_ms`, `stage2_ms`; 46 file raw `.npz` và 105 ảnh giống từng byte (kiểm trên bản tải về; raw và ảnh của cả hai lần chạy chỉ để trên Drive). Chạy lại `evaluate_research.py` trên CPU từ `_controls` đã tải: `metrics.json` và `per_query.csv` giống bản Colab (chỉ khác kiểu xuống dòng của `metrics.json` khi ghi trên Windows).
+
+**Trạng thái:** Đã chép, chờ commit. **Bước tiếp:** Triệu commit + push; vẫn chờ Trí trả lời báo cáo 03/11 (mục 4, 6) và đề xuất dữ liệu v2 (mục 4).
 
 ## 04/11/2026 — Triệu: soạn quy tắc và script rút tập dev/test v2 (chưa rút)
 

@@ -1,0 +1,179 @@
+{
+  "status": "complete",
+  "variant": "P1",
+  "runner": "run_b2_verified_pseudo.py",
+  "scope": "P1 verified pseudo-exemplars; dev only until tau/M are locked",
+  "inputs": [
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "guitars"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "amplifiers"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_100",
+      "query_id": "q01_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_100.jpg",
+      "prompt": "chairs"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "plates"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "bowls"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_11",
+      "query_id": "q02_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_11.jpg",
+      "prompt": "cups"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "pens"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "rulers"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_200",
+      "query_id": "q03_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_200.jpg",
+      "prompt": "pencils"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "strawberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "blueberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_20",
+      "query_id": "q04_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_20.jpg",
+      "prompt": "red currants"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_1",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "cherries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_2",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "raspberries"
+    },
+    {
+      "schema_version": 1,
+      "image_id": "mcac_27",
+      "query_id": "q05_3",
+      "image_path": "workspace Trí and Triệu/Triệu/MUCCA_10_queries/MUCCA_10_queries/images/mcac_27.jpg",
+      "prompt": "blackberries"
+    }
+  ],
+  "checkpoint_sha256": "b89395d79711c9b9f13f3ef80cd2e528386fb1d70453f99443be4eccab33592f",
+  "source_sha256": "c6adbad84897f266d25ad6d1672ddea5ef52d1fcdd8f6ec54d94be04c8fa32e9",
+  "source_hash_eol": "CRLF-normalized before sha256",
+  "adapter_sha256": "95adcbdfed56330bc3467034a1975f16ec8b70cbee1d62b3e9cc942db2807dbc",
+  "verifier_sha256": "27ff080bcda50082350a02eff13107178df54b3ebb13254cb91c21812d3c6209",
+  "b2_adapter_sha256": "535b4484f259394ee43cc6f8f7b49498a818f0b86adcb92915b3a46479c49af5",
+  "input_sha256": "db53b66978d25d549ae4c442ec431c2ec4296658842fe9152aa444fd89184102",
+  "model_commit": "8489f836d75eb407ae778c56cff1f72cc6f8baae",
+  "tau_sample": 0.23,
+  "tau_final": 0.23,
+  "max_pseudo": 3,
+  "m": 10,
+  "tau_pseudo": [
+    0.2,
+    0.22,
+    0.24,
+    0.26,
+    0.28
+  ],
+  "outputs": {
+    "B2": "predictions_B2.jsonl",
+    "tau0.200": "predictions_tau0.200.jsonl",
+    "tau0.220": "predictions_tau0.220.jsonl",
+    "tau0.240": "predictions_tau0.240.jsonl",
+    "tau0.260": "predictions_tau0.260.jsonl",
+    "tau0.280": "predictions_tau0.280.jsonl"
+  },
+  "candidates": "select_pseudo rule with maximum=M; degenerate boxes kept in log with valid=false and never chosen",
+  "verifier": {
+    "model_id": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "template": "a photo of {prompt}",
+    "crop": "round+clamp, no padding (p4_clip_score.crop_box)"
+  },
+  "choose": "valid and clip_cosine >= tau, top 3 by CountGD score; none left -> stage 1 (B0), stage2_executed=false",
+  "rng": "seed 42 before stage 1; RNG state restored to end-of-stage-1 before every stage-2 forward",
+  "references": {
+    "B0": [
+      "results/countgdpp/m4_first5_b0/predictions.jsonl"
+    ],
+    "B2": [
+      "results/countgdpp/b2_two_images_20261015/predictions.jsonl",
+      "results/countgdpp/b2_remaining3_20261015/predictions.jsonl"
+    ]
+  },
+  "reference_mode": "report",
+  "uses_ground_truth": false,
+  "negative_prompts": false,
+  "synthetic": false,
+  "crop": false,
+  "seed": 42,
+  "resize": {
+    "short_side": 800,
+    "max_size": 1333
+  },
+  "device": "Tesla T4",
+  "torch_version": "2.5.1+cu121",
+  "transformers_version": "4.44.2",
+  "clip_resolved_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "allow_tf32": {
+    "matmul": false,
+    "cudnn": true
+  },
+  "python": "3.10.22 (main, Oct  9 2026, 15:21:30) [Clang 22.1.3 ]",
+  "executable": "/content/venv310/bin/python",
+  "completed_queries": 15
+}

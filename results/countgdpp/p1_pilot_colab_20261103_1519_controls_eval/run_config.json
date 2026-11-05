@@ -1,0 +1,17 @@
+{
+  "scorer": "evaluate_research.py",
+  "scorer_sha256": "9f5d7f3f7be66944e90e7c2aff527fbdd02f44f019fea7d4edcc764d0fc680e8",
+  "controls": "results/countgdpp/p1_pilot_colab_20261103_1519_controls",
+  "controls_counts_sha256": "44e38ef9eedeeab18797c7f5d3659e5e1a869498bc2ba55d1367e4e9e589d845",
+  "controls_kept_sha256": "2236727ae4d3b8c9eb72507d163c907533a732dbb28faadb57532d380dc5ba2f",
+  "manifest": "experiments/countgdpp/m4_inputs/manifest.csv",
+  "manifest_sha256": "1ed40bd838104cac5fb63df0aa4550c3a2b34c234ac65834cece22910369a7ad",
+  "annotations": null,
+  "bootstrap": {
+    "unit": "image",
+    "draws": 5000,
+    "seed": 331,
+    "ci": "2.5/97.5 percentile of paired mean |error| difference"
+  },
+  "note": "GT read only here. Proxy columns are an automatic point-in-box approximation, not the human review."
+}

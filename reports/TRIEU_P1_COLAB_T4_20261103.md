@@ -20,7 +20,7 @@ run_b2_verified_pseudo.py --inputs experiments/countgdpp/m4_inputs/first5_inputs
   --reference-mode report
 ```
 
-- Run ID: `p1_pilot_colab_20261103_1519` (lần 1), `p1_pilot_colab_20261103_1528` (lần 2). Output nằm trên Google Drive của Triệu (`MyDrive/CS331_colab/<run_id>/`), **chưa đưa vào repo** vì có nhiều file raw `.npz` và ảnh. Trí cần thì Triệu chia sẻ thư mục hoặc nhóm quyết đưa vào repo.
+- Run ID: `p1_pilot_colab_20261103_1519` (lần 1), `p1_pilot_colab_20261103_1528` (lần 2). Output nằm trên Google Drive của Triệu (`MyDrive/CS331_colab/<run_id>/`), **chưa đưa vào repo** vì có nhiều file raw `.npz` và ảnh. Trí cần thì Triệu chia sẻ thư mục hoặc nhóm quyết đưa vào repo. **Cập nhật 05/11:** đã đưa vào repo ở `results/countgdpp/p1_pilot_colab_20261103_1519/` và `results/countgdpp/p1_pilot_colab_20261103_1528/` (cả hai chỉ có file nhỏ theo D10; raw `.npz` và ảnh ở Drive, xem WORKLOG 05/11).
 - Môi trường: Python 3.10.22, torch 2.5.1+cu121, transformers 4.44.2, numpy 2.2.6, pillow 10.4.0 (giống máy Trí), GPU Tesla T4. Checkpoint và mã nguồn qua kiểm băm của audit 14/10.
 - Cách cài trên Colab (Python 3.10 riêng, CUDA 12.1, build CUDA ops) và các lỗi đã gặp: [COLAB_P1_HUONG_DAN.md](../experiments/countgdpp/COLAB_P1_HUONG_DAN.md).
 
@@ -72,7 +72,7 @@ Số đếm từng query có trong Ô 10 của notebook và `predictions_*.jsonl
 
 ## 6. Bổ sung 04/11: bảng đối chứng trên pilot và một câu hỏi về C6
 
-Ngày 04/11 Triệu chạy công cụ bảng đối chứng mới (`experiments/countgdpp/p1_controls.py` + `evaluation/evaluate_research.py`, Ô 12 của notebook) trên run `p1_pilot_colab_20261103_1519`. Cách làm và bài kiểm code: `experiments/countgdpp/COLAB_P1_HUONG_DAN.md`, mục "Bảng đối chứng". Output trên Drive của Triệu.
+Ngày 04/11 Triệu chạy công cụ bảng đối chứng mới (`experiments/countgdpp/p1_controls.py` + `evaluation/evaluate_research.py`, Ô 12 của notebook) trên run `p1_pilot_colab_20261103_1519`. Cách làm và bài kiểm code: `experiments/countgdpp/COLAB_P1_HUONG_DAN.md`, mục "Bảng đối chứng". Output (đưa vào repo 05/11): `results/countgdpp/p1_pilot_colab_20261103_1519_controls/`, `_controls_clip/`, `_controls_eval/`.
 
 | cách (tên kế hoạch §3.5) | MAE (15 query có mặt) |
 |---|---|

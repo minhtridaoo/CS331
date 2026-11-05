@@ -1,0 +1,53 @@
+{
+  "runner": "p1_controls.py",
+  "adapter_sha256": "8b03cbb562c78cb420b3619c1671dab364145a3cd88eab786b1f2c2c1e3763e2",
+  "clip_scorer_sha256": "c51666fab1ae354bac8b4a31b6b26ceae93fe1e8404a4672f5b9d54f841cd771",
+  "freeze_applier_sha256": "cf2784bb188527f4b8a06889167a2cc862be942fb26300c7b2293bf4033e8ef8",
+  "freeze": "results/countgdpp/p4_candidate_freeze_20261021.json",
+  "freeze_sha256": "3c4634e79d21d0c58bd7c0e3db0972c3a3eeff6d25996c716b4def1267def4da",
+  "frozen_values": {
+    "b2_threshold": 0.9067394733428955,
+    "fusion_threshold": 0.6551826746408328,
+    "bounds": {
+      "B2": [
+        0.2326723337173462,
+        0.9772246479988098
+      ],
+      "CLIP": [
+        0.1666240692138672,
+        0.3146958649158478
+      ]
+    }
+  },
+  "p1_run": "results/countgdpp/p1_pilot_colab_20261103_1519",
+  "p1_run_config_sha256": "80963b55f43b9d55415912bac3e024d829db1678afaaebb30c22e00adc918551",
+  "prediction_sha256": {
+    "predictions_B2.jsonl": "e4a5a14a4310d089d4446a5089cc28da585f6c34cf1bee89f9b4a3afb9a9c78c",
+    "predictions_tau0.200.jsonl": "a09d4570699d2d99c6d25a94de43e9e0cfc4c19f2f371a0a73a05c85e18ee8a1",
+    "predictions_tau0.220.jsonl": "cf45a3492ca6f1f4773ba154120b86b55e3e1beeeb093c6bf123b945ef526945",
+    "predictions_tau0.240.jsonl": "b4efa7bda9c0d7259dac86a0e6b71c5fecffa30776aeae9433b61f0e7952e7cd",
+    "predictions_tau0.260.jsonl": "b1ddcfb7c31070fc975ba8ac5cbb4a4196a8212f8ef625d487c80b53a3949e78",
+    "predictions_tau0.280.jsonl": "b6b368cae5e93ecaf3dabb7205e69c57428912c743e69856eb1866a2aceb033e"
+  },
+  "clip_scores": "results/countgdpp/p1_pilot_colab_20261103_1519_controls_clip",
+  "clip_run_config_sha256": "c37d0f863307d77863482536156ec7816143ab3278715208f751e5c12129ee3c",
+  "sources": [
+    "B0",
+    "B2",
+    "tau0.200",
+    "tau0.220",
+    "tau0.240",
+    "tau0.260",
+    "tau0.280"
+  ],
+  "methods": "per source X: X (all boxes), X+S (score >= b2_threshold), X+F (Fusion 50/50 >= threshold)",
+  "plan_names": {
+    "F": "B2+F",
+    "S-only": "B2+S",
+    "C6": "B0+F",
+    "P": "tauX",
+    "P+F": "tauX+F"
+  },
+  "note": "Freeze fitted on pilot B2 boxes; on B0/P boxes the box's own CountGD++ score replaces b2_score. No refit, no GT.",
+  "uses_ground_truth": false
+}
